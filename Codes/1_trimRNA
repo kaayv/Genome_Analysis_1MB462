@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH -A uppmax2022-2-5_1
+#SBATCH -A uppmax2022-2-5
 #SBATCH -M snowy
 #SBATCH -p core
 #SBATCH -n 2
