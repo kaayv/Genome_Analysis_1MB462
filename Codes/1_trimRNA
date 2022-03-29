@@ -1,0 +1,17 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5_1
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 2
+#SBATCH -t 00:30:00
+#SBATCH -J trim_RNA
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user kaavya.venkateswaran.5938@student.uu.se
+
+# trim RNA reads using trimmomatic
+module load bioinfo-tools
+module load trimmomatic
+
+cd /home/kvenk811/Genome_Analysis_1MB462/Data/raw_data/3_Thrash_2017/RNA_trimmed/
+
+java -jar /sw/apps/bioinfo/trimmomatic/0.36/milou/trimmomatic-0.36.jar PE -threads 5 -phred33 /home/kvenk811/Genome_Analysis_1MB462/raw_data/3_Thrash_2017/RNA_untrimmed/SRR4342137.1.fastq.gz /home/kvenk811/Genome_Analysis_1MB462/raw_data/3_Thrash_2017/RNA_untrimmed/SRR4342137.2.fastq.gz ../RNA_trim_37.left_paired.trimmed.fastq.gz ../RNA_trim_37.left_unpaired.trimmed.fastq.gz ../RNA_trim_37.right_paired.trimmed.fastq.gz ../RNA_trim_37.right_unpaired.trimmed.fastq.gz ILLUMINACLIP:/sw/apps/bioinfo/trimmomatic/0.36/milou/adapters/TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
