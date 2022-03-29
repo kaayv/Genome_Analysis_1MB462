@@ -23,6 +23,7 @@ do
 fastqc $file -o /home/kvenk811/Genome_Analysis_1MB462/Data/fastqc/RNA_trimmed/
 done
 
+#trimmed DNA fastqc analysis
 for file in /home/kvenk811/Genome_Analysis_1MB462/Data/raw_data/3_Thrash_2017/DNA_trimmed/*
 do
 fastqc $file -o /home/kvenk811/Genome_Analysis_1MB462/Data/fastqc/DNA_trimmed/
