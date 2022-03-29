@@ -1,3 +1,0 @@
-cd /home/kvenk811/genome_analysis_git/Genome_Analysis_1MB462/
-mkdir raw_data
-ln -s /proj/genomeanalysis2022/Genome_Analysis/3_Thrash_2017/ /home/kvenk811/genome_analysis_git/Genome_Analysis_1MB462/raw_data/
