@@ -1,0 +1,4 @@
+Analysis 1:
+  Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 1304686 Both Surviving: 834308 (63.95%) Forward Only Surviving: 226067 (17.33%) Reverse Only Surviving: 6193 (0.47%) Dropped: 238118 (18.25%)
