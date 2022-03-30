@@ -1,0 +1,7 @@
+/var/spool/slurmd/job6101825/slurm_script: line 15: cd: /home/kvenk811/Genome_Analysis_1MB462/Data/raw_data/3_Thrash_2017/RNA_trimmed/: No such file or directory
+TrimmomaticPE: Started with arguments:
+ -threads 5 -phred33 /home/kvenk811/Genome_Analysis_1MB462/raw_data/3_Thrash_2017/RNA_untrimmed/SRR4342137.1.fastq.gz /home/kvenk811/Genome_Analysis_1MB462/raw_data/3_Thrash_2017/RNA_untrimmed/SRR4342137.2.fastq.gz ../RNA_trim_37.left_paired.trimmed.fastq.gz ../RNA_trim_37.left_unpaired.trimmed.fastq.gz ../RNA_trim_37.right_paired.trimmed.fastq.gz ../RNA_trim_37.right_unpaired.trimmed.fastq.gz ILLUMINACLIP:/sw/apps/bioinfo/trimmomatic/0.36/milou/adapters/TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 1304686 Both Surviving: 834308 (63.95%) Forward Only Surviving: 226067 (17.33%) Reverse Only Surviving: 6193 (0.47%) Dropped: 238118 (18.25%)
+TrimmomaticPE: Completed successfully
