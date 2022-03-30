@@ -1,10 +1,9 @@
 #clone to uppmax with ssh
-ssh-keygen -t rsa -b 4096 -C "kay.ven811@gmail.com"
+ssh-keygen -t ed25519 -C "kay.ven811@gmail.com"
 eval "$(ssh-agent -s)"
-ssh-add /home/kvenk811/ssh_git
+ssh-add ~/.ssh/id_ed25519
 cat ssh_git.pub #to paste the public key to github website
 
-history |grep remote #optional
 git remote set-url origin git@github.com:kaayv/Genome_Analysis_1MB462.git
 
 cd /home/kvenk811/genome_analysis_git/Genome_Analysis_1MB462/
