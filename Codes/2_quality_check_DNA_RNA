@@ -3,7 +3,7 @@
 #SBATCH -M snowy
 #SBATCH -p core
 #SBATCH -n 2
-#SBATCH -t 02:00:00
+#SBATCH -t 00:30:00
 #SBATCH -J trim_RNA
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user kaavya.venkateswaran.5938@student.uu.se
@@ -17,30 +17,17 @@ OUT = "/home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC"
 #untrimmed RNA fastqc analysis
 for file in $DATA/RNA_untrimmed/*
 do
-fastqc $file -o $OUT
+fastqc $file -o $OUT/RNA_untrimmed
 done
 
 #trimmed RNA fastqc analysis
 for file in $DATA/RNA_trimmed/*
 do
-fastqc $file -o $OUT
-=======
-fastqc $file -o /home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC/RNA_untrimmed/
-done
-
-#trimmed RNA fastqc analysis
-for file in /home/kvenk811/Genome_Analysis_1MB462/Data/RNA_trimmed_files/*
-do
-fastqc $file -o /home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC/RNA_trimmed/
->>>>>>> 45cc853efc6d8f4305039539de33c4d7acb44540
+fastqc $file -o $OUT/RNA_trimmed
 done
 
 #trimmed DNA fastqc analysis
 for file in $DATAB462/DNA_trimmed/*
 do
-<<<<<<< HEAD
-fastqc $file -o $OUT
-=======
-fastqc $file -o /home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC/DNA_trimmed/
->>>>>>> 45cc853efc6d8f4305039539de33c4d7acb44540
+fastqc $file -o $OUT/DNA_quality
 done
