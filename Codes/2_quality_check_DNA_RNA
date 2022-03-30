@@ -14,17 +14,17 @@ module load FastQC/0.11.9
 #untrimmed RNA fastqc analysis
 for file in /home/kvenk811/Genome_Analysis_1MB462/Data/raw_data/3_Thrash_2017/RNA_untrimmed/*
 do
-fastqc $file -o /home/kvenk811/Genome_Analysis_1MB462/Data/fastqc/RNA_untrimmed/
+fastqc $file -o /home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC/RNA_untrimmed/
 done
 
 #trimmed RNA fastqc analysis
-for file in /home/kvenk811/Genome_Analysis_1MB462/Data/RNA_trimmed/*
+for file in /home/kvenk811/Genome_Analysis_1MB462/Data/RNA_trimmed_files/*
 do
-fastqc $file -o /home/kvenk811/Genome_Analysis_1MB462/Data/fastqc/RNA_trimmed/
+fastqc $file -o /home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC/RNA_trimmed/
 done
 
 #trimmed DNA fastqc analysis
 for file in /home/kvenk811/Genome_Analysis_1MB462/Data/raw_data/3_Thrash_2017/DNA_trimmed/*
 do
-fastqc $file -o /home/kvenk811/Genome_Analysis_1MB462/Data/fastqc/DNA_trimmed/
+fastqc $file -o /home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC/DNA_trimmed/
 done
