@@ -1,9 +1,9 @@
 #!/bin/bash -l
-#SBATCH -A uppmax2022-2-5_2
+#SBATCH -A uppmax2022-2-5
 #SBATCH -M snowy
 #SBATCH -p core
 #SBATCH -n 2
-#SBATCH -t 02:00:00
+#SBATCH -t 00:30:00
 #SBATCH -J trim_RNA
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user kaavya.venkateswaran.5938@student.uu.se

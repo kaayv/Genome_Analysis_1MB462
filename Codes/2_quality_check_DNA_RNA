@@ -17,7 +17,6 @@ OUT = "/home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC"
 #untrimmed RNA fastqc analysis
 for file in $DATA/RNA_untrimmed/*
 do
-<<<<<<< HEAD
 fastqc $file -o $OUT
 done
 
