@@ -12,6 +12,13 @@
 module load bioinfo-tools
 module load trimmomatic
 
-cd /home/kvenk811/Genome_Analysis_1MB462/Data/raw_data/3_Thrash_2017/RNA_trimmed/
+# Path to sequence directory and output directories
+SEQDIR="/home/kvenk811/Genome_Analysis_1MB462/Data/raw_data/3_Thrash_2017/RNA_untrimmed"
+OUTDIR="/home/kvenk811/Genome_Analysis_1MB462/Data/RNA_trimmed_files"
 
-java -jar /sw/apps/bioinfo/trimmomatic/0.36/milou/trimmomatic-0.36.jar PE -threads 5 -phred33 /home/kvenk811/Genome_Analysis_1MB462/raw_data/3_Thrash_2017/RNA_untrimmed/SRR4342137.1.fastq.gz /home/kvenk811/Genome_Analysis_1MB462/raw_data/3_Thrash_2017/RNA_untrimmed/SRR4342137.2.fastq.gz ../RNA_trim_37.left_paired.trimmed.fastq.gz ../RNA_trim_37.left_unpaired.trimmed.fastq.gz ../RNA_trim_37.right_paired.trimmed.fastq.gz ../RNA_trim_37.right_unpaired.trimmed.fastq.gz ILLUMINACLIP:/sw/apps/bioinfo/trimmomatic/0.36/milou/adapters/TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+# Run trimmomatic on the two files. Include full path to input and output files. 
+# Input files (2): paired end reads of untrimmed RNA. Output files (4): left and right, paired and unpaired trimmed reads.
+
+java -jar /sw/apps/bioinfo/trimmomatic/0.36/milou/trimmomatic-0.36.jar PE -threads 5 -phred33 $SEQDIR/SRR4342137.1.fastq.gz $SEQDIR/SRR4342137.2.fastq.gz $OUTDIR/RNA_trim_37.left_paired.trimmed.fastq.gz $OUTDIR/RNA_trim_37.left_unpaired.trimmed.fastq.gz $OUTDIR/RNA_trim_37.right_paired.trimmed.fastq.gz $OUTDIR/RNA_trim_37.right_unpaired.trimmed.fastq.gz ILLUMINACLIP:/sw/apps/bioinfo/trimmomatic/0.36/milou/adapters/TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+java -jar /sw/apps/bioinfo/trimmomatic/0.36/milou/trimmomatic-0.36.jar PE -threads 5 -phred33 $SEQDIR/SRR4342139.1.fastq.gz $SEQDIR/SRR4342139.2.fastq.gz $OUTDIR/RNA_trim_39.left_paired.trimmed.fastq.gz $OUTDIR/RNA_trim_39.left_unpaired.trimmed.fastq.gz $OUTDIR/RNA_trim_39.right_paired.trimmed.fastq.gz $OUTDIR/RNA_trim_39.right_unpaired.trimmed.fastq.gz ILLUMINACLIP:/sw/apps/bioinfo/trimmomatic/0.36/milou/adapters/TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36

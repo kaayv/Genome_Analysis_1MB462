@@ -17,6 +17,7 @@ OUT = "/home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC"
 #untrimmed RNA fastqc analysis
 for file in $DATA/RNA_untrimmed/*
 do
+<<<<<<< HEAD
 fastqc $file -o $OUT
 done
 
@@ -24,10 +25,23 @@ done
 for file in $DATA/RNA_trimmed/*
 do
 fastqc $file -o $OUT
+=======
+fastqc $file -o /home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC/RNA_untrimmed/
+done
+
+#trimmed RNA fastqc analysis
+for file in /home/kvenk811/Genome_Analysis_1MB462/Data/RNA_trimmed_files/*
+do
+fastqc $file -o /home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC/RNA_trimmed/
+>>>>>>> 45cc853efc6d8f4305039539de33c4d7acb44540
 done
 
 #trimmed DNA fastqc analysis
 for file in $DATAB462/DNA_trimmed/*
 do
+<<<<<<< HEAD
 fastqc $file -o $OUT
+=======
+fastqc $file -o /home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC/DNA_trimmed/
+>>>>>>> 45cc853efc6d8f4305039539de33c4d7acb44540
 done
