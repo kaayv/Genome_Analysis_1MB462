@@ -1,5 +1,0 @@
-/var/spool/slurmd/job6104046/slurm_script: line 14: DATA: command not found
-/var/spool/slurmd/job6104046/slurm_script: line 15: OUT: command not found
-Specified output directory '/RNA_untrimmed' does not exist
-Specified output directory '/RNA_trimmed' does not exist
-Specified output directory '/DNA_quality' does not exist
