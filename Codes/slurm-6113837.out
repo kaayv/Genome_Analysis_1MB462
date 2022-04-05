@@ -1,0 +1,311 @@
++ module load bioinfo-tools
+++ /usr/share/lmod/lmod/libexec/lmod bash load bioinfo-tools
++ eval '__LMOD_REF_COUNT_LOADEDMODULES=uppmax:2\;bioinfo-tools:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=uppmax:bioinfo-tools;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MODULEPATH=/sw/mf/snowy/bioinfo-tools/annotation:1\;/sw/mf/snowy/bioinfo-tools/alignment:1\;/sw/mf/snowy/bioinfo-tools/assembly:1\;/sw/mf/snowy/bioinfo-tools/misc:1\;/sw/mf/snowy/bioinfo-tools/phylogeny:1\;/sw/mf/snowy/bioinfo-tools/pipelines:1\;/sw/mf/snowy/bioinfo-tools/sw_collections:1\;/sw/mf/snowy/applications:1\;/sw/mf/snowy/build-tools:1\;/sw/mf/snowy/compilers:1\;/sw/mf/snowy/data:1\;/sw/mf/snowy/environment:1\;/sw/mf/snowy/libraries:1\;/sw/mf/snowy/parallel:1;' export '__LMOD_REF_COUNT_MODULEPATH;' 'MODULEPATH=/sw/mf/snowy/bioinfo-tools/annotation:/sw/mf/snowy/bioinfo-tools/alignment:/sw/mf/snowy/bioinfo-tools/assembly:/sw/mf/snowy/bioinfo-tools/misc:/sw/mf/snowy/bioinfo-tools/phylogeny:/sw/mf/snowy/bioinfo-tools/pipelines:/sw/mf/snowy/bioinfo-tools/sw_collections:/sw/mf/snowy/applications:/sw/mf/snowy/build-tools:/sw/mf/snowy/compilers:/sw/mf/snowy/data:/sw/mf/snowy/environment:/sw/mf/snowy/libraries:/sw/mf/snowy/parallel;' export 'MODULEPATH;' '__LMOD_REF_COUNT__LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/sw/mf/snowy/environment/bioinfo-tools;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImJpb2luZm8tdG9vbHMiXT17WyJmbiJdPSIvc3cvbWYvc25vd3kvZW52aXJvbm1lbnQvYmlvaW5mby10b29scyIsWyJmdWxsTmFtZSJdPSJiaW9pbmZvLXRvb2xzIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iYmlvaW5mby10b29scyIsfSx9LG1wYXRoQT17Ii9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2Fubm90YXRpb24iLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9hbGlnbm1lbnQiLCIvc3cv;' export '_ModuleTable001_;' '_ModuleTable002_=bWYvc25vd3kvYmlvaW5mby10b29scy9hc3NlbWJseSIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL21pc2MiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9waHlsb2dlbnkiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9waXBlbGluZXMiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9zd19jb2xsZWN0aW9ucyIsIi9zdy9tZi9zbm93eS9hcHBsaWNhdGlvbnMiLCIvc3cvbWYvc25vd3kvYnVpbGQtdG9vbHMiLCIvc3cvbWYvc25vd3kvY29tcGlsZXJzIiwiL3N3L21mL3Nub3d5L2RhdGEiLCIvc3cvbWYvc25vd3kvZW52aXJvbm1lbnQiLCIvc3cvbWYvc25vd3kvbGlicmFyaWVzIiwiL3N3L21mL3Nub3d5L3BhcmFsbGVsIix9LFsic3lzdGVtQmFzZU1QQVRI;' export '_ModuleTable002_;' '_ModuleTable003_=Il09Ii9zdy9tZi9zbm93eS9hcHBsaWNhdGlvbnM6L3N3L21mL3Nub3d5L2J1aWxkLXRvb2xzOi9zdy9tZi9zbm93eS9jb21waWxlcnM6L3N3L21mL3Nub3d5L2RhdGE6L3N3L21mL3Nub3d5L2Vudmlyb25tZW50Oi9zdy9tZi9zbm93eS9saWJyYXJpZXM6L3N3L21mL3Nub3d5L3BhcmFsbGVsIix9;' export '_ModuleTable003_;' '_ModuleTable_Sz_=3;' export '_ModuleTable_Sz_;'
+++ __LMOD_REF_COUNT_LOADEDMODULES='uppmax:2;bioinfo-tools:1'
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=uppmax:bioinfo-tools
+++ export LOADEDMODULES
+++ __LMOD_REF_COUNT_MODULEPATH='/sw/mf/snowy/bioinfo-tools/annotation:1;/sw/mf/snowy/bioinfo-tools/alignment:1;/sw/mf/snowy/bioinfo-tools/assembly:1;/sw/mf/snowy/bioinfo-tools/misc:1;/sw/mf/snowy/bioinfo-tools/phylogeny:1;/sw/mf/snowy/bioinfo-tools/pipelines:1;/sw/mf/snowy/bioinfo-tools/sw_collections:1;/sw/mf/snowy/applications:1;/sw/mf/snowy/build-tools:1;/sw/mf/snowy/compilers:1;/sw/mf/snowy/data:1;/sw/mf/snowy/environment:1;/sw/mf/snowy/libraries:1;/sw/mf/snowy/parallel:1'
+++ export __LMOD_REF_COUNT_MODULEPATH
+++ MODULEPATH=/sw/mf/snowy/bioinfo-tools/annotation:/sw/mf/snowy/bioinfo-tools/alignment:/sw/mf/snowy/bioinfo-tools/assembly:/sw/mf/snowy/bioinfo-tools/misc:/sw/mf/snowy/bioinfo-tools/phylogeny:/sw/mf/snowy/bioinfo-tools/pipelines:/sw/mf/snowy/bioinfo-tools/sw_collections:/sw/mf/snowy/applications:/sw/mf/snowy/build-tools:/sw/mf/snowy/compilers:/sw/mf/snowy/data:/sw/mf/snowy/environment:/sw/mf/snowy/libraries:/sw/mf/snowy/parallel
+++ export MODULEPATH
+++ __LMOD_REF_COUNT__LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:1
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/sw/mf/snowy/environment/bioinfo-tools
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImJpb2luZm8tdG9vbHMiXT17WyJmbiJdPSIvc3cvbWYvc25vd3kvZW52aXJvbm1lbnQvYmlvaW5mby10b29scyIsWyJmdWxsTmFtZSJdPSJiaW9pbmZvLXRvb2xzIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iYmlvaW5mby10b29scyIsfSx9LG1wYXRoQT17Ii9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2Fubm90YXRpb24iLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9hbGlnbm1lbnQiLCIvc3cv
+++ export _ModuleTable001_
+++ _ModuleTable002_=bWYvc25vd3kvYmlvaW5mby10b29scy9hc3NlbWJseSIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL21pc2MiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9waHlsb2dlbnkiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9waXBlbGluZXMiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9zd19jb2xsZWN0aW9ucyIsIi9zdy9tZi9zbm93eS9hcHBsaWNhdGlvbnMiLCIvc3cvbWYvc25vd3kvYnVpbGQtdG9vbHMiLCIvc3cvbWYvc25vd3kvY29tcGlsZXJzIiwiL3N3L21mL3Nub3d5L2RhdGEiLCIvc3cvbWYvc25vd3kvZW52aXJvbm1lbnQiLCIvc3cvbWYvc25vd3kvbGlicmFyaWVzIiwiL3N3L21mL3Nub3d5L3BhcmFsbGVsIix9LFsic3lzdGVtQmFzZU1QQVRI
+++ export _ModuleTable002_
+++ _ModuleTable003_=Il09Ii9zdy9tZi9zbm93eS9hcHBsaWNhdGlvbnM6L3N3L21mL3Nub3d5L2J1aWxkLXRvb2xzOi9zdy9tZi9zbm93eS9jb21waWxlcnM6L3N3L21mL3Nub3d5L2RhdGE6L3N3L21mL3Nub3d5L2Vudmlyb25tZW50Oi9zdy9tZi9zbm93eS9saWJyYXJpZXM6L3N3L21mL3Nub3d5L3BhcmFsbGVsIix9
+++ export _ModuleTable003_
+++ _ModuleTable_Sz_=3
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ module load FastQC/0.11.9
+++ /usr/share/lmod/lmod/libexec/lmod bash load FastQC/0.11.9
++ eval '__LMOD_REF_COUNT_LOADEDMODULES=uppmax:2\;bioinfo-tools:1\;FastQC/0.11.9:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=uppmax:bioinfo-tools:FastQC/0.11.9;' export 'LOADEDMODULES;' 'MODULEPATH=/sw/mf/snowy/bioinfo-tools/annotation:/sw/mf/snowy/bioinfo-tools/alignment:/sw/mf/snowy/bioinfo-tools/assembly:/sw/mf/snowy/bioinfo-tools/misc:/sw/mf/snowy/bioinfo-tools/phylogeny:/sw/mf/snowy/bioinfo-tools/pipelines:/sw/mf/snowy/bioinfo-tools/sw_collections:/sw/mf/snowy/applications:/sw/mf/snowy/build-tools:/sw/mf/snowy/compilers:/sw/mf/snowy/data:/sw/mf/snowy/environment:/sw/mf/snowy/libraries:/sw/mf/snowy/parallel;' export 'MODULEPATH;' '__LMOD_REF_COUNT_PATH=/sw/bioinfo/FastQC/0.11.9/snowy:1\;/home/kvenk811/bin:2\;/usr/local/bin:1\;/usr/bin:1\;/usr/local/sbin:1\;/usr/sbin:1\;/sw/uppmax/bin:2;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/sw/bioinfo/FastQC/0.11.9/snowy:/home/kvenk811/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sw/uppmax/bin;' export 'PATH;' '__LMOD_REF_COUNT__LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:1\;/sw/mf/snowy/bioinfo-tools/misc/FastQC/0.11.9:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:/sw/mf/snowy/bioinfo-tools/misc/FastQC/0.11.9;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtGYXN0UUM9e1siZm4iXT0iL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvbWlzYy9GYXN0UUMvMC4xMS45IixbImZ1bGxOYW1lIl09IkZhc3RRQy8wLjExLjkiLFsibG9hZE9yZGVyIl09Mixwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJGYXN0UUMvMC4xMS45Iix9LFsiYmlvaW5mby10b29scyJdPXtbImZuIl09Ii9zdy9tZi9zbm93eS9lbnZpcm9ubWVudC9iaW9pbmZvLXRvb2xzIixbImZ1bGxOYW1lIl09ImJpb2luZm8tdG9vbHMiLFsi;' export '_ModuleTable001_;' '_ModuleTable002_=bG9hZE9yZGVyIl09MSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJiaW9pbmZvLXRvb2xzIix9LH0sbXBhdGhBPXsiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvYW5ub3RhdGlvbiIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2FsaWdubWVudCIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2Fzc2VtYmx5IiwiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvbWlzYyIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3BoeWxvZ2VueSIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3BpcGVsaW5lcyIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3N3X2NvbGxlY3Rpb25zIiwiL3N3L21mL3Nu;' export '_ModuleTable002_;' '_ModuleTable003_=b3d5L2FwcGxpY2F0aW9ucyIsIi9zdy9tZi9zbm93eS9idWlsZC10b29scyIsIi9zdy9tZi9zbm93eS9jb21waWxlcnMiLCIvc3cvbWYvc25vd3kvZGF0YSIsIi9zdy9tZi9zbm93eS9lbnZpcm9ubWVudCIsIi9zdy9tZi9zbm93eS9saWJyYXJpZXMiLCIvc3cvbWYvc25vd3kvcGFyYWxsZWwiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL3N3L21mL3Nub3d5L2FwcGxpY2F0aW9uczovc3cvbWYvc25vd3kvYnVpbGQtdG9vbHM6L3N3L21mL3Nub3d5L2NvbXBpbGVyczovc3cvbWYvc25vd3kvZGF0YTovc3cvbWYvc25vd3kvZW52aXJvbm1lbnQ6L3N3L21mL3Nub3d5L2xpYnJhcmllczovc3cvbWYvc25vd3kvcGFyYWxsZWwiLH0=;' export '_ModuleTable003_;' '_ModuleTable_Sz_=3;' export '_ModuleTable_Sz_;'
+++ __LMOD_REF_COUNT_LOADEDMODULES='uppmax:2;bioinfo-tools:1;FastQC/0.11.9:1'
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=uppmax:bioinfo-tools:FastQC/0.11.9
+++ export LOADEDMODULES
+++ MODULEPATH=/sw/mf/snowy/bioinfo-tools/annotation:/sw/mf/snowy/bioinfo-tools/alignment:/sw/mf/snowy/bioinfo-tools/assembly:/sw/mf/snowy/bioinfo-tools/misc:/sw/mf/snowy/bioinfo-tools/phylogeny:/sw/mf/snowy/bioinfo-tools/pipelines:/sw/mf/snowy/bioinfo-tools/sw_collections:/sw/mf/snowy/applications:/sw/mf/snowy/build-tools:/sw/mf/snowy/compilers:/sw/mf/snowy/data:/sw/mf/snowy/environment:/sw/mf/snowy/libraries:/sw/mf/snowy/parallel
+++ export MODULEPATH
+++ __LMOD_REF_COUNT_PATH='/sw/bioinfo/FastQC/0.11.9/snowy:1;/home/kvenk811/bin:2;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/sw/uppmax/bin:2'
+++ export __LMOD_REF_COUNT_PATH
+++ PATH=/sw/bioinfo/FastQC/0.11.9/snowy:/home/kvenk811/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sw/uppmax/bin
+++ export PATH
+++ __LMOD_REF_COUNT__LMFILES_='/sw/mf/snowy/environment/bioinfo-tools:1;/sw/mf/snowy/bioinfo-tools/misc/FastQC/0.11.9:1'
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:/sw/mf/snowy/bioinfo-tools/misc/FastQC/0.11.9
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtGYXN0UUM9e1siZm4iXT0iL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvbWlzYy9GYXN0UUMvMC4xMS45IixbImZ1bGxOYW1lIl09IkZhc3RRQy8wLjExLjkiLFsibG9hZE9yZGVyIl09Mixwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJGYXN0UUMvMC4xMS45Iix9LFsiYmlvaW5mby10b29scyJdPXtbImZuIl09Ii9zdy9tZi9zbm93eS9lbnZpcm9ubWVudC9iaW9pbmZvLXRvb2xzIixbImZ1bGxOYW1lIl09ImJpb2luZm8tdG9vbHMiLFsi
+++ export _ModuleTable001_
+++ _ModuleTable002_=bG9hZE9yZGVyIl09MSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJiaW9pbmZvLXRvb2xzIix9LH0sbXBhdGhBPXsiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvYW5ub3RhdGlvbiIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2FsaWdubWVudCIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2Fzc2VtYmx5IiwiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvbWlzYyIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3BoeWxvZ2VueSIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3BpcGVsaW5lcyIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3N3X2NvbGxlY3Rpb25zIiwiL3N3L21mL3Nu
+++ export _ModuleTable002_
+++ _ModuleTable003_=b3d5L2FwcGxpY2F0aW9ucyIsIi9zdy9tZi9zbm93eS9idWlsZC10b29scyIsIi9zdy9tZi9zbm93eS9jb21waWxlcnMiLCIvc3cvbWYvc25vd3kvZGF0YSIsIi9zdy9tZi9zbm93eS9lbnZpcm9ubWVudCIsIi9zdy9tZi9zbm93eS9saWJyYXJpZXMiLCIvc3cvbWYvc25vd3kvcGFyYWxsZWwiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL3N3L21mL3Nub3d5L2FwcGxpY2F0aW9uczovc3cvbWYvc25vd3kvYnVpbGQtdG9vbHM6L3N3L21mL3Nub3d5L2NvbXBpbGVyczovc3cvbWYvc25vd3kvZGF0YTovc3cvbWYvc25vd3kvZW52aXJvbm1lbnQ6L3N3L21mL3Nub3d5L2xpYnJhcmllczovc3cvbWYvc25vd3kvcGFyYWxsZWwiLH0=
+++ export _ModuleTable003_
+++ _ModuleTable_Sz_=3
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ DNA=/home/kvenk811/Genome_Analysis_1MB462/Data/raw_data/3_Thrash_2017/DNA_trimmed
++ RNA=/home/kvenk811/Genome_Analysis_1MB462/Data/raw_data/3_Thrash_2017/RNA_untrimmed
++ OUT=/home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC
++ RNA_trim=/home/kvenk811/Genome_Analysis_1MB462/Data/RNA_trimmed_files
++ for file in '$RNA/*'
++ fastqc /home/kvenk811/Genome_Analysis_1MB462/Data/raw_data/3_Thrash_2017/RNA_untrimmed/SRR4342137.1.fastq.gz -o /home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC/
+Started analysis of SRR4342137.1.fastq.gz
+Approx 5% complete for SRR4342137.1.fastq.gz
+Approx 10% complete for SRR4342137.1.fastq.gz
+Approx 15% complete for SRR4342137.1.fastq.gz
+Approx 20% complete for SRR4342137.1.fastq.gz
+Approx 25% complete for SRR4342137.1.fastq.gz
+Approx 30% complete for SRR4342137.1.fastq.gz
+Approx 35% complete for SRR4342137.1.fastq.gz
+Approx 40% complete for SRR4342137.1.fastq.gz
+Approx 45% complete for SRR4342137.1.fastq.gz
+Approx 50% complete for SRR4342137.1.fastq.gz
+Approx 55% complete for SRR4342137.1.fastq.gz
+Approx 60% complete for SRR4342137.1.fastq.gz
+Approx 65% complete for SRR4342137.1.fastq.gz
+Approx 70% complete for SRR4342137.1.fastq.gz
+Approx 75% complete for SRR4342137.1.fastq.gz
+Approx 80% complete for SRR4342137.1.fastq.gz
+Approx 85% complete for SRR4342137.1.fastq.gz
+Approx 90% complete for SRR4342137.1.fastq.gz
+Approx 95% complete for SRR4342137.1.fastq.gz
+Analysis complete for SRR4342137.1.fastq.gz
++ for file in '$RNA/*'
++ fastqc /home/kvenk811/Genome_Analysis_1MB462/Data/raw_data/3_Thrash_2017/RNA_untrimmed/SRR4342137.2.fastq.gz -o /home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC/
+Started analysis of SRR4342137.2.fastq.gz
+Approx 5% complete for SRR4342137.2.fastq.gz
+Approx 10% complete for SRR4342137.2.fastq.gz
+Approx 15% complete for SRR4342137.2.fastq.gz
+Approx 20% complete for SRR4342137.2.fastq.gz
+Approx 25% complete for SRR4342137.2.fastq.gz
+Approx 30% complete for SRR4342137.2.fastq.gz
+Approx 35% complete for SRR4342137.2.fastq.gz
+Approx 40% complete for SRR4342137.2.fastq.gz
+Approx 45% complete for SRR4342137.2.fastq.gz
+Approx 50% complete for SRR4342137.2.fastq.gz
+Approx 55% complete for SRR4342137.2.fastq.gz
+Approx 60% complete for SRR4342137.2.fastq.gz
+Approx 65% complete for SRR4342137.2.fastq.gz
+Approx 70% complete for SRR4342137.2.fastq.gz
+Approx 75% complete for SRR4342137.2.fastq.gz
+Approx 80% complete for SRR4342137.2.fastq.gz
+Approx 85% complete for SRR4342137.2.fastq.gz
+Approx 90% complete for SRR4342137.2.fastq.gz
+Approx 95% complete for SRR4342137.2.fastq.gz
+Analysis complete for SRR4342137.2.fastq.gz
++ for file in '$RNA/*'
++ fastqc /home/kvenk811/Genome_Analysis_1MB462/Data/raw_data/3_Thrash_2017/RNA_untrimmed/SRR4342139.1.fastq.gz -o /home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC/
+Started analysis of SRR4342139.1.fastq.gz
+Approx 5% complete for SRR4342139.1.fastq.gz
+Approx 10% complete for SRR4342139.1.fastq.gz
+Approx 15% complete for SRR4342139.1.fastq.gz
+Approx 20% complete for SRR4342139.1.fastq.gz
+Approx 25% complete for SRR4342139.1.fastq.gz
+Approx 30% complete for SRR4342139.1.fastq.gz
+Approx 35% complete for SRR4342139.1.fastq.gz
+Approx 40% complete for SRR4342139.1.fastq.gz
+Approx 45% complete for SRR4342139.1.fastq.gz
+Approx 50% complete for SRR4342139.1.fastq.gz
+Approx 55% complete for SRR4342139.1.fastq.gz
+Approx 60% complete for SRR4342139.1.fastq.gz
+Approx 65% complete for SRR4342139.1.fastq.gz
+Approx 70% complete for SRR4342139.1.fastq.gz
+Approx 75% complete for SRR4342139.1.fastq.gz
+Approx 80% complete for SRR4342139.1.fastq.gz
+Approx 85% complete for SRR4342139.1.fastq.gz
+Approx 90% complete for SRR4342139.1.fastq.gz
+Approx 95% complete for SRR4342139.1.fastq.gz
+Analysis complete for SRR4342139.1.fastq.gz
++ for file in '$RNA/*'
++ fastqc /home/kvenk811/Genome_Analysis_1MB462/Data/raw_data/3_Thrash_2017/RNA_untrimmed/SRR4342139.2.fastq.gz -o /home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC/
+Started analysis of SRR4342139.2.fastq.gz
+Approx 5% complete for SRR4342139.2.fastq.gz
+Approx 10% complete for SRR4342139.2.fastq.gz
+Approx 15% complete for SRR4342139.2.fastq.gz
+Approx 20% complete for SRR4342139.2.fastq.gz
+Approx 25% complete for SRR4342139.2.fastq.gz
+Approx 30% complete for SRR4342139.2.fastq.gz
+Approx 35% complete for SRR4342139.2.fastq.gz
+Approx 40% complete for SRR4342139.2.fastq.gz
+Approx 45% complete for SRR4342139.2.fastq.gz
+Approx 50% complete for SRR4342139.2.fastq.gz
+Approx 55% complete for SRR4342139.2.fastq.gz
+Approx 60% complete for SRR4342139.2.fastq.gz
+Approx 65% complete for SRR4342139.2.fastq.gz
+Approx 70% complete for SRR4342139.2.fastq.gz
+Approx 75% complete for SRR4342139.2.fastq.gz
+Approx 80% complete for SRR4342139.2.fastq.gz
+Approx 85% complete for SRR4342139.2.fastq.gz
+Approx 90% complete for SRR4342139.2.fastq.gz
+Approx 95% complete for SRR4342139.2.fastq.gz
+Analysis complete for SRR4342139.2.fastq.gz
++ for file in '$RNA_trim/RNA*'
++ fastqc /home/kvenk811/Genome_Analysis_1MB462/Data/RNA_trimmed_files/RNA_trim_37.left_paired.trimmed.fastq.gz -o /home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC/
+Started analysis of RNA_trim_37.left_paired.trimmed.fastq.gz
+Approx 5% complete for RNA_trim_37.left_paired.trimmed.fastq.gz
+Approx 10% complete for RNA_trim_37.left_paired.trimmed.fastq.gz
+Approx 15% complete for RNA_trim_37.left_paired.trimmed.fastq.gz
+Approx 20% complete for RNA_trim_37.left_paired.trimmed.fastq.gz
+Approx 25% complete for RNA_trim_37.left_paired.trimmed.fastq.gz
+Approx 30% complete for RNA_trim_37.left_paired.trimmed.fastq.gz
+Approx 35% complete for RNA_trim_37.left_paired.trimmed.fastq.gz
+Approx 40% complete for RNA_trim_37.left_paired.trimmed.fastq.gz
+Approx 45% complete for RNA_trim_37.left_paired.trimmed.fastq.gz
+Approx 50% complete for RNA_trim_37.left_paired.trimmed.fastq.gz
+Approx 55% complete for RNA_trim_37.left_paired.trimmed.fastq.gz
+Approx 60% complete for RNA_trim_37.left_paired.trimmed.fastq.gz
+Approx 65% complete for RNA_trim_37.left_paired.trimmed.fastq.gz
+Approx 70% complete for RNA_trim_37.left_paired.trimmed.fastq.gz
+Approx 75% complete for RNA_trim_37.left_paired.trimmed.fastq.gz
+Approx 80% complete for RNA_trim_37.left_paired.trimmed.fastq.gz
+Approx 85% complete for RNA_trim_37.left_paired.trimmed.fastq.gz
+Approx 90% complete for RNA_trim_37.left_paired.trimmed.fastq.gz
+Approx 95% complete for RNA_trim_37.left_paired.trimmed.fastq.gz
+Analysis complete for RNA_trim_37.left_paired.trimmed.fastq.gz
++ for file in '$RNA_trim/RNA*'
++ fastqc /home/kvenk811/Genome_Analysis_1MB462/Data/RNA_trimmed_files/RNA_trim_37.left_unpaired.trimmed.fastq.gz -o /home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC/
+Started analysis of RNA_trim_37.left_unpaired.trimmed.fastq.gz
+Approx 5% complete for RNA_trim_37.left_unpaired.trimmed.fastq.gz
+Approx 10% complete for RNA_trim_37.left_unpaired.trimmed.fastq.gz
+Approx 15% complete for RNA_trim_37.left_unpaired.trimmed.fastq.gz
+Approx 20% complete for RNA_trim_37.left_unpaired.trimmed.fastq.gz
+Approx 25% complete for RNA_trim_37.left_unpaired.trimmed.fastq.gz
+Approx 30% complete for RNA_trim_37.left_unpaired.trimmed.fastq.gz
+Approx 35% complete for RNA_trim_37.left_unpaired.trimmed.fastq.gz
+Approx 40% complete for RNA_trim_37.left_unpaired.trimmed.fastq.gz
+Approx 45% complete for RNA_trim_37.left_unpaired.trimmed.fastq.gz
+Approx 50% complete for RNA_trim_37.left_unpaired.trimmed.fastq.gz
+Approx 55% complete for RNA_trim_37.left_unpaired.trimmed.fastq.gz
+Approx 60% complete for RNA_trim_37.left_unpaired.trimmed.fastq.gz
+Approx 65% complete for RNA_trim_37.left_unpaired.trimmed.fastq.gz
+Approx 70% complete for RNA_trim_37.left_unpaired.trimmed.fastq.gz
+Approx 75% complete for RNA_trim_37.left_unpaired.trimmed.fastq.gz
+Approx 80% complete for RNA_trim_37.left_unpaired.trimmed.fastq.gz
+Approx 85% complete for RNA_trim_37.left_unpaired.trimmed.fastq.gz
+Approx 90% complete for RNA_trim_37.left_unpaired.trimmed.fastq.gz
+Approx 95% complete for RNA_trim_37.left_unpaired.trimmed.fastq.gz
+Analysis complete for RNA_trim_37.left_unpaired.trimmed.fastq.gz
++ for file in '$RNA_trim/RNA*'
++ fastqc /home/kvenk811/Genome_Analysis_1MB462/Data/RNA_trimmed_files/RNA_trim_37.right_paired.trimmed.fastq.gz -o /home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC/
+Started analysis of RNA_trim_37.right_paired.trimmed.fastq.gz
+Approx 5% complete for RNA_trim_37.right_paired.trimmed.fastq.gz
+Approx 10% complete for RNA_trim_37.right_paired.trimmed.fastq.gz
+Approx 15% complete for RNA_trim_37.right_paired.trimmed.fastq.gz
+Approx 20% complete for RNA_trim_37.right_paired.trimmed.fastq.gz
+Approx 25% complete for RNA_trim_37.right_paired.trimmed.fastq.gz
+Approx 30% complete for RNA_trim_37.right_paired.trimmed.fastq.gz
+Approx 35% complete for RNA_trim_37.right_paired.trimmed.fastq.gz
+Approx 40% complete for RNA_trim_37.right_paired.trimmed.fastq.gz
+Approx 45% complete for RNA_trim_37.right_paired.trimmed.fastq.gz
+Approx 50% complete for RNA_trim_37.right_paired.trimmed.fastq.gz
+Approx 55% complete for RNA_trim_37.right_paired.trimmed.fastq.gz
+Approx 60% complete for RNA_trim_37.right_paired.trimmed.fastq.gz
+Approx 65% complete for RNA_trim_37.right_paired.trimmed.fastq.gz
+Approx 70% complete for RNA_trim_37.right_paired.trimmed.fastq.gz
+Approx 75% complete for RNA_trim_37.right_paired.trimmed.fastq.gz
+Approx 80% complete for RNA_trim_37.right_paired.trimmed.fastq.gz
+Approx 85% complete for RNA_trim_37.right_paired.trimmed.fastq.gz
+Approx 90% complete for RNA_trim_37.right_paired.trimmed.fastq.gz
+Approx 95% complete for RNA_trim_37.right_paired.trimmed.fastq.gz
+Analysis complete for RNA_trim_37.right_paired.trimmed.fastq.gz
++ for file in '$RNA_trim/RNA*'
++ fastqc /home/kvenk811/Genome_Analysis_1MB462/Data/RNA_trimmed_files/RNA_trim_37.right_unpaired.trimmed.fastq.gz -o /home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC/
+Started analysis of RNA_trim_37.right_unpaired.trimmed.fastq.gz
+Approx 15% complete for RNA_trim_37.right_unpaired.trimmed.fastq.gz
+Approx 30% complete for RNA_trim_37.right_unpaired.trimmed.fastq.gz
+Approx 45% complete for RNA_trim_37.right_unpaired.trimmed.fastq.gz
+Approx 60% complete for RNA_trim_37.right_unpaired.trimmed.fastq.gz
+Approx 80% complete for RNA_trim_37.right_unpaired.trimmed.fastq.gz
+Approx 95% complete for RNA_trim_37.right_unpaired.trimmed.fastq.gz
+Analysis complete for RNA_trim_37.right_unpaired.trimmed.fastq.gz
++ for file in '$RNA_trim/RNA*'
++ fastqc /home/kvenk811/Genome_Analysis_1MB462/Data/RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz -o /home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC/
+Started analysis of RNA_trim_39.left_paired.trimmed.fastq.gz
+Approx 5% complete for RNA_trim_39.left_paired.trimmed.fastq.gz
+Approx 10% complete for RNA_trim_39.left_paired.trimmed.fastq.gz
+Approx 15% complete for RNA_trim_39.left_paired.trimmed.fastq.gz
+Approx 20% complete for RNA_trim_39.left_paired.trimmed.fastq.gz
+Approx 25% complete for RNA_trim_39.left_paired.trimmed.fastq.gz
+Approx 30% complete for RNA_trim_39.left_paired.trimmed.fastq.gz
+Approx 35% complete for RNA_trim_39.left_paired.trimmed.fastq.gz
+Approx 40% complete for RNA_trim_39.left_paired.trimmed.fastq.gz
+Approx 45% complete for RNA_trim_39.left_paired.trimmed.fastq.gz
+Approx 50% complete for RNA_trim_39.left_paired.trimmed.fastq.gz
+Approx 55% complete for RNA_trim_39.left_paired.trimmed.fastq.gz
+Approx 60% complete for RNA_trim_39.left_paired.trimmed.fastq.gz
+Approx 65% complete for RNA_trim_39.left_paired.trimmed.fastq.gz
+Approx 70% complete for RNA_trim_39.left_paired.trimmed.fastq.gz
+Approx 75% complete for RNA_trim_39.left_paired.trimmed.fastq.gz
+Approx 80% complete for RNA_trim_39.left_paired.trimmed.fastq.gz
+Approx 85% complete for RNA_trim_39.left_paired.trimmed.fastq.gz
+Approx 90% complete for RNA_trim_39.left_paired.trimmed.fastq.gz
+Approx 95% complete for RNA_trim_39.left_paired.trimmed.fastq.gz
+Analysis complete for RNA_trim_39.left_paired.trimmed.fastq.gz
++ for file in '$RNA_trim/RNA*'
++ fastqc /home/kvenk811/Genome_Analysis_1MB462/Data/RNA_trimmed_files/RNA_trim_39.left_unpaired.trimmed.fastq.gz -o /home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC/
+Started analysis of RNA_trim_39.left_unpaired.trimmed.fastq.gz
+Approx 5% complete for RNA_trim_39.left_unpaired.trimmed.fastq.gz
+Approx 10% complete for RNA_trim_39.left_unpaired.trimmed.fastq.gz
+Approx 15% complete for RNA_trim_39.left_unpaired.trimmed.fastq.gz
+Approx 20% complete for RNA_trim_39.left_unpaired.trimmed.fastq.gz
+Approx 25% complete for RNA_trim_39.left_unpaired.trimmed.fastq.gz
+Approx 30% complete for RNA_trim_39.left_unpaired.trimmed.fastq.gz
+Approx 35% complete for RNA_trim_39.left_unpaired.trimmed.fastq.gz
+Approx 40% complete for RNA_trim_39.left_unpaired.trimmed.fastq.gz
+Approx 45% complete for RNA_trim_39.left_unpaired.trimmed.fastq.gz
+Approx 50% complete for RNA_trim_39.left_unpaired.trimmed.fastq.gz
+Approx 55% complete for RNA_trim_39.left_unpaired.trimmed.fastq.gz
+Approx 60% complete for RNA_trim_39.left_unpaired.trimmed.fastq.gz
+Approx 65% complete for RNA_trim_39.left_unpaired.trimmed.fastq.gz
+Approx 70% complete for RNA_trim_39.left_unpaired.trimmed.fastq.gz
+Approx 75% complete for RNA_trim_39.left_unpaired.trimmed.fastq.gz
+Approx 80% complete for RNA_trim_39.left_unpaired.trimmed.fastq.gz
+Approx 85% complete for RNA_trim_39.left_unpaired.trimmed.fastq.gz
+Approx 90% complete for RNA_trim_39.left_unpaired.trimmed.fastq.gz
+Approx 95% complete for RNA_trim_39.left_unpaired.trimmed.fastq.gz
+Analysis complete for RNA_trim_39.left_unpaired.trimmed.fastq.gz
++ for file in '$RNA_trim/RNA*'
++ fastqc /home/kvenk811/Genome_Analysis_1MB462/Data/RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz -o /home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC/
+Started analysis of RNA_trim_39.right_paired.trimmed.fastq.gz
+Approx 5% complete for RNA_trim_39.right_paired.trimmed.fastq.gz
+Approx 10% complete for RNA_trim_39.right_paired.trimmed.fastq.gz
+Approx 15% complete for RNA_trim_39.right_paired.trimmed.fastq.gz
+Approx 20% complete for RNA_trim_39.right_paired.trimmed.fastq.gz
+Approx 25% complete for RNA_trim_39.right_paired.trimmed.fastq.gz
+Approx 30% complete for RNA_trim_39.right_paired.trimmed.fastq.gz
+Approx 35% complete for RNA_trim_39.right_paired.trimmed.fastq.gz
+Approx 40% complete for RNA_trim_39.right_paired.trimmed.fastq.gz
+Approx 45% complete for RNA_trim_39.right_paired.trimmed.fastq.gz
+Approx 50% complete for RNA_trim_39.right_paired.trimmed.fastq.gz
+Approx 55% complete for RNA_trim_39.right_paired.trimmed.fastq.gz
+Approx 60% complete for RNA_trim_39.right_paired.trimmed.fastq.gz
+Approx 65% complete for RNA_trim_39.right_paired.trimmed.fastq.gz
+Approx 70% complete for RNA_trim_39.right_paired.trimmed.fastq.gz
+Approx 75% complete for RNA_trim_39.right_paired.trimmed.fastq.gz
+Approx 80% complete for RNA_trim_39.right_paired.trimmed.fastq.gz
+Approx 85% complete for RNA_trim_39.right_paired.trimmed.fastq.gz
+Approx 90% complete for RNA_trim_39.right_paired.trimmed.fastq.gz
+Approx 95% complete for RNA_trim_39.right_paired.trimmed.fastq.gz
+Analysis complete for RNA_trim_39.right_paired.trimmed.fastq.gz
++ for file in '$RNA_trim/RNA*'
++ fastqc /home/kvenk811/Genome_Analysis_1MB462/Data/RNA_trimmed_files/RNA_trim_39.right_unpaired.trimmed.fastq.gz -o /home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC/
+Started analysis of RNA_trim_39.right_unpaired.trimmed.fastq.gz
+Approx 20% complete for RNA_trim_39.right_unpaired.trimmed.fastq.gz
+Approx 40% complete for RNA_trim_39.right_unpaired.trimmed.fastq.gz
+Approx 65% complete for RNA_trim_39.right_unpaired.trimmed.fastq.gz
+Approx 85% complete for RNA_trim_39.right_unpaired.trimmed.fastq.gz
+Analysis complete for RNA_trim_39.right_unpaired.trimmed.fastq.gz
++ for file in '$DNA/*'
++ fastqc /home/kvenk811/Genome_Analysis_1MB462/Data/raw_data/3_Thrash_2017/DNA_trimmed/SRR4342129_1.paired.trimmed.fastq.gz -o /home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC/
+Started analysis of SRR4342129_1.paired.trimmed.fastq.gz
+Approx 5% complete for SRR4342129_1.paired.trimmed.fastq.gz
+Approx 10% complete for SRR4342129_1.paired.trimmed.fastq.gz
+Approx 15% complete for SRR4342129_1.paired.trimmed.fastq.gz
+Approx 20% complete for SRR4342129_1.paired.trimmed.fastq.gz

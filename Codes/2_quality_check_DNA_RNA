@@ -2,34 +2,36 @@
 #SBATCH -A uppmax2022-2-5
 #SBATCH -M snowy
 #SBATCH -p core
-#SBATCH -n 2
+#SBATCH -n 1
 #SBATCH -t 00:30:00
-#SBATCH -J quality check
+#SBATCH -J quality_check
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user kaavya.venkateswaran.5938@student.uu.se
+
+set -x 
 
 module load bioinfo-tools
 module load FastQC/0.11.9
 
-DATA = "/home/kvenk811/Genome_Analysis_1MB462/Data/raw_data/3_Thrash_2017"
-OUT = "/home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC"
+DNA="/home/kvenk811/Genome_Analysis_1MB462/Data/raw_data/3_Thrash_2017/DNA_trimmed"
+RNA="/home/kvenk811/Genome_Analysis_1MB462/Data/raw_data/3_Thrash_2017/RNA_untrimmed"
+OUT="/home/kvenk811/Genome_Analysis_1MB462/Results/FASTQC"
+RNA_trim="/home/kvenk811/Genome_Analysis_1MB462/Data/RNA_trimmed_files"
 
 #untrimmed RNA fastqc analysis
-for file in $DATA/RNA_untrimmed/*
+for file in $RNA/*
 do
 fastqc $file -o $OUT/
 done
 
-
-
 #trimmed RNA fastqc analysis
-for file in $DATA/RNA_trimmed/*
+for file in $RNA_trim/RNA*
 do
 fastqc $file -o $OUT/
 done
 
 #trimmed DNA fastqc analysis
-for file in $DATAB462/DNA_trimmed/*
+for file in $DNA/*
 do
 fastqc $file -o $OUT/
 done
