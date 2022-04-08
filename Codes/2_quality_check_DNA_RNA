@@ -21,17 +21,17 @@ RNA_trim="/home/kvenk811/Genome_Analysis_1MB462/Data/RNA_trimmed_files"
 #untrimmed RNA fastqc analysis
 for file in $RNA/*
 do
-fastqc $file -o $OUT/
+fastqc $file -o $OUT/RNA_untrimmed/
 done
 
 #trimmed RNA fastqc analysis
 for file in $RNA_trim/RNA*
 do
-fastqc $file -o $OUT/
+fastqc $file -o $OUT/RNA_trimmed/
 done
 
 #trimmed DNA fastqc analysis
 for file in $DNA/*
 do
-fastqc $file -o $OUT/
+fastqc $file -o $OUT/DNA_trimmed/
 done
