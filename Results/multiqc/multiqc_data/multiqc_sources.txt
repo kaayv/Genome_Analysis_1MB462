@@ -1,0 +1,17 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	RNA_trim_37.left_paired	/domus/h1/kvenk811/Genome_Analysis_1MB462/Results/multiqc/RNA_trim_37.left_paired.trimmed_fastqc.zip
+FastQC	all_sections	RNA_trim_37.left_unpaired	/domus/h1/kvenk811/Genome_Analysis_1MB462/Results/multiqc/RNA_trim_37.left_unpaired.trimmed_fastqc.zip
+FastQC	all_sections	RNA_trim_37.right_paired	/domus/h1/kvenk811/Genome_Analysis_1MB462/Results/multiqc/RNA_trim_37.right_paired.trimmed_fastqc.zip
+FastQC	all_sections	RNA_trim_37.right_unpaired	/domus/h1/kvenk811/Genome_Analysis_1MB462/Results/multiqc/RNA_trim_37.right_unpaired.trimmed_fastqc.zip
+FastQC	all_sections	RNA_trim_39.left_paired	/domus/h1/kvenk811/Genome_Analysis_1MB462/Results/multiqc/RNA_trim_39.left_paired.trimmed_fastqc.zip
+FastQC	all_sections	RNA_trim_39.left_unpaired	/domus/h1/kvenk811/Genome_Analysis_1MB462/Results/multiqc/RNA_trim_39.left_unpaired.trimmed_fastqc.zip
+FastQC	all_sections	RNA_trim_39.right_paired	/domus/h1/kvenk811/Genome_Analysis_1MB462/Results/multiqc/RNA_trim_39.right_paired.trimmed_fastqc.zip
+FastQC	all_sections	RNA_trim_39.right_unpaired	/domus/h1/kvenk811/Genome_Analysis_1MB462/Results/multiqc/RNA_trim_39.right_unpaired.trimmed_fastqc.zip
+FastQC	all_sections	SRR4342129_1.paired	/domus/h1/kvenk811/Genome_Analysis_1MB462/Results/multiqc/SRR4342129_1.paired.trimmed_fastqc.zip
+FastQC	all_sections	SRR4342129_2.paired	/domus/h1/kvenk811/Genome_Analysis_1MB462/Results/multiqc/SRR4342129_2.paired.trimmed_fastqc.zip
+FastQC	all_sections	SRR4342133_1.paired	/domus/h1/kvenk811/Genome_Analysis_1MB462/Results/multiqc/SRR4342133_1.paired.trimmed_fastqc.zip
+FastQC	all_sections	SRR4342133_2.paired	/domus/h1/kvenk811/Genome_Analysis_1MB462/Results/multiqc/SRR4342133_2.paired.trimmed_fastqc.zip
+FastQC	all_sections	SRR4342137.1	/domus/h1/kvenk811/Genome_Analysis_1MB462/Results/multiqc/SRR4342137.1_fastqc.zip
+FastQC	all_sections	SRR4342137.2	/domus/h1/kvenk811/Genome_Analysis_1MB462/Results/multiqc/SRR4342137.2_fastqc.zip
+FastQC	all_sections	SRR4342139.1	/domus/h1/kvenk811/Genome_Analysis_1MB462/Results/multiqc/SRR4342139.1_fastqc.zip
+FastQC	all_sections	SRR4342139.2	/domus/h1/kvenk811/Genome_Analysis_1MB462/Results/multiqc/SRR4342139.2_fastqc.zip
