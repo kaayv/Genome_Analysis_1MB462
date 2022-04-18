@@ -1,0 +1,24 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 2
+#SBATCH -t 02:00:00
+#SBATCH -J metaquast_analysis
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user kaavya.venkateswaran.5398@student.uu.se
+
+# DNA assembly evaulation with MetaQuast script
+
+# Load modules
+module load bioinfo-tools
+module load quast
+
+# Sequence directories
+SEQDIR="/home/kvenk811/Genome_Analysis_1MB462/Results/Megahit_assembly"
+OUTDIR="/home/kvenk811/Genome_Analysis_1MB462/Results/Metquast_analysis_of_Megahit"
+
+# Run metaquast on sites D1 and D3, assembled by megahit
+
+metaquast.py -o $OUTDIR/D1_metaquast_out $SEQDIR/D1_megahit_output/final.contigs.fa
+metaquast.py -o $OUTDIR/D3_metaquast_out $SEQDIR/D3_megahit_output/final.contigs.fa
