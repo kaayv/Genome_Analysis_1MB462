@@ -1,0 +1,6 @@
+#to ignore trimmed files
+.fastq.gz
+Data/
+#to ignore big files in Results folders
+Results/
+
