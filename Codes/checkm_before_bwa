@@ -1,1 +1,44 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 
+#SBATCH -t 01:00:00
+#SBATCH -J Checkm_before_bwa
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user kaavya.venkateswaran.5938@student.uu.se
 
+set -x
+
+#load modules
+module load bioinfo-tools 
+module load CheckM
+
+#directories
+seq="/home/kvenk811/Genome_Analysis_1MB462/Results/
+out=$seq/Checkm_before_bwa
+
+if ! [ -d $out/D1_checkm ]
+then
+mkdir $out/D1_checkm
+fi
+
+if ! [ -d $out/D3_checkm ]
+then
+mkdir $out/D3_checkm
+fi
+
+# Download the CheckM data to current directory. As of April 2022, the most recent version is 2015.01.16.
+cp -av $CHECKM_DATA/2015_01_16/* .
+#set up the location of the database so CheckM can find it
+checkm data setRoot $PWD
+
+# Run the analyses with combined workflow: lineage_wf. Then follow up with analyze and qa to create ...
+checkm lineage_wf -t 8 -x fa --reduced_tree $SEQDIR/D1_metabat_output/ $OUTDIR/D1_checkm
+checkm lineage_wf -t 8 -x fa --reduced_tree $SEQDIR/D3_metabat_output/ $OUTDIR/D3_checkm
+
+checkm analyze -t 8 -x fa $OUTDIR/D1_checkm/lineage.ms $SEQDIR/D1_metabat_output/ $OUTDIR/D1_checkm/
+checkm analyze -t 8 -x fa $OUTDIR/D3_checkm/lineage.ms $SEQDIR/D3_metabat_output/ $OUTDIR/D3_checkm/
+
+checkm qa -t 8 -o 1 -f $OUTDIR/D1_checkm/qa.out $OUTDIR/D1_checkm/lineage.ms $OUTDIR/D1_checkm/
+checkm qa -t 8 -o 1 -f $OUTDIR/D3_checkm/qa.out $OUTDIR/D3_checkm/lineage.ms $OUTDIR/D3_checkm/
