@@ -15,8 +15,8 @@ module load bioinfo-tools
 module load CheckM
 
 #directories
-seq="/home/kvenk811/Genome_Analysis_1MB462/Results/
-out=$seq/Checkm_before_bwa
+seq="/home/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning"
+out="/home/kvenk811/Genome_Analysis_1MB462/Results/Checkm_before_bwa"
 
 #see if directories exist, or create
 if ! [ -d $out/D1_checkm ]
@@ -36,13 +36,13 @@ cp -av $CHECKM_DATA/2015_01_16/* .
 checkm data setRoot $PWD
 
 # Run the analyses with combined workflow: lineage_wf. Then follow up with analyze and qa to create ...
-checkm lineage_wf -t 8 -x fa --reduced_tree $SEQDIR/D1_metabat_output/ $OUTDIR/D1_checkm
-checkm lineage_wf -t 8 -x fa --reduced_tree $SEQDIR/D3_metabat_output/ $OUTDIR/D3_checkm
+checkm lineage_wf -t 8 -x fa --reduced_tree $seq/D1_metabat_output/ $out/D1_checkm
+checkm lineage_wf -t 8 -x fa --reduced_tree $seq/D3_metabat_output/ $out/D3_checkm
 
 #for checkm marker genes in the bins
-checkm analyze -t 8 -x fa $OUTDIR/D1_checkm/lineage.ms $SEQDIR/D1_metabat_output/ $OUTDIR/D1_checkm/
-checkm analyze -t 8 -x fa $OUTDIR/D3_checkm/lineage.ms $SEQDIR/D3_metabat_output/ $OUTDIR/D3_checkm/
+checkm analyze -t 8 -x fa $out/D1_checkm/lineage.ms $out/D1_metabat_output/ $out/D1_checkm/
+checkm analyze -t 8 -x fa $out/D3_checkm/lineage.ms $out/D3_metabat_output/ $out/D3_checkm/
 
 #Assess bins for contamination and completeness
-checkm qa -t 8 -o 1 -f $OUTDIR/D1_checkm/qa.out $OUTDIR/D1_checkm/lineage.ms $OUTDIR/D1_checkm/
-checkm qa -t 8 -o 1 -f $OUTDIR/D3_checkm/qa.out $OUTDIR/D3_checkm/lineage.ms $OUTDIR/D3_checkm/
+checkm qa -t 8 -o 1 -f $out/D1_checkm/qa.out $out/D1_checkm/lineage.ms $out/D1_checkm/
+checkm qa -t 8 -o 1 -f $out/D3_checkm/qa.out $out/D3_checkm/lineage.ms $out/D3_checkm/
