@@ -13,13 +13,17 @@ module load bioinfo-tools
 module load bwa
 module load samtools
 
+#directories
+seqdir="/home/kvenk811/Genome_Analysis_1MB462/Results/Megahit_Assembly"
+outdir="/home/kvenk811/Genome_Analysis_1MB462/Results/BWA_before_assembly"
+rawdata="/home/kvenk811/Genome_Analysis_1MB462/Data/raw_data/3_Thrash_2017/DNA_trimmed"
 # For D1
-bwa index /home/andreak/Genome_Analysis/Genome-Analysis/data/Megahit/D1-SRR4342129_contigs/final.contigs.fa
-bwa mem -t 10 /home/andreak/Genome_Analysis/Genome-Analysis/data/Megahit/D1-SRR4342129_contigs/final.contigs.fa /home/andreak/Genome_Analysis/Genome-Analysis/raw_data/3_Thrash_2017/DNA_trimmed/SRR4342129_1.paired.trimmed.fastq.gz /home/andreak/Genome_Analysis/Genome-Analysis/raw_data/3_Thrash_2017/DNA_trimmed/SRR4342129_2.paired.trimmed.fastq.gz 2> /home/andreak/Genome_Analysis/Genome-Analysis/data/BWA_DNA/D1-SRR4342129_bwa/bwa_DNA_D1-SRR4342129.sam
+bwa index $seqdir/D1_assembly_output/final.contigs.fa
+bwa mem -t 10 $seq/D1_assembly_output/final.contigs.fa $rawdata/SRR4342129_1.paired.trimmed.fastq.gz $rawdata/SRR4342129_2.paired.trimmed.fastq.gz 2> $outdir/D1_BWA/bwa_DNA_D1.sam
 
 # For D3
-#bwa index /home/andreak/Genome_Analysis/Genome-Analysis/data/Megahit/D3-SRR4342133_contigs/final.contigs.fa
-#bwa mem -t 10 /home/andreak/Genome_Analysis/Genome-Analysis/data/Megahit/D3-SRR4342133_contigs/final.contigs.fa /home/andreak/Genome_Analysis/Genome-Analysis/raw_data/3_Thrash_2017/DNA_trimmed/SRR4342133_1.paired.trimmed.fastq.gz /home/andreak/Genome_Analysis/Genome-Analysis/raw_data/3_Thrash_2017/DNA_trimmed/SRR4342133_2.paired.trimmed.fastq.gz 2> /home/andreak/Genome_Analysis/Genome-Analysis/data/BWA_DNA/D3-SRR4342133_bwa/bwa_DNA_D3-SRR4342133.sam
+bwa index $seqdir/D3_assembly_output/final.contigs.fa
+bwa mem -t 10 $seqdir/D3_assembly_output/final.contigs.fa $rawdata/SRR4342133_1.paired.trimmed.fastq.gz $rawdata/SRR4342133_2.paired.trimmed.fastq.gz 2> $outdir/D3_BWA/bwa_DNA_D3.sam
 
 # Convert sam to bam file
 #samtools view -S -b /home/andreak/Genome_Analysis/Genome-Analysis/data/BWA_DNA/D1-SRR4342129_bwa/bwa_DNA_D1-SRR4342129.sam > /home/andreak/Genome_Analysis/Genome-Analysis/data/BWA_DNA/D1-SRR4342129_bwa/bwa_DNA_D1-SRR4342129.bam
@@ -27,7 +31,7 @@ bwa mem -t 10 /home/andreak/Genome_Analysis/Genome-Analysis/data/Megahit/D1-SRR4
 
 
 # Create depth file 
-jgi_summarize_bam_contig_depths --outputDepth /home/andreak/Genome_Analysis/Genome-Analysis/data/BWA_DNA/D1-SRR4342129_bwa/D1_depth.txt --pairedContigs /home/andreak/Genome_Analysis/Genome-Analysis/data/BWA_DNA/D1-SRR4342129_bwa/D1_paired.txt /home/andreak/Genome_Analysis/Genome-Analysis/data/BWA_DNA/D1-SRR4342129_bwa/bwa_DNA_D1-SRR4342129.bam
-jgi_summarize_bam_contig_depths --outputDepth /home/andreak/Genome_Analysis/Genome-Analysis/data/BWA_DNA/D3-SRR4342133_bwa/D3_depth.txt --pairedContigs /home/andreak/Genome_Analysis/Genome-Analysis/data/BWA_DNA/D3-SRR4342133_bwa/D3_paired.txt /home/andreak/Genome_Analysis/Genome-Analysis/data/BWA_DNA/D3-SRR4342133_bwa/bwa_DNA_D3-SRR4342133.bam
+#jgi_summarize_bam_contig_depths --outputDepth /home/andreak/Genome_Analysis/Genome-Analysis/data/BWA_DNA/D1-SRR4342129_bwa/D1_depth.txt --pairedContigs /home/andreak/Genome_Analysis/Genome-Analysis/data/BWA_DNA/D1-SRR4342129_bwa/D1_paired.txt /home/andreak/Genome_Analysis/Genome-Analysis/data/BWA_DNA/D1-SRR4342129_bwa/bwa_DNA_D1-SRR4342129.bam
+#jgi_summarize_bam_contig_depths --outputDepth /home/andreak/Genome_Analysis/Genome-Analysis/data/BWA_DNA/D3-SRR4342133_bwa/D3_depth.txt --pairedContigs /home/andreak/Genome_Analysis/Genome-Analysis/data/BWA_DNA/D3-SRR4342133_bwa/D3_paired.txt /home/andreak/Genome_Analysis/Genome-Analysis/data/BWA_DNA/D3-SRR4342133_bwa/bwa_DNA_D3-SRR4342133.bam
 
 #metabat -i assembly.fa -a depth.txt -p paired.txt -o bin3 --specific -l -v --saveTNF saved.tnf --saveDistance saved.gprob
