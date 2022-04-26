@@ -4,9 +4,9 @@
 #SBATCH -p core
 #SBATCH -n 2
 #SBATCH -t 15:00:00
-#SBATCH -J BWA_DNA
+#SBATCH -J BWA_for_DNA
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user stavroula.andreakou.9085@student.uu.se
+#SBATCH --mail-user kaavya.venkateswaran.5938@student.uu.se
 
 # Load modules
 module load bioinfo-tools
