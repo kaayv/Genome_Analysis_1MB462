@@ -29,8 +29,8 @@ bwa index $seqdir/D3_megahit_output/final.contigs.fa
 bwa mem -t 10 $seqdir/D3_megahit_output/final.contigs.fa $rawdata/SRR4342133_1.paired.trimmed.fastq.gz $rawdata/SRR4342133_2.paired.trimmed.fastq.gz 2> $outdir/D3_BWA/bwa_DNA_D3_sam.sam | samtools sort -o $outdir/D3_BWA/D3.sorted.bam
 
 # Run MetaBat with depth.txt on D1 and D3
-#jgi_summarize_bam_contig_depths --outputDepth $outdir/D1_BWA/depth.txt --pairedContigs $OUTDIR/D1/paired.txt $OUTDIR/D1/*.bam 
-#metabat -i $CONTIGDIR/D1_megahit_output/final.contigs.fa -a $OUTDIR/D1/depth.txt -p $OUTDIR/D1/paired.txt --specific -v --saveTNF $OUTDIR/D1/saved.tnf --saveDistance $OUTDIR/D1/saved.gprob -o $OUTDIR/metabat_output/D1/D1_normalized
+#jgi_summarize_bam_contig_depths --outputDepth $outdir/D1_BWA/depth.txt --pairedContigs $outdir/D1_BWA/paired.txt $OUTDIR/D1/*.bam 
+#metabat -i $seqdir/D1_megahit_output/final.contigs.fa -a $outdir/D1_BWA/depth.txt -p $outdir/D1_BWA/paired.txt --specific -v --saveTNF $outdir/D1_BWA/saved.tnf --saveDistance $outdir/D1_BWA/saved.gprob -o $outmet/D1_normalized
 
 #jgi_summarize_bam_contig_depths --outputDepth $OUTDIR/D3/depth.txt --pairedContigs $OUTDIR/D3/paired.txt $OUTDIR/D3/*.bam
-#metabat -i $CONTIGDIR/D3_megahit_output/final.contigs.fa -a $OUTDIR/D3/depth.txt -p $OUTDIR/D3/paired.txt --specific -v --saveTNF $OUTDIR/D3/saved.tnf --saveDistance $OUTDIR/D3/saved.gprob -o $OUTDIR/metabat_output/D3/D3_normalized
+#metabat -i $seqdir/D3_megahit_output/final.contigs.fa -a $outdir/D3_BWA/depth.txt -p $outdir/D3_BWA/paired.txt --specific -v --saveTNF $outdir/D3_BWA/saved.tnf --saveDistance $outdir/D3_BWA/saved.gprob -o $outmet/D3_normalized
