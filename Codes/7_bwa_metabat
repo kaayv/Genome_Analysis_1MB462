@@ -12,39 +12,25 @@
 module load bioinfo-tools
 module load bwa
 module load samtools
+module load MetaBat
 
 #directories
 seqdir="/home/kvenk811/Genome_Analysis_1MB462/Results/Megahit_Assembly"
-outdir="/home/kvenk811/Genome_Analysis_1MB462/Results/BWA_before_assembly"
+outdir="/proj/genomeanalysis2022/nobackup/work/kvenk811/BWA_before_metabat"
 rawdata="/home/kvenk811/Genome_Analysis_1MB462/Data/raw_data/3_Thrash_2017/DNA_trimmed"
-
-#make directories if absent
-if ! [ -d $out/D1_BWA ]
-then
-mkdir $out/D1_BWA
-fi
-
-if ! [ -d $out/D3_BWA ]
-then
-mkdir $out/D3_BWA
-fi
-
+outmet="/proj/genomeanalysis2022/nobackup/work/kvenk811/metabat_after_bwa"
 
 # For D1
 bwa index $seqdir/D1_megahit_output/final.contigs.fa
-bwa mem -t 10 $seq/D1_megahit_output/final.contigs.fa $rawdata/SRR4342129_1.paired.trimmed.fastq.gz $rawdata/SRR4342129_2.paired.trimmed.fastq.gz 2> $outdir/D1_BWA/bwa_DNA_D1_sam.sam
+bwa mem -t 10 $seqdir/D1_megahit_output/final.contigs.fa $rawdata/SRR4342129_1.paired.trimmed.fastq.gz $rawdata/SRR4342129_2.paired.trimmed.fastq.gz 2> $outdir/D1_BWA/D1.bam.bwa.log | samtools sort -o $outdir/D1_BWA/D1.sorted.bam
 
 # For D3
 bwa index $seqdir/D3_megahit_output/final.contigs.fa
-bwa mem -t 10 $seqdir/D3_megahit_output/final.contigs.fa $rawdata/SRR4342133_1.paired.trimmed.fastq.gz $rawdata/SRR4342133_2.paired.trimmed.fastq.gz 2> $outdir/D3_BWA/bwa_DNA_D3_sam.sam
+bwa mem -t 10 $seqdir/D3_megahit_output/final.contigs.fa $rawdata/SRR4342133_1.paired.trimmed.fastq.gz $rawdata/SRR4342133_2.paired.trimmed.fastq.gz 2> $outdir/D3_BWA/bwa_DNA_D3_sam.sam | samtools sort -o $outdir/D3_BWA/D3.sorted.bam
 
-# Convert sam to bam file
-samtools view -S -b $outdir/D1_BWA/bwa_DNA_D1_sam.sam > $outdir/D1_BWA/bwa_DNA_D1_bam.bam
-samtools view -S -b $outdir/D3_BWA/bwa_DNA_D3_sam.sam > $outdir/D3_BWA/bwa_DNA_D3_bam.bam
+# Run MetaBat with depth.txt on D1 and D3
+#jgi_summarize_bam_contig_depths --outputDepth $outdir/D1_BWA/depth.txt --pairedContigs $OUTDIR/D1/paired.txt $OUTDIR/D1/*.bam 
+#metabat -i $CONTIGDIR/D1_megahit_output/final.contigs.fa -a $OUTDIR/D1/depth.txt -p $OUTDIR/D1/paired.txt --specific -v --saveTNF $OUTDIR/D1/saved.tnf --saveDistance $OUTDIR/D1/saved.gprob -o $OUTDIR/metabat_output/D1/D1_normalized
 
-
-# Create depth file 
-#jgi_summarize_bam_contig_depths --outputDepth /home/andreak/Genome_Analysis/Genome-Analysis/data/BWA_DNA/D1-SRR4342129_bwa/D1_depth.txt --pairedContigs /home/andreak/Genome_Analysis/Genome-Analysis/data/BWA_DNA/D1-SRR4342129_bwa/D1_paired.txt /home/andreak/Genome_Analysis/Genome-Analysis/data/BWA_DNA/D1-SRR4342129_bwa/bwa_DNA_D1-SRR4342129.bam
-#jgi_summarize_bam_contig_depths --outputDepth /home/andreak/Genome_Analysis/Genome-Analysis/data/BWA_DNA/D3-SRR4342133_bwa/D3_depth.txt --pairedContigs /home/andreak/Genome_Analysis/Genome-Analysis/data/BWA_DNA/D3-SRR4342133_bwa/D3_paired.txt /home/andreak/Genome_Analysis/Genome-Analysis/data/BWA_DNA/D3-SRR4342133_bwa/bwa_DNA_D3-SRR4342133.bam
-
-#metabat -i assembly.fa -a depth.txt -p paired.txt -o bin3 --specific -l -v --saveTNF saved.tnf --saveDistance saved.gprob
+#jgi_summarize_bam_contig_depths --outputDepth $OUTDIR/D3/depth.txt --pairedContigs $OUTDIR/D3/paired.txt $OUTDIR/D3/*.bam
+#metabat -i $CONTIGDIR/D3_megahit_output/final.contigs.fa -a $OUTDIR/D3/depth.txt -p $OUTDIR/D3/paired.txt --specific -v --saveTNF $OUTDIR/D3/saved.tnf --saveDistance $OUTDIR/D3/saved.gprob -o $OUTDIR/metabat_output/D3/D3_normalized
