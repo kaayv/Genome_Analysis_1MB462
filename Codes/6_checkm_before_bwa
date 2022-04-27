@@ -40,8 +40,8 @@ checkm lineage_wf -t 8 -x fa --reduced_tree $seq/D1_metabat_output/ $out/D1_chec
 checkm lineage_wf -t 8 -x fa --reduced_tree $seq/D3_metabat_output/ $out/D3_checkm
 
 #for checkm marker genes in the bins
-checkm analyze -t 8 -x fa $out/D1_checkm/lineage.ms $out/D1_metabat_output/ $out/D1_checkm/
-checkm analyze -t 8 -x fa $out/D3_checkm/lineage.ms $out/D3_metabat_output/ $out/D3_checkm/
+checkm analyze -t 8 -x fa $out/D1_checkm/lineage.ms $seq/D1_metabat_output/ $out/D1_checkm/
+checkm analyze -t 8 -x fa $out/D3_checkm/lineage.ms $seq/D3_metabat_output/ $out/D3_checkm/
 
 #Assess bins for contamination and completeness
 checkm qa -t 8 -o 1 -f $out/D1_checkm/qa.out $out/D1_checkm/lineage.ms $out/D1_checkm/
