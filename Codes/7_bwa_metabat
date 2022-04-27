@@ -17,6 +17,19 @@ module load samtools
 seqdir="/home/kvenk811/Genome_Analysis_1MB462/Results/Megahit_Assembly"
 outdir="/home/kvenk811/Genome_Analysis_1MB462/Results/BWA_before_assembly"
 rawdata="/home/kvenk811/Genome_Analysis_1MB462/Data/raw_data/3_Thrash_2017/DNA_trimmed"
+
+#make directories if absent
+if ! [ -d $out/D1_BWA ]
+then
+mkdir $out/D1_BWA
+fi
+
+if ! [ -d $out/D3_BWA ]
+then
+mkdir $out/D3_BWA
+fi
+
+
 # For D1
 bwa index $seqdir/D1_megahit_output/final.contigs.fa
 bwa mem -t 10 $seq/D1_megahit_output/final.contigs.fa $rawdata/SRR4342129_1.paired.trimmed.fastq.gz $rawdata/SRR4342129_2.paired.trimmed.fastq.gz 2> $outdir/D1_BWA/bwa_DNA_D1_sam.sam
@@ -26,8 +39,8 @@ bwa index $seqdir/D3_megahit_output/final.contigs.fa
 bwa mem -t 10 $seqdir/D3_megahit_output/final.contigs.fa $rawdata/SRR4342133_1.paired.trimmed.fastq.gz $rawdata/SRR4342133_2.paired.trimmed.fastq.gz 2> $outdir/D3_BWA/bwa_DNA_D3_sam.sam
 
 # Convert sam to bam file
-#samtools view -S -b $outdir/D1_BWA/bwa_DNA_D1_sam.sam > $outdir/D1_BWA/bwa_DNA_D1_bam.bam
-#samtools view -S -b $outdir/D3_BWA/bwa_DNA_D3_sam.sam > $outdir/D3_BWA/bwa_DNA_D3_bam.bam
+samtools view -S -b $outdir/D1_BWA/bwa_DNA_D1_sam.sam > $outdir/D1_BWA/bwa_DNA_D1_bam.bam
+samtools view -S -b $outdir/D3_BWA/bwa_DNA_D3_sam.sam > $outdir/D3_BWA/bwa_DNA_D3_bam.bam
 
 
 # Create depth file 
