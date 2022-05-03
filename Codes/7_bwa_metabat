@@ -16,8 +16,8 @@ module load MetaBat
 
 #directories
 #seqdir="/home/kvenk811/Genome_Analysis_1MB462/Results/Megahit_Assembly"
-#outdir="/proj/genomeanalysis2022/nobackup/work/kvenk811/BWA_before_metabat"
-rawdata="/home/kvenk811/Genome_Analysis_1MB462/Data/raw_data/3_Thrash_2017/DNA_trimmed"
+outdir="/proj/genomeanalysis2022/nobackup/work/kvenk811/BWA_before_metabat"
+#rawdata="/home/kvenk811/Genome_Analysis_1MB462/Data/raw_data/3_Thrash_2017/DNA_trimmed"
 outmet="/proj/genomeanalysis2022/nobackup/work/kvenk811/metabat_after_bwa"
 
 # For D1
@@ -30,7 +30,9 @@ outmet="/proj/genomeanalysis2022/nobackup/work/kvenk811/metabat_after_bwa"
 
 # Run MetaBat with depth.txt on D1 and D3
 jgi_summarize_bam_contig_depths --outputDepth $outdir/D1_BWA/depth.txt --pairedContigs $outdir/D1_BWA/paired.txt $OUTDIR/D1/*.bam 
+#or this jgi_summarize_bam_contig_depths --outputDepth $OUTDIR/D1/D1_depth.txt $OUTDIR/D1/*.bam 
 metabat -i $seqdir/D1_megahit_output/final.contigs.fa -a $outdir/D1_BWA/depth.txt -p $outdir/D1_BWA/paired.txt --specific -v --saveTNF $outdir/D1_BWA/saved.tnf --saveDistance $outdir/D1_BWA/saved.gprob -o $outmet/D1_normalized
 
-jgi_summarize_bam_contig_depths --outputDepth $OUTDIR/D3/depth.txt --pairedContigs $OUTDIR/D3/paired.txt $OUTDIR/D3/*.bam
-metabat -i $seqdir/D3_megahit_output/final.contigs.fa -a $outdir/D3_BWA/depth.txt -p $outdir/D3_BWA/paired.txt --specific -v --saveTNF $outdir/D3_BWA/saved.tnf --saveDistance $outdir/D3_BWA/saved.gprob -o $outmet/D3_normalized
+#jgi_summarize_bam_contig_depths --outputDepth $OUTDIR/D3/depth.txt --pairedContigs $OUTDIR/D3/paired.txt $OUTDIR/D3/*.bam
+#or this jgi_summarize_bam_contig_depths --outputDepth $OUTDIR/D3/D3_depth.txt $OUTDIR/D3/*.bam
+#metabat -i $seqdir/D3_megahit_output/final.contigs.fa -a $outdir/D3_BWA/depth.txt -p $outdir/D3_BWA/paired.txt --specific -v --saveTNF $outdir/D3_BWA/saved.tnf --saveDistance $outdir/D3_BWA/saved.gprob -o $outmet/D3_normalized
