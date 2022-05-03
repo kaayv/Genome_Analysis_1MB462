@@ -1,0 +1,32 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 4
+#SBATCH -t 10:00:00
+#SBATCH -J prokka
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user kaavya.venkateswaran.5938@student.uu.se
+
+# Structural annotation with Prokka 
+
+# Load modules 
+module load bioinfo-tools prokka
+
+# Sequence directories
+seq="/home/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa"
+out="/proj/genomeanalysis2022/nobackup/work/kvenk811/prokka_before_bwa"
+
+# Loop for annotation of all .fa in D1
+for fa in $seq/D1_metabat_output/*
+do
+echo $fa
+prokka --metagenome --cpus 4 $fa --outdir $out/D1/"$fa"_ann.out
+done
+
+# Loop for annotation of all .fa in D3
+#for fb in $seq/D3_metabat_output/*
+#do
+#echo $fb
+#prokka --metagenome --cpus 4 $fb --outdir $out/D3/"$fb"_ann.out
+#done
