@@ -25,8 +25,8 @@ prokka --metagenome --cpus 4 $fa --outdir $out/D1/"$fa"_ann.out
 done
 
 # Loop for annotation of all .fa in D3
-#for fb in $seq/D3_metabat_output/*
-#do
-#echo $fb
-#prokka --metagenome --cpus 4 $fb --outdir $out/D3/"$fb"_ann.out
-#done
+for fb in $seq/D3_metabat_output/*
+do
+echo $fb
+prokka --metagenome --cpus 4 $fb --outdir $out/D3/"$fb"_ann.out
+done
