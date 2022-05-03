@@ -1,0 +1,42 @@
+Output depth matrix to /proj/genomeanalysis2022/nobackup/work/kvenk811/BWA_before_metabat/D1_BWA/depth.txt
+Output pairedContigs lower triangle to /proj/genomeanalysis2022/nobackup/work/kvenk811/BWA_before_metabat/D1_BWA/paired.txt
+Output matrix to /proj/genomeanalysis2022/nobackup/work/kvenk811/BWA_before_metabat/D1_BWA/depth.txt
+Opening 17 bams
+Consolidating headers
+Allocating pairedContigs matrix: 14 MB over 2 threads
+Processing bam files
+Thread 1 finished: D1.sorted.bam.tmp.0000.bam with 2919086 reads and 924049 readsWellMapped
+Thread 0 finished: D1.sorted.bam with 48146049 reads and 15270717 readsWellMapped
+Thread 1 finished: D1.sorted.bam.tmp.0002.bam with 2919421 reads and 925748 readsWellMapped
+Thread 0 finished: D1.sorted.bam.tmp.0001.bam with 2918501 reads and 927344 readsWellMapped
+Thread 1 finished: D1.sorted.bam.tmp.0004.bam with 2920047 reads and 927863 readsWellMapped
+Thread 0 finished: D1.sorted.bam.tmp.0003.bam with 2920564 reads and 923835 readsWellMapped
+Thread 1 finished: D1.sorted.bam.tmp.0006.bam with 2919447 reads and 925282 readsWellMapped
+Thread 0 finished: D1.sorted.bam.tmp.0005.bam with 2919687 reads and 923278 readsWellMapped
+Thread 1 finished: D1.sorted.bam.tmp.0008.bam with 2920251 reads and 924282 readsWellMapped
+Thread 0 finished: D1.sorted.bam.tmp.0007.bam with 2919998 reads and 926671 readsWellMapped
+Thread 1 finished: D1.sorted.bam.tmp.0010.bam with 2922278 reads and 928658 readsWellMapped
+Thread 0 finished: D1.sorted.bam.tmp.0009.bam with 2920182 reads and 924604 readsWellMapped
+Thread 1 finished: D1.sorted.bam.tmp.0012.bam with 2920634 reads and 927728 readsWellMapped
+Thread 0 finished: D1.sorted.bam.tmp.0011.bam with 2920727 reads and 927348 readsWellMapped
+Thread 1 finished: D1.sorted.bam.tmp.0014.bam with 2920373 reads and 927999 readsWellMapped
+Thread 0 finished: D1.sorted.bam.tmp.0013.bam with 2922271 reads and 927904 readsWellMapped
+Thread 0 finished: D1.sorted.bam.tmp.0015.bam with 2920328 reads and 927154 readsWellMapped
+Creating depth matrix file: /proj/genomeanalysis2022/nobackup/work/kvenk811/BWA_before_metabat/D1_BWA/depth.txt
+Closing most bam files
+Creating pairedContigs matrix file: /proj/genomeanalysis2022/nobackup/work/kvenk811/BWA_before_metabat/D1_BWA/paired.txt
+Closing last bam file
+Finished
+Output depth matrix to /D3/depth.txt
+Output pairedContigs lower triangle to /D3/paired.txt
+Output matrix to /D3/depth.txt
+Opening 1 bams
+Consolidating headers
+Allocating pairedContigs matrix: 7 MB over 1 threads
+Processing bam files
+Thread 0 finished: D3.sorted.bam with 60004885 reads and 32117744 readsWellMapped
+Creating depth matrix file: /D3/depth.txt
+Closing most bam files
+Creating pairedContigs matrix file: /D3/paired.txt
+Closing last bam file
+Finished

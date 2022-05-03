@@ -1,0 +1,55 @@
+[bwa_index] Pack FASTA... 1.13 sec
+[bwa_index] Construct BWT for the packed sequence...
+[BWTIncCreate] textLength=247718882, availableWord=29430028
+[BWTIncConstructFromPacked] 10 iterations done. 48546146 characters processed.
+[BWTIncConstructFromPacked] 20 iterations done. 89685010 characters processed.
+[BWTIncConstructFromPacked] 30 iterations done. 126245266 characters processed.
+[BWTIncConstructFromPacked] 40 iterations done. 158736082 characters processed.
+[BWTIncConstructFromPacked] 50 iterations done. 187609970 characters processed.
+[BWTIncConstructFromPacked] 60 iterations done. 213269154 characters processed.
+[BWTIncConstructFromPacked] 70 iterations done. 236071058 characters processed.
+[bwt_gen] Finished constructing BWT in 76 iterations.
+[bwa_index] 75.37 seconds elapse.
+[bwa_index] Update BWT... 0.72 sec
+[bwa_index] Pack forward-only FASTA... 0.70 sec
+[bwa_index] Construct SA from BWT and Occ... 31.53 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index /home/kvenk811/Genome_Analysis_1MB462/Results/Megahit_Assembly/D1_megahit_output/final.contigs.fa
+[main] Real time: 113.390 sec; CPU: 109.459 sec
+[E::hts_open_format] Failed to open file "/proj/genomeanalysis2022/nobackup/work/kvenk811/BWA_before_metabat/D1_BWA/D1.sorted.bam.tmp.0000.bam" : File exists
+[E::hts_open_format] Failed to open file "/proj/genomeanalysis2022/nobackup/work/kvenk811/BWA_before_metabat/D1_BWA/D1.sorted.bam.tmp.0001.bam" : File exists
+[E::hts_open_format] Failed to open file "/proj/genomeanalysis2022/nobackup/work/kvenk811/BWA_before_metabat/D1_BWA/D1.sorted.bam.tmp.0002.bam" : File exists
+[E::hts_open_format] Failed to open file "/proj/genomeanalysis2022/nobackup/work/kvenk811/BWA_before_metabat/D1_BWA/D1.sorted.bam.tmp.0003.bam" : File exists
+[E::hts_open_format] Failed to open file "/proj/genomeanalysis2022/nobackup/work/kvenk811/BWA_before_metabat/D1_BWA/D1.sorted.bam.tmp.0004.bam" : File exists
+[E::hts_open_format] Failed to open file "/proj/genomeanalysis2022/nobackup/work/kvenk811/BWA_before_metabat/D1_BWA/D1.sorted.bam.tmp.0005.bam" : File exists
+[E::hts_open_format] Failed to open file "/proj/genomeanalysis2022/nobackup/work/kvenk811/BWA_before_metabat/D1_BWA/D1.sorted.bam.tmp.0006.bam" : File exists
+[E::hts_open_format] Failed to open file "/proj/genomeanalysis2022/nobackup/work/kvenk811/BWA_before_metabat/D1_BWA/D1.sorted.bam.tmp.0007.bam" : File exists
+[E::hts_open_format] Failed to open file "/proj/genomeanalysis2022/nobackup/work/kvenk811/BWA_before_metabat/D1_BWA/D1.sorted.bam.tmp.0008.bam" : File exists
+[E::hts_open_format] Failed to open file "/proj/genomeanalysis2022/nobackup/work/kvenk811/BWA_before_metabat/D1_BWA/D1.sorted.bam.tmp.0009.bam" : File exists
+[E::hts_open_format] Failed to open file "/proj/genomeanalysis2022/nobackup/work/kvenk811/BWA_before_metabat/D1_BWA/D1.sorted.bam.tmp.0010.bam" : File exists
+[E::hts_open_format] Failed to open file "/proj/genomeanalysis2022/nobackup/work/kvenk811/BWA_before_metabat/D1_BWA/D1.sorted.bam.tmp.0011.bam" : File exists
+[E::hts_open_format] Failed to open file "/proj/genomeanalysis2022/nobackup/work/kvenk811/BWA_before_metabat/D1_BWA/D1.sorted.bam.tmp.0012.bam" : File exists
+[E::hts_open_format] Failed to open file "/proj/genomeanalysis2022/nobackup/work/kvenk811/BWA_before_metabat/D1_BWA/D1.sorted.bam.tmp.0013.bam" : File exists
+[E::hts_open_format] Failed to open file "/proj/genomeanalysis2022/nobackup/work/kvenk811/BWA_before_metabat/D1_BWA/D1.sorted.bam.tmp.0014.bam" : File exists
+[E::hts_open_format] Failed to open file "/proj/genomeanalysis2022/nobackup/work/kvenk811/BWA_before_metabat/D1_BWA/D1.sorted.bam.tmp.0015.bam" : File exists
+[bam_sort_core] merging from 16 files and 1 in-memory blocks...
+[bwa_index] Pack FASTA... 1.40 sec
+[bwa_index] Construct BWT for the packed sequence...
+[BWTIncCreate] textLength=300975624, availableWord=33177728
+[BWTIncConstructFromPacked] 10 iterations done. 54728344 characters processed.
+[BWTIncConstructFromPacked] 20 iterations done. 101106584 characters processed.
+[BWTIncConstructFromPacked] 30 iterations done. 142323672 characters processed.
+[BWTIncConstructFromPacked] 40 iterations done. 178953480 characters processed.
+[BWTIncConstructFromPacked] 50 iterations done. 211506168 characters processed.
+[BWTIncConstructFromPacked] 60 iterations done. 240435016 characters processed.
+[BWTIncConstructFromPacked] 70 iterations done. 266143000 characters processed.
+[BWTIncConstructFromPacked] 80 iterations done. 288988312 characters processed.
+[bwt_gen] Finished constructing BWT in 86 iterations.
+[bwa_index] 96.80 seconds elapse.
+[bwa_index] Update BWT... 0.92 sec
+[bwa_index] Pack forward-only FASTA... 0.89 sec
+[bwa_index] Construct SA from BWT and Occ... 41.79 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index /home/kvenk811/Genome_Analysis_1MB462/Results/Megahit_Assembly/D3_megahit_output/final.contigs.fa
+[main] Real time: 146.849 sec; CPU: 141.814 sec
+[bam_sort_core] merging from 21 files and 1 in-memory blocks...

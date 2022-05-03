@@ -9,3 +9,6 @@ git remote set-url origin git@github.com:kaayv/Genome_Analysis_1MB462.git
 cd /home/kvenk811/genome_analysis_git/Genome_Analysis_1MB462/
 mkdir raw_data
 ln -s /proj/genomeanalysis2022/Genome_Analysis/3_Thrash_2017/ /home/kvenk811/genome_analysis_git/Genome_Analysis_1MB462/raw_data/
+
+#to transfer files from or to uppmax
+scp -r C:\Users\\kayve\\\Desktop\\\\ kvenk811@rackham.uppmax.uu.se:/proj/genomeanalysis2022/nobackup/work/kvenk811/BWA_before_metabat/D3_BWA/
