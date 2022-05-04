@@ -19,7 +19,7 @@ seq="/proj/genomeanalysis2022/nobackup/work/kvenk811/metabat_after_bwa"
 out="/proj/genomeanalysis2022/nobackup/work/kvenk811/Checkm_for_BWA_Metabat_DNA" #create this driectory
 cd /proj/genomeanalysis2022/nobackup/work/kvenk811/
 
-if ! [ -d $out/Checkm_for_BWA_Metabat_DNA ]
+if ! [ -d Checkm_for_BWA_Metabat_DNA ]
 then
 mkdir $out/Checkm_for_BWA_Metabat_DNA
 fi
