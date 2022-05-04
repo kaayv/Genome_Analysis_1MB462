@@ -4,7 +4,7 @@
 #SBATCH -p core
 #SBATCH -n 4
 #SBATCH -t 01:00:00
-#SBATCH -J Checkm_before_bwa
+#SBATCH -J Checkm_for_bwa
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user kaavya.venkateswaran.5938@student.uu.se
 
