@@ -17,16 +17,17 @@ module load bioinfo-tools prokka
 seq="/home/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa"
 out="/proj/genomeanalysis2022/nobackup/work/kvenk811/prokka_before_bwa"
 
-# Loop for annotation of all .fa in D1
-for fa in $seq/D1_metabat_output/*
+cd #seq
+# Loop for annotation of all binning in D1
+for binfastafileD1 in /D1_metabat_output/*
 do
-echo $fa
-prokka --metagenome --cpus 4 $fa --outdir $out/D1/"$fa"_ann.out
+#echo $binfastafileD1
+prokka --metagenome --cpus 4 $fa --outdir $out/D1/"$binfastafileD1"_ann.out
 done
 
 # Loop for annotation of all .fa in D3
-for fb in $seq/D3_metabat_output/*
-do
-echo $fb
-prokka --metagenome --cpus 4 $fb --outdir $out/D3/"$fb"_ann.out
-done
+#for binfastafileD3 in $seq/D3_metabat_output/*
+#do
+#echo $binfastafileD3
+#prokka --metagenome --cpus 4 $fb --outdir $out/D3/"$binfastafileD3"_ann.out
+#done
