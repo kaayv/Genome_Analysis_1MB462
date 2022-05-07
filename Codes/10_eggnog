@@ -4,7 +4,7 @@
 #SBATCH -p core
 #SBATCH -n 2
 #SBATCH -t 100:00:00
-#SBATCH -J eggnoggmapper
+#SBATCH -J eggnoggmapper_without_bwa
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user kaavya.venkateswaran.5938@student.uu.se
 
@@ -22,7 +22,7 @@ cd $seqdir/D1_metabat_output
 
 for bin_D1 in *
 do
-emapper.py --itype metagenome -i $bin_D1 -o $bin_D1 --outputdir $outdir/D1_struct
+emapper.py --itype metagenome -i $bin_D1 -o $bin_D1 --outputdir $outdir/D1_funct
 done
 
 
@@ -31,5 +31,5 @@ cd $seqdir/D3_metabat_output
 
 for bin_D3 in *
 do
-emapper.py --itype metagenome -i $bin_D3 -o $bin_D3 --outputdir $outdir/D3_struct
+emapper.py --itype metagenome -i $bin_D3 -o $bin_D3 --outputdir $outdir/D3_funct
 done
