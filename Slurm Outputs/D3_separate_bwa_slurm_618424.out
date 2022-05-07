@@ -1,0 +1,19 @@
+[bwa_index] Pack FASTA... 1.39 sec
+[bwa_index] Construct BWT for the packed sequence...
+[BWTIncCreate] textLength=300975624, availableWord=33177728
+[BWTIncConstructFromPacked] 10 iterations done. 54728344 characters processed.
+[BWTIncConstructFromPacked] 20 iterations done. 101106584 characters processed.
+[BWTIncConstructFromPacked] 30 iterations done. 142323672 characters processed.
+[BWTIncConstructFromPacked] 40 iterations done. 178953480 characters processed.
+[BWTIncConstructFromPacked] 50 iterations done. 211506168 characters processed.
+[BWTIncConstructFromPacked] 60 iterations done. 240435016 characters processed.
+[BWTIncConstructFromPacked] 70 iterations done. 266143000 characters processed.
+[BWTIncConstructFromPacked] 80 iterations done. 288988312 characters processed.
+[bwt_gen] Finished constructing BWT in 86 iterations.
+[bwa_index] 96.45 seconds elapse.
+[bwa_index] Update BWT... 0.96 sec
+[bwa_index] Pack forward-only FASTA... 0.88 sec
+[bwa_index] Construct SA from BWT and Occ... 39.87 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index /home/kvenk811/Genome_Analysis_1MB462/Results/Megahit_Assembly/D3_megahit_output/final.contigs.fa
+[main] Real time: 144.390 sec; CPU: 139.568 sec
