@@ -22,7 +22,7 @@ cd $seqdir/D1_metabat_output
 
 for bin_D1 in *
 do
-emapper.py --itype metagenome -i $bin_D1 -o $bin_D1 --outputdir $outdir/D1_funct
+emapper.py --itype metagenome -i $bin_D1 -o $bin_D1 --output_dir $outdir/D1_funct
 done
 
 
@@ -31,5 +31,5 @@ cd $seqdir/D3_metabat_output
 
 for bin_D3 in *
 do
-emapper.py --itype metagenome -i $bin_D3 -o $bin_D3 --outputdir $outdir/D3_funct
+emapper.py --itype metagenome -i $bin_D3 -o $bin_D3 --output_dir $outdir/D3_funct
 done
