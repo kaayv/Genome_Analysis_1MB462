@@ -17,7 +17,7 @@ module load bioinfo-tools prokka
 seq="/home/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa"
 out="/proj/genomeanalysis2022/nobackup/work/kvenk811/prokka_before_bwa"
 
-cd #seq
+cd $seq
 # Loop for annotation of all binning in D1
 for binfastafileD1 in /D1_metabat_output/*
 do
