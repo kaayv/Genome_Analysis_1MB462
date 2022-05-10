@@ -1,0 +1,932 @@
++ module load bioinfo-tools eggNOG-mapper
+++ /usr/share/lmod/lmod/libexec/lmod bash load bioinfo-tools eggNOG-mapper
+EggNOG data 5.0 available at /sw/data/uppnex/eggNOG/5.0
++ eval '__LMOD_REF_COUNT_CPATH=/sw/apps/sqlite/3.34.0/snowy/include:1;' export '__LMOD_REF_COUNT_CPATH;' 'CPATH=/sw/apps/sqlite/3.34.0/snowy/include;' export 'CPATH;' '__LMOD_REF_COUNT_CPLUS_INCLUDE_PATH=/sw/apps/sqlite/3.34.0/snowy/include:1;' export '__LMOD_REF_COUNT_CPLUS_INCLUDE_PATH;' 'CPLUS_INCLUDE_PATH=/sw/apps/sqlite/3.34.0/snowy/include;' export 'CPLUS_INCLUDE_PATH;' 'EGGNOGMAPPER_DATA=/sw/data/uppnex/eggNOG/5.0;' export 'EGGNOGMAPPER_DATA;' 'EGGNOG_DATA_DIR=/sw/data/uppnex/eggNOG/5.0;' export 'EGGNOG_DATA_DIR;' '__LMOD_REF_COUNT_LD_LIBRARY_PATH=/sw/apps/sqlite/3.34.0/snowy/lib:1\;/sw/libs/wxWidgets/lib:1;' export '__LMOD_REF_COUNT_LD_LIBRARY_PATH;' 'LD_LIBRARY_PATH=/sw/apps/sqlite/3.34.0/snowy/lib:/sw/libs/wxWidgets/lib;' export 'LD_LIBRARY_PATH;' '__LMOD_REF_COUNT_LD_RUN_PATH=/sw/apps/sqlite/3.34.0/snowy/lib:1;' export '__LMOD_REF_COUNT_LD_RUN_PATH;' 'LD_RUN_PATH=/sw/apps/sqlite/3.34.0/snowy/lib;' export 'LD_RUN_PATH;' '__LMOD_REF_COUNT_LIBRARY_PATH=/sw/apps/sqlite/3.34.0/snowy/lib:1;' export '__LMOD_REF_COUNT_LIBRARY_PATH;' 'LIBRARY_PATH=/sw/apps/sqlite/3.34.0/snowy/lib;' export 'LIBRARY_PATH;' '__LMOD_REF_COUNT_LOADEDMODULES=uppmax:2\;bioinfo-tools:1\;python/3.8.7:1\;sqlite/3.34.0:1\;eggNOG-mapper/2.1.5:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=uppmax:bioinfo-tools:python/3.8.7:sqlite/3.34.0:eggNOG-mapper/2.1.5;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MANPATH=/sw/apps/sqlite/3.34.0/snowy/share/man:1\;/sw/comp/python/3.8.7_snowy/share/man:1\;/usr/share/man:2\;/sw/uppmax/man:2\;/opt/thinlinc/share/man:2;' export '__LMOD_REF_COUNT_MANPATH;' 'MANPATH=/sw/apps/sqlite/3.34.0/snowy/share/man:/sw/comp/python/3.8.7_snowy/share/man:/usr/share/man:/sw/uppmax/man:/opt/thinlinc/share/man;' export 'MANPATH;' '__LMOD_REF_COUNT_MODULEPATH=/sw/mf/snowy/bioinfo-tools/annotation:1\;/sw/mf/snowy/bioinfo-tools/alignment:1\;/sw/mf/snowy/bioinfo-tools/assembly:1\;/sw/mf/snowy/bioinfo-tools/misc:1\;/sw/mf/snowy/bioinfo-tools/phylogeny:1\;/sw/mf/snowy/bioinfo-tools/pipelines:1\;/sw/mf/snowy/bioinfo-tools/sw_collections:1\;/sw/mf/snowy/applications:1\;/sw/mf/snowy/build-tools:1\;/sw/mf/snowy/compilers:1\;/sw/mf/snowy/data:1\;/sw/mf/snowy/environment:1\;/sw/mf/snowy/libraries:1\;/sw/mf/snowy/parallel:1;' export '__LMOD_REF_COUNT_MODULEPATH;' 'MODULEPATH=/sw/mf/snowy/bioinfo-tools/annotation:/sw/mf/snowy/bioinfo-tools/alignment:/sw/mf/snowy/bioinfo-tools/assembly:/sw/mf/snowy/bioinfo-tools/misc:/sw/mf/snowy/bioinfo-tools/phylogeny:/sw/mf/snowy/bioinfo-tools/pipelines:/sw/mf/snowy/bioinfo-tools/sw_collections:/sw/mf/snowy/applications:/sw/mf/snowy/build-tools:/sw/mf/snowy/compilers:/sw/mf/snowy/data:/sw/mf/snowy/environment:/sw/mf/snowy/libraries:/sw/mf/snowy/parallel;' export 'MODULEPATH;' '__LMOD_REF_COUNT_PATH=/sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin:1\;/sw/bioinfo/eggNOG-mapper/2.1.5/snowy/bin:1\;/sw/apps/sqlite/3.34.0/snowy/bin:1\;/sw/comp/python/3.8.7_snowy/bin:1\;/home/kvenk811/bin:2\;/usr/local/bin:1\;/usr/bin:1\;/usr/local/sbin:1\;/usr/sbin:1\;/sw/uppmax/bin:2;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin:/sw/bioinfo/eggNOG-mapper/2.1.5/snowy/bin:/sw/apps/sqlite/3.34.0/snowy/bin:/sw/comp/python/3.8.7_snowy/bin:/home/kvenk811/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sw/uppmax/bin;' export 'PATH;' '__LMOD_REF_COUNT_PKG_CONFIG_PATH=/sw/apps/sqlite/3.34.0/snowy/lib/pkgconfig:1\;/sw/comp/python/3.8.7_snowy/lib/pkgconfig:1;' export '__LMOD_REF_COUNT_PKG_CONFIG_PATH;' 'PKG_CONFIG_PATH=/sw/apps/sqlite/3.34.0/snowy/lib/pkgconfig:/sw/comp/python/3.8.7_snowy/lib/pkgconfig;' export 'PKG_CONFIG_PATH;' '__LMOD_REF_COUNT_PYTHONPATH=/sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages:1;' export '__LMOD_REF_COUNT_PYTHONPATH;' 'PYTHONPATH=/sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages;' export 'PYTHONPATH;' 'PYTHON_ROOT=/sw/comp/python/3.8.7_snowy;' export 'PYTHON_ROOT;' 'SQLITE_ROOT=/sw/apps/sqlite/3.34.0/snowy;' export 'SQLITE_ROOT;' '__LMOD_REF_COUNT__LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:1\;/sw/mf/snowy/compilers/python/3.8.7:1\;/sw/mf/snowy/applications/sqlite/3.34.0:1\;/sw/mf/snowy/bioinfo-tools/annotation/eggNOG-mapper/2.1.5:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:/sw/mf/snowy/compilers/python/3.8.7:/sw/mf/snowy/applications/sqlite/3.34.0:/sw/mf/snowy/bioinfo-tools/annotation/eggNOG-mapper/2.1.5;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImJpb2luZm8tdG9vbHMiXT17WyJmbiJdPSIvc3cvbWYvc25vd3kvZW52aXJvbm1lbnQvYmlvaW5mby10b29scyIsWyJmdWxsTmFtZSJdPSJiaW9pbmZvLXRvb2xzIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iYmlvaW5mby10b29scyIsfSxbImVnZ05PRy1tYXBwZXIiXT17WyJmbiJdPSIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9hbm5vdGF0aW9uL2VnZ05PRy1tYXBwZXIvMi4xLjUiLFsiZnVsbE5h;' export '_ModuleTable001_;' '_ModuleTable002_=bWUiXT0iZWdnTk9HLW1hcHBlci8yLjEuNSIsWyJsb2FkT3JkZXIiXT00LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImVnZ05PRy1tYXBwZXIiLH0scHl0aG9uPXtbImZuIl09Ii9zdy9tZi9zbm93eS9jb21waWxlcnMvcHl0aG9uLzMuOC43IixbImZ1bGxOYW1lIl09InB5dGhvbi8zLjguNyIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTEsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09InB5dGhvbi8zLjguNyIsfSxzcWxpdGU9e1siZm4iXT0iL3N3L21mL3Nub3d5L2FwcGxpY2F0aW9ucy9zcWxpdGUvMy4zNC4wIixbImZ1bGxOYW1lIl09InNxbGl0ZS8zLjM0LjAiLFsibG9h;' export '_ModuleTable002_;' '_ModuleTable003_=ZE9yZGVyIl09Myxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJzcWxpdGUvMy4zNC4wIix9LH0sbXBhdGhBPXsiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvYW5ub3RhdGlvbiIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2FsaWdubWVudCIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2Fzc2VtYmx5IiwiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvbWlzYyIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3BoeWxvZ2VueSIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3BpcGVsaW5lcyIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3N3X2NvbGxlY3Rpb25zIiwiL3N3L21mL3Nub3d5;' export '_ModuleTable003_;' '_ModuleTable004_=L2FwcGxpY2F0aW9ucyIsIi9zdy9tZi9zbm93eS9idWlsZC10b29scyIsIi9zdy9tZi9zbm93eS9jb21waWxlcnMiLCIvc3cvbWYvc25vd3kvZGF0YSIsIi9zdy9tZi9zbm93eS9lbnZpcm9ubWVudCIsIi9zdy9tZi9zbm93eS9saWJyYXJpZXMiLCIvc3cvbWYvc25vd3kvcGFyYWxsZWwiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL3N3L21mL3Nub3d5L2FwcGxpY2F0aW9uczovc3cvbWYvc25vd3kvYnVpbGQtdG9vbHM6L3N3L21mL3Nub3d5L2NvbXBpbGVyczovc3cvbWYvc25vd3kvZGF0YTovc3cvbWYvc25vd3kvZW52aXJvbm1lbnQ6L3N3L21mL3Nub3d5L2xpYnJhcmllczovc3cvbWYvc25vd3kvcGFyYWxsZWwiLH0=;' export '_ModuleTable004_;' '_ModuleTable_Sz_=4;' export '_ModuleTable_Sz_;'
+++ __LMOD_REF_COUNT_CPATH=/sw/apps/sqlite/3.34.0/snowy/include:1
+++ export __LMOD_REF_COUNT_CPATH
+++ CPATH=/sw/apps/sqlite/3.34.0/snowy/include
+++ export CPATH
+++ __LMOD_REF_COUNT_CPLUS_INCLUDE_PATH=/sw/apps/sqlite/3.34.0/snowy/include:1
+++ export __LMOD_REF_COUNT_CPLUS_INCLUDE_PATH
+++ CPLUS_INCLUDE_PATH=/sw/apps/sqlite/3.34.0/snowy/include
+++ export CPLUS_INCLUDE_PATH
+++ EGGNOGMAPPER_DATA=/sw/data/uppnex/eggNOG/5.0
+++ export EGGNOGMAPPER_DATA
+++ EGGNOG_DATA_DIR=/sw/data/uppnex/eggNOG/5.0
+++ export EGGNOG_DATA_DIR
+++ __LMOD_REF_COUNT_LD_LIBRARY_PATH='/sw/apps/sqlite/3.34.0/snowy/lib:1;/sw/libs/wxWidgets/lib:1'
+++ export __LMOD_REF_COUNT_LD_LIBRARY_PATH
+++ LD_LIBRARY_PATH=/sw/apps/sqlite/3.34.0/snowy/lib:/sw/libs/wxWidgets/lib
+++ export LD_LIBRARY_PATH
+++ __LMOD_REF_COUNT_LD_RUN_PATH=/sw/apps/sqlite/3.34.0/snowy/lib:1
+++ export __LMOD_REF_COUNT_LD_RUN_PATH
+++ LD_RUN_PATH=/sw/apps/sqlite/3.34.0/snowy/lib
+++ export LD_RUN_PATH
+++ __LMOD_REF_COUNT_LIBRARY_PATH=/sw/apps/sqlite/3.34.0/snowy/lib:1
+++ export __LMOD_REF_COUNT_LIBRARY_PATH
+++ LIBRARY_PATH=/sw/apps/sqlite/3.34.0/snowy/lib
+++ export LIBRARY_PATH
+++ __LMOD_REF_COUNT_LOADEDMODULES='uppmax:2;bioinfo-tools:1;python/3.8.7:1;sqlite/3.34.0:1;eggNOG-mapper/2.1.5:1'
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=uppmax:bioinfo-tools:python/3.8.7:sqlite/3.34.0:eggNOG-mapper/2.1.5
+++ export LOADEDMODULES
+++ __LMOD_REF_COUNT_MANPATH='/sw/apps/sqlite/3.34.0/snowy/share/man:1;/sw/comp/python/3.8.7_snowy/share/man:1;/usr/share/man:2;/sw/uppmax/man:2;/opt/thinlinc/share/man:2'
+++ export __LMOD_REF_COUNT_MANPATH
+++ MANPATH=/sw/apps/sqlite/3.34.0/snowy/share/man:/sw/comp/python/3.8.7_snowy/share/man:/usr/share/man:/sw/uppmax/man:/opt/thinlinc/share/man
+++ export MANPATH
+++ __LMOD_REF_COUNT_MODULEPATH='/sw/mf/snowy/bioinfo-tools/annotation:1;/sw/mf/snowy/bioinfo-tools/alignment:1;/sw/mf/snowy/bioinfo-tools/assembly:1;/sw/mf/snowy/bioinfo-tools/misc:1;/sw/mf/snowy/bioinfo-tools/phylogeny:1;/sw/mf/snowy/bioinfo-tools/pipelines:1;/sw/mf/snowy/bioinfo-tools/sw_collections:1;/sw/mf/snowy/applications:1;/sw/mf/snowy/build-tools:1;/sw/mf/snowy/compilers:1;/sw/mf/snowy/data:1;/sw/mf/snowy/environment:1;/sw/mf/snowy/libraries:1;/sw/mf/snowy/parallel:1'
+++ export __LMOD_REF_COUNT_MODULEPATH
+++ MODULEPATH=/sw/mf/snowy/bioinfo-tools/annotation:/sw/mf/snowy/bioinfo-tools/alignment:/sw/mf/snowy/bioinfo-tools/assembly:/sw/mf/snowy/bioinfo-tools/misc:/sw/mf/snowy/bioinfo-tools/phylogeny:/sw/mf/snowy/bioinfo-tools/pipelines:/sw/mf/snowy/bioinfo-tools/sw_collections:/sw/mf/snowy/applications:/sw/mf/snowy/build-tools:/sw/mf/snowy/compilers:/sw/mf/snowy/data:/sw/mf/snowy/environment:/sw/mf/snowy/libraries:/sw/mf/snowy/parallel
+++ export MODULEPATH
+++ __LMOD_REF_COUNT_PATH='/sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin:1;/sw/bioinfo/eggNOG-mapper/2.1.5/snowy/bin:1;/sw/apps/sqlite/3.34.0/snowy/bin:1;/sw/comp/python/3.8.7_snowy/bin:1;/home/kvenk811/bin:2;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/sw/uppmax/bin:2'
+++ export __LMOD_REF_COUNT_PATH
+++ PATH=/sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin:/sw/bioinfo/eggNOG-mapper/2.1.5/snowy/bin:/sw/apps/sqlite/3.34.0/snowy/bin:/sw/comp/python/3.8.7_snowy/bin:/home/kvenk811/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sw/uppmax/bin
+++ export PATH
+++ __LMOD_REF_COUNT_PKG_CONFIG_PATH='/sw/apps/sqlite/3.34.0/snowy/lib/pkgconfig:1;/sw/comp/python/3.8.7_snowy/lib/pkgconfig:1'
+++ export __LMOD_REF_COUNT_PKG_CONFIG_PATH
+++ PKG_CONFIG_PATH=/sw/apps/sqlite/3.34.0/snowy/lib/pkgconfig:/sw/comp/python/3.8.7_snowy/lib/pkgconfig
+++ export PKG_CONFIG_PATH
+++ __LMOD_REF_COUNT_PYTHONPATH=/sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages:1
+++ export __LMOD_REF_COUNT_PYTHONPATH
+++ PYTHONPATH=/sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages
+++ export PYTHONPATH
+++ PYTHON_ROOT=/sw/comp/python/3.8.7_snowy
+++ export PYTHON_ROOT
+++ SQLITE_ROOT=/sw/apps/sqlite/3.34.0/snowy
+++ export SQLITE_ROOT
+++ __LMOD_REF_COUNT__LMFILES_='/sw/mf/snowy/environment/bioinfo-tools:1;/sw/mf/snowy/compilers/python/3.8.7:1;/sw/mf/snowy/applications/sqlite/3.34.0:1;/sw/mf/snowy/bioinfo-tools/annotation/eggNOG-mapper/2.1.5:1'
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:/sw/mf/snowy/compilers/python/3.8.7:/sw/mf/snowy/applications/sqlite/3.34.0:/sw/mf/snowy/bioinfo-tools/annotation/eggNOG-mapper/2.1.5
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImJpb2luZm8tdG9vbHMiXT17WyJmbiJdPSIvc3cvbWYvc25vd3kvZW52aXJvbm1lbnQvYmlvaW5mby10b29scyIsWyJmdWxsTmFtZSJdPSJiaW9pbmZvLXRvb2xzIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iYmlvaW5mby10b29scyIsfSxbImVnZ05PRy1tYXBwZXIiXT17WyJmbiJdPSIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9hbm5vdGF0aW9uL2VnZ05PRy1tYXBwZXIvMi4xLjUiLFsiZnVsbE5h
+++ export _ModuleTable001_
+++ _ModuleTable002_=bWUiXT0iZWdnTk9HLW1hcHBlci8yLjEuNSIsWyJsb2FkT3JkZXIiXT00LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImVnZ05PRy1tYXBwZXIiLH0scHl0aG9uPXtbImZuIl09Ii9zdy9tZi9zbm93eS9jb21waWxlcnMvcHl0aG9uLzMuOC43IixbImZ1bGxOYW1lIl09InB5dGhvbi8zLjguNyIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTEsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09InB5dGhvbi8zLjguNyIsfSxzcWxpdGU9e1siZm4iXT0iL3N3L21mL3Nub3d5L2FwcGxpY2F0aW9ucy9zcWxpdGUvMy4zNC4wIixbImZ1bGxOYW1lIl09InNxbGl0ZS8zLjM0LjAiLFsibG9h
+++ export _ModuleTable002_
+++ _ModuleTable003_=ZE9yZGVyIl09Myxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJzcWxpdGUvMy4zNC4wIix9LH0sbXBhdGhBPXsiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvYW5ub3RhdGlvbiIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2FsaWdubWVudCIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2Fzc2VtYmx5IiwiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvbWlzYyIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3BoeWxvZ2VueSIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3BpcGVsaW5lcyIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3N3X2NvbGxlY3Rpb25zIiwiL3N3L21mL3Nub3d5
+++ export _ModuleTable003_
+++ _ModuleTable004_=L2FwcGxpY2F0aW9ucyIsIi9zdy9tZi9zbm93eS9idWlsZC10b29scyIsIi9zdy9tZi9zbm93eS9jb21waWxlcnMiLCIvc3cvbWYvc25vd3kvZGF0YSIsIi9zdy9tZi9zbm93eS9lbnZpcm9ubWVudCIsIi9zdy9tZi9zbm93eS9saWJyYXJpZXMiLCIvc3cvbWYvc25vd3kvcGFyYWxsZWwiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL3N3L21mL3Nub3d5L2FwcGxpY2F0aW9uczovc3cvbWYvc25vd3kvYnVpbGQtdG9vbHM6L3N3L21mL3Nub3d5L2NvbXBpbGVyczovc3cvbWYvc25vd3kvZGF0YTovc3cvbWYvc25vd3kvZW52aXJvbm1lbnQ6L3N3L21mL3Nub3d5L2xpYnJhcmllczovc3cvbWYvc25vd3kvcGFyYWxsZWwiLH0=
+++ export _ModuleTable004_
+++ _ModuleTable_Sz_=4
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ seqdir=/home/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa
++ outdir=/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa
++ cd /home/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output
++ for bin_D1 in '*'
++ emapper.py --itype metagenome -i D1_metabat_output.10.fa -o D1_metabat_output.10.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct
+[1;32mFunctional annotation of hits...[0m
+0 4.291534423828125e-06 0.00 q/s (% mem usage: 21.00, % mem avail: 79.00)
+#  emapper-2.1.5-be1649e
+# emapper.py  --itype metagenome -i D1_metabat_output.10.fa -o D1_metabat_output.10.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct
+[1;33m  /sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin/diamond blastx -d /crex/data/eggNOG_data/5.0/eggnog_proteins.dmnd -q /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.10.fa --threads 1 -o /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.10.fa.emapper.hits  --sensitive -e 0.001 --max-target-seqs 0 --max-hsps 0  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDecorating gff file /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.10.fa.emapper.gff...[0m
+Parsing fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.10.fa...
+Fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.10.fa parsing complete.
+500 321.50860023498535 1.56 q/s (% mem usage: 25.10, % mem avail: 74.89)
+1000 321.5268511772156 3.11 q/s (% mem usage: 25.10, % mem avail: 74.89)
+1500 321.54367780685425 4.66 q/s (% mem usage: 25.10, % mem avail: 74.89)
+1583 321.5697326660156 4.92 q/s (% mem usage: 25.10, % mem avail: 74.89)
+[32mDone[0m
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.10.fa.emapper.genepred.fasta
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.10.fa.emapper.gff
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.10.fa.emapper.hits
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.10.fa.emapper.seed_orthologs
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.10.fa.emapper.annotations
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas.
+      biorxiv (2021). doi: https://doi.org/10.1101/2021.06.03.446934
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Fast and Sensitive Protein Alignment using DIAMOND. Buchfink B, Xie C,
+       Huson DH. 2015. Nat. Methods 12, 59–60. https://doi.org/10.1038/nmeth.3176
+
+e.g. Functional annotation was performed using emapper-2.1.5-be1649e [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 1583
+Total time: 13873 secs
+FINISHED
++ for bin_D1 in '*'
++ emapper.py --itype metagenome -i D1_metabat_output.11.fa -o D1_metabat_output.11.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct
+[1;32mFunctional annotation of hits...[0m
+0 4.76837158203125e-06 0.00 q/s (% mem usage: 22.20, % mem avail: 77.83)
+#  emapper-2.1.5-be1649e
+# emapper.py  --itype metagenome -i D1_metabat_output.11.fa -o D1_metabat_output.11.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct
+[1;33m  /sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin/diamond blastx -d /crex/data/eggNOG_data/5.0/eggnog_proteins.dmnd -q /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.11.fa --threads 1 -o /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.11.fa.emapper.hits  --sensitive -e 0.001 --max-target-seqs 0 --max-hsps 0  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDecorating gff file /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.11.fa.emapper.gff...[0m
+Parsing fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.11.fa...
+Fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.11.fa parsing complete.
+434 122.85683393478394 3.53 q/s (% mem usage: 25.20, % mem avail: 74.80)
+[32mDone[0m
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.11.fa.emapper.genepred.fasta
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.11.fa.emapper.gff
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.11.fa.emapper.hits
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.11.fa.emapper.seed_orthologs
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.11.fa.emapper.annotations
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas.
+      biorxiv (2021). doi: https://doi.org/10.1101/2021.06.03.446934
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Fast and Sensitive Protein Alignment using DIAMOND. Buchfink B, Xie C,
+       Huson DH. 2015. Nat. Methods 12, 59–60. https://doi.org/10.1038/nmeth.3176
+
+e.g. Functional annotation was performed using emapper-2.1.5-be1649e [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 434
+Total time: 7777 secs
+FINISHED
++ for bin_D1 in '*'
++ emapper.py --itype metagenome -i D1_metabat_output.12.fa -o D1_metabat_output.12.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct
+#  emapper-2.1.5-be1649e
+# emapper.py  --itype metagenome -i D1_metabat_output.12.fa -o D1_metabat_output.12.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct
+[1;33m  /sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin/diamond blastx -d /crex/data/eggNOG_data/5.0/eggnog_proteins.dmnd -q /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.12.fa --threads 1 -o /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.12.fa.emapper.hits  --sensitive -e 0.001 --max-target-seqs 0 --max-hsps 0  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+Error running diamond: Error: Error writing file /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/diamond-tmp-5Visds
++ for bin_D1 in '*'
++ emapper.py --itype metagenome -i D1_metabat_output.1.fa -o D1_metabat_output.1.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct
+[1;32mFunctional annotation of hits...[0m
+0 5.245208740234375e-06 0.00 q/s (% mem usage: 25.00, % mem avail: 75.04)
+#  emapper-2.1.5-be1649e
+# emapper.py  --itype metagenome -i D1_metabat_output.1.fa -o D1_metabat_output.1.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct
+[1;33m  /sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin/diamond blastx -d /crex/data/eggNOG_data/5.0/eggnog_proteins.dmnd -q /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.1.fa --threads 1 -o /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.1.fa.emapper.hits  --sensitive -e 0.001 --max-target-seqs 0 --max-hsps 0  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDecorating gff file /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.1.fa.emapper.gff...[0m
+Parsing fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.1.fa...
+Fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.1.fa parsing complete.
+500 2300.358664751053 0.22 q/s (% mem usage: 26.70, % mem avail: 73.30)
+1000 2302.1888587474823 0.43 q/s (% mem usage: 26.70, % mem avail: 73.29)
+1500 2304.034181833267 0.65 q/s (% mem usage: 26.70, % mem avail: 73.29)
+2000 2305.6297760009766 0.87 q/s (% mem usage: 26.70, % mem avail: 73.28)
+2500 2306.6760454177856 1.08 q/s (% mem usage: 26.70, % mem avail: 73.28)
+3000 2307.996171236038 1.30 q/s (% mem usage: 26.70, % mem avail: 73.28)
+3500 2309.08225440979 1.52 q/s (% mem usage: 26.70, % mem avail: 73.28)
+4000 2310.3706595897675 1.73 q/s (% mem usage: 26.70, % mem avail: 73.28)
+4500 2311.748480319977 1.95 q/s (% mem usage: 26.70, % mem avail: 73.26)
+5000 2312.7809612751007 2.16 q/s (% mem usage: 26.80, % mem avail: 73.23)
+5500 2313.5858194828033 2.38 q/s (% mem usage: 26.80, % mem avail: 73.22)
+6000 2314.3157148361206 2.59 q/s (% mem usage: 26.80, % mem avail: 73.21)
+6132 2331.2043237686157 2.63 q/s (% mem usage: 26.80, % mem avail: 73.21)
+[32mDone[0m
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.1.fa.emapper.genepred.fasta
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.1.fa.emapper.gff
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.1.fa.emapper.hits
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.1.fa.emapper.seed_orthologs
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.1.fa.emapper.annotations
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas.
+      biorxiv (2021). doi: https://doi.org/10.1101/2021.06.03.446934
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Fast and Sensitive Protein Alignment using DIAMOND. Buchfink B, Xie C,
+       Huson DH. 2015. Nat. Methods 12, 59–60. https://doi.org/10.1038/nmeth.3176
+
+e.g. Functional annotation was performed using emapper-2.1.5-f3aab55 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 6132
+Total time: 27679 secs
+FINISHED
++ for bin_D1 in '*'
++ emapper.py --itype metagenome -i D1_metabat_output.2.fa -o D1_metabat_output.2.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct
+[1;32mFunctional annotation of hits...[0m
+0 4.0531158447265625e-06 0.00 q/s (% mem usage: 24.10, % mem avail: 75.90)
+#  emapper-2.1.5-f3aab55
+# emapper.py  --itype metagenome -i D1_metabat_output.2.fa -o D1_metabat_output.2.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct
+[1;33m  /sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin/diamond blastx -d /crex/data/eggNOG_data/5.0/eggnog_proteins.dmnd -q /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.2.fa --threads 1 -o /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.2.fa.emapper.hits  --sensitive -e 0.001 --max-target-seqs 0 --max-hsps 0  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDecorating gff file /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.2.fa.emapper.gff...[0m
+Parsing fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.2.fa...
+Fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.2.fa parsing complete.
+500 237.71597123146057 2.10 q/s (% mem usage: 26.00, % mem avail: 74.01)
+1000 237.73205494880676 4.21 q/s (% mem usage: 26.00, % mem avail: 74.01)
+1500 237.74742889404297 6.31 q/s (% mem usage: 26.00, % mem avail: 74.01)
+2000 237.7621579170227 8.41 q/s (% mem usage: 26.00, % mem avail: 74.01)
+2128 237.78396153450012 8.95 q/s (% mem usage: 26.00, % mem avail: 74.01)
+[32mDone[0m
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.2.fa.emapper.genepred.fasta
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.2.fa.emapper.gff
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.2.fa.emapper.hits
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.2.fa.emapper.seed_orthologs
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.2.fa.emapper.annotations
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas.
+      biorxiv (2021). doi: https://doi.org/10.1101/2021.06.03.446934
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Fast and Sensitive Protein Alignment using DIAMOND. Buchfink B, Xie C,
+       Huson DH. 2015. Nat. Methods 12, 59–60. https://doi.org/10.1038/nmeth.3176
+
+e.g. Functional annotation was performed using emapper-2.1.5-f3aab55 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 2128
+Total time: 19065 secs
+FINISHED
++ for bin_D1 in '*'
++ emapper.py --itype metagenome -i D1_metabat_output.3.fa -o D1_metabat_output.3.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct
+[1;32mFunctional annotation of hits...[0m
+0 4.76837158203125e-06 0.00 q/s (% mem usage: 23.30, % mem avail: 76.72)
+#  emapper-2.1.5-f3aab55
+# emapper.py  --itype metagenome -i D1_metabat_output.3.fa -o D1_metabat_output.3.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct
+[1;33m  /sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin/diamond blastx -d /crex/data/eggNOG_data/5.0/eggnog_proteins.dmnd -q /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.3.fa --threads 1 -o /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.3.fa.emapper.hits  --sensitive -e 0.001 --max-target-seqs 0 --max-hsps 0  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDecorating gff file /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.3.fa.emapper.gff...[0m
+Parsing fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.3.fa...
+Fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.3.fa parsing complete.
+500 355.69779992103577 1.41 q/s (% mem usage: 24.70, % mem avail: 75.29)
+1000 355.7151560783386 2.81 q/s (% mem usage: 24.70, % mem avail: 75.29)
+1459 355.7634470462799 4.10 q/s (% mem usage: 24.70, % mem avail: 75.29)
+[32mDone[0m
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.3.fa.emapper.genepred.fasta
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.3.fa.emapper.gff
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.3.fa.emapper.hits
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.3.fa.emapper.seed_orthologs
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.3.fa.emapper.annotations
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas.
+      biorxiv (2021). doi: https://doi.org/10.1101/2021.06.03.446934
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Fast and Sensitive Protein Alignment using DIAMOND. Buchfink B, Xie C,
+       Huson DH. 2015. Nat. Methods 12, 59–60. https://doi.org/10.1038/nmeth.3176
+
+e.g. Functional annotation was performed using emapper-2.1.5-f3aab55 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 1459
+Total time: 13555 secs
+FINISHED
++ for bin_D1 in '*'
++ emapper.py --itype metagenome -i D1_metabat_output.4.fa -o D1_metabat_output.4.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct
+[1;32mFunctional annotation of hits...[0m
+0 5.7220458984375e-06 0.00 q/s (% mem usage: 23.20, % mem avail: 76.85)
+#  emapper-2.1.5-f3aab55
+# emapper.py  --itype metagenome -i D1_metabat_output.4.fa -o D1_metabat_output.4.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct
+[1;33m  /sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin/diamond blastx -d /crex/data/eggNOG_data/5.0/eggnog_proteins.dmnd -q /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.4.fa --threads 1 -o /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.4.fa.emapper.hits  --sensitive -e 0.001 --max-target-seqs 0 --max-hsps 0  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDecorating gff file /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.4.fa.emapper.gff...[0m
+Parsing fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.4.fa...
+Fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.4.fa parsing complete.
+500 288.19334053993225 1.73 q/s (% mem usage: 25.10, % mem avail: 74.87)
+1000 288.21208667755127 3.47 q/s (% mem usage: 25.10, % mem avail: 74.87)
+1217 288.2593688964844 4.22 q/s (% mem usage: 25.10, % mem avail: 74.88)
+[32mDone[0m
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.4.fa.emapper.genepred.fasta
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.4.fa.emapper.gff
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.4.fa.emapper.hits
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.4.fa.emapper.seed_orthologs
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.4.fa.emapper.annotations
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas.
+      biorxiv (2021). doi: https://doi.org/10.1101/2021.06.03.446934
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Fast and Sensitive Protein Alignment using DIAMOND. Buchfink B, Xie C,
+       Huson DH. 2015. Nat. Methods 12, 59–60. https://doi.org/10.1038/nmeth.3176
+
+e.g. Functional annotation was performed using emapper-2.1.5-f3aab55 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 1217
+Total time: 9795 secs
+FINISHED
++ for bin_D1 in '*'
++ emapper.py --itype metagenome -i D1_metabat_output.5.fa -o D1_metabat_output.5.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct
+[1;32mFunctional annotation of hits...[0m
+0 5.0067901611328125e-06 0.00 q/s (% mem usage: 22.90, % mem avail: 77.13)
+#  emapper-2.1.5-f3aab55
+# emapper.py  --itype metagenome -i D1_metabat_output.5.fa -o D1_metabat_output.5.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct
+[1;33m  /sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin/diamond blastx -d /crex/data/eggNOG_data/5.0/eggnog_proteins.dmnd -q /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.5.fa --threads 1 -o /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.5.fa.emapper.hits  --sensitive -e 0.001 --max-target-seqs 0 --max-hsps 0  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDecorating gff file /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.5.fa.emapper.gff...[0m
+Parsing fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.5.fa...
+Fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.5.fa parsing complete.
+500 222.67792391777039 2.25 q/s (% mem usage: 25.00, % mem avail: 74.96)
+895 222.70524883270264 4.02 q/s (% mem usage: 25.00, % mem avail: 74.96)
+[32mDone[0m
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.5.fa.emapper.genepred.fasta
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.5.fa.emapper.gff
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.5.fa.emapper.hits
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.5.fa.emapper.seed_orthologs
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.5.fa.emapper.annotations
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas.
+      biorxiv (2021). doi: https://doi.org/10.1101/2021.06.03.446934
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Fast and Sensitive Protein Alignment using DIAMOND. Buchfink B, Xie C,
+       Huson DH. 2015. Nat. Methods 12, 59–60. https://doi.org/10.1038/nmeth.3176
+
+e.g. Functional annotation was performed using emapper-2.1.5-f3aab55 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 895
+Total time: 9374 secs
+FINISHED
++ for bin_D1 in '*'
++ emapper.py --itype metagenome -i D1_metabat_output.6.fa -o D1_metabat_output.6.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct
+[1;32mFunctional annotation of hits...[0m
+0 5.0067901611328125e-06 0.00 q/s (% mem usage: 22.80, % mem avail: 77.17)
+#  emapper-2.1.5-f3aab55
+# emapper.py  --itype metagenome -i D1_metabat_output.6.fa -o D1_metabat_output.6.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct
+[1;33m  /sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin/diamond blastx -d /crex/data/eggNOG_data/5.0/eggnog_proteins.dmnd -q /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.6.fa --threads 1 -o /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.6.fa.emapper.hits  --sensitive -e 0.001 --max-target-seqs 0 --max-hsps 0  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDecorating gff file /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.6.fa.emapper.gff...[0m
+Parsing fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.6.fa...
+Fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.6.fa parsing complete.
+197 80.69532537460327 2.44 q/s (% mem usage: 25.20, % mem avail: 74.83)
+[32mDone[0m
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.6.fa.emapper.genepred.fasta
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.6.fa.emapper.gff
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.6.fa.emapper.hits
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.6.fa.emapper.seed_orthologs
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.6.fa.emapper.annotations
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas.
+      biorxiv (2021). doi: https://doi.org/10.1101/2021.06.03.446934
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Fast and Sensitive Protein Alignment using DIAMOND. Buchfink B, Xie C,
+       Huson DH. 2015. Nat. Methods 12, 59–60. https://doi.org/10.1038/nmeth.3176
+
+e.g. Functional annotation was performed using emapper-2.1.5-f3aab55 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 197
+Total time: 5308 secs
+FINISHED
++ for bin_D1 in '*'
++ emapper.py --itype metagenome -i D1_metabat_output.7.fa -o D1_metabat_output.7.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct
+[1;32mFunctional annotation of hits...[0m
+0 4.76837158203125e-06 0.00 q/s (% mem usage: 22.80, % mem avail: 77.21)
+#  emapper-2.1.5-f3aab55
+# emapper.py  --itype metagenome -i D1_metabat_output.7.fa -o D1_metabat_output.7.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct
+[1;33m  /sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin/diamond blastx -d /crex/data/eggNOG_data/5.0/eggnog_proteins.dmnd -q /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.7.fa --threads 1 -o /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.7.fa.emapper.hits  --sensitive -e 0.001 --max-target-seqs 0 --max-hsps 0  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDecorating gff file /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.7.fa.emapper.gff...[0m
+Parsing fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.7.fa...
+Fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.7.fa parsing complete.
+500 236.42171382904053 2.11 q/s (% mem usage: 25.00, % mem avail: 74.99)
+1000 236.43858122825623 4.23 q/s (% mem usage: 25.00, % mem avail: 74.99)
+1013 236.45300889015198 4.28 q/s (% mem usage: 25.00, % mem avail: 75.00)
+[32mDone[0m
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.7.fa.emapper.genepred.fasta
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.7.fa.emapper.gff
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.7.fa.emapper.hits
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.7.fa.emapper.seed_orthologs
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.7.fa.emapper.annotations
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas.
+      biorxiv (2021). doi: https://doi.org/10.1101/2021.06.03.446934
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Fast and Sensitive Protein Alignment using DIAMOND. Buchfink B, Xie C,
+       Huson DH. 2015. Nat. Methods 12, 59–60. https://doi.org/10.1038/nmeth.3176
+
+e.g. Functional annotation was performed using emapper-2.1.5-f3aab55 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 1013
+Total time: 12524 secs
+FINISHED
++ for bin_D1 in '*'
++ emapper.py --itype metagenome -i D1_metabat_output.8.fa -o D1_metabat_output.8.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct
+[1;32mFunctional annotation of hits...[0m
+0 3.0994415283203125e-06 0.00 q/s (% mem usage: 23.70, % mem avail: 76.25)
+#  emapper-2.1.5-f3aab55
+# emapper.py  --itype metagenome -i D1_metabat_output.8.fa -o D1_metabat_output.8.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct
+[1;33m  /sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin/diamond blastx -d /crex/data/eggNOG_data/5.0/eggnog_proteins.dmnd -q /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.8.fa --threads 1 -o /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.8.fa.emapper.hits  --sensitive -e 0.001 --max-target-seqs 0 --max-hsps 0  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDecorating gff file /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.8.fa.emapper.gff...[0m
+Parsing fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.8.fa...
+Fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.8.fa parsing complete.
+500 244.6312701702118 2.04 q/s (% mem usage: 24.90, % mem avail: 75.10)
+1000 244.64598321914673 4.09 q/s (% mem usage: 24.90, % mem avail: 75.10)
+1500 244.66004419326782 6.13 q/s (% mem usage: 24.90, % mem avail: 75.10)
+2000 244.67356705665588 8.17 q/s (% mem usage: 24.90, % mem avail: 75.10)
+2500 244.68728518486023 10.22 q/s (% mem usage: 24.90, % mem avail: 75.10)
+3000 244.70115995407104 12.26 q/s (% mem usage: 24.90, % mem avail: 75.10)
+3306 244.72433042526245 13.51 q/s (% mem usage: 24.90, % mem avail: 75.10)
+[32mDone[0m
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.8.fa.emapper.genepred.fasta
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.8.fa.emapper.gff
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.8.fa.emapper.hits
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.8.fa.emapper.seed_orthologs
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.8.fa.emapper.annotations
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas.
+      biorxiv (2021). doi: https://doi.org/10.1101/2021.06.03.446934
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Fast and Sensitive Protein Alignment using DIAMOND. Buchfink B, Xie C,
+       Huson DH. 2015. Nat. Methods 12, 59–60. https://doi.org/10.1038/nmeth.3176
+
+e.g. Functional annotation was performed using emapper-2.1.5-f3aab55 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 3306
+Total time: 15858 secs
+FINISHED
++ for bin_D1 in '*'
++ emapper.py --itype metagenome -i D1_metabat_output.9.fa -o D1_metabat_output.9.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct
+[1;32mFunctional annotation of hits...[0m
+0 3.814697265625e-06 0.00 q/s (% mem usage: 23.40, % mem avail: 76.64)
+#  emapper-2.1.5-f3aab55
+# emapper.py  --itype metagenome -i D1_metabat_output.9.fa -o D1_metabat_output.9.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct
+[1;33m  /sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin/diamond blastx -d /crex/data/eggNOG_data/5.0/eggnog_proteins.dmnd -q /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.9.fa --threads 1 -o /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.9.fa.emapper.hits  --sensitive -e 0.001 --max-target-seqs 0 --max-hsps 0  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDecorating gff file /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.9.fa.emapper.gff...[0m
+Parsing fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.9.fa...
+Fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D1_metabat_output/D1_metabat_output.9.fa parsing complete.
+500 220.4662983417511 2.27 q/s (% mem usage: 25.40, % mem avail: 74.56)
+936 220.5209243297577 4.24 q/s (% mem usage: 25.40, % mem avail: 74.56)
+[32mDone[0m
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.9.fa.emapper.genepred.fasta
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.9.fa.emapper.gff
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.9.fa.emapper.hits
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.9.fa.emapper.seed_orthologs
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D1_funct/D1_metabat_output.9.fa.emapper.annotations
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas.
+      biorxiv (2021). doi: https://doi.org/10.1101/2021.06.03.446934
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Fast and Sensitive Protein Alignment using DIAMOND. Buchfink B, Xie C,
+       Huson DH. 2015. Nat. Methods 12, 59–60. https://doi.org/10.1038/nmeth.3176
+
+e.g. Functional annotation was performed using emapper-2.1.5-f3aab55 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 936
+Total time: 9777 secs
+FINISHED
++ cd /home/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D3_metabat_output
++ for bin_D3 in '*'
++ emapper.py --itype metagenome -i D3_metabat_output.10.fa -o D3_metabat_output.10.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct
+[1;32mFunctional annotation of hits...[0m
+0 3.5762786865234375e-06 0.00 q/s (% mem usage: 27.00, % mem avail: 72.98)
+#  emapper-2.1.5-f3aab55
+# emapper.py  --itype metagenome -i D3_metabat_output.10.fa -o D3_metabat_output.10.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct
+[1;33m  /sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin/diamond blastx -d /crex/data/eggNOG_data/5.0/eggnog_proteins.dmnd -q /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D3_metabat_output/D3_metabat_output.10.fa --threads 1 -o /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.10.fa.emapper.hits  --sensitive -e 0.001 --max-target-seqs 0 --max-hsps 0  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDecorating gff file /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.10.fa.emapper.gff...[0m
+Parsing fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D3_metabat_output/D3_metabat_output.10.fa...
+Fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D3_metabat_output/D3_metabat_output.10.fa parsing complete.
+500 907.5142531394958 0.55 q/s (% mem usage: 27.80, % mem avail: 72.25)
+1000 907.5314884185791 1.10 q/s (% mem usage: 27.80, % mem avail: 72.25)
+1500 907.5480608940125 1.65 q/s (% mem usage: 27.80, % mem avail: 72.25)
+1877 907.6201560497284 2.07 q/s (% mem usage: 27.70, % mem avail: 72.28)
+[32mDone[0m
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.10.fa.emapper.genepred.fasta
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.10.fa.emapper.gff
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.10.fa.emapper.hits
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.10.fa.emapper.seed_orthologs
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.10.fa.emapper.annotations
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas.
+      biorxiv (2021). doi: https://doi.org/10.1101/2021.06.03.446934
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Fast and Sensitive Protein Alignment using DIAMOND. Buchfink B, Xie C,
+       Huson DH. 2015. Nat. Methods 12, 59–60. https://doi.org/10.1038/nmeth.3176
+
+e.g. Functional annotation was performed using emapper-2.1.5-f3aab55 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 1877
+Total time: 16759 secs
+FINISHED
++ for bin_D3 in '*'
++ emapper.py --itype metagenome -i D3_metabat_output.11.fa -o D3_metabat_output.11.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct
+[1;32mFunctional annotation of hits...[0m
+0 2.6226043701171875e-06 0.00 q/s (% mem usage: 20.80, % mem avail: 79.24)
+#  emapper-2.1.5-f3aab55
+# emapper.py  --itype metagenome -i D3_metabat_output.11.fa -o D3_metabat_output.11.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct
+[1;33m  /sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin/diamond blastx -d /crex/data/eggNOG_data/5.0/eggnog_proteins.dmnd -q /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D3_metabat_output/D3_metabat_output.11.fa --threads 1 -o /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.11.fa.emapper.hits  --sensitive -e 0.001 --max-target-seqs 0 --max-hsps 0  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDecorating gff file /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.11.fa.emapper.gff...[0m
+Parsing fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D3_metabat_output/D3_metabat_output.11.fa...
+Fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D3_metabat_output/D3_metabat_output.11.fa parsing complete.
+500 232.59900975227356 2.15 q/s (% mem usage: 25.00, % mem avail: 74.95)
+908 232.62412786483765 3.90 q/s (% mem usage: 25.00, % mem avail: 74.96)
+[32mDone[0m
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.11.fa.emapper.genepred.fasta
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.11.fa.emapper.gff
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.11.fa.emapper.hits
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.11.fa.emapper.seed_orthologs
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.11.fa.emapper.annotations
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas.
+      biorxiv (2021). doi: https://doi.org/10.1101/2021.06.03.446934
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Fast and Sensitive Protein Alignment using DIAMOND. Buchfink B, Xie C,
+       Huson DH. 2015. Nat. Methods 12, 59–60. https://doi.org/10.1038/nmeth.3176
+
+e.g. Functional annotation was performed using emapper-2.1.5-f3aab55 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 908
+Total time: 11678 secs
+FINISHED
++ for bin_D3 in '*'
++ emapper.py --itype metagenome -i D3_metabat_output.12.fa -o D3_metabat_output.12.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct
+[1;32mFunctional annotation of hits...[0m
+0 3.814697265625e-06 0.00 q/s (% mem usage: 21.60, % mem avail: 78.38)
+#  emapper-2.1.5-f3aab55
+# emapper.py  --itype metagenome -i D3_metabat_output.12.fa -o D3_metabat_output.12.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct
+[1;33m  /sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin/diamond blastx -d /crex/data/eggNOG_data/5.0/eggnog_proteins.dmnd -q /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D3_metabat_output/D3_metabat_output.12.fa --threads 1 -o /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.12.fa.emapper.hits  --sensitive -e 0.001 --max-target-seqs 0 --max-hsps 0  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDecorating gff file /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.12.fa.emapper.gff...[0m
+Parsing fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D3_metabat_output/D3_metabat_output.12.fa...
+Fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D3_metabat_output/D3_metabat_output.12.fa parsing complete.
+500 906.3587384223938 0.55 q/s (% mem usage: 25.40, % mem avail: 74.61)
+1000 906.3763003349304 1.10 q/s (% mem usage: 25.40, % mem avail: 74.61)
+1500 906.3939280509949 1.65 q/s (% mem usage: 25.40, % mem avail: 74.61)
+2000 906.4113473892212 2.21 q/s (% mem usage: 25.40, % mem avail: 74.61)
+2500 906.4279851913452 2.76 q/s (% mem usage: 25.40, % mem avail: 74.61)
+3000 906.4454071521759 3.31 q/s (% mem usage: 25.40, % mem avail: 74.60)
+3500 906.4626817703247 3.86 q/s (% mem usage: 25.40, % mem avail: 74.60)
+3988 906.5421607494354 4.40 q/s (% mem usage: 25.40, % mem avail: 74.63)
+[32mDone[0m
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.12.fa.emapper.genepred.fasta
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.12.fa.emapper.gff
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.12.fa.emapper.hits
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.12.fa.emapper.seed_orthologs
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.12.fa.emapper.annotations
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas.
+      biorxiv (2021). doi: https://doi.org/10.1101/2021.06.03.446934
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Fast and Sensitive Protein Alignment using DIAMOND. Buchfink B, Xie C,
+       Huson DH. 2015. Nat. Methods 12, 59–60. https://doi.org/10.1038/nmeth.3176
+
+e.g. Functional annotation was performed using emapper-2.1.5-f3aab55 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 3988
+Total time: 26088 secs
+FINISHED
++ for bin_D3 in '*'
++ emapper.py --itype metagenome -i D3_metabat_output.13.fa -o D3_metabat_output.13.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct
+[1;32mFunctional annotation of hits...[0m
+0 5.0067901611328125e-06 0.00 q/s (% mem usage: 20.60, % mem avail: 79.35)
+#  emapper-2.1.5-f3aab55
+# emapper.py  --itype metagenome -i D3_metabat_output.13.fa -o D3_metabat_output.13.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct
+[1;33m  /sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin/diamond blastx -d /crex/data/eggNOG_data/5.0/eggnog_proteins.dmnd -q /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D3_metabat_output/D3_metabat_output.13.fa --threads 1 -o /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.13.fa.emapper.hits  --sensitive -e 0.001 --max-target-seqs 0 --max-hsps 0  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDecorating gff file /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.13.fa.emapper.gff...[0m
+Parsing fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D3_metabat_output/D3_metabat_output.13.fa...
+Fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D3_metabat_output/D3_metabat_output.13.fa parsing complete.
+500 827.9594404697418 0.60 q/s (% mem usage: 25.80, % mem avail: 74.21)
+1000 827.9774556159973 1.21 q/s (% mem usage: 25.80, % mem avail: 74.21)
+1403 828.0375871658325 1.69 q/s (% mem usage: 25.80, % mem avail: 74.24)
+[32mDone[0m
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.13.fa.emapper.genepred.fasta
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.13.fa.emapper.gff
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.13.fa.emapper.hits
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.13.fa.emapper.seed_orthologs
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.13.fa.emapper.annotations
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas.
+      biorxiv (2021). doi: https://doi.org/10.1101/2021.06.03.446934
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Fast and Sensitive Protein Alignment using DIAMOND. Buchfink B, Xie C,
+       Huson DH. 2015. Nat. Methods 12, 59–60. https://doi.org/10.1038/nmeth.3176
+
+e.g. Functional annotation was performed using emapper-2.1.5-f3aab55 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 1403
+Total time: 13085 secs
+FINISHED
++ for bin_D3 in '*'
++ emapper.py --itype metagenome -i D3_metabat_output.14.fa -o D3_metabat_output.14.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct
+[1;32mFunctional annotation of hits...[0m
+0 4.76837158203125e-06 0.00 q/s (% mem usage: 20.40, % mem avail: 79.61)
+#  emapper-2.1.5-f3aab55
+# emapper.py  --itype metagenome -i D3_metabat_output.14.fa -o D3_metabat_output.14.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct
+[1;33m  /sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin/diamond blastx -d /crex/data/eggNOG_data/5.0/eggnog_proteins.dmnd -q /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D3_metabat_output/D3_metabat_output.14.fa --threads 1 -o /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.14.fa.emapper.hits  --sensitive -e 0.001 --max-target-seqs 0 --max-hsps 0  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDecorating gff file /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.14.fa.emapper.gff...[0m
+Parsing fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D3_metabat_output/D3_metabat_output.14.fa...
+Fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D3_metabat_output/D3_metabat_output.14.fa parsing complete.
+289 150.48078179359436 1.92 q/s (% mem usage: 25.50, % mem avail: 74.46)
+[32mDone[0m
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.14.fa.emapper.genepred.fasta
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.14.fa.emapper.gff
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.14.fa.emapper.hits
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.14.fa.emapper.seed_orthologs
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.14.fa.emapper.annotations
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas.
+      biorxiv (2021). doi: https://doi.org/10.1101/2021.06.03.446934
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Fast and Sensitive Protein Alignment using DIAMOND. Buchfink B, Xie C,
+       Huson DH. 2015. Nat. Methods 12, 59–60. https://doi.org/10.1038/nmeth.3176
+
+e.g. Functional annotation was performed using emapper-2.1.5-f3aab55 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 289
+Total time: 5208 secs
+FINISHED
++ for bin_D3 in '*'
++ emapper.py --itype metagenome -i D3_metabat_output.15.fa -o D3_metabat_output.15.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct
+[1;32mFunctional annotation of hits...[0m
+0 3.814697265625e-06 0.00 q/s (% mem usage: 20.60, % mem avail: 79.36)
+#  emapper-2.1.5-f3aab55
+# emapper.py  --itype metagenome -i D3_metabat_output.15.fa -o D3_metabat_output.15.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct
+[1;33m  /sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin/diamond blastx -d /crex/data/eggNOG_data/5.0/eggnog_proteins.dmnd -q /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D3_metabat_output/D3_metabat_output.15.fa --threads 1 -o /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.15.fa.emapper.hits  --sensitive -e 0.001 --max-target-seqs 0 --max-hsps 0  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qcovhsp scovhsp[0m
+[1;32mDecorating gff file /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.15.fa.emapper.gff...[0m
+Parsing fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D3_metabat_output/D3_metabat_output.15.fa...
+Fasta file /domus/h1/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa/D3_metabat_output/D3_metabat_output.15.fa parsing complete.
+500 448.7724943161011 1.11 q/s (% mem usage: 25.80, % mem avail: 74.25)
+1000 448.79125332832336 2.23 q/s (% mem usage: 25.80, % mem avail: 74.25)
+1500 448.8081603050232 3.34 q/s (% mem usage: 25.80, % mem avail: 74.24)
+1841 448.8918151855469 4.10 q/s (% mem usage: 25.70, % mem avail: 74.29)
+[32mDone[0m
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.15.fa.emapper.genepred.fasta
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.15.fa.emapper.gff
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.15.fa.emapper.hits
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.15.fa.emapper.seed_orthologs
+   /crex/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct/D3_metabat_output.15.fa.emapper.annotations
+
+================================================================================
+CITATION:
+If you use this software, please cite:
+
+[1] eggNOG-mapper v2: functional annotation, orthology assignments, and domain 
+      prediction at the metagenomic scale. Carlos P. Cantalapiedra, 
+      Ana Hernandez-Plaza, Ivica Letunic, Peer Bork, Jaime Huerta-Cepas.
+      biorxiv (2021). doi: https://doi.org/10.1101/2021.06.03.446934
+
+[2] eggNOG 5.0: a hierarchical, functionally and phylogenetically annotated
+      orthology resource based on 5090 organisms and 2502 viruses. Jaime
+      Huerta-Cepas, Damian Szklarczyk, Davide Heller, Ana Hernandez-Plaza,
+      Sofia K Forslund, Helen Cook, Daniel R Mende, Ivica Letunic, Thomas
+      Rattei, Lars J Jensen, Christian von Mering and Peer Bork. Nucleic Acids
+      Research, Volume 47, Issue D1, 8 January 2019, Pages D309-D314,
+      https://doi.org/10.1093/nar/gky1085 
+
+[3] Fast and Sensitive Protein Alignment using DIAMOND. Buchfink B, Xie C,
+       Huson DH. 2015. Nat. Methods 12, 59–60. https://doi.org/10.1038/nmeth.3176
+
+e.g. Functional annotation was performed using emapper-2.1.5-f3aab55 [1]
+ based on eggNOG orthology data [2]. Sequence searches were performed using [3].
+
+
+================================================================================
+
+Total hits processed: 1841
+Total time: 16059 secs
+FINISHED
++ for bin_D3 in '*'
++ emapper.py --itype metagenome -i D3_metabat_output.16.fa -o D3_metabat_output.16.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_funct
