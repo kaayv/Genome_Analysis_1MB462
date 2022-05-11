@@ -1,38 +1,59 @@
-# Bash script to align RNA reads to bins
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 2
+#SBATCH -t 08:00:00
+#SBATCH -J BWA_for_DNA_metabat
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user kaavya.venkateswaran.5938@student.uu.se
 
+# Load modules
 module load bioinfo-tools
-module load bwa samtools
+module load bwa
+module load samtools
 
-# Create a reference .fa file with db to align to that is a contcatenated file of all bins at a site,
-# using code from bwa_workflow.txt (provided by authors of paper in their supplementary materials).
-cd /home/vinglis/genome_analysis/GenomeAnalysis/analysis/03_binning/D1_metabat_output
-for i in *.fa; do name=`echo $i | awk 'BEGIN{FS="."}{print $2}'`; echo ">"$name >> D1_allbins_concat.fa; grep -v '>' $i >> D1_allbins_concat.fa; done
-mv D1_allbins_concat.fa /home/vinglis/genome_analysis/GenomeAnalysis/analysis/05_mapping/D1_bwa_alignment
+#directories used
+seqdir1="/home/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa"
+seqdir2="/proj/genomeanalysis2022/nobackup/work/kvenk811/metabat_after_bwa"
+outdir="/proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map"
+source="/home/kvenk811/Genome_Analysis_1MB462/Data/RNA_trimmed_files"
 
-cd ../D3_metabat_output
-for j in *.fa; do name=`echo $j | awk 'BEGIN{FS="."}{print $2}'`; echo ">"$name >> D3_allbins_concat.fa; grep -v '>' $j >> D3_allbins_concat.fa; done
-mv D3_allbins_concat.fa /home/vinglis/genome_analysis/GenomeAnalysis/analysis/05_mapping/D3_bwa_alignment
 
-# Move to directory to perform bwa analysis
-cd /home/vinglis/genome_analysis/GenomeAnalysis/analysis/05_mapping/D1_bwa_alignment
+# Create a reference .fa file with db to align to that is a contcatenated file of all bins at a site
+# from supplementary material
+cd $outdir
+for i in $seqdir1/D1_metabat_output/*.fa; do name=`echo $i | awk 'BEGIN{FS="."}{print $1$2}'`; echo ">"$name >> D1_allbins_concat.fa; grep -v '>' $i >> D1_allbins_concat.fa; done
+mv D1_allbins_concat.fa D1_conc/
 
-# Create soft links to trimmed RNA fastq files
-ln -s ../../../data/trimmed_data/RNA_trimmed/RNA*D1* .
+for j in $seqdir1/D1_metabat_output/*.fa; do name=`echo $j | awk 'BEGIN{FS="."}{print $2}'`; echo ">"$name >> D3_allbins_concat.fa; grep -v '>' $j >> D3_allbins_concat.fa; done
+mv D3_allbins_concat.fa D3_conc/
+
+
 # Align RNA reads to concatenated fasta file, and convert to a sorted bam format.
 # Also produce some index stats.
 bwa index D1_allbins_concat.fa 2>D1_index.out
-bwa mem -t 2 D1_allbins_concat.fa RNA_trim_D1_1.paired.trimmed.fastq.gz RNA_trim_D1_2.paired.trimmed.fastq.gz > D1_supercontig.RNA.aln.sam 2>D1_bwamem.out
+bwa mem -t 2 D1_allbins_concat.fa $source/RNA_trim_D1_1.paired.trimmed.fastq.gz $source/RNA_trim_D1_2.paired.trimmed.fastq.gz > D1_supercontig.RNA.aln.sam 2>D1_bwamem.out
 samtools view -@ 2 -bS  D1_supercontig.RNA.aln.sam | 
 samtools sort -@ 2 -o D1_supercontig.RNA.aln.bam -
 samtools index D1_supercontig.RNA.aln.bam
 samtools idxstats D1_supercontig.RNA.aln.bam > D1_supercontig.RNA.aln.stats
 
-# Do the same for site D3
-cd ../D3_bwa_alignment
-ln -s ../../../data/trimmed_data/RNA_trimmed/RNA*D3* .
+#alt code
+# For D1
+#bwa index $seqdir/D1_megahit_output/final.contigs.fa
+#bwa mem -t 10 D1_allbins_concat.fa $source/RNA_trim_D1_1.paired.trimmed.fastq.gz $source/RNA_trim_D1_2.paired.trimmed.fastq.gz 2> $OUTDIR/D1/D1_mem.out | samtools sort -o $OUTDIR/D1/D1_sorted.bam
+
+#D3
 bwa index D3_allbins_concat.fa 2>D3_index.out
-bwa mem -t 2 D3_allbins_concat.fa RNA_trim_D3_1.paired.trimmed.fastq.gz RNA_trim_D3_2.paired.trimmed.fastq.gz > D3_supercontig.RNA.aln.sam 2>D3_bwamem.out
+bwa mem -t 2 D3_allbins_concat.fa $source/RNA_trim_D3_1.paired.trimmed.fastq.gz $source/RNA_trim_D3_2.paired.trimmed.fastq.gz > D3_supercontig.RNA.aln.sam 2>D3_bwamem.out
 samtools view -@ 2 -bS  D3_supercontig.RNA.aln.sam | 
 samtools sort -@ 2 -o D3_supercontig.RNA.aln.bam -
 samtools index D3_supercontig.RNA.aln.bam
 samtools idxstats D3_supercontig.RNA.aln.bam > D3_supercontig.RNA.aln.stats
+
+#alt code
+# For D1
+#bwa index $seqdir/D1_megahit_output/final.contigs.fa
+#bwa mem -t 10 D3_allbins_concat.fa $source/RNA_trim_D3_1.paired.trimmed.fastq.gz $source/RNA_trim_D3_2.paired.trimmed.fastq.gz 2> $OUTDIR/D3/D3_mem.out | samtools sort -o $OUTDIR/D3/D3_sorted.bam
+
