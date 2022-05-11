@@ -23,24 +23,24 @@ source="/home/kvenk811/Genome_Analysis_1MB462/Data/RNA_trimmed_files"
 # Create a reference .fa file with db to align to that is a contcatenated file of all bins at a site
 # from supplementary material
 cd $outdir
-for j in $seqdir1/D1_metabat_output/*.fa; do name=`echo $j | awk 'BEGIN{FS="."}{print $1$2}'`; echo ">"$name >> D1_allbins_concat.fa; grep -v '>' $j >> D1_allbins_concat.fa; done
+for i in $seqdir1/D1_metabat_output/*.fa; do name=`echo $i | awk 'BEGIN{FS="."}{print $1$2}'`; echo ">"$name >> D1_allbins_concat.fa; grep -v '>' $i >> D1_allbins_concat.fa; done
 
 for j in $seqdir1/D3_metabat_output/*.fa; do name=`echo $j | awk 'BEGIN{FS="."}{print $1$2}'`; echo ">"$name >> D3_allbins_concat.fa; grep -v '>' $j >> D3_allbins_concat.fa; done
 
 
 # Align RNA reads to concatenated fasta file, and convert to a sorted bam format.
 # Also produce some index stats.
-bwa index $outdir/D1_allbins_concat.fa 2>D1_index.out
-bwa mem -t 2 $outdir/D1_allbins_concat.fa $source/RNA_trim_D1_1.paired.trimmed.fastq.gz $source/RNA_trim_D1_2.paired.trimmed.fastq.gz > D1_supercontig.RNA.aln.sam 2>D1_bwamem.out
-samtools view -@ 2 -bS  D1_supercontig.RNA.aln.sam | 
-samtools sort -@ 2 -o D1_supercontig.RNA.aln.bam -
-samtools index D1_supercontig.RNA.aln.bam
+#bwa index $outdir/D1_allbins_concat.fa 2>D1_index.out
+#bwa mem -t 2 $outdir/D1_allbins_concat.fa $source/RNA_trim_D1_1.paired.trimmed.fastq.gz $source/RNA_trim_D1_2.paired.trimmed.fastq.gz > D1_supercontig.RNA.aln.sam 2>D1_bwamem.out
+#samtools view -@ 2 -bS  D1_supercontig.RNA.aln.sam | 
+#samtools sort -@ 2 -o D1_supercontig.RNA.aln.bam -
+#samtools index D1_supercontig.aln.bam
 samtools idxstats D1_supercontig.RNA.aln.bam > D1_supercontig.RNA.aln.stats
 
 #alt code
 # For D1
-#bwa index $outdir/D1_bins_concat.fa 2> $outdir/D1_index.out
-#bwa mem -t 10 D1_allbins_concat.fa $source/RNA_trim_D1_1.paired.trimmed.fastq.gz $source/RNA_trim_D1_2.paired.trimmed.fastq.gz 2> $outdir/D1/D1_mem.out | samtools sort -o $outdir/D1/D1_sorted.bam
+bwa index $outdir/D1_bins_concat.fa 2> $outdir/D1_index.out
+bwa mem -t 10 D1_allbins_concat.fa $source/RNA_trim_D1_1.paired.trimmed.fastq.gz $source/RNA_trim_D1_2.paired.trimmed.fastq.gz 2> $outdir/D1/D1_mem.out | samtools sort -o $outdir/D1/D1_sorted.bam
 
 #D3
 #bwa index D3_allbins_concat.fa 2>D3_index.out
