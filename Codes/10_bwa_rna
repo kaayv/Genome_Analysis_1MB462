@@ -26,18 +26,29 @@ source="/home/kvenk811/Genome_Analysis_1MB462/Data/RNA_trimmed_files"
 # Align RNA reads to each fasta file, and convert to a sorted bam format.
 # Also produce some index stats.
 #cd $seqdir1/D1_metabat_output
-for fa in *.fa
+#for fa in *.fa
+#do
+#bwa index $fa 2> $outdir/D1/"$fa"_index.out
+#bwa mem -t 4 $fa $source/RNA_trim_37.left_paired.trimmed.fastq.gz $source/RNA_trim_37.right_paired.trimmed.fastq.gz 2> $outdir/D1/"${fa[i]}"_D1_mem.out
+#done
+
+cd $outdir/D1
+for sa1 in *mem.out
 do
-bwa index $fa 2> $outdir/D1/"$fa"_index.out
-bwa mem -t 4 $fa $source/RNA_trim_37.left_paired.trimmed.fastq.gz $source/RNA_trim_37.right_paired.trimmed.fastq.gz 2> $outdir/D1/"${fa[i]}"_D1_mem.out
-done
+samtools sort -@ 2 -o "${sa1[i]}".sort.bam
+done 
 
 #D3
-cd $seqdir1/D3_metabat_output
-for faa in *.fa
-do
-bwa index $faa 2> $outdir/D3/"$faa"_index.out
-bwa mem -t 4 $faa $source/RNA_trim_39.left_paired.trimmed.fastq.gz $source/RNA_trim_39.right_paired.trimmed.fastq.gz 2> $outdir/D3/"${faa[i]}"_D3_mem.out
-done
+#cd $seqdir1/D3_metabat_output
+#for faa in *.fa
+#do
+#bwa index $faa 2> $outdir/D3/"$faa"_index.out
+#bwa mem -t 4 $faa $source/RNA_trim_39.left_paired.trimmed.fastq.gz $source/RNA_trim_39.right_paired.trimmed.fastq.gz 2> $outdir/D3/"${faa[i]}"_D3_mem.out
+#done
 
+#cd $outdir/D3
+#for sa3 in *mem.out
+#do
+#samtools sort -@ 2 -o "${sa3[i]}".sort.bam
+#done
 
