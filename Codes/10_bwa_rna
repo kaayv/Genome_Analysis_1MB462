@@ -19,7 +19,7 @@ module load samtools
 seqdir1="/proj/genomeanalysis2022/nobackup/work/kvenk811/Metabat_binning_before_bwa"
 #seqdir2="/proj/genomeanalysis2022/nobackup/work/kvenk811/metabat_after_bwa"
 outdir="/proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map"
-source="/home/kvenk811/Genome_Analysis_1MB462/Data/RNA_trimmed_files"
+source="/proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files"
 
 
 #run bwa for each bin
