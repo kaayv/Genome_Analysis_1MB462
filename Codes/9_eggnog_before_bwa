@@ -3,7 +3,7 @@
 #SBATCH -M snowy
 #SBATCH -p core
 #SBATCH -n 2
-#SBATCH -t 100:00:00
+#SBATCH -t 200:00:00
 #SBATCH -J eggnoggmapper_without_bwa
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user kaavya.venkateswaran.5938@student.uu.se
@@ -15,19 +15,19 @@ set -x
 module load bioinfo-tools eggNOG-mapper
 
 #directories
-seqdir="/home/kvenk811/Genome_Analysis_1MB462/Results/Metabat_binning_before_bwa"
+seqdir="/proj/genomeanalysis2022/nobackup/work/kvenk811/Metabat_binning_before_bwa"
 outdir="/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa"
 
 cd $seqdir/D1_metabat_output
 
 for bin_D1 in *
 do
-emapper.py --itype metagenome -i $bin_D1 -o $bin_D1 --output_dir $outdir/D1_funct
+emapper.py --itype metagenome -i $bin_D1 -o $bin_D1 --output_dir $outdir/D1
 done
 
 cd $seqdir/D3_metabat_output
 
 for bin_D3 in *
 do
-emapper.py --itype metagenome -i $bin_D3 -o $bin_D3 --output_dir $outdir/D3_funct
+emapper.py --itype metagenome -i $bin_D3 -o $bin_D3 --output_dir $outdir/D3
 done
