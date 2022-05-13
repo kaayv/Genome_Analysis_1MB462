@@ -3,7 +3,7 @@
 #SBATCH -M snowy
 #SBATCH -p core
 #SBATCH -n 2
-#SBATCH -t 06:00:00
+#SBATCH -t 08:00:00
 #SBATCH -J BWA_for_RNA_after_metabat_1_2
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user kaavya.venkateswaran.5938@student.uu.se
@@ -28,27 +28,18 @@ source="/proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files"
 cd $seqdir1/D1_metabat_output
 for fa in *.fa
 do
-bwa index $fa 1> $outdir/D1/$fai_index.out
-bwa mem -t 4 $fa $source/RNA_trim_37.left_paired.trimmed.fastq.gz $source/RNA_trim_37.right_paired.trimmed.fastq.gz 1> $fa.sam | samtools sort -@ 2 -o $fai_sort.bam -
+bwa index $faa
+bwa mem -t 6 $fa $source/RNA_trim_37.left_paired.trimmed.fastq.gz $source/RNA_trim_37.right_paired.trimmed.fastq.gz > $fa.sam  
+samtools sort -@ 2 -o ${fa}_sort.bam $fa.sam
 done
 
-#cd $outdir/D1
-#for sa1 in *mem.out
-#do
-#samtools sort -@ 2 -o "${sa1[i]}".sort.bam $sa1
-#done 
 
 #D3
 cd $seqdir1/D3_metabat_output
 for faa in *.fa
 do
-bwa index $faa 1> $outdir/D3_test/$faai_index.out
-bwa mem -t 4 $faa $source/RNA_trim_39.left_paired.trimmed.fastq.gz $source/RNA_trim_39.right_paired.trimmed.fastq.gz 1> $faa.sam | samtools sort -@ -o $faai_sort.bam -
+bwa index $faa 
+bwa mem -t 6 $faa $source/RNA_trim_39.left_paired.trimmed.fastq.gz $source/RNA_trim_39.right_paired.trimmed.fastq.gz > $faa.sam 
+samtools sort -@ 2 -o ${faa}_sort.bam $faa.sam
 done
-
-#cd $outdir/D3
-#for sa3 in *mem.out
-#do
-#samtools sort -@ 2 -o "${sa3[i]}".sort.bam
-#done
 
