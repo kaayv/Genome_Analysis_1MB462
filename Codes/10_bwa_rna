@@ -28,8 +28,8 @@ source="/proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files"
 cd $seqdir1/D1_metabat_output
 for fa in *.fa
 do
-bwa index $fa 2> $outdir/D1/"${fa[i]}"_index.out
-bwa mem -t 4 $fa $source/RNA_trim_37.left_paired.trimmed.fastq.gz $source/RNA_trim_37.right_paired.trimmed.fastq.gz | samtools sort -@ 2 -o "${fa[i]}"_sort.bam -
+bwa index $fa 1> $outdir/D1/$fai_index.out
+bwa mem -t 4 $fa $source/RNA_trim_37.left_paired.trimmed.fastq.gz $source/RNA_trim_37.right_paired.trimmed.fastq.gz 1> $fa.sam | samtools sort -@ 2 -o $fai_sort.bam -
 done
 
 #cd $outdir/D1
@@ -42,8 +42,8 @@ done
 cd $seqdir1/D3_metabat_output
 for faa in *.fa
 do
-bwa index $faa 2> $outdir/D3/"${faa[i]}"_index.out
-bwa mem -t 4 $faa $source/RNA_trim_39.left_paired.trimmed.fastq.gz $source/RNA_trim_39.right_paired.trimmed.fastq.gz | samtools sort -@ -o "${faa[i]}"_sort.bam -
+bwa index $faa 1> $outdir/D3_test/$faai_index.out
+bwa mem -t 4 $faa $source/RNA_trim_39.left_paired.trimmed.fastq.gz $source/RNA_trim_39.right_paired.trimmed.fastq.gz 1> $faa.sam | samtools sort -@ -o $faai_sort.bam -
 done
 
 #cd $outdir/D3
