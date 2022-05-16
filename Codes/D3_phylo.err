@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/sw/apps/bioinfo/phylophlan/0.99/snowy/bin/phylophlan.py", line 780, in <module>
+    init()
+  File "/sw/apps/bioinfo/phylophlan/0.99/snowy/bin/phylophlan.py", line 141, in init
+    with closing(tarfile.open( compressed(f)  )) as inp:
+  File "/sw/comp/python/2.7.15_snowy/lib/python2.7/tarfile.py", line 1675, in open
+    return func(name, "r", fileobj, **kwargs)
+  File "/sw/comp/python/2.7.15_snowy/lib/python2.7/tarfile.py", line 1740, in gzopen
+    fileobj = gzip.GzipFile(name, mode, compresslevel, fileobj)
+  File "/sw/comp/python/2.7.15_snowy/lib/python2.7/gzip.py", line 94, in __init__
+    fileobj = self.myfileobj = __builtin__.open(filename, mode or 'rb')
+IOError: [Errno 2] No such file or directory: 'data/ppa.seeds.faa.tar.bz2'

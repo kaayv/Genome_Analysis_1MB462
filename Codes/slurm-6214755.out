@@ -1,0 +1,3 @@
+/var/spool/slurmd/job6214755/slurm_script: line 63: /proj/genomeanalysis2022/nobackup/work/kvenk811/phylophlan: Is a directory
+/var/spool/slurmd/job6214755/slurm_script: line 64: /proj/genomeanalysis2022/nobackup/work/kvenk811/phylophlan/output/D1/: Is a directory
+/var/spool/slurmd/job6214755/slurm_script: line 65: /proj/genomeanalysis2022/nobackup/work/kvenk811/phylophlan/output/D3/: Is a directory
