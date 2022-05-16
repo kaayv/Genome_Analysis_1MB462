@@ -62,6 +62,6 @@ outdir="/proj/genomeanalysis2022/nobackup/work/kvenk811/phylophlan"
 #ln -s $seqdir/D3/*ann.out/*.faa $outdir/input/D3/
 
 #run phylophlan nproc -- number of CPUs -i input -o output with error file D1/D3_phylo.err
-$outdir
+cd $outdir
 phylophlan.py -i -t --nproc 2 D1
 phylophlan.py -i -t --nproc 2 D3
