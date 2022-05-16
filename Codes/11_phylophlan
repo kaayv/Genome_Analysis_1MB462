@@ -7,7 +7,8 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user kaavya.venkateswaran.5938@student.uu.se
 
-script for phylogenetic reconstruction
+#script for phylogenetic reconstruction
+
 #this script takes bins from binning without structural (Proka)/ functional (eggNOGmapper) annotation
 #load the necessary modules
 module load bioinfo-tools phylophlan/0.99
@@ -20,49 +21,45 @@ outdir="/proj/genomeanalysis2022/nobackup/work/kvenk811/phylophlan"
 
 # The input .fa files will be the Prokka output, as these include amino acid sequence and not only nucleotide, in contrast to the binning output. 
 # Further, the file names have to be given new names.
-cd $seqdir/D1
-for bins in *ann.out
-do
-echo $bins
-for files in $bins/*
-do
-echo $files
-mv "$files" "${files/PROKKA_05032022/$bins}"
-done
-done
+#cd $seqdir/D1
+#for bins in *ann.out
+#do
+#echo $bins
+#for files in $bins/*
+#do
+#echo $files
+#mv "$files" "${files/PROKKA_05032022/$bins}"
+#done
+#done
 
-cd $seqdir/D3
-for bins in *ann.out
-do
-echo $bins
-for files in $bins/*
-do
-echo $files
-mv "$files" "${files/PROKKA_05032022/$bins}"
-done
-done
+#cd $seqdir/D3
+#for bins in *ann.out
+#do
+#echo $bins
+#for files in $bins/*
+#do
+#echo $files
+#mv "$files" "${files/PROKKA_05032022/$bins}"
+#done
+#done
 
 #not used but good to have
-# did the copying directly in the folder
-# Copy installed phylophlan 0.99 files to my working directory (couldnt download new version from bitbucket)
-#cp -r /sw/bioinfo/phylophlan/0.99/snowy/bin/* /home/pcr98/GenomeAnalysis/GenomeAnalysis/analysis/phylo/
-#cp -r /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/* /home/pcr98/GenomeAnalysis/GenomeAnalysis/analysis/phylo/ 
-#cd /home/pcr98/GenomeAnalysis/GenomeAnalysis/analysis/phylo/
+# did the copying of phylophlan stuff directly in the folder
+# Symlink the phylophlan data files
+#cd  $OUTDIR/
 #mkdir data
 #cd data
 #mkdir -p ppaalns
-# symlink phylophlan data files
 #ln -sf /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/data/*.bz2 .
 #ln -sf /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/data/ppaalns/*.bz2 ppaalns/
 #ln -sf /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/data/ppafull.tax.txt .
-#ln -sf /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/taxcuration/ /home/pcr98/GenomeAnalysis/GenomeAnalysis/analysis/phylo/taxcuration
+#ln -sf /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/taxcuration/ $OUTDIR 
 
- 
-# Prokka output will be the input for phylophlan since it has DNA/AA-sequence for the genes in the bins/genome (and metabat only had DNA-sequence for bins/genome)
-ln -s $seqdir/D1/*ann.out/*.faa $outdir/input/D1/
-ln -s $seqdir/D3/*ann.out/*.faa $outdir/input/D3/
+# Prokka output will be the input for phylophlan since it has DNA/AA-sequence for the genes in the bins/genome
+#ln -s $seqdir/D1/*ann.out/*.faa $outdir/input/D1/
+#ln -s $seqdir/D3/*ann.out/*.faa $outdir/input/D3/
 
 #run phylophlan nproc -- number of CPUs -i input -o output with error file D1/D3_phylo.err
-#$seqdir
-#phylophlan.py -i D1 -t --nproc 2 2> output/D1/D1_phylo.err
-#phylophlan.py -i D3 -t --nproc 2 2> output/D3/D3_phylo.err
+$outdir
+phylophlan.py -i D1 -t --nproc 2 2> D1_phylo.err
+phylophlan.py -i D3 -t --nproc 2 2> D3_phylo.err
