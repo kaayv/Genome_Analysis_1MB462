@@ -1,0 +1,1810 @@
++ module load bioinfo-tools
+++ /usr/share/lmod/lmod/libexec/lmod bash load bioinfo-tools
++ eval '__LMOD_REF_COUNT_LOADEDMODULES=uppmax:2\;bioinfo-tools:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=uppmax:bioinfo-tools;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MODULEPATH=/sw/mf/snowy/bioinfo-tools/annotation:1\;/sw/mf/snowy/bioinfo-tools/alignment:1\;/sw/mf/snowy/bioinfo-tools/assembly:1\;/sw/mf/snowy/bioinfo-tools/misc:1\;/sw/mf/snowy/bioinfo-tools/phylogeny:1\;/sw/mf/snowy/bioinfo-tools/pipelines:1\;/sw/mf/snowy/bioinfo-tools/sw_collections:1\;/sw/mf/snowy/applications:1\;/sw/mf/snowy/build-tools:1\;/sw/mf/snowy/compilers:1\;/sw/mf/snowy/data:1\;/sw/mf/snowy/environment:1\;/sw/mf/snowy/libraries:1\;/sw/mf/snowy/parallel:1;' export '__LMOD_REF_COUNT_MODULEPATH;' 'MODULEPATH=/sw/mf/snowy/bioinfo-tools/annotation:/sw/mf/snowy/bioinfo-tools/alignment:/sw/mf/snowy/bioinfo-tools/assembly:/sw/mf/snowy/bioinfo-tools/misc:/sw/mf/snowy/bioinfo-tools/phylogeny:/sw/mf/snowy/bioinfo-tools/pipelines:/sw/mf/snowy/bioinfo-tools/sw_collections:/sw/mf/snowy/applications:/sw/mf/snowy/build-tools:/sw/mf/snowy/compilers:/sw/mf/snowy/data:/sw/mf/snowy/environment:/sw/mf/snowy/libraries:/sw/mf/snowy/parallel;' export 'MODULEPATH;' '__LMOD_REF_COUNT__LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/sw/mf/snowy/environment/bioinfo-tools;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImJpb2luZm8tdG9vbHMiXT17WyJmbiJdPSIvc3cvbWYvc25vd3kvZW52aXJvbm1lbnQvYmlvaW5mby10b29scyIsWyJmdWxsTmFtZSJdPSJiaW9pbmZvLXRvb2xzIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iYmlvaW5mby10b29scyIsfSx9LG1wYXRoQT17Ii9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2Fubm90YXRpb24iLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9hbGlnbm1lbnQiLCIvc3cv;' export '_ModuleTable001_;' '_ModuleTable002_=bWYvc25vd3kvYmlvaW5mby10b29scy9hc3NlbWJseSIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL21pc2MiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9waHlsb2dlbnkiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9waXBlbGluZXMiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9zd19jb2xsZWN0aW9ucyIsIi9zdy9tZi9zbm93eS9hcHBsaWNhdGlvbnMiLCIvc3cvbWYvc25vd3kvYnVpbGQtdG9vbHMiLCIvc3cvbWYvc25vd3kvY29tcGlsZXJzIiwiL3N3L21mL3Nub3d5L2RhdGEiLCIvc3cvbWYvc25vd3kvZW52aXJvbm1lbnQiLCIvc3cvbWYvc25vd3kvbGlicmFyaWVzIiwiL3N3L21mL3Nub3d5L3BhcmFsbGVsIix9LFsic3lzdGVtQmFzZU1QQVRI;' export '_ModuleTable002_;' '_ModuleTable003_=Il09Ii9zdy9tZi9zbm93eS9hcHBsaWNhdGlvbnM6L3N3L21mL3Nub3d5L2J1aWxkLXRvb2xzOi9zdy9tZi9zbm93eS9jb21waWxlcnM6L3N3L21mL3Nub3d5L2RhdGE6L3N3L21mL3Nub3d5L2Vudmlyb25tZW50Oi9zdy9tZi9zbm93eS9saWJyYXJpZXM6L3N3L21mL3Nub3d5L3BhcmFsbGVsIix9;' export '_ModuleTable003_;' '_ModuleTable_Sz_=3;' export '_ModuleTable_Sz_;'
+++ __LMOD_REF_COUNT_LOADEDMODULES='uppmax:2;bioinfo-tools:1'
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=uppmax:bioinfo-tools
+++ export LOADEDMODULES
+++ __LMOD_REF_COUNT_MODULEPATH='/sw/mf/snowy/bioinfo-tools/annotation:1;/sw/mf/snowy/bioinfo-tools/alignment:1;/sw/mf/snowy/bioinfo-tools/assembly:1;/sw/mf/snowy/bioinfo-tools/misc:1;/sw/mf/snowy/bioinfo-tools/phylogeny:1;/sw/mf/snowy/bioinfo-tools/pipelines:1;/sw/mf/snowy/bioinfo-tools/sw_collections:1;/sw/mf/snowy/applications:1;/sw/mf/snowy/build-tools:1;/sw/mf/snowy/compilers:1;/sw/mf/snowy/data:1;/sw/mf/snowy/environment:1;/sw/mf/snowy/libraries:1;/sw/mf/snowy/parallel:1'
+++ export __LMOD_REF_COUNT_MODULEPATH
+++ MODULEPATH=/sw/mf/snowy/bioinfo-tools/annotation:/sw/mf/snowy/bioinfo-tools/alignment:/sw/mf/snowy/bioinfo-tools/assembly:/sw/mf/snowy/bioinfo-tools/misc:/sw/mf/snowy/bioinfo-tools/phylogeny:/sw/mf/snowy/bioinfo-tools/pipelines:/sw/mf/snowy/bioinfo-tools/sw_collections:/sw/mf/snowy/applications:/sw/mf/snowy/build-tools:/sw/mf/snowy/compilers:/sw/mf/snowy/data:/sw/mf/snowy/environment:/sw/mf/snowy/libraries:/sw/mf/snowy/parallel
+++ export MODULEPATH
+++ __LMOD_REF_COUNT__LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:1
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/sw/mf/snowy/environment/bioinfo-tools
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImJpb2luZm8tdG9vbHMiXT17WyJmbiJdPSIvc3cvbWYvc25vd3kvZW52aXJvbm1lbnQvYmlvaW5mby10b29scyIsWyJmdWxsTmFtZSJdPSJiaW9pbmZvLXRvb2xzIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iYmlvaW5mby10b29scyIsfSx9LG1wYXRoQT17Ii9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2Fubm90YXRpb24iLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9hbGlnbm1lbnQiLCIvc3cv
+++ export _ModuleTable001_
+++ _ModuleTable002_=bWYvc25vd3kvYmlvaW5mby10b29scy9hc3NlbWJseSIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL21pc2MiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9waHlsb2dlbnkiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9waXBlbGluZXMiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9zd19jb2xsZWN0aW9ucyIsIi9zdy9tZi9zbm93eS9hcHBsaWNhdGlvbnMiLCIvc3cvbWYvc25vd3kvYnVpbGQtdG9vbHMiLCIvc3cvbWYvc25vd3kvY29tcGlsZXJzIiwiL3N3L21mL3Nub3d5L2RhdGEiLCIvc3cvbWYvc25vd3kvZW52aXJvbm1lbnQiLCIvc3cvbWYvc25vd3kvbGlicmFyaWVzIiwiL3N3L21mL3Nub3d5L3BhcmFsbGVsIix9LFsic3lzdGVtQmFzZU1QQVRI
+++ export _ModuleTable002_
+++ _ModuleTable003_=Il09Ii9zdy9tZi9zbm93eS9hcHBsaWNhdGlvbnM6L3N3L21mL3Nub3d5L2J1aWxkLXRvb2xzOi9zdy9tZi9zbm93eS9jb21waWxlcnM6L3N3L21mL3Nub3d5L2RhdGE6L3N3L21mL3Nub3d5L2Vudmlyb25tZW50Oi9zdy9tZi9zbm93eS9saWJyYXJpZXM6L3N3L21mL3Nub3d5L3BhcmFsbGVsIix9
+++ export _ModuleTable003_
+++ _ModuleTable_Sz_=3
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ module load bwa
+++ /usr/share/lmod/lmod/libexec/lmod bash load bwa
++ eval '__LMOD_REF_COUNT_LOADEDMODULES=uppmax:2\;bioinfo-tools:1\;bwa/0.7.17:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=uppmax:bioinfo-tools:bwa/0.7.17;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MANPATH=/usr/share/man:2\;/sw/uppmax/man:2\;/opt/thinlinc/share/man:2\;/sw/bioinfo/bwa/0.7.17/snowy/man:1;' export '__LMOD_REF_COUNT_MANPATH;' 'MANPATH=/usr/share/man:/sw/uppmax/man:/opt/thinlinc/share/man:/sw/bioinfo/bwa/0.7.17/snowy/man;' export 'MANPATH;' 'MODULEPATH=/sw/mf/snowy/bioinfo-tools/annotation:/sw/mf/snowy/bioinfo-tools/alignment:/sw/mf/snowy/bioinfo-tools/assembly:/sw/mf/snowy/bioinfo-tools/misc:/sw/mf/snowy/bioinfo-tools/phylogeny:/sw/mf/snowy/bioinfo-tools/pipelines:/sw/mf/snowy/bioinfo-tools/sw_collections:/sw/mf/snowy/applications:/sw/mf/snowy/build-tools:/sw/mf/snowy/compilers:/sw/mf/snowy/data:/sw/mf/snowy/environment:/sw/mf/snowy/libraries:/sw/mf/snowy/parallel;' export 'MODULEPATH;' '__LMOD_REF_COUNT_PATH=/sw/bioinfo/bwa/0.7.17/snowy/bin:1\;/home/kvenk811/bin:2\;/usr/local/bin:1\;/usr/bin:1\;/usr/local/sbin:1\;/usr/sbin:1\;/sw/uppmax/bin:2;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/sw/bioinfo/bwa/0.7.17/snowy/bin:/home/kvenk811/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sw/uppmax/bin;' export 'PATH;' '__LMOD_REF_COUNT__LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:1\;/sw/mf/snowy/bioinfo-tools/alignment/bwa/0.7.17:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:/sw/mf/snowy/bioinfo-tools/alignment/bwa/0.7.17;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImJpb2luZm8tdG9vbHMiXT17WyJmbiJdPSIvc3cvbWYvc25vd3kvZW52aXJvbm1lbnQvYmlvaW5mby10b29scyIsWyJmdWxsTmFtZSJdPSJiaW9pbmZvLXRvb2xzIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iYmlvaW5mby10b29scyIsfSxid2E9e1siZm4iXT0iL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvYWxpZ25tZW50L2J3YS8wLjcuMTciLFsiZnVsbE5hbWUiXT0iYndhLzAuNy4xNyIsWyJsb2Fk;' export '_ModuleTable001_;' '_ModuleTable002_=T3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImJ3YSIsfSx9LG1wYXRoQT17Ii9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2Fubm90YXRpb24iLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9hbGlnbm1lbnQiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9hc3NlbWJseSIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL21pc2MiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9waHlsb2dlbnkiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9waXBlbGluZXMiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9zd19jb2xsZWN0aW9ucyIsIi9zdy9tZi9zbm93eS9hcHBsaWNhdGlv;' export '_ModuleTable002_;' '_ModuleTable003_=bnMiLCIvc3cvbWYvc25vd3kvYnVpbGQtdG9vbHMiLCIvc3cvbWYvc25vd3kvY29tcGlsZXJzIiwiL3N3L21mL3Nub3d5L2RhdGEiLCIvc3cvbWYvc25vd3kvZW52aXJvbm1lbnQiLCIvc3cvbWYvc25vd3kvbGlicmFyaWVzIiwiL3N3L21mL3Nub3d5L3BhcmFsbGVsIix9LFsic3lzdGVtQmFzZU1QQVRIIl09Ii9zdy9tZi9zbm93eS9hcHBsaWNhdGlvbnM6L3N3L21mL3Nub3d5L2J1aWxkLXRvb2xzOi9zdy9tZi9zbm93eS9jb21waWxlcnM6L3N3L21mL3Nub3d5L2RhdGE6L3N3L21mL3Nub3d5L2Vudmlyb25tZW50Oi9zdy9tZi9zbm93eS9saWJyYXJpZXM6L3N3L21mL3Nub3d5L3BhcmFsbGVsIix9;' export '_ModuleTable003_;' '_ModuleTable_Sz_=3;' export '_ModuleTable_Sz_;'
+++ __LMOD_REF_COUNT_LOADEDMODULES='uppmax:2;bioinfo-tools:1;bwa/0.7.17:1'
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=uppmax:bioinfo-tools:bwa/0.7.17
+++ export LOADEDMODULES
+++ __LMOD_REF_COUNT_MANPATH='/usr/share/man:2;/sw/uppmax/man:2;/opt/thinlinc/share/man:2;/sw/bioinfo/bwa/0.7.17/snowy/man:1'
+++ export __LMOD_REF_COUNT_MANPATH
+++ MANPATH=/usr/share/man:/sw/uppmax/man:/opt/thinlinc/share/man:/sw/bioinfo/bwa/0.7.17/snowy/man
+++ export MANPATH
+++ MODULEPATH=/sw/mf/snowy/bioinfo-tools/annotation:/sw/mf/snowy/bioinfo-tools/alignment:/sw/mf/snowy/bioinfo-tools/assembly:/sw/mf/snowy/bioinfo-tools/misc:/sw/mf/snowy/bioinfo-tools/phylogeny:/sw/mf/snowy/bioinfo-tools/pipelines:/sw/mf/snowy/bioinfo-tools/sw_collections:/sw/mf/snowy/applications:/sw/mf/snowy/build-tools:/sw/mf/snowy/compilers:/sw/mf/snowy/data:/sw/mf/snowy/environment:/sw/mf/snowy/libraries:/sw/mf/snowy/parallel
+++ export MODULEPATH
+++ __LMOD_REF_COUNT_PATH='/sw/bioinfo/bwa/0.7.17/snowy/bin:1;/home/kvenk811/bin:2;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/sw/uppmax/bin:2'
+++ export __LMOD_REF_COUNT_PATH
+++ PATH=/sw/bioinfo/bwa/0.7.17/snowy/bin:/home/kvenk811/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sw/uppmax/bin
+++ export PATH
+++ __LMOD_REF_COUNT__LMFILES_='/sw/mf/snowy/environment/bioinfo-tools:1;/sw/mf/snowy/bioinfo-tools/alignment/bwa/0.7.17:1'
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:/sw/mf/snowy/bioinfo-tools/alignment/bwa/0.7.17
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImJpb2luZm8tdG9vbHMiXT17WyJmbiJdPSIvc3cvbWYvc25vd3kvZW52aXJvbm1lbnQvYmlvaW5mby10b29scyIsWyJmdWxsTmFtZSJdPSJiaW9pbmZvLXRvb2xzIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iYmlvaW5mby10b29scyIsfSxid2E9e1siZm4iXT0iL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvYWxpZ25tZW50L2J3YS8wLjcuMTciLFsiZnVsbE5hbWUiXT0iYndhLzAuNy4xNyIsWyJsb2Fk
+++ export _ModuleTable001_
+++ _ModuleTable002_=T3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImJ3YSIsfSx9LG1wYXRoQT17Ii9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2Fubm90YXRpb24iLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9hbGlnbm1lbnQiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9hc3NlbWJseSIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL21pc2MiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9waHlsb2dlbnkiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9waXBlbGluZXMiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9zd19jb2xsZWN0aW9ucyIsIi9zdy9tZi9zbm93eS9hcHBsaWNhdGlv
+++ export _ModuleTable002_
+++ _ModuleTable003_=bnMiLCIvc3cvbWYvc25vd3kvYnVpbGQtdG9vbHMiLCIvc3cvbWYvc25vd3kvY29tcGlsZXJzIiwiL3N3L21mL3Nub3d5L2RhdGEiLCIvc3cvbWYvc25vd3kvZW52aXJvbm1lbnQiLCIvc3cvbWYvc25vd3kvbGlicmFyaWVzIiwiL3N3L21mL3Nub3d5L3BhcmFsbGVsIix9LFsic3lzdGVtQmFzZU1QQVRIIl09Ii9zdy9tZi9zbm93eS9hcHBsaWNhdGlvbnM6L3N3L21mL3Nub3d5L2J1aWxkLXRvb2xzOi9zdy9tZi9zbm93eS9jb21waWxlcnM6L3N3L21mL3Nub3d5L2RhdGE6L3N3L21mL3Nub3d5L2Vudmlyb25tZW50Oi9zdy9tZi9zbm93eS9saWJyYXJpZXM6L3N3L21mL3Nub3d5L3BhcmFsbGVsIix9
+++ export _ModuleTable003_
+++ _ModuleTable_Sz_=3
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ module load samtools
+++ /usr/share/lmod/lmod/libexec/lmod bash load samtools
++ eval '__LMOD_REF_COUNT_LOADEDMODULES=uppmax:2\;bioinfo-tools:1\;bwa/0.7.17:1\;samtools/1.14:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=uppmax:bioinfo-tools:bwa/0.7.17:samtools/1.14;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MANPATH=/sw/bioinfo/samtools/1.14/snowy/share/man:1\;/usr/share/man:2\;/sw/uppmax/man:2\;/opt/thinlinc/share/man:2\;/sw/bioinfo/bwa/0.7.17/snowy/man:1;' export '__LMOD_REF_COUNT_MANPATH;' 'MANPATH=/sw/bioinfo/samtools/1.14/snowy/share/man:/usr/share/man:/sw/uppmax/man:/opt/thinlinc/share/man:/sw/bioinfo/bwa/0.7.17/snowy/man;' export 'MANPATH;' 'MODULEPATH=/sw/mf/snowy/bioinfo-tools/annotation:/sw/mf/snowy/bioinfo-tools/alignment:/sw/mf/snowy/bioinfo-tools/assembly:/sw/mf/snowy/bioinfo-tools/misc:/sw/mf/snowy/bioinfo-tools/phylogeny:/sw/mf/snowy/bioinfo-tools/pipelines:/sw/mf/snowy/bioinfo-tools/sw_collections:/sw/mf/snowy/applications:/sw/mf/snowy/build-tools:/sw/mf/snowy/compilers:/sw/mf/snowy/data:/sw/mf/snowy/environment:/sw/mf/snowy/libraries:/sw/mf/snowy/parallel;' export 'MODULEPATH;' '__LMOD_REF_COUNT_PATH=/sw/bioinfo/samtools/1.14/snowy/bin:1\;/sw/bioinfo/bwa/0.7.17/snowy/bin:1\;/home/kvenk811/bin:2\;/usr/local/bin:1\;/usr/bin:1\;/usr/local/sbin:1\;/usr/sbin:1\;/sw/uppmax/bin:2;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/sw/bioinfo/samtools/1.14/snowy/bin:/sw/bioinfo/bwa/0.7.17/snowy/bin:/home/kvenk811/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sw/uppmax/bin;' export 'PATH;' 'SAMTOOLS_ROOT=/sw/bioinfo/samtools/1.14/snowy;' export 'SAMTOOLS_ROOT;' '__LMOD_REF_COUNT__LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:1\;/sw/mf/snowy/bioinfo-tools/alignment/bwa/0.7.17:1\;/sw/mf/snowy/bioinfo-tools/misc/samtools/1.14:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:/sw/mf/snowy/bioinfo-tools/alignment/bwa/0.7.17:/sw/mf/snowy/bioinfo-tools/misc/samtools/1.14;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImJpb2luZm8tdG9vbHMiXT17WyJmbiJdPSIvc3cvbWYvc25vd3kvZW52aXJvbm1lbnQvYmlvaW5mby10b29scyIsWyJmdWxsTmFtZSJdPSJiaW9pbmZvLXRvb2xzIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iYmlvaW5mby10b29scyIsfSxid2E9e1siZm4iXT0iL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvYWxpZ25tZW50L2J3YS8wLjcuMTciLFsiZnVsbE5hbWUiXT0iYndhLzAuNy4xNyIsWyJsb2Fk;' export '_ModuleTable001_;' '_ModuleTable002_=T3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImJ3YSIsfSxzYW10b29scz17WyJmbiJdPSIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9taXNjL3NhbXRvb2xzLzEuMTQiLFsiZnVsbE5hbWUiXT0ic2FtdG9vbHMvMS4xNCIsWyJsb2FkT3JkZXIiXT0zLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09InNhbXRvb2xzIix9LH0sbXBhdGhBPXsiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvYW5ub3RhdGlvbiIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2FsaWdubWVudCIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2Fzc2VtYmx5;' export '_ModuleTable002_;' '_ModuleTable003_=IiwiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvbWlzYyIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3BoeWxvZ2VueSIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3BpcGVsaW5lcyIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3N3X2NvbGxlY3Rpb25zIiwiL3N3L21mL3Nub3d5L2FwcGxpY2F0aW9ucyIsIi9zdy9tZi9zbm93eS9idWlsZC10b29scyIsIi9zdy9tZi9zbm93eS9jb21waWxlcnMiLCIvc3cvbWYvc25vd3kvZGF0YSIsIi9zdy9tZi9zbm93eS9lbnZpcm9ubWVudCIsIi9zdy9tZi9zbm93eS9saWJyYXJpZXMiLCIvc3cvbWYvc25vd3kvcGFyYWxsZWwiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL3N3L21mL3Nub3d5L2FwcGxpY2F0aW9uczov;' export '_ModuleTable003_;' '_ModuleTable004_=c3cvbWYvc25vd3kvYnVpbGQtdG9vbHM6L3N3L21mL3Nub3d5L2NvbXBpbGVyczovc3cvbWYvc25vd3kvZGF0YTovc3cvbWYvc25vd3kvZW52aXJvbm1lbnQ6L3N3L21mL3Nub3d5L2xpYnJhcmllczovc3cvbWYvc25vd3kvcGFyYWxsZWwiLH0=;' export '_ModuleTable004_;' '_ModuleTable_Sz_=4;' export '_ModuleTable_Sz_;'
+++ __LMOD_REF_COUNT_LOADEDMODULES='uppmax:2;bioinfo-tools:1;bwa/0.7.17:1;samtools/1.14:1'
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=uppmax:bioinfo-tools:bwa/0.7.17:samtools/1.14
+++ export LOADEDMODULES
+++ __LMOD_REF_COUNT_MANPATH='/sw/bioinfo/samtools/1.14/snowy/share/man:1;/usr/share/man:2;/sw/uppmax/man:2;/opt/thinlinc/share/man:2;/sw/bioinfo/bwa/0.7.17/snowy/man:1'
+++ export __LMOD_REF_COUNT_MANPATH
+++ MANPATH=/sw/bioinfo/samtools/1.14/snowy/share/man:/usr/share/man:/sw/uppmax/man:/opt/thinlinc/share/man:/sw/bioinfo/bwa/0.7.17/snowy/man
+++ export MANPATH
+++ MODULEPATH=/sw/mf/snowy/bioinfo-tools/annotation:/sw/mf/snowy/bioinfo-tools/alignment:/sw/mf/snowy/bioinfo-tools/assembly:/sw/mf/snowy/bioinfo-tools/misc:/sw/mf/snowy/bioinfo-tools/phylogeny:/sw/mf/snowy/bioinfo-tools/pipelines:/sw/mf/snowy/bioinfo-tools/sw_collections:/sw/mf/snowy/applications:/sw/mf/snowy/build-tools:/sw/mf/snowy/compilers:/sw/mf/snowy/data:/sw/mf/snowy/environment:/sw/mf/snowy/libraries:/sw/mf/snowy/parallel
+++ export MODULEPATH
+++ __LMOD_REF_COUNT_PATH='/sw/bioinfo/samtools/1.14/snowy/bin:1;/sw/bioinfo/bwa/0.7.17/snowy/bin:1;/home/kvenk811/bin:2;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/sw/uppmax/bin:2'
+++ export __LMOD_REF_COUNT_PATH
+++ PATH=/sw/bioinfo/samtools/1.14/snowy/bin:/sw/bioinfo/bwa/0.7.17/snowy/bin:/home/kvenk811/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sw/uppmax/bin
+++ export PATH
+++ SAMTOOLS_ROOT=/sw/bioinfo/samtools/1.14/snowy
+++ export SAMTOOLS_ROOT
+++ __LMOD_REF_COUNT__LMFILES_='/sw/mf/snowy/environment/bioinfo-tools:1;/sw/mf/snowy/bioinfo-tools/alignment/bwa/0.7.17:1;/sw/mf/snowy/bioinfo-tools/misc/samtools/1.14:1'
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:/sw/mf/snowy/bioinfo-tools/alignment/bwa/0.7.17:/sw/mf/snowy/bioinfo-tools/misc/samtools/1.14
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImJpb2luZm8tdG9vbHMiXT17WyJmbiJdPSIvc3cvbWYvc25vd3kvZW52aXJvbm1lbnQvYmlvaW5mby10b29scyIsWyJmdWxsTmFtZSJdPSJiaW9pbmZvLXRvb2xzIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iYmlvaW5mby10b29scyIsfSxid2E9e1siZm4iXT0iL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvYWxpZ25tZW50L2J3YS8wLjcuMTciLFsiZnVsbE5hbWUiXT0iYndhLzAuNy4xNyIsWyJsb2Fk
+++ export _ModuleTable001_
+++ _ModuleTable002_=T3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImJ3YSIsfSxzYW10b29scz17WyJmbiJdPSIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9taXNjL3NhbXRvb2xzLzEuMTQiLFsiZnVsbE5hbWUiXT0ic2FtdG9vbHMvMS4xNCIsWyJsb2FkT3JkZXIiXT0zLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09InNhbXRvb2xzIix9LH0sbXBhdGhBPXsiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvYW5ub3RhdGlvbiIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2FsaWdubWVudCIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2Fzc2VtYmx5
+++ export _ModuleTable002_
+++ _ModuleTable003_=IiwiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvbWlzYyIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3BoeWxvZ2VueSIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3BpcGVsaW5lcyIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3N3X2NvbGxlY3Rpb25zIiwiL3N3L21mL3Nub3d5L2FwcGxpY2F0aW9ucyIsIi9zdy9tZi9zbm93eS9idWlsZC10b29scyIsIi9zdy9tZi9zbm93eS9jb21waWxlcnMiLCIvc3cvbWYvc25vd3kvZGF0YSIsIi9zdy9tZi9zbm93eS9lbnZpcm9ubWVudCIsIi9zdy9tZi9zbm93eS9saWJyYXJpZXMiLCIvc3cvbWYvc25vd3kvcGFyYWxsZWwiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL3N3L21mL3Nub3d5L2FwcGxpY2F0aW9uczov
+++ export _ModuleTable003_
+++ _ModuleTable004_=c3cvbWYvc25vd3kvYnVpbGQtdG9vbHM6L3N3L21mL3Nub3d5L2NvbXBpbGVyczovc3cvbWYvc25vd3kvZGF0YTovc3cvbWYvc25vd3kvZW52aXJvbm1lbnQ6L3N3L21mL3Nub3d5L2xpYnJhcmllczovc3cvbWYvc25vd3kvcGFyYWxsZWwiLH0=
+++ export _ModuleTable004_
+++ _ModuleTable_Sz_=4
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ seqdir1=/proj/genomeanalysis2022/nobackup/work/kvenk811/Metabat_binning_before_bwa
++ outdir=/proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map
++ source=/proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files
++ cd /proj/genomeanalysis2022/nobackup/work/kvenk811/Metabat_binning_before_bwa/D1_metabat_output
++ for fa in '*.fa'
++ bwa index D1_metabat_output.10.fa
+[bwa_index] Pack FASTA... 0.02 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.53 seconds elapse.
+[bwa_index] Update BWT... 0.01 sec
+[bwa_index] Pack forward-only FASTA... 0.02 sec
+[bwa_index] Construct SA from BWT and Occ... 0.24 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D1_metabat_output.10.fa
+[main] Real time: 1.016 sec; CPU: 0.833 sec
++ bwa mem -t 6 D1_metabat_output.10.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612274 sequences (60000033 bp)...
+[M::process] read 615670 sequences (60000000 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (1, 1128, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (121, 148, 187)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 319)
+[M::mem_pestat] mean and std.dev: (156.24, 51.47)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 385)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612274 reads in 34.560 CPU sec, 17.417 real sec
+[M::process] read 440672 sequences (42751923 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1104, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (125, 152, 197)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 341)
+[M::mem_pestat] mean and std.dev: (163.03, 56.56)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 413)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 615670 reads in 33.399 CPU sec, 16.713 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 813, 1, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (121, 152, 197)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 349)
+[M::mem_pestat] mean and std.dev: (160.48, 57.14)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 425)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 440672 reads in 22.816 CPU sec, 11.414 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D1_metabat_output.10.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.right_paired.trimmed.fastq.gz
+[main] Real time: 48.136 sec; CPU: 93.092 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_test/D1_metabat_output.10.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_test/D1_metabat_output.10.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for fa in '*.fa'
++ bwa index D1_metabat_output.11.fa
+[bwa_index] Pack FASTA... 0.00 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.09 seconds elapse.
+[bwa_index] Update BWT... 0.00 sec
+[bwa_index] Pack forward-only FASTA... 0.01 sec
+[bwa_index] Construct SA from BWT and Occ... 0.05 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D1_metabat_output.11.fa
+[main] Real time: 0.790 sec; CPU: 0.161 sec
++ bwa mem -t 6 D1_metabat_output.11.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612274 sequences (60000033 bp)...
+[M::process] read 615670 sequences (60000000 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 488, 1, 1)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (117, 154, 199)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 363)
+[M::mem_pestat] mean and std.dev: (159.21, 61.43)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 445)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612274 reads in 31.070 CPU sec, 15.670 real sec
+[M::process] read 440672 sequences (42751923 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 439, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (123, 156, 199)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 351)
+[M::mem_pestat] mean and std.dev: (163.83, 61.70)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 427)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 615670 reads in 30.303 CPU sec, 15.165 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 278, 1, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (123, 162, 200)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 354)
+[M::mem_pestat] mean and std.dev: (165.91, 56.90)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 431)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 440672 reads in 20.771 CPU sec, 10.390 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D1_metabat_output.11.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.right_paired.trimmed.fastq.gz
+[main] Real time: 43.465 sec; CPU: 84.356 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_test/D1_metabat_output.11.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_test/D1_metabat_output.11.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for fa in '*.fa'
++ bwa index D1_metabat_output.12.fa
+[bwa_index] Pack FASTA... 0.00 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.15 seconds elapse.
+[bwa_index] Update BWT... 0.00 sec
+[bwa_index] Pack forward-only FASTA... 0.01 sec
+[bwa_index] Construct SA from BWT and Occ... 0.08 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D1_metabat_output.12.fa
+[main] Real time: 0.942 sec; CPU: 0.248 sec
++ bwa mem -t 6 D1_metabat_output.12.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612274 sequences (60000033 bp)...
+[M::process] read 615670 sequences (60000000 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 170, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (122, 154, 202)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 362)
+[M::mem_pestat] mean and std.dev: (165.52, 64.29)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 442)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612274 reads in 31.349 CPU sec, 15.778 real sec
+[M::process] read 440672 sequences (42751923 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 146, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (120, 152, 192)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 336)
+[M::mem_pestat] mean and std.dev: (155.15, 60.41)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 408)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 615670 reads in 30.540 CPU sec, 15.281 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 85, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (113, 146, 195)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 359)
+[M::mem_pestat] mean and std.dev: (151.17, 58.51)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 441)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 440672 reads in 20.920 CPU sec, 10.465 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D1_metabat_output.12.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.right_paired.trimmed.fastq.gz
+[main] Real time: 43.760 sec; CPU: 85.025 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_test/D1_metabat_output.12.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_test/D1_metabat_output.12.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for fa in '*.fa'
++ bwa index D1_metabat_output.1.fa
+[bwa_index] Pack FASTA... 0.09 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 1.71 seconds elapse.
+[bwa_index] Update BWT... 0.04 sec
+[bwa_index] Pack forward-only FASTA... 0.03 sec
+[bwa_index] Construct SA from BWT and Occ... 0.66 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D1_metabat_output.1.fa
+[main] Real time: 3.103 sec; CPU: 2.531 sec
++ bwa mem -t 6 D1_metabat_output.1.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612274 sequences (60000033 bp)...
+[M::process] read 615670 sequences (60000000 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 21023, 4, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (121, 134, 158)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (47, 232)
+[M::mem_pestat] mean and std.dev: (137.50, 32.77)
+[M::mem_pestat] low and high boundaries for proper pairs: (6, 269)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612274 reads in 36.692 CPU sec, 18.690 real sec
+[M::process] read 440672 sequences (42751923 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (1, 20899, 11, 4)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (122, 137, 166)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (34, 254)
+[M::mem_pestat] mean and std.dev: (140.97, 38.10)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 298)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (14, 46, 84)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 224)
+[M::mem_pestat] mean and std.dev: (36.80, 33.46)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 294)
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_pestat] skip orientation RF
+[M::mem_process_seqs] Processed 615670 reads in 36.361 CPU sec, 18.207 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 14695, 4, 1)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (122, 139, 171)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (24, 269)
+[M::mem_pestat] mean and std.dev: (142.85, 41.44)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 318)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 440672 reads in 25.136 CPU sec, 12.576 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D1_metabat_output.1.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.right_paired.trimmed.fastq.gz
+[main] Real time: 51.727 sec; CPU: 100.416 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_test/D1_metabat_output.1.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_test/D1_metabat_output.1.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for fa in '*.fa'
++ bwa index D1_metabat_output.2.fa
+[bwa_index] Pack FASTA... 0.03 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.71 seconds elapse.
+[bwa_index] Update BWT... 0.02 sec
+[bwa_index] Pack forward-only FASTA... 0.02 sec
+[bwa_index] Construct SA from BWT and Occ... 0.32 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D1_metabat_output.2.fa
+[main] Real time: 1.432 sec; CPU: 1.110 sec
++ bwa mem -t 6 D1_metabat_output.2.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612274 sequences (60000033 bp)...
+[M::process] read 615670 sequences (60000000 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 273, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (120, 155, 201)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 363)
+[M::mem_pestat] mean and std.dev: (160.28, 62.11)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 444)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612274 reads in 36.117 CPU sec, 18.203 real sec
+[M::process] read 440672 sequences (42751923 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 252, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (112, 152, 199)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 373)
+[M::mem_pestat] mean and std.dev: (156.29, 65.24)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 460)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 615670 reads in 32.921 CPU sec, 16.470 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 175, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (116, 150, 206)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 386)
+[M::mem_pestat] mean and std.dev: (162.88, 66.95)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 476)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 440672 reads in 22.521 CPU sec, 11.271 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D1_metabat_output.2.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.right_paired.trimmed.fastq.gz
+[main] Real time: 48.379 sec; CPU: 93.961 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_test/D1_metabat_output.2.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_test/D1_metabat_output.2.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for fa in '*.fa'
++ bwa index D1_metabat_output.3.fa
+[bwa_index] Pack FASTA... 0.01 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.32 seconds elapse.
+[bwa_index] Update BWT... 0.00 sec
+[bwa_index] Pack forward-only FASTA... 0.01 sec
+[bwa_index] Construct SA from BWT and Occ... 0.17 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D1_metabat_output.3.fa
+[main] Real time: 0.802 sec; CPU: 0.512 sec
++ bwa mem -t 6 D1_metabat_output.3.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612274 sequences (60000033 bp)...
+[M::process] read 615670 sequences (60000000 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 515, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (71, 108, 164)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 350)
+[M::mem_pestat] mean and std.dev: (124.48, 71.78)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 443)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612274 reads in 33.365 CPU sec, 16.930 real sec
+[M::process] read 440672 sequences (42751923 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 542, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (71, 108, 165)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 353)
+[M::mem_pestat] mean and std.dev: (125.99, 71.35)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 447)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 615670 reads in 32.924 CPU sec, 16.472 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (1, 378, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (93, 111, 172)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 330)
+[M::mem_pestat] mean and std.dev: (126.86, 64.87)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 409)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 440672 reads in 22.027 CPU sec, 11.019 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D1_metabat_output.3.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.right_paired.trimmed.fastq.gz
+[main] Real time: 46.666 sec; CPU: 90.531 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_test/D1_metabat_output.3.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_test/D1_metabat_output.3.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for fa in '*.fa'
++ bwa index D1_metabat_output.4.fa
+[bwa_index] Pack FASTA... 0.00 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.25 seconds elapse.
+[bwa_index] Update BWT... 0.00 sec
+[bwa_index] Pack forward-only FASTA... 0.02 sec
+[bwa_index] Construct SA from BWT and Occ... 0.12 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D1_metabat_output.4.fa
+[main] Real time: 0.645 sec; CPU: 0.397 sec
++ bwa mem -t 6 D1_metabat_output.4.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612274 sequences (60000033 bp)...
+[M::process] read 615670 sequences (60000000 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1742, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (69, 72, 113)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 201)
+[M::mem_pestat] mean and std.dev: (87.06, 36.82)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 245)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612274 reads in 31.141 CPU sec, 15.731 real sec
+[M::process] read 440672 sequences (42751923 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1583, 1, 1)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (68, 77, 115)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 209)
+[M::mem_pestat] mean and std.dev: (90.59, 41.08)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 256)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 615670 reads in 30.463 CPU sec, 15.250 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1005, 0, 1)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (69, 73, 133)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 261)
+[M::mem_pestat] mean and std.dev: (96.62, 49.84)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 325)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 440672 reads in 20.847 CPU sec, 10.428 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D1_metabat_output.4.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.right_paired.trimmed.fastq.gz
+[main] Real time: 43.655 sec; CPU: 84.663 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_test/D1_metabat_output.4.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_test/D1_metabat_output.4.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for fa in '*.fa'
++ bwa index D1_metabat_output.5.fa
+[bwa_index] Pack FASTA... 0.00 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.18 seconds elapse.
+[bwa_index] Update BWT... 0.02 sec
+[bwa_index] Pack forward-only FASTA... 0.00 sec
+[bwa_index] Construct SA from BWT and Occ... 0.10 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D1_metabat_output.5.fa
+[main] Real time: 0.563 sec; CPU: 0.309 sec
++ bwa mem -t 6 D1_metabat_output.5.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612274 sequences (60000033 bp)...
+[M::process] read 615670 sequences (60000000 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1042, 0, 1)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (115, 150, 186)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 328)
+[M::mem_pestat] mean and std.dev: (151.25, 60.58)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 399)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612274 reads in 32.132 CPU sec, 16.176 real sec
+[M::process] read 440672 sequences (42751923 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1107, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (124, 161, 198)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 346)
+[M::mem_pestat] mean and std.dev: (161.45, 62.64)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 420)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 615670 reads in 31.346 CPU sec, 15.686 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 813, 0, 1)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (122, 162, 197)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 347)
+[M::mem_pestat] mean and std.dev: (160.80, 61.87)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 422)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 440672 reads in 21.515 CPU sec, 10.763 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D1_metabat_output.5.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.right_paired.trimmed.fastq.gz
+[main] Real time: 44.979 sec; CPU: 87.214 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_test/D1_metabat_output.5.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_test/D1_metabat_output.5.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for fa in '*.fa'
++ bwa index D1_metabat_output.6.fa
+[bwa_index] Pack FASTA... 0.00 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.05 seconds elapse.
+[bwa_index] Update BWT... 0.00 sec
+[bwa_index] Pack forward-only FASTA... 0.00 sec
+[bwa_index] Construct SA from BWT and Occ... 0.03 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D1_metabat_output.6.fa
+[main] Real time: 0.903 sec; CPU: 0.088 sec
++ bwa mem -t 6 D1_metabat_output.6.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612274 sequences (60000033 bp)...
+[M::process] read 615670 sequences (60000000 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 206, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (124, 154, 180)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (12, 292)
+[M::mem_pestat] mean and std.dev: (155.86, 40.57)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 348)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612274 reads in 29.828 CPU sec, 15.097 real sec
+[M::process] read 440672 sequences (42751923 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 203, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (124, 154, 186)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 310)
+[M::mem_pestat] mean and std.dev: (157.12, 47.82)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 372)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 615670 reads in 28.970 CPU sec, 14.497 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 136, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (121, 155, 190)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 328)
+[M::mem_pestat] mean and std.dev: (159.19, 50.30)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 397)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 440672 reads in 19.862 CPU sec, 9.936 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D1_metabat_output.6.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.right_paired.trimmed.fastq.gz
+[main] Real time: 41.773 sec; CPU: 80.883 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_test/D1_metabat_output.6.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_test/D1_metabat_output.6.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for fa in '*.fa'
++ bwa index D1_metabat_output.7.fa
+[bwa_index] Pack FASTA... 0.01 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.34 seconds elapse.
+[bwa_index] Update BWT... 0.01 sec
+[bwa_index] Pack forward-only FASTA... 0.00 sec
+[bwa_index] Construct SA from BWT and Occ... 0.16 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D1_metabat_output.7.fa
+[main] Real time: 0.809 sec; CPU: 0.535 sec
++ bwa mem -t 6 D1_metabat_output.7.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612274 sequences (60000033 bp)...
+[M::process] read 615670 sequences (60000000 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 807, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (110, 140, 174)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 302)
+[M::mem_pestat] mean and std.dev: (144.00, 52.17)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 366)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612274 reads in 32.675 CPU sec, 16.442 real sec
+[M::process] read 440672 sequences (42751923 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 801, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (112, 145, 185)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 331)
+[M::mem_pestat] mean and std.dev: (151.34, 57.63)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 404)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 615670 reads in 31.839 CPU sec, 15.934 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 553, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (117, 153, 195)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 351)
+[M::mem_pestat] mean and std.dev: (160.67, 62.69)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 429)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 440672 reads in 21.883 CPU sec, 10.947 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D1_metabat_output.7.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.right_paired.trimmed.fastq.gz
+[main] Real time: 45.587 sec; CPU: 88.629 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_test/D1_metabat_output.7.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_test/D1_metabat_output.7.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for fa in '*.fa'
++ bwa index D1_metabat_output.8.fa
+[bwa_index] Pack FASTA... 0.03 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.69 seconds elapse.
+[bwa_index] Update BWT... 0.02 sec
+[bwa_index] Pack forward-only FASTA... 0.02 sec
+[bwa_index] Construct SA from BWT and Occ... 0.34 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D1_metabat_output.8.fa
+[main] Real time: 1.595 sec; CPU: 1.109 sec
++ bwa mem -t 6 D1_metabat_output.8.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612274 sequences (60000033 bp)...
+[M::process] read 615670 sequences (60000000 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (3, 16727, 22, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (118, 145, 183)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 313)
+[M::mem_pestat] mean and std.dev: (152.37, 50.73)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 378)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (314, 347, 433)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (76, 671)
+[M::mem_pestat] mean and std.dev: (359.12, 74.73)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 790)
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_pestat] skip orientation RF
+[M::mem_process_seqs] Processed 612274 reads in 36.440 CPU sec, 18.569 real sec
+[M::process] read 440672 sequences (42751923 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (2, 17053, 22, 3)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (120, 147, 189)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 327)
+[M::mem_pestat] mean and std.dev: (155.76, 53.38)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 396)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (158, 316, 433)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 983)
+[M::mem_pestat] mean and std.dev: (305.36, 192.56)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 1258)
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_pestat] skip orientation RF
+[M::mem_process_seqs] Processed 615670 reads in 36.039 CPU sec, 18.050 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 12272, 13, 1)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (120, 149, 192)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 336)
+[M::mem_pestat] mean and std.dev: (158.69, 55.69)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 408)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (70, 315, 433)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 1159)
+[M::mem_pestat] mean and std.dev: (248.33, 169.22)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 1522)
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_pestat] skip orientation RF
+[M::mem_process_seqs] Processed 440672 reads in 24.873 CPU sec, 12.447 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D1_metabat_output.8.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.right_paired.trimmed.fastq.gz
+[main] Real time: 51.416 sec; CPU: 99.671 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_test/D1_metabat_output.8.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_test/D1_metabat_output.8.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for fa in '*.fa'
++ bwa index D1_metabat_output.9.fa
+[bwa_index] Pack FASTA... 0.00 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.20 seconds elapse.
+[bwa_index] Update BWT... 0.00 sec
+[bwa_index] Pack forward-only FASTA... 0.02 sec
+[bwa_index] Construct SA from BWT and Occ... 0.10 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D1_metabat_output.9.fa
+[main] Real time: 0.515 sec; CPU: 0.332 sec
++ bwa mem -t 6 D1_metabat_output.9.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612274 sequences (60000033 bp)...
+[M::process] read 615670 sequences (60000000 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (1, 1942, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (68, 79, 130)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 254)
+[M::mem_pestat] mean and std.dev: (97.22, 49.52)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 316)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612274 reads in 30.807 CPU sec, 15.568 real sec
+[M::process] read 440672 sequences (42751923 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1742, 1, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (68, 85, 132)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 260)
+[M::mem_pestat] mean and std.dev: (99.13, 50.99)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 324)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 615670 reads in 30.462 CPU sec, 15.249 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1152, 1, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (69, 86, 148)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 306)
+[M::mem_pestat] mean and std.dev: (106.02, 57.53)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 385)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 440672 reads in 20.810 CPU sec, 10.411 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D1_metabat_output.9.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_37.right_paired.trimmed.fastq.gz
+[main] Real time: 43.725 sec; CPU: 84.387 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_test/D1_metabat_output.9.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_test/D1_metabat_output.9.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ cd /proj/genomeanalysis2022/nobackup/work/kvenk811/Metabat_binning_before_bwa/D3_metabat_output
++ for faa in '*.fa'
++ bwa index D3_metabat_output.10.fa
+[bwa_index] Pack FASTA... 0.02 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.55 seconds elapse.
+[bwa_index] Update BWT... 0.01 sec
+[bwa_index] Pack forward-only FASTA... 0.02 sec
+[bwa_index] Construct SA from BWT and Occ... 0.25 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D3_metabat_output.10.fa
+[main] Real time: 1.274 sec; CPU: 0.859 sec
++ bwa mem -t 6 D3_metabat_output.10.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612218 sequences (60000156 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 561, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (118, 142, 188)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 328)
+[M::mem_pestat] mean and std.dev: (150.61, 58.37)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 398)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612218 reads in 37.988 CPU sec, 19.227 real sec
+[M::process] read 617048 sequences (60000023 bp)...
+[M::process] read 171522 sequences (16669978 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 511, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (118, 147, 190)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 334)
+[M::mem_pestat] mean and std.dev: (153.74, 59.42)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 406)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 617048 reads in 33.261 CPU sec, 16.642 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 130, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (119, 144, 195)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 347)
+[M::mem_pestat] mean and std.dev: (160.37, 62.34)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 423)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 171522 reads in 9.796 CPU sec, 4.903 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D3_metabat_output.10.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[main] Real time: 51.909 sec; CPU: 92.339 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.10.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.10.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for faa in '*.fa'
++ bwa index D3_metabat_output.11.fa
+[bwa_index] Pack FASTA... 0.01 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.31 seconds elapse.
+[bwa_index] Update BWT... 0.00 sec
+[bwa_index] Pack forward-only FASTA... 0.02 sec
+[bwa_index] Construct SA from BWT and Occ... 0.15 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D3_metabat_output.11.fa
+[main] Real time: 0.629 sec; CPU: 0.502 sec
++ bwa mem -t 6 D3_metabat_output.11.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612218 sequences (60000156 bp)...
+[M::process] read 617048 sequences (60000023 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1260, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (126, 159, 202)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 354)
+[M::mem_pestat] mean and std.dev: (165.76, 54.98)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 430)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612218 reads in 32.835 CPU sec, 16.620 real sec
+[M::process] read 171522 sequences (16669978 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1103, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (127, 162, 214)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 388)
+[M::mem_pestat] mean and std.dev: (172.50, 59.77)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 475)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 617048 reads in 31.453 CPU sec, 15.738 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 303, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (132, 158, 212)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 372)
+[M::mem_pestat] mean and std.dev: (170.69, 57.10)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 452)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 171522 reads in 9.225 CPU sec, 4.615 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D3_metabat_output.11.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[main] Real time: 39.062 sec; CPU: 75.493 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.11.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.11.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for faa in '*.fa'
++ bwa index D3_metabat_output.12.fa
+[bwa_index] Pack FASTA... 0.06 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 1.20 seconds elapse.
+[bwa_index] Update BWT... 0.02 sec
+[bwa_index] Pack forward-only FASTA... 0.03 sec
+[bwa_index] Construct SA from BWT and Occ... 0.47 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D3_metabat_output.12.fa
+[main] Real time: 3.024 sec; CPU: 1.789 sec
++ bwa mem -t 6 D3_metabat_output.12.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612218 sequences (60000156 bp)...
+[M::process] read 617048 sequences (60000023 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 2239, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (122, 155, 199)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 353)
+[M::mem_pestat] mean and std.dev: (163.69, 58.17)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 430)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612218 reads in 36.833 CPU sec, 18.632 real sec
+[M::process] read 171522 sequences (16669978 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 2087, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (123, 158, 209)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 381)
+[M::mem_pestat] mean and std.dev: (169.31, 63.13)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 467)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 617048 reads in 35.558 CPU sec, 17.801 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 562, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (119, 150, 199)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 359)
+[M::mem_pestat] mean and std.dev: (161.75, 62.76)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 439)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 171522 reads in 10.340 CPU sec, 5.173 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D3_metabat_output.12.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[main] Real time: 43.642 sec; CPU: 84.666 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.12.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.12.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for faa in '*.fa'
++ bwa index D3_metabat_output.13.fa
+[bwa_index] Pack FASTA... 0.01 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.37 seconds elapse.
+[bwa_index] Update BWT... 0.02 sec
+[bwa_index] Pack forward-only FASTA... 0.00 sec
+[bwa_index] Construct SA from BWT and Occ... 0.18 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D3_metabat_output.13.fa
+[main] Real time: 0.814 sec; CPU: 0.598 sec
++ bwa mem -t 6 D3_metabat_output.13.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612218 sequences (60000156 bp)...
+[M::process] read 617048 sequences (60000023 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1623, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (120, 150, 187)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 321)
+[M::mem_pestat] mean and std.dev: (152.83, 54.26)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 388)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612218 reads in 35.348 CPU sec, 17.800 real sec
+[M::process] read 171522 sequences (16669978 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1619, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (120, 158, 201)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 363)
+[M::mem_pestat] mean and std.dev: (162.76, 61.07)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 444)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 617048 reads in 34.064 CPU sec, 17.053 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 425, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (121, 156, 197)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 349)
+[M::mem_pestat] mean and std.dev: (160.57, 61.27)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 425)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 171522 reads in 9.902 CPU sec, 4.954 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D3_metabat_output.13.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[main] Real time: 41.869 sec; CPU: 81.309 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.13.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.13.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for faa in '*.fa'
++ bwa index D3_metabat_output.14.fa
+[bwa_index] Pack FASTA... 0.00 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.06 seconds elapse.
+[bwa_index] Update BWT... 0.00 sec
+[bwa_index] Pack forward-only FASTA... 0.01 sec
+[bwa_index] Construct SA from BWT and Occ... 0.03 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D3_metabat_output.14.fa
+[main] Real time: 0.236 sec; CPU: 0.103 sec
++ bwa mem -t 6 D3_metabat_output.14.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612218 sequences (60000156 bp)...
+[M::process] read 617048 sequences (60000023 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 35, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (102, 155, 194)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 378)
+[M::mem_pestat] mean and std.dev: (153.23, 61.63)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 470)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612218 reads in 27.754 CPU sec, 13.971 real sec
+[M::process] read 171522 sequences (16669978 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 47, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (98, 155, 243)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 533)
+[M::mem_pestat] mean and std.dev: (172.79, 91.07)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 678)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 617048 reads in 26.611 CPU sec, 13.324 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 5, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] skip orientation FR as there are not enough pairs
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 171522 reads in 7.881 CPU sec, 3.943 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D3_metabat_output.14.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[main] Real time: 33.237 sec; CPU: 64.226 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.14.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.14.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for faa in '*.fa'
++ bwa index D3_metabat_output.15.fa
+[bwa_index] Pack FASTA... 0.02 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.60 seconds elapse.
+[bwa_index] Update BWT... 0.01 sec
+[bwa_index] Pack forward-only FASTA... 0.01 sec
+[bwa_index] Construct SA from BWT and Occ... 0.25 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D3_metabat_output.15.fa
+[main] Real time: 0.977 sec; CPU: 0.903 sec
++ bwa mem -t 6 D3_metabat_output.15.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612218 sequences (60000156 bp)...
+[M::process] read 617048 sequences (60000023 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1006, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (103, 131, 167)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 295)
+[M::mem_pestat] mean and std.dev: (135.60, 53.82)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 359)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612218 reads in 34.789 CPU sec, 17.522 real sec
+[M::process] read 171522 sequences (16669978 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 818, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (103, 132, 172)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 310)
+[M::mem_pestat] mean and std.dev: (138.52, 58.37)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 379)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 617048 reads in 33.288 CPU sec, 16.668 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 243, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (105, 133, 174)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 312)
+[M::mem_pestat] mean and std.dev: (139.09, 57.02)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 381)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 171522 reads in 9.630 CPU sec, 4.819 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D3_metabat_output.15.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[main] Real time: 41.031 sec; CPU: 79.701 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.15.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.15.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for faa in '*.fa'
++ bwa index D3_metabat_output.16.fa
+[bwa_index] Pack FASTA... 0.12 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 3.22 seconds elapse.
+[bwa_index] Update BWT... 0.04 sec
+[bwa_index] Pack forward-only FASTA... 0.04 sec
+[bwa_index] Construct SA from BWT and Occ... 1.25 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D3_metabat_output.16.fa
+[main] Real time: 4.867 sec; CPU: 4.684 sec
++ bwa mem -t 6 D3_metabat_output.16.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612218 sequences (60000156 bp)...
+[M::process] read 617048 sequences (60000023 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 11929, 94, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (103, 130, 172)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 310)
+[M::mem_pestat] mean and std.dev: (136.90, 55.39)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 379)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (121, 128, 155)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (53, 223)
+[M::mem_pestat] mean and std.dev: (137.20, 25.78)
+[M::mem_pestat] low and high boundaries for proper pairs: (19, 257)
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_pestat] skip orientation RF
+[M::mem_process_seqs] Processed 612218 reads in 45.094 CPU sec, 22.976 real sec
+[M::process] read 171522 sequences (16669978 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (3, 11864, 71, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (106, 136, 180)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 328)
+[M::mem_pestat] mean and std.dev: (142.61, 59.02)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 402)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (122, 125, 155)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (56, 221)
+[M::mem_pestat] mean and std.dev: (140.54, 26.28)
+[M::mem_pestat] low and high boundaries for proper pairs: (23, 254)
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_pestat] skip orientation RF
+[M::mem_process_seqs] Processed 617048 reads in 43.554 CPU sec, 21.810 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 3340, 14, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (107, 136, 183)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 335)
+[M::mem_pestat] mean and std.dev: (144.19, 60.85)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 411)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (95, 125, 134)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (17, 212)
+[M::mem_pestat] mean and std.dev: (113.43, 36.28)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 259)
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_pestat] skip orientation RF
+[M::mem_process_seqs] Processed 171522 reads in 12.249 CPU sec, 6.131 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D3_metabat_output.16.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[main] Real time: 52.955 sec; CPU: 102.904 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.16.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.16.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for faa in '*.fa'
++ bwa index D3_metabat_output.17.fa
+[bwa_index] Pack FASTA... 0.05 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 1.07 seconds elapse.
+[bwa_index] Update BWT... 0.03 sec
+[bwa_index] Pack forward-only FASTA... 0.01 sec
+[bwa_index] Construct SA from BWT and Occ... 0.45 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D3_metabat_output.17.fa
+[main] Real time: 1.735 sec; CPU: 1.622 sec
++ bwa mem -t 6 D3_metabat_output.17.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612218 sequences (60000156 bp)...
+[M::process] read 617048 sequences (60000023 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (1, 28133, 4, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (110, 139, 177)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 311)
+[M::mem_pestat] mean and std.dev: (145.98, 51.53)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 378)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612218 reads in 40.410 CPU sec, 20.738 real sec
+[M::process] read 171522 sequences (16669978 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (1, 27962, 4, 2)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (113, 144, 186)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 332)
+[M::mem_pestat] mean and std.dev: (152.06, 55.36)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 405)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 617048 reads in 39.331 CPU sec, 19.687 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 7906, 2, 1)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (112, 142, 185)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 331)
+[M::mem_pestat] mean and std.dev: (151.47, 55.55)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 404)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 171522 reads in 11.430 CPU sec, 5.720 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D3_metabat_output.17.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[main] Real time: 48.169 sec; CPU: 93.170 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.17.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.17.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for faa in '*.fa'
++ bwa index D3_metabat_output.18.fa
+[bwa_index] Pack FASTA... 0.03 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.69 seconds elapse.
+[bwa_index] Update BWT... 0.02 sec
+[bwa_index] Pack forward-only FASTA... 0.02 sec
+[bwa_index] Construct SA from BWT and Occ... 0.31 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D3_metabat_output.18.fa
+[main] Real time: 1.320 sec; CPU: 1.077 sec
++ bwa mem -t 6 D3_metabat_output.18.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612218 sequences (60000156 bp)...
+[M::process] read 617048 sequences (60000023 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 2460, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (121, 151, 190)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 328)
+[M::mem_pestat] mean and std.dev: (158.66, 51.85)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 397)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612218 reads in 35.147 CPU sec, 17.747 real sec
+[M::process] read 171522 sequences (16669978 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 2495, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (124, 155, 197)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 343)
+[M::mem_pestat] mean and std.dev: (164.05, 54.55)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 416)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 617048 reads in 33.983 CPU sec, 17.005 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 647, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (121, 152, 194)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 340)
+[M::mem_pestat] mean and std.dev: (160.20, 54.45)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 413)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 171522 reads in 9.907 CPU sec, 4.956 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D3_metabat_output.18.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[main] Real time: 41.716 sec; CPU: 81.015 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.18.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.18.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for faa in '*.fa'
++ bwa index D3_metabat_output.19.fa
+[bwa_index] Pack FASTA... 0.04 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.93 seconds elapse.
+[bwa_index] Update BWT... 0.02 sec
+[bwa_index] Pack forward-only FASTA... 0.02 sec
+[bwa_index] Construct SA from BWT and Occ... 0.39 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D3_metabat_output.19.fa
+[main] Real time: 1.536 sec; CPU: 1.416 sec
++ bwa mem -t 6 D3_metabat_output.19.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612218 sequences (60000156 bp)...
+[M::process] read 617048 sequences (60000023 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 311, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (120, 154, 191)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 333)
+[M::mem_pestat] mean and std.dev: (158.37, 60.28)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 404)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612218 reads in 34.619 CPU sec, 17.427 real sec
+[M::process] read 171522 sequences (16669978 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 290, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (112, 153, 191)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 349)
+[M::mem_pestat] mean and std.dev: (153.40, 62.22)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 428)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 617048 reads in 33.444 CPU sec, 16.737 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 88, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (130, 174, 225)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 415)
+[M::mem_pestat] mean and std.dev: (176.57, 67.85)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 510)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 171522 reads in 9.892 CPU sec, 4.949 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D3_metabat_output.19.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[main] Real time: 41.202 sec; CPU: 79.941 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.19.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.19.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for faa in '*.fa'
++ bwa index D3_metabat_output.1.fa
+[bwa_index] Pack FASTA... 0.00 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.05 seconds elapse.
+[bwa_index] Update BWT... 0.00 sec
+[bwa_index] Pack forward-only FASTA... 0.01 sec
+[bwa_index] Construct SA from BWT and Occ... 0.04 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D3_metabat_output.1.fa
+[main] Real time: 0.180 sec; CPU: 0.101 sec
++ bwa mem -t 6 D3_metabat_output.1.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612218 sequences (60000156 bp)...
+[M::process] read 617048 sequences (60000023 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 131, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (135, 160, 234)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 432)
+[M::mem_pestat] mean and std.dev: (178.72, 56.27)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 531)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612218 reads in 28.215 CPU sec, 14.200 real sec
+[M::process] read 171522 sequences (16669978 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 107, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (135, 167, 246)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 468)
+[M::mem_pestat] mean and std.dev: (189.03, 68.73)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 579)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 617048 reads in 27.123 CPU sec, 13.570 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 26, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (108, 136, 201)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 387)
+[M::mem_pestat] mean and std.dev: (149.31, 55.44)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 480)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 171522 reads in 7.910 CPU sec, 3.961 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D3_metabat_output.1.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[main] Real time: 33.760 sec; CPU: 65.210 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.1.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.1.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for faa in '*.fa'
++ bwa index D3_metabat_output.20.fa
+[bwa_index] Pack FASTA... 0.02 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.32 seconds elapse.
+[bwa_index] Update BWT... 0.01 sec
+[bwa_index] Pack forward-only FASTA... 0.01 sec
+[bwa_index] Construct SA from BWT and Occ... 0.17 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D3_metabat_output.20.fa
+[main] Real time: 0.621 sec; CPU: 0.538 sec
++ bwa mem -t 6 D3_metabat_output.20.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612218 sequences (60000156 bp)...
+[M::process] read 617048 sequences (60000023 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1575, 0, 1)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (123, 152, 192)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 330)
+[M::mem_pestat] mean and std.dev: (161.13, 53.62)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 399)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612218 reads in 34.112 CPU sec, 17.178 real sec
+[M::process] read 171522 sequences (16669978 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1454, 1, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (127, 155, 196)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 334)
+[M::mem_pestat] mean and std.dev: (162.96, 52.49)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 403)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 617048 reads in 32.770 CPU sec, 16.397 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 375, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (123, 155, 204)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 366)
+[M::mem_pestat] mean and std.dev: (165.01, 54.36)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 447)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 171522 reads in 9.784 CPU sec, 4.894 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D3_metabat_output.20.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[main] Real time: 40.475 sec; CPU: 78.643 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.20.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.20.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for faa in '*.fa'
++ bwa index D3_metabat_output.21.fa
+[bwa_index] Pack FASTA... 0.02 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.41 seconds elapse.
+[bwa_index] Update BWT... 0.01 sec
+[bwa_index] Pack forward-only FASTA... 0.02 sec
+[bwa_index] Construct SA from BWT and Occ... 0.20 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D3_metabat_output.21.fa
+[main] Real time: 0.766 sec; CPU: 0.666 sec
++ bwa mem -t 6 D3_metabat_output.21.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612218 sequences (60000156 bp)...
+[M::process] read 617048 sequences (60000023 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1461, 0, 1)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (115, 145, 187)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 331)
+[M::mem_pestat] mean and std.dev: (150.67, 58.91)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 403)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612218 reads in 34.156 CPU sec, 17.194 real sec
+[M::process] read 171522 sequences (16669978 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1380, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (119, 154, 195)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 347)
+[M::mem_pestat] mean and std.dev: (158.08, 60.83)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 423)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 617048 reads in 32.972 CPU sec, 16.503 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 357, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (118, 158, 204)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 376)
+[M::mem_pestat] mean and std.dev: (163.59, 68.25)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 462)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 171522 reads in 9.566 CPU sec, 4.785 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D3_metabat_output.21.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[main] Real time: 40.470 sec; CPU: 78.666 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.21.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.21.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for faa in '*.fa'
++ bwa index D3_metabat_output.2.fa
+[bwa_index] Pack FASTA... 0.03 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.62 seconds elapse.
+[bwa_index] Update BWT... 0.02 sec
+[bwa_index] Pack forward-only FASTA... 0.01 sec
+[bwa_index] Construct SA from BWT and Occ... 0.28 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D3_metabat_output.2.fa
+[main] Real time: 1.085 sec; CPU: 0.974 sec
++ bwa mem -t 6 D3_metabat_output.2.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612218 sequences (60000156 bp)...
+[M::process] read 617048 sequences (60000023 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 546, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (110, 145, 194)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 362)
+[M::mem_pestat] mean and std.dev: (151.03, 65.00)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 446)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612218 reads in 33.807 CPU sec, 17.396 real sec
+[M::process] read 171522 sequences (16669978 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 463, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (114, 155, 204)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 384)
+[M::mem_pestat] mean and std.dev: (158.98, 68.96)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 474)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 617048 reads in 32.142 CPU sec, 16.085 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 121, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (116, 163, 198)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 362)
+[M::mem_pestat] mean and std.dev: (158.92, 61.41)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 444)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 171522 reads in 9.304 CPU sec, 4.655 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D3_metabat_output.2.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[main] Real time: 40.168 sec; CPU: 77.236 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.2.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.2.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for faa in '*.fa'
++ bwa index D3_metabat_output.3.fa
+[bwa_index] Pack FASTA... 0.01 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.28 seconds elapse.
+[bwa_index] Update BWT... 0.01 sec
+[bwa_index] Pack forward-only FASTA... 0.01 sec
+[bwa_index] Construct SA from BWT and Occ... 0.15 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D3_metabat_output.3.fa
+[main] Real time: 0.535 sec; CPU: 0.469 sec
++ bwa mem -t 6 D3_metabat_output.3.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612218 sequences (60000156 bp)...
+[M::process] read 617048 sequences (60000023 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 4222, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (122, 129, 145)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (76, 191)
+[M::mem_pestat] mean and std.dev: (130.43, 17.48)
+[M::mem_pestat] low and high boundaries for proper pairs: (53, 214)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612218 reads in 34.050 CPU sec, 17.199 real sec
+[M::process] read 171522 sequences (16669978 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 4010, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (122, 129, 145)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (76, 191)
+[M::mem_pestat] mean and std.dev: (129.94, 17.40)
+[M::mem_pestat] low and high boundaries for proper pairs: (53, 214)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 617048 reads in 32.719 CPU sec, 16.376 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1104, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (122, 125, 145)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (76, 191)
+[M::mem_pestat] mean and std.dev: (129.04, 17.45)
+[M::mem_pestat] low and high boundaries for proper pairs: (53, 214)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 171522 reads in 9.402 CPU sec, 4.703 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D3_metabat_output.3.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[main] Real time: 40.220 sec; CPU: 78.094 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.3.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.3.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for faa in '*.fa'
++ bwa index D3_metabat_output.4.fa
+[bwa_index] Pack FASTA... 0.03 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.63 seconds elapse.
+[bwa_index] Update BWT... 0.01 sec
+[bwa_index] Pack forward-only FASTA... 0.02 sec
+[bwa_index] Construct SA from BWT and Occ... 0.28 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D3_metabat_output.4.fa
+[main] Real time: 1.077 sec; CPU: 0.979 sec
++ bwa mem -t 6 D3_metabat_output.4.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612218 sequences (60000156 bp)...
+[M::process] read 617048 sequences (60000023 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1479, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (110, 143, 192)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 356)
+[M::mem_pestat] mean and std.dev: (150.52, 64.20)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 438)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612218 reads in 34.345 CPU sec, 17.273 real sec
+[M::process] read 171522 sequences (16669978 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1296, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (110, 152, 201)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 383)
+[M::mem_pestat] mean and std.dev: (156.11, 69.42)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 474)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 617048 reads in 33.285 CPU sec, 16.660 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 361, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (110, 149, 202)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 386)
+[M::mem_pestat] mean and std.dev: (155.27, 66.91)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 478)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 171522 reads in 9.640 CPU sec, 4.822 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D3_metabat_output.4.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[main] Real time: 40.696 sec; CPU: 79.190 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.4.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.4.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for faa in '*.fa'
++ bwa index D3_metabat_output.5.fa
+[bwa_index] Pack FASTA... 0.01 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.23 seconds elapse.
+[bwa_index] Update BWT... 0.01 sec
+[bwa_index] Pack forward-only FASTA... 0.01 sec
+[bwa_index] Construct SA from BWT and Occ... 0.12 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D3_metabat_output.5.fa
+[main] Real time: 0.481 sec; CPU: 0.390 sec
++ bwa mem -t 6 D3_metabat_output.5.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612218 sequences (60000156 bp)...
+[M::process] read 617048 sequences (60000023 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 739, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (115, 140, 183)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 319)
+[M::mem_pestat] mean and std.dev: (150.42, 54.73)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 387)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612218 reads in 33.454 CPU sec, 16.834 real sec
+[M::process] read 171522 sequences (16669978 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 682, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (120, 153, 197)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 351)
+[M::mem_pestat] mean and std.dev: (157.92, 58.05)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 428)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 617048 reads in 32.113 CPU sec, 16.072 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 163, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (120, 148, 192)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 336)
+[M::mem_pestat] mean and std.dev: (159.69, 53.53)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 408)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 171522 reads in 9.405 CPU sec, 4.705 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D3_metabat_output.5.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[main] Real time: 39.559 sec; CPU: 76.905 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.5.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.5.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for faa in '*.fa'
++ bwa index D3_metabat_output.6.fa
+[bwa_index] Pack FASTA... 0.01 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.21 seconds elapse.
+[bwa_index] Update BWT... 0.00 sec
+[bwa_index] Pack forward-only FASTA... 0.01 sec
+[bwa_index] Construct SA from BWT and Occ... 0.12 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D3_metabat_output.6.fa
+[main] Real time: 0.412 sec; CPU: 0.352 sec
++ bwa mem -t 6 D3_metabat_output.6.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612218 sequences (60000156 bp)...
+[M::process] read 617048 sequences (60000023 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 695, 2, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (124, 150, 182)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (8, 298)
+[M::mem_pestat] mean and std.dev: (155.81, 45.91)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 356)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612218 reads in 33.422 CPU sec, 16.871 real sec
+[M::process] read 171522 sequences (16669978 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 655, 3, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (125, 151, 187)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 311)
+[M::mem_pestat] mean and std.dev: (157.99, 48.57)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 373)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 617048 reads in 32.017 CPU sec, 16.021 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 196, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (128, 150, 180)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (24, 284)
+[M::mem_pestat] mean and std.dev: (154.99, 42.65)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 336)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 171522 reads in 9.282 CPU sec, 4.648 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D3_metabat_output.6.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[main] Real time: 39.471 sec; CPU: 76.636 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.6.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.6.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for faa in '*.fa'
++ bwa index D3_metabat_output.7.fa
+[bwa_index] Pack FASTA... 0.00 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.21 seconds elapse.
+[bwa_index] Update BWT... 0.01 sec
+[bwa_index] Pack forward-only FASTA... 0.00 sec
+[bwa_index] Construct SA from BWT and Occ... 0.11 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D3_metabat_output.7.fa
+[main] Real time: 0.434 sec; CPU: 0.343 sec
++ bwa mem -t 6 D3_metabat_output.7.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612218 sequences (60000156 bp)...
+[M::process] read 617048 sequences (60000023 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 52, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (123, 163, 226)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 432)
+[M::mem_pestat] mean and std.dev: (172.14, 69.19)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 535)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612218 reads in 31.438 CPU sec, 15.820 real sec
+[M::process] read 171522 sequences (16669978 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 52, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (134, 186, 228)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 416)
+[M::mem_pestat] mean and std.dev: (188.15, 63.16)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 510)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 617048 reads in 30.364 CPU sec, 15.192 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 22, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (138, 194, 269)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 531)
+[M::mem_pestat] mean and std.dev: (203.36, 91.23)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 662)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 171522 reads in 8.756 CPU sec, 4.380 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D3_metabat_output.7.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[main] Real time: 37.664 sec; CPU: 72.474 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.7.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.7.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for faa in '*.fa'
++ bwa index D3_metabat_output.8.fa
+[bwa_index] Pack FASTA... 0.05 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.98 seconds elapse.
+[bwa_index] Update BWT... 0.03 sec
+[bwa_index] Pack forward-only FASTA... 0.01 sec
+[bwa_index] Construct SA from BWT and Occ... 0.43 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D3_metabat_output.8.fa
+[main] Real time: 1.598 sec; CPU: 1.503 sec
++ bwa mem -t 6 D3_metabat_output.8.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612218 sequences (60000156 bp)...
+[M::process] read 617048 sequences (60000023 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 200, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (81, 126, 174)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 360)
+[M::mem_pestat] mean and std.dev: (132.66, 63.27)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 453)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612218 reads in 33.255 CPU sec, 16.721 real sec
+[M::process] read 171522 sequences (16669978 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 186, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (69, 116, 166)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 360)
+[M::mem_pestat] mean and std.dev: (120.90, 64.29)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 457)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 617048 reads in 32.070 CPU sec, 16.049 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 50, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (75, 115, 180)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 390)
+[M::mem_pestat] mean and std.dev: (130.30, 65.18)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 495)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 171522 reads in 9.404 CPU sec, 4.705 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D3_metabat_output.8.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[main] Real time: 39.439 sec; CPU: 76.674 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.8.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.8.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
++ for faa in '*.fa'
++ bwa index D3_metabat_output.9.fa
+[bwa_index] Pack FASTA... 0.00 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.20 seconds elapse.
+[bwa_index] Update BWT... 0.00 sec
+[bwa_index] Pack forward-only FASTA... 0.02 sec
+[bwa_index] Construct SA from BWT and Occ... 0.10 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index D3_metabat_output.9.fa
+[main] Real time: 0.477 sec; CPU: 0.327 sec
++ bwa mem -t 6 D3_metabat_output.9.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 612218 sequences (60000156 bp)...
+[M::process] read 617048 sequences (60000023 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 103, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (97, 143, 198)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 400)
+[M::mem_pestat] mean and std.dev: (148.35, 75.73)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 501)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 612218 reads in 32.547 CPU sec, 16.377 real sec
+[M::process] read 171522 sequences (16669978 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 122, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (103, 152, 196)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 382)
+[M::mem_pestat] mean and std.dev: (150.94, 68.49)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 475)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 617048 reads in 31.362 CPU sec, 15.697 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 28, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (125, 149, 204)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 362)
+[M::mem_pestat] mean and std.dev: (152.68, 69.05)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 441)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 171522 reads in 9.080 CPU sec, 4.546 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -t 6 D3_metabat_output.9.fa /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.left_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/kvenk811//RNA_trimmed_files/RNA_trim_39.right_paired.trimmed.fastq.gz
+[main] Real time: 38.584 sec; CPU: 74.929 sec
++ samtools sort -@ 2 -o /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.9.fa_sort.bam /proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test/D3_metabat_output.9.fa.sam
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
