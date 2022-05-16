@@ -1,0 +1,166 @@
++ module load bioinfo-tools phylophlan/0.99
+++ /usr/share/lmod/lmod/libexec/lmod bash load bioinfo-tools phylophlan/0.99
++ eval '__LMOD_REF_COUNT_LD_LIBRARY_PATH=/sw/libs/wxWidgets/lib:1;' export '__LMOD_REF_COUNT_LD_LIBRARY_PATH;' 'LD_LIBRARY_PATH=/sw/libs/wxWidgets/lib;' export 'LD_LIBRARY_PATH;' '__LMOD_REF_COUNT_LOADEDMODULES=uppmax:2\;bioinfo-tools:1\;python/2.7.11:1\;phylophlan/0.99:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=uppmax:bioinfo-tools:python/2.7.11:phylophlan/0.99;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MANPATH=/sw/comp/python/2.7.11_snowy/share/man:1\;/usr/share/man:2\;/sw/uppmax/man:2\;/opt/thinlinc/share/man:2;' export '__LMOD_REF_COUNT_MANPATH;' 'MANPATH=/sw/comp/python/2.7.11_snowy/share/man:/usr/share/man:/sw/uppmax/man:/opt/thinlinc/share/man;' export 'MANPATH;' '__LMOD_REF_COUNT_MODULEPATH=/sw/mf/snowy/bioinfo-tools/annotation:1\;/sw/mf/snowy/bioinfo-tools/alignment:1\;/sw/mf/snowy/bioinfo-tools/assembly:1\;/sw/mf/snowy/bioinfo-tools/misc:1\;/sw/mf/snowy/bioinfo-tools/phylogeny:1\;/sw/mf/snowy/bioinfo-tools/pipelines:1\;/sw/mf/snowy/bioinfo-tools/sw_collections:1\;/sw/mf/snowy/applications:1\;/sw/mf/snowy/build-tools:1\;/sw/mf/snowy/compilers:1\;/sw/mf/snowy/data:1\;/sw/mf/snowy/environment:1\;/sw/mf/snowy/libraries:1\;/sw/mf/snowy/parallel:1;' export '__LMOD_REF_COUNT_MODULEPATH;' 'MODULEPATH=/sw/mf/snowy/bioinfo-tools/annotation:/sw/mf/snowy/bioinfo-tools/alignment:/sw/mf/snowy/bioinfo-tools/assembly:/sw/mf/snowy/bioinfo-tools/misc:/sw/mf/snowy/bioinfo-tools/phylogeny:/sw/mf/snowy/bioinfo-tools/pipelines:/sw/mf/snowy/bioinfo-tools/sw_collections:/sw/mf/snowy/applications:/sw/mf/snowy/build-tools:/sw/mf/snowy/compilers:/sw/mf/snowy/data:/sw/mf/snowy/environment:/sw/mf/snowy/libraries:/sw/mf/snowy/parallel;' export 'MODULEPATH;' '__LMOD_REF_COUNT_PATH=/sw/apps/bioinfo/phylophlan/0.99/snowy/bin:1\;/sw/comp/python/2.7.11_snowy/bin:1\;/home/kvenk811/bin:2\;/usr/local/bin:1\;/usr/bin:1\;/usr/local/sbin:1\;/usr/sbin:1\;/sw/uppmax/bin:2;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/sw/apps/bioinfo/phylophlan/0.99/snowy/bin:/sw/comp/python/2.7.11_snowy/bin:/home/kvenk811/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sw/uppmax/bin;' export 'PATH;' '__LMOD_REF_COUNT_PKG_CONFIG_PATH=/sw/comp/python/2.7.11_snowy/lib/pkgconfig:1;' export '__LMOD_REF_COUNT_PKG_CONFIG_PATH;' 'PKG_CONFIG_PATH=/sw/comp/python/2.7.11_snowy/lib/pkgconfig;' export 'PKG_CONFIG_PATH;' '__LMOD_REF_COUNT_PYTHONPATH=/sw/apps/bioinfo/phylophlan/0.99/snowy/lib/python2.7/site-packages:1;' export '__LMOD_REF_COUNT_PYTHONPATH;' 'PYTHONPATH=/sw/apps/bioinfo/phylophlan/0.99/snowy/lib/python2.7/site-packages;' export 'PYTHONPATH;' 'PYTHON_ROOT=/sw/comp/python/2.7.11_snowy;' export 'PYTHON_ROOT;' '__LMOD_REF_COUNT__LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:1\;/sw/mf/snowy/compilers/python/2.7.11:1\;/sw/mf/snowy/bioinfo-tools/misc/phylophlan/0.99:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:/sw/mf/snowy/compilers/python/2.7.11:/sw/mf/snowy/bioinfo-tools/misc/phylophlan/0.99;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImJpb2luZm8tdG9vbHMiXT17WyJmbiJdPSIvc3cvbWYvc25vd3kvZW52aXJvbm1lbnQvYmlvaW5mby10b29scyIsWyJmdWxsTmFtZSJdPSJiaW9pbmZvLXRvb2xzIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iYmlvaW5mby10b29scyIsfSxwaHlsb3BobGFuPXtbImZuIl09Ii9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL21pc2MvcGh5bG9waGxhbi8wLjk5IixbImZ1bGxOYW1lIl09InBoeWxvcGhsYW4v;' export '_ModuleTable001_;' '_ModuleTable002_=MC45OSIsWyJsb2FkT3JkZXIiXT0zLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09InBoeWxvcGhsYW4vMC45OSIsfSxweXRob249e1siZm4iXT0iL3N3L21mL3Nub3d5L2NvbXBpbGVycy9weXRob24vMi43LjExIixbImZ1bGxOYW1lIl09InB5dGhvbi8yLjcuMTEiLFsibG9hZE9yZGVyIl09Mixwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJweXRob24vMi43LjExIix9LH0sbXBhdGhBPXsiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvYW5ub3RhdGlvbiIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2FsaWdubWVudCIsIi9zdy9tZi9zbm93eS9iaW9p;' export '_ModuleTable002_;' '_ModuleTable003_=bmZvLXRvb2xzL2Fzc2VtYmx5IiwiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvbWlzYyIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3BoeWxvZ2VueSIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3BpcGVsaW5lcyIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3N3X2NvbGxlY3Rpb25zIiwiL3N3L21mL3Nub3d5L2FwcGxpY2F0aW9ucyIsIi9zdy9tZi9zbm93eS9idWlsZC10b29scyIsIi9zdy9tZi9zbm93eS9jb21waWxlcnMiLCIvc3cvbWYvc25vd3kvZGF0YSIsIi9zdy9tZi9zbm93eS9lbnZpcm9ubWVudCIsIi9zdy9tZi9zbm93eS9saWJyYXJpZXMiLCIvc3cvbWYvc25vd3kvcGFyYWxsZWwiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL3N3L21mL3Nu;' export '_ModuleTable003_;' '_ModuleTable004_=b3d5L2FwcGxpY2F0aW9uczovc3cvbWYvc25vd3kvYnVpbGQtdG9vbHM6L3N3L21mL3Nub3d5L2NvbXBpbGVyczovc3cvbWYvc25vd3kvZGF0YTovc3cvbWYvc25vd3kvZW52aXJvbm1lbnQ6L3N3L21mL3Nub3d5L2xpYnJhcmllczovc3cvbWYvc25vd3kvcGFyYWxsZWwiLH0=;' export '_ModuleTable004_;' '_ModuleTable_Sz_=4;' export '_ModuleTable_Sz_;'
+++ __LMOD_REF_COUNT_LD_LIBRARY_PATH=/sw/libs/wxWidgets/lib:1
+++ export __LMOD_REF_COUNT_LD_LIBRARY_PATH
+++ LD_LIBRARY_PATH=/sw/libs/wxWidgets/lib
+++ export LD_LIBRARY_PATH
+++ __LMOD_REF_COUNT_LOADEDMODULES='uppmax:2;bioinfo-tools:1;python/2.7.11:1;phylophlan/0.99:1'
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=uppmax:bioinfo-tools:python/2.7.11:phylophlan/0.99
+++ export LOADEDMODULES
+++ __LMOD_REF_COUNT_MANPATH='/sw/comp/python/2.7.11_snowy/share/man:1;/usr/share/man:2;/sw/uppmax/man:2;/opt/thinlinc/share/man:2'
+++ export __LMOD_REF_COUNT_MANPATH
+++ MANPATH=/sw/comp/python/2.7.11_snowy/share/man:/usr/share/man:/sw/uppmax/man:/opt/thinlinc/share/man
+++ export MANPATH
+++ __LMOD_REF_COUNT_MODULEPATH='/sw/mf/snowy/bioinfo-tools/annotation:1;/sw/mf/snowy/bioinfo-tools/alignment:1;/sw/mf/snowy/bioinfo-tools/assembly:1;/sw/mf/snowy/bioinfo-tools/misc:1;/sw/mf/snowy/bioinfo-tools/phylogeny:1;/sw/mf/snowy/bioinfo-tools/pipelines:1;/sw/mf/snowy/bioinfo-tools/sw_collections:1;/sw/mf/snowy/applications:1;/sw/mf/snowy/build-tools:1;/sw/mf/snowy/compilers:1;/sw/mf/snowy/data:1;/sw/mf/snowy/environment:1;/sw/mf/snowy/libraries:1;/sw/mf/snowy/parallel:1'
+++ export __LMOD_REF_COUNT_MODULEPATH
+++ MODULEPATH=/sw/mf/snowy/bioinfo-tools/annotation:/sw/mf/snowy/bioinfo-tools/alignment:/sw/mf/snowy/bioinfo-tools/assembly:/sw/mf/snowy/bioinfo-tools/misc:/sw/mf/snowy/bioinfo-tools/phylogeny:/sw/mf/snowy/bioinfo-tools/pipelines:/sw/mf/snowy/bioinfo-tools/sw_collections:/sw/mf/snowy/applications:/sw/mf/snowy/build-tools:/sw/mf/snowy/compilers:/sw/mf/snowy/data:/sw/mf/snowy/environment:/sw/mf/snowy/libraries:/sw/mf/snowy/parallel
+++ export MODULEPATH
+++ __LMOD_REF_COUNT_PATH='/sw/apps/bioinfo/phylophlan/0.99/snowy/bin:1;/sw/comp/python/2.7.11_snowy/bin:1;/home/kvenk811/bin:2;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/sw/uppmax/bin:2'
+++ export __LMOD_REF_COUNT_PATH
+++ PATH=/sw/apps/bioinfo/phylophlan/0.99/snowy/bin:/sw/comp/python/2.7.11_snowy/bin:/home/kvenk811/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sw/uppmax/bin
+++ export PATH
+++ __LMOD_REF_COUNT_PKG_CONFIG_PATH=/sw/comp/python/2.7.11_snowy/lib/pkgconfig:1
+++ export __LMOD_REF_COUNT_PKG_CONFIG_PATH
+++ PKG_CONFIG_PATH=/sw/comp/python/2.7.11_snowy/lib/pkgconfig
+++ export PKG_CONFIG_PATH
+++ __LMOD_REF_COUNT_PYTHONPATH=/sw/apps/bioinfo/phylophlan/0.99/snowy/lib/python2.7/site-packages:1
+++ export __LMOD_REF_COUNT_PYTHONPATH
+++ PYTHONPATH=/sw/apps/bioinfo/phylophlan/0.99/snowy/lib/python2.7/site-packages
+++ export PYTHONPATH
+++ PYTHON_ROOT=/sw/comp/python/2.7.11_snowy
+++ export PYTHON_ROOT
+++ __LMOD_REF_COUNT__LMFILES_='/sw/mf/snowy/environment/bioinfo-tools:1;/sw/mf/snowy/compilers/python/2.7.11:1;/sw/mf/snowy/bioinfo-tools/misc/phylophlan/0.99:1'
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:/sw/mf/snowy/compilers/python/2.7.11:/sw/mf/snowy/bioinfo-tools/misc/phylophlan/0.99
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImJpb2luZm8tdG9vbHMiXT17WyJmbiJdPSIvc3cvbWYvc25vd3kvZW52aXJvbm1lbnQvYmlvaW5mby10b29scyIsWyJmdWxsTmFtZSJdPSJiaW9pbmZvLXRvb2xzIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iYmlvaW5mby10b29scyIsfSxwaHlsb3BobGFuPXtbImZuIl09Ii9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL21pc2MvcGh5bG9waGxhbi8wLjk5IixbImZ1bGxOYW1lIl09InBoeWxvcGhsYW4v
+++ export _ModuleTable001_
+++ _ModuleTable002_=MC45OSIsWyJsb2FkT3JkZXIiXT0zLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09InBoeWxvcGhsYW4vMC45OSIsfSxweXRob249e1siZm4iXT0iL3N3L21mL3Nub3d5L2NvbXBpbGVycy9weXRob24vMi43LjExIixbImZ1bGxOYW1lIl09InB5dGhvbi8yLjcuMTEiLFsibG9hZE9yZGVyIl09Mixwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJweXRob24vMi43LjExIix9LH0sbXBhdGhBPXsiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvYW5ub3RhdGlvbiIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2FsaWdubWVudCIsIi9zdy9tZi9zbm93eS9iaW9p
+++ export _ModuleTable002_
+++ _ModuleTable003_=bmZvLXRvb2xzL2Fzc2VtYmx5IiwiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvbWlzYyIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3BoeWxvZ2VueSIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3BpcGVsaW5lcyIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3N3X2NvbGxlY3Rpb25zIiwiL3N3L21mL3Nub3d5L2FwcGxpY2F0aW9ucyIsIi9zdy9tZi9zbm93eS9idWlsZC10b29scyIsIi9zdy9tZi9zbm93eS9jb21waWxlcnMiLCIvc3cvbWYvc25vd3kvZGF0YSIsIi9zdy9tZi9zbm93eS9lbnZpcm9ubWVudCIsIi9zdy9tZi9zbm93eS9saWJyYXJpZXMiLCIvc3cvbWYvc25vd3kvcGFyYWxsZWwiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL3N3L21mL3Nu
+++ export _ModuleTable003_
+++ _ModuleTable004_=b3d5L2FwcGxpY2F0aW9uczovc3cvbWYvc25vd3kvYnVpbGQtdG9vbHM6L3N3L21mL3Nub3d5L2NvbXBpbGVyczovc3cvbWYvc25vd3kvZGF0YTovc3cvbWYvc25vd3kvZW52aXJvbm1lbnQ6L3N3L21mL3Nub3d5L2xpYnJhcmllczovc3cvbWYvc25vd3kvcGFyYWxsZWwiLH0=
+++ export _ModuleTable004_
+++ _ModuleTable_Sz_=4
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ module unload python
+++ /usr/share/lmod/lmod/libexec/lmod bash unload python
++ eval unset '__LMOD_REF_COUNT_LD_LIBRARY_PATH;' unset 'LD_LIBRARY_PATH;' '__LMOD_REF_COUNT_LOADEDMODULES=uppmax:2\;bioinfo-tools:1\;phylophlan/0.99:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=uppmax:bioinfo-tools:phylophlan/0.99;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MANPATH=/usr/share/man:2\;/sw/uppmax/man:2\;/opt/thinlinc/share/man:2;' export '__LMOD_REF_COUNT_MANPATH;' 'MANPATH=/usr/share/man:/sw/uppmax/man:/opt/thinlinc/share/man;' export 'MANPATH;' 'MODULEPATH=/sw/mf/snowy/bioinfo-tools/annotation:/sw/mf/snowy/bioinfo-tools/alignment:/sw/mf/snowy/bioinfo-tools/assembly:/sw/mf/snowy/bioinfo-tools/misc:/sw/mf/snowy/bioinfo-tools/phylogeny:/sw/mf/snowy/bioinfo-tools/pipelines:/sw/mf/snowy/bioinfo-tools/sw_collections:/sw/mf/snowy/applications:/sw/mf/snowy/build-tools:/sw/mf/snowy/compilers:/sw/mf/snowy/data:/sw/mf/snowy/environment:/sw/mf/snowy/libraries:/sw/mf/snowy/parallel;' export 'MODULEPATH;' '__LMOD_REF_COUNT_PATH=/sw/apps/bioinfo/phylophlan/0.99/snowy/bin:1\;/home/kvenk811/bin:2\;/usr/local/bin:1\;/usr/bin:1\;/usr/local/sbin:1\;/usr/sbin:1\;/sw/uppmax/bin:2;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/sw/apps/bioinfo/phylophlan/0.99/snowy/bin:/home/kvenk811/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sw/uppmax/bin;' export 'PATH;' unset '__LMOD_REF_COUNT_PKG_CONFIG_PATH;' unset 'PKG_CONFIG_PATH;' unset 'PYTHON_ROOT;' '__LMOD_REF_COUNT__LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:1\;/sw/mf/snowy/bioinfo-tools/misc/phylophlan/0.99:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:/sw/mf/snowy/bioinfo-tools/misc/phylophlan/0.99;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImJpb2luZm8tdG9vbHMiXT17WyJmbiJdPSIvc3cvbWYvc25vd3kvZW52aXJvbm1lbnQvYmlvaW5mby10b29scyIsWyJmdWxsTmFtZSJdPSJiaW9pbmZvLXRvb2xzIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iYmlvaW5mby10b29scyIsfSxwaHlsb3BobGFuPXtbImZuIl09Ii9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL21pc2MvcGh5bG9waGxhbi8wLjk5IixbImZ1bGxOYW1lIl09InBoeWxvcGhsYW4v;' export '_ModuleTable001_;' '_ModuleTable002_=MC45OSIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09InBoeWxvcGhsYW4vMC45OSIsfSx9LG1wYXRoQT17Ii9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2Fubm90YXRpb24iLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9hbGlnbm1lbnQiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9hc3NlbWJseSIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL21pc2MiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9waHlsb2dlbnkiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9waXBlbGluZXMiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9zd19jb2xsZWN0aW9ucyIs;' export '_ModuleTable002_;' '_ModuleTable003_=Ii9zdy9tZi9zbm93eS9hcHBsaWNhdGlvbnMiLCIvc3cvbWYvc25vd3kvYnVpbGQtdG9vbHMiLCIvc3cvbWYvc25vd3kvY29tcGlsZXJzIiwiL3N3L21mL3Nub3d5L2RhdGEiLCIvc3cvbWYvc25vd3kvZW52aXJvbm1lbnQiLCIvc3cvbWYvc25vd3kvbGlicmFyaWVzIiwiL3N3L21mL3Nub3d5L3BhcmFsbGVsIix9LFsic3lzdGVtQmFzZU1QQVRIIl09Ii9zdy9tZi9zbm93eS9hcHBsaWNhdGlvbnM6L3N3L21mL3Nub3d5L2J1aWxkLXRvb2xzOi9zdy9tZi9zbm93eS9jb21waWxlcnM6L3N3L21mL3Nub3d5L2RhdGE6L3N3L21mL3Nub3d5L2Vudmlyb25tZW50Oi9zdy9tZi9zbm93eS9saWJyYXJpZXM6L3N3L21mL3Nub3d5L3BhcmFsbGVsIix9;' export '_ModuleTable003_;' '_ModuleTable_Sz_=3;' export '_ModuleTable_Sz_;'
+++ unset __LMOD_REF_COUNT_LD_LIBRARY_PATH
+++ unset LD_LIBRARY_PATH
+++ __LMOD_REF_COUNT_LOADEDMODULES='uppmax:2;bioinfo-tools:1;phylophlan/0.99:1'
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=uppmax:bioinfo-tools:phylophlan/0.99
+++ export LOADEDMODULES
+++ __LMOD_REF_COUNT_MANPATH='/usr/share/man:2;/sw/uppmax/man:2;/opt/thinlinc/share/man:2'
+++ export __LMOD_REF_COUNT_MANPATH
+++ MANPATH=/usr/share/man:/sw/uppmax/man:/opt/thinlinc/share/man
+++ export MANPATH
+++ MODULEPATH=/sw/mf/snowy/bioinfo-tools/annotation:/sw/mf/snowy/bioinfo-tools/alignment:/sw/mf/snowy/bioinfo-tools/assembly:/sw/mf/snowy/bioinfo-tools/misc:/sw/mf/snowy/bioinfo-tools/phylogeny:/sw/mf/snowy/bioinfo-tools/pipelines:/sw/mf/snowy/bioinfo-tools/sw_collections:/sw/mf/snowy/applications:/sw/mf/snowy/build-tools:/sw/mf/snowy/compilers:/sw/mf/snowy/data:/sw/mf/snowy/environment:/sw/mf/snowy/libraries:/sw/mf/snowy/parallel
+++ export MODULEPATH
+++ __LMOD_REF_COUNT_PATH='/sw/apps/bioinfo/phylophlan/0.99/snowy/bin:1;/home/kvenk811/bin:2;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/sw/uppmax/bin:2'
+++ export __LMOD_REF_COUNT_PATH
+++ PATH=/sw/apps/bioinfo/phylophlan/0.99/snowy/bin:/home/kvenk811/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sw/uppmax/bin
+++ export PATH
+++ unset __LMOD_REF_COUNT_PKG_CONFIG_PATH
+++ unset PKG_CONFIG_PATH
+++ unset PYTHON_ROOT
+++ __LMOD_REF_COUNT__LMFILES_='/sw/mf/snowy/environment/bioinfo-tools:1;/sw/mf/snowy/bioinfo-tools/misc/phylophlan/0.99:1'
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:/sw/mf/snowy/bioinfo-tools/misc/phylophlan/0.99
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImJpb2luZm8tdG9vbHMiXT17WyJmbiJdPSIvc3cvbWYvc25vd3kvZW52aXJvbm1lbnQvYmlvaW5mby10b29scyIsWyJmdWxsTmFtZSJdPSJiaW9pbmZvLXRvb2xzIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iYmlvaW5mby10b29scyIsfSxwaHlsb3BobGFuPXtbImZuIl09Ii9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL21pc2MvcGh5bG9waGxhbi8wLjk5IixbImZ1bGxOYW1lIl09InBoeWxvcGhsYW4v
+++ export _ModuleTable001_
+++ _ModuleTable002_=MC45OSIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09InBoeWxvcGhsYW4vMC45OSIsfSx9LG1wYXRoQT17Ii9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2Fubm90YXRpb24iLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9hbGlnbm1lbnQiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9hc3NlbWJseSIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL21pc2MiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9waHlsb2dlbnkiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9waXBlbGluZXMiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9zd19jb2xsZWN0aW9ucyIs
+++ export _ModuleTable002_
+++ _ModuleTable003_=Ii9zdy9tZi9zbm93eS9hcHBsaWNhdGlvbnMiLCIvc3cvbWYvc25vd3kvYnVpbGQtdG9vbHMiLCIvc3cvbWYvc25vd3kvY29tcGlsZXJzIiwiL3N3L21mL3Nub3d5L2RhdGEiLCIvc3cvbWYvc25vd3kvZW52aXJvbm1lbnQiLCIvc3cvbWYvc25vd3kvbGlicmFyaWVzIiwiL3N3L21mL3Nub3d5L3BhcmFsbGVsIix9LFsic3lzdGVtQmFzZU1QQVRIIl09Ii9zdy9tZi9zbm93eS9hcHBsaWNhdGlvbnM6L3N3L21mL3Nub3d5L2J1aWxkLXRvb2xzOi9zdy9tZi9zbm93eS9jb21waWxlcnM6L3N3L21mL3Nub3d5L2RhdGE6L3N3L21mL3Nub3d5L2Vudmlyb25tZW50Oi9zdy9tZi9zbm93eS9saWJyYXJpZXM6L3N3L21mL3Nub3d5L3BhcmFsbGVsIix9
+++ export _ModuleTable003_
+++ _ModuleTable_Sz_=3
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ module load python/2.7.15 biopython/1.73 FastTree muscle/3.8.31 usearch/5.2.32
+++ /usr/share/lmod/lmod/libexec/lmod bash load python/2.7.15 biopython/1.73 FastTree muscle/3.8.31 usearch/5.2.32
++ eval '__LMOD_REF_COUNT_LD_LIBRARY_PATH=/sw/libs/wxWidgets/lib:1;' export '__LMOD_REF_COUNT_LD_LIBRARY_PATH;' 'LD_LIBRARY_PATH=/sw/libs/wxWidgets/lib;' export 'LD_LIBRARY_PATH;' '__LMOD_REF_COUNT_LOADEDMODULES=uppmax:2\;bioinfo-tools:1\;phylophlan/0.99:1\;python/2.7.15:1\;biopython/1.73:1\;FastTree/2.1.10:1\;muscle/3.8.31:1\;usearch/5.2.32:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=uppmax:bioinfo-tools:phylophlan/0.99:python/2.7.15:biopython/1.73:FastTree/2.1.10:muscle/3.8.31:usearch/5.2.32;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MANPATH=/sw/comp/python/2.7.15_snowy/share/man:1\;/usr/share/man:2\;/sw/uppmax/man:2\;/opt/thinlinc/share/man:2;' export '__LMOD_REF_COUNT_MANPATH;' 'MANPATH=/sw/comp/python/2.7.15_snowy/share/man:/usr/share/man:/sw/uppmax/man:/opt/thinlinc/share/man;' export 'MANPATH;' 'MODULEPATH=/sw/mf/snowy/bioinfo-tools/annotation:/sw/mf/snowy/bioinfo-tools/alignment:/sw/mf/snowy/bioinfo-tools/assembly:/sw/mf/snowy/bioinfo-tools/misc:/sw/mf/snowy/bioinfo-tools/phylogeny:/sw/mf/snowy/bioinfo-tools/pipelines:/sw/mf/snowy/bioinfo-tools/sw_collections:/sw/mf/snowy/applications:/sw/mf/snowy/build-tools:/sw/mf/snowy/compilers:/sw/mf/snowy/data:/sw/mf/snowy/environment:/sw/mf/snowy/libraries:/sw/mf/snowy/parallel;' export 'MODULEPATH;' '__LMOD_REF_COUNT_PATH=/sw/bioinfo/usearch/5.2.32/snowy:1\;/sw/apps/bioinfo/muscle/3.8.31/snowy:1\;/sw/apps/bioinfo/FastTree/2.1.10/snowy:1\;/sw/comp/python/2.7.15_snowy/bin:1\;/sw/apps/bioinfo/phylophlan/0.99/snowy/bin:1\;/home/kvenk811/bin:2\;/usr/local/bin:1\;/usr/bin:1\;/usr/local/sbin:1\;/usr/sbin:1\;/sw/uppmax/bin:2;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/sw/bioinfo/usearch/5.2.32/snowy:/sw/apps/bioinfo/muscle/3.8.31/snowy:/sw/apps/bioinfo/FastTree/2.1.10/snowy:/sw/comp/python/2.7.15_snowy/bin:/sw/apps/bioinfo/phylophlan/0.99/snowy/bin:/home/kvenk811/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sw/uppmax/bin;' export 'PATH;' '__LMOD_REF_COUNT_PKG_CONFIG_PATH=/sw/comp/python/2.7.15_snowy/lib/pkgconfig:1;' export '__LMOD_REF_COUNT_PKG_CONFIG_PATH;' 'PKG_CONFIG_PATH=/sw/comp/python/2.7.15_snowy/lib/pkgconfig;' export 'PKG_CONFIG_PATH;' '__LMOD_REF_COUNT_PYTHONPATH=/sw/bioinfo/biopython/1.73/snowy/lib/python2.7/site-packages:1\;/sw/apps/bioinfo/phylophlan/0.99/snowy/lib/python2.7/site-packages:1;' export '__LMOD_REF_COUNT_PYTHONPATH;' 'PYTHONPATH=/sw/bioinfo/biopython/1.73/snowy/lib/python2.7/site-packages:/sw/apps/bioinfo/phylophlan/0.99/snowy/lib/python2.7/site-packages;' export 'PYTHONPATH;' 'PYTHON_ROOT=/sw/comp/python/2.7.15_snowy;' export 'PYTHON_ROOT;' '__LMOD_REF_COUNT__LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:1\;/sw/mf/snowy/bioinfo-tools/misc/phylophlan/0.99:1\;/sw/mf/snowy/compilers/python/2.7.15:1\;/sw/mf/snowy/bioinfo-tools/misc/biopython/1.73:1\;/sw/mf/snowy/bioinfo-tools/phylogeny/FastTree/2.1.10:1\;/sw/mf/snowy/bioinfo-tools/alignment/muscle/3.8.31:1\;/sw/mf/snowy/bioinfo-tools/misc/usearch/5.2.32:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:/sw/mf/snowy/bioinfo-tools/misc/phylophlan/0.99:/sw/mf/snowy/compilers/python/2.7.15:/sw/mf/snowy/bioinfo-tools/misc/biopython/1.73:/sw/mf/snowy/bioinfo-tools/phylogeny/FastTree/2.1.10:/sw/mf/snowy/bioinfo-tools/alignment/muscle/3.8.31:/sw/mf/snowy/bioinfo-tools/misc/usearch/5.2.32;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtGYXN0VHJlZT17WyJmbiJdPSIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9waHlsb2dlbnkvRmFzdFRyZWUvMi4xLjEwIixbImZ1bGxOYW1lIl09IkZhc3RUcmVlLzIuMS4xMCIsWyJsb2FkT3JkZXIiXT01LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09IkZhc3RUcmVlIix9LFsiYmlvaW5mby10b29scyJdPXtbImZuIl09Ii9zdy9tZi9zbm93eS9lbnZpcm9ubWVudC9iaW9pbmZvLXRvb2xzIixbImZ1bGxOYW1lIl09ImJpb2luZm8tdG9v;' export '_ModuleTable001_;' '_ModuleTable002_=bHMiLFsibG9hZE9yZGVyIl09MSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJiaW9pbmZvLXRvb2xzIix9LGJpb3B5dGhvbj17WyJmbiJdPSIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9taXNjL2Jpb3B5dGhvbi8xLjczIixbImZ1bGxOYW1lIl09ImJpb3B5dGhvbi8xLjczIixbImxvYWRPcmRlciJdPTQscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iYmlvcHl0aG9uLzEuNzMiLH0sbXVzY2xlPXtbImZuIl09Ii9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2FsaWdubWVudC9tdXNjbGUvMy44LjMxIixbImZ1bGxOYW1lIl09Im11c2NsZS8zLjguMzEi;' export '_ModuleTable002_;' '_ModuleTable003_=LFsibG9hZE9yZGVyIl09Nixwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJtdXNjbGUvMy44LjMxIix9LHBoeWxvcGhsYW49e1siZm4iXT0iL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvbWlzYy9waHlsb3BobGFuLzAuOTkiLFsiZnVsbE5hbWUiXT0icGh5bG9waGxhbi8wLjk5IixbImxvYWRPcmRlciJdPTIscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0icGh5bG9waGxhbi8wLjk5Iix9LHB5dGhvbj17WyJmbiJdPSIvc3cvbWYvc25vd3kvY29tcGlsZXJzL3B5dGhvbi8yLjcuMTUiLFsiZnVsbE5hbWUiXT0icHl0aG9uLzIuNy4xNSIsWyJsb2FkT3JkZXIi;' export '_ModuleTable003_;' '_ModuleTable004_=XT0zLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTEsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09InB5dGhvbi8yLjcuMTUiLH0sdXNlYXJjaD17WyJmbiJdPSIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9taXNjL3VzZWFyY2gvNS4yLjMyIixbImZ1bGxOYW1lIl09InVzZWFyY2gvNS4yLjMyIixbImxvYWRPcmRlciJdPTcscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0idXNlYXJjaC81LjIuMzIiLH0sfSxtcGF0aEE9eyIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9hbm5vdGF0aW9uIiwiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvYWxpZ25tZW50IiwiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9v;' export '_ModuleTable004_;' '_ModuleTable005_=bHMvYXNzZW1ibHkiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9taXNjIiwiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvcGh5bG9nZW55IiwiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvcGlwZWxpbmVzIiwiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvc3dfY29sbGVjdGlvbnMiLCIvc3cvbWYvc25vd3kvYXBwbGljYXRpb25zIiwiL3N3L21mL3Nub3d5L2J1aWxkLXRvb2xzIiwiL3N3L21mL3Nub3d5L2NvbXBpbGVycyIsIi9zdy9tZi9zbm93eS9kYXRhIiwiL3N3L21mL3Nub3d5L2Vudmlyb25tZW50IiwiL3N3L21mL3Nub3d5L2xpYnJhcmllcyIsIi9zdy9tZi9zbm93eS9wYXJhbGxlbCIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvc3cvbWYvc25vd3kvYXBw;' export '_ModuleTable005_;' '_ModuleTable006_=bGljYXRpb25zOi9zdy9tZi9zbm93eS9idWlsZC10b29sczovc3cvbWYvc25vd3kvY29tcGlsZXJzOi9zdy9tZi9zbm93eS9kYXRhOi9zdy9tZi9zbm93eS9lbnZpcm9ubWVudDovc3cvbWYvc25vd3kvbGlicmFyaWVzOi9zdy9tZi9zbm93eS9wYXJhbGxlbCIsfQ==;' export '_ModuleTable006_;' '_ModuleTable_Sz_=6;' export '_ModuleTable_Sz_;'
+++ __LMOD_REF_COUNT_LD_LIBRARY_PATH=/sw/libs/wxWidgets/lib:1
+++ export __LMOD_REF_COUNT_LD_LIBRARY_PATH
+++ LD_LIBRARY_PATH=/sw/libs/wxWidgets/lib
+++ export LD_LIBRARY_PATH
+++ __LMOD_REF_COUNT_LOADEDMODULES='uppmax:2;bioinfo-tools:1;phylophlan/0.99:1;python/2.7.15:1;biopython/1.73:1;FastTree/2.1.10:1;muscle/3.8.31:1;usearch/5.2.32:1'
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=uppmax:bioinfo-tools:phylophlan/0.99:python/2.7.15:biopython/1.73:FastTree/2.1.10:muscle/3.8.31:usearch/5.2.32
+++ export LOADEDMODULES
+++ __LMOD_REF_COUNT_MANPATH='/sw/comp/python/2.7.15_snowy/share/man:1;/usr/share/man:2;/sw/uppmax/man:2;/opt/thinlinc/share/man:2'
+++ export __LMOD_REF_COUNT_MANPATH
+++ MANPATH=/sw/comp/python/2.7.15_snowy/share/man:/usr/share/man:/sw/uppmax/man:/opt/thinlinc/share/man
+++ export MANPATH
+++ MODULEPATH=/sw/mf/snowy/bioinfo-tools/annotation:/sw/mf/snowy/bioinfo-tools/alignment:/sw/mf/snowy/bioinfo-tools/assembly:/sw/mf/snowy/bioinfo-tools/misc:/sw/mf/snowy/bioinfo-tools/phylogeny:/sw/mf/snowy/bioinfo-tools/pipelines:/sw/mf/snowy/bioinfo-tools/sw_collections:/sw/mf/snowy/applications:/sw/mf/snowy/build-tools:/sw/mf/snowy/compilers:/sw/mf/snowy/data:/sw/mf/snowy/environment:/sw/mf/snowy/libraries:/sw/mf/snowy/parallel
+++ export MODULEPATH
+++ __LMOD_REF_COUNT_PATH='/sw/bioinfo/usearch/5.2.32/snowy:1;/sw/apps/bioinfo/muscle/3.8.31/snowy:1;/sw/apps/bioinfo/FastTree/2.1.10/snowy:1;/sw/comp/python/2.7.15_snowy/bin:1;/sw/apps/bioinfo/phylophlan/0.99/snowy/bin:1;/home/kvenk811/bin:2;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/sw/uppmax/bin:2'
+++ export __LMOD_REF_COUNT_PATH
+++ PATH=/sw/bioinfo/usearch/5.2.32/snowy:/sw/apps/bioinfo/muscle/3.8.31/snowy:/sw/apps/bioinfo/FastTree/2.1.10/snowy:/sw/comp/python/2.7.15_snowy/bin:/sw/apps/bioinfo/phylophlan/0.99/snowy/bin:/home/kvenk811/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sw/uppmax/bin
+++ export PATH
+++ __LMOD_REF_COUNT_PKG_CONFIG_PATH=/sw/comp/python/2.7.15_snowy/lib/pkgconfig:1
+++ export __LMOD_REF_COUNT_PKG_CONFIG_PATH
+++ PKG_CONFIG_PATH=/sw/comp/python/2.7.15_snowy/lib/pkgconfig
+++ export PKG_CONFIG_PATH
+++ __LMOD_REF_COUNT_PYTHONPATH='/sw/bioinfo/biopython/1.73/snowy/lib/python2.7/site-packages:1;/sw/apps/bioinfo/phylophlan/0.99/snowy/lib/python2.7/site-packages:1'
+++ export __LMOD_REF_COUNT_PYTHONPATH
+++ PYTHONPATH=/sw/bioinfo/biopython/1.73/snowy/lib/python2.7/site-packages:/sw/apps/bioinfo/phylophlan/0.99/snowy/lib/python2.7/site-packages
+++ export PYTHONPATH
+++ PYTHON_ROOT=/sw/comp/python/2.7.15_snowy
+++ export PYTHON_ROOT
+++ __LMOD_REF_COUNT__LMFILES_='/sw/mf/snowy/environment/bioinfo-tools:1;/sw/mf/snowy/bioinfo-tools/misc/phylophlan/0.99:1;/sw/mf/snowy/compilers/python/2.7.15:1;/sw/mf/snowy/bioinfo-tools/misc/biopython/1.73:1;/sw/mf/snowy/bioinfo-tools/phylogeny/FastTree/2.1.10:1;/sw/mf/snowy/bioinfo-tools/alignment/muscle/3.8.31:1;/sw/mf/snowy/bioinfo-tools/misc/usearch/5.2.32:1'
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:/sw/mf/snowy/bioinfo-tools/misc/phylophlan/0.99:/sw/mf/snowy/compilers/python/2.7.15:/sw/mf/snowy/bioinfo-tools/misc/biopython/1.73:/sw/mf/snowy/bioinfo-tools/phylogeny/FastTree/2.1.10:/sw/mf/snowy/bioinfo-tools/alignment/muscle/3.8.31:/sw/mf/snowy/bioinfo-tools/misc/usearch/5.2.32
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtGYXN0VHJlZT17WyJmbiJdPSIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9waHlsb2dlbnkvRmFzdFRyZWUvMi4xLjEwIixbImZ1bGxOYW1lIl09IkZhc3RUcmVlLzIuMS4xMCIsWyJsb2FkT3JkZXIiXT01LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09IkZhc3RUcmVlIix9LFsiYmlvaW5mby10b29scyJdPXtbImZuIl09Ii9zdy9tZi9zbm93eS9lbnZpcm9ubWVudC9iaW9pbmZvLXRvb2xzIixbImZ1bGxOYW1lIl09ImJpb2luZm8tdG9v
+++ export _ModuleTable001_
+++ _ModuleTable002_=bHMiLFsibG9hZE9yZGVyIl09MSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJiaW9pbmZvLXRvb2xzIix9LGJpb3B5dGhvbj17WyJmbiJdPSIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9taXNjL2Jpb3B5dGhvbi8xLjczIixbImZ1bGxOYW1lIl09ImJpb3B5dGhvbi8xLjczIixbImxvYWRPcmRlciJdPTQscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iYmlvcHl0aG9uLzEuNzMiLH0sbXVzY2xlPXtbImZuIl09Ii9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2FsaWdubWVudC9tdXNjbGUvMy44LjMxIixbImZ1bGxOYW1lIl09Im11c2NsZS8zLjguMzEi
+++ export _ModuleTable002_
+++ _ModuleTable003_=LFsibG9hZE9yZGVyIl09Nixwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJtdXNjbGUvMy44LjMxIix9LHBoeWxvcGhsYW49e1siZm4iXT0iL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvbWlzYy9waHlsb3BobGFuLzAuOTkiLFsiZnVsbE5hbWUiXT0icGh5bG9waGxhbi8wLjk5IixbImxvYWRPcmRlciJdPTIscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0icGh5bG9waGxhbi8wLjk5Iix9LHB5dGhvbj17WyJmbiJdPSIvc3cvbWYvc25vd3kvY29tcGlsZXJzL3B5dGhvbi8yLjcuMTUiLFsiZnVsbE5hbWUiXT0icHl0aG9uLzIuNy4xNSIsWyJsb2FkT3JkZXIi
+++ export _ModuleTable003_
+++ _ModuleTable004_=XT0zLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTEsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09InB5dGhvbi8yLjcuMTUiLH0sdXNlYXJjaD17WyJmbiJdPSIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9taXNjL3VzZWFyY2gvNS4yLjMyIixbImZ1bGxOYW1lIl09InVzZWFyY2gvNS4yLjMyIixbImxvYWRPcmRlciJdPTcscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0idXNlYXJjaC81LjIuMzIiLH0sfSxtcGF0aEE9eyIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9hbm5vdGF0aW9uIiwiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvYWxpZ25tZW50IiwiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9v
+++ export _ModuleTable004_
+++ _ModuleTable005_=bHMvYXNzZW1ibHkiLCIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9taXNjIiwiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvcGh5bG9nZW55IiwiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvcGlwZWxpbmVzIiwiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvc3dfY29sbGVjdGlvbnMiLCIvc3cvbWYvc25vd3kvYXBwbGljYXRpb25zIiwiL3N3L21mL3Nub3d5L2J1aWxkLXRvb2xzIiwiL3N3L21mL3Nub3d5L2NvbXBpbGVycyIsIi9zdy9tZi9zbm93eS9kYXRhIiwiL3N3L21mL3Nub3d5L2Vudmlyb25tZW50IiwiL3N3L21mL3Nub3d5L2xpYnJhcmllcyIsIi9zdy9tZi9zbm93eS9wYXJhbGxlbCIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvc3cvbWYvc25vd3kvYXBw
+++ export _ModuleTable005_
+++ _ModuleTable006_=bGljYXRpb25zOi9zdy9tZi9zbm93eS9idWlsZC10b29sczovc3cvbWYvc25vd3kvY29tcGlsZXJzOi9zdy9tZi9zbm93eS9kYXRhOi9zdy9tZi9zbm93eS9lbnZpcm9ubWVudDovc3cvbWYvc25vd3kvbGlicmFyaWVzOi9zdy9tZi9zbm93eS9wYXJhbGxlbCIsfQ==
+++ export _ModuleTable006_
+++ _ModuleTable_Sz_=6
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ seqdir=/proj/genomeanalysis2022/nobackup/work/kvenk811/prokka_before_bwa
++ outdir=/proj/genomeanalysis2022/nobackup/work/kvenk811/phylophlan
++ /proj/genomeanalysis2022/nobackup/work/kvenk811/phylophlan
+/var/spool/slurmd/job6215194/slurm_script: line 65: /proj/genomeanalysis2022/nobackup/work/kvenk811/phylophlan: Is a directory
++ phylophlan.py -i input/D1 -t --nproc 2
+Traceback (most recent call last):
+  File "/sw/apps/bioinfo/phylophlan/0.99/snowy/bin/phylophlan.py", line 780, in <module>
+    init()
+  File "/sw/apps/bioinfo/phylophlan/0.99/snowy/bin/phylophlan.py", line 141, in init
+    with closing(tarfile.open( compressed(f)  )) as inp:
+  File "/sw/comp/python/2.7.15_snowy/lib/python2.7/tarfile.py", line 1675, in open
+    return func(name, "r", fileobj, **kwargs)
+  File "/sw/comp/python/2.7.15_snowy/lib/python2.7/tarfile.py", line 1740, in gzopen
+    fileobj = gzip.GzipFile(name, mode, compresslevel, fileobj)
+  File "/sw/comp/python/2.7.15_snowy/lib/python2.7/gzip.py", line 94, in __init__
+    fileobj = self.myfileobj = __builtin__.open(filename, mode or 'rb')
+IOError: [Errno 2] No such file or directory: 'data/ppa.seeds.faa.tar.bz2'
++ phylophlan.py -i input/D3 -t --nproc 2
+Traceback (most recent call last):
+  File "/sw/apps/bioinfo/phylophlan/0.99/snowy/bin/phylophlan.py", line 780, in <module>
+    init()
+  File "/sw/apps/bioinfo/phylophlan/0.99/snowy/bin/phylophlan.py", line 141, in init
+    with closing(tarfile.open( compressed(f)  )) as inp:
+  File "/sw/comp/python/2.7.15_snowy/lib/python2.7/tarfile.py", line 1675, in open
+    return func(name, "r", fileobj, **kwargs)
+  File "/sw/comp/python/2.7.15_snowy/lib/python2.7/tarfile.py", line 1740, in gzopen
+    fileobj = gzip.GzipFile(name, mode, compresslevel, fileobj)
+  File "/sw/comp/python/2.7.15_snowy/lib/python2.7/gzip.py", line 94, in __init__
+    fileobj = self.myfileobj = __builtin__.open(filename, mode or 'rb')
+IOError: [Errno 2] No such file or directory: 'data/ppa.seeds.faa.tar.bz2'
