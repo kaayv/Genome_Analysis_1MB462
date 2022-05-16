@@ -27,11 +27,11 @@ outdir="/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa
 
 #cd $seqdir/D3_metabat_output
 
-#for bin_D3 in *
-#do
-#emapper.py --itype metagenome -i $bin_D3 -o $bin_D3 --output_dir $outdir/D3
-#done
+for bin_D3 in *
+do
+emapper.py --itype metagenome -i $bin_D3 -o $bin_D3 --output_dir $outdir/D3_complete
+done
 
 
-cd $seqdir/D3_metabat_output
-emapper.py --itype metagenome -i D3_metabat_output.21.fa -o D3_metabat_output.21.fa --output_dir $outdir/D3
+#cd $seqdir/D3_metabat_output
+#emapper.py --itype metagenome -i D3_metabat_output.21.fa -o D3_metabat_output.21.fa --output_dir $outdir/D3

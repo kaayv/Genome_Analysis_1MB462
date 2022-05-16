@@ -74,3 +74,4 @@ EggNOG data 5.0 available at /sw/data/uppnex/eggNOG/5.0
 + outdir=/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa
 + cd /proj/genomeanalysis2022/nobackup/work/kvenk811/Metabat_binning_before_bwa/D3_metabat_output
 + emapper.py --itype metagenome -i D3_metabat_output.21.fa -o D3_metabat_output.21.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3
+slurmstepd: error: *** JOB 6214652 ON s5 CANCELLED AT 2022-05-16T15:03:58 ***
