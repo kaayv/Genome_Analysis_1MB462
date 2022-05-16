@@ -25,7 +25,7 @@ outdir="/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa
 #emapper.py --itype metagenome -i $bin_D1 -o $bin_D1 --output_dir $outdir/D1
 #done
 
-#cd $seqdir/D3_metabat_output
+cd $seqdir/D3_metabat_output
 
 for bin_D3 in *
 do
