@@ -1,0 +1,55 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 2
+#SBATCH -t 10:00:00
+#SBATCH -J htseq
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user kaavya.venkateswaran.5938@student.uu.se
+
+# Differential expression of RNA with htseq script 
+
+# Load modules
+module load bioinfo-tools
+module load htseq samtools 
+
+# Sequence directories
+SEQDIR="/proj/genomeanalysis2022/nobackup/work/kvenk811/prokka_before_bwa"
+OUTDIR="/proj/genomeanalysis2022/nobackup/work/kvenk811/htseq"
+BAMDIR1="/proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_test"
+BAMDIR3="/proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test"
+
+# Index bam files
+cd $BAMDIR1
+for bam in *.bam
+do
+echo $bam
+samtools index $bam
+done 
+
+# Run htseq
+cd $SEQDIR/D1
+for gff in *.gff
+do
+echo $gff
+bin=$(echo $gff | cut -f2 -d ".")
+echo $bin
+cd $OUTDIR/D1
+mkdir $bin
+cd $bin
+htseq-count -f bam -t CDS -r pos -i ID $BAMDIR/D1_normalized.${bin}.fa_sorted.bam $SEQDIR/D1/$gff > $OUTDIR/D1_htseq_${bin}.counts
+done
+
+cd $SEQDIR/D3
+for gff in *.gff
+do
+echo $gff
+bin=$(echo $gff | cut -f2 -d ".")
+echo $bin
+cd $OUTDIR/D3
+mkdir $bin
+cd $bin
+htseq-count -f bam -t CDS -r pos -i ID $BAMDIR/D3_normalized.${bin}.fa_sorted.bam $SEQDIR/D3/$gff > $OUTDIR/D3_htseq_${bin}.counts
+done
+
