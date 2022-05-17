@@ -21,32 +21,32 @@ BAMDIR1="/proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D1_tes
 BAMDIR3="/proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_test"
 
 # Index bam files
-cd $BAMDIR1
-for bam in *.bam
-do
-echo $bam
-samtools index $bam
-done 
+#cd $BAMDIR1
+#for bam in *.bam
+#do
+#echo $bam
+#samtools index $bam
+#done 
 
-cd $BAMDIR3
-for bam in *.bam
-do
-echo $bam
-samtools index $bam
-done
+#cd $BAMDIR3
+#for bam in *.bam
+#do
+#echo $bam
+#samtools index $bam
+#done
 
 # Run htseq
-#cd $SEQDIR/D1
-#for gff in *.gff
-#do
-#echo $gff
+cd $SEQDIR/D1
+for gff in *.gff
+do
+echo $gff
 #bin=$(echo $gff | cut -f2 -d ".")
 #echo $bin
 #cd $OUTDIR/D1
 #mkdir $bin
 #cd $bin
 #htseq-count -f bam -t CDS -r pos -i ID $BAMDIR/D3_metabat_output.${bin}.fa_sort.bam $SEQDIR/D1/$gff > $OUTDIR/D1_htseq_${bin}.counts
-#done
+done
 
 #cd $SEQDIR/D3
 #for gff in *.gff
