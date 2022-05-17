@@ -58,6 +58,6 @@ done
 #cd $OUTDIR/D3
 #mkdir $bin
 #cd $bin
-#htseq-count -f bam -t CDS -r pos -i ID $BAMDIR3/D3_metabat_output.${bin}.fa_sort.bam $SEQDIR/D3/$gff > $OUTDIR/D3_htseq_${bin}.counts
+#htseq-count -f bam -t CDS -r pos -i ID $BAMDIR/D3_metabat_output.${bin}.fa_sort.bam $SEQDIR/D3/$gff > $OUTDIR/D3_htseq_${bin}.counts
 #done
 
