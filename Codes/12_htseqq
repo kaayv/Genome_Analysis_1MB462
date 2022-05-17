@@ -9,7 +9,7 @@
 #SBATCH --mail-user kaavya.venkateswaran.5938@student.uu.se
 
 # Differential expression of RNA with htseq script 
-
+set -x
 # Load modules
 module load bioinfo-tools
 module load htseq samtools 
@@ -40,12 +40,12 @@ cd $SEQDIR/D1
 for gff in *.gff
 do
 echo $gff
-#bin=$(echo $gff | cut -f2 -d ".")
-#echo $bin
-#cd $OUTDIR/D1
-#mkdir $bin
-#cd $bin
-#htseq-count -f bam -t CDS -r pos -i ID $BAMDIR/D3_metabat_output.${bin}.fa_sort.bam $SEQDIR/D1/$gff > $OUTDIR/D1_htseq_${bin}.counts
+bin=$(echo $gff | cut -f2 -d ".")
+echo $bin
+cd $OUTDIR/D1
+mkdir $bin
+cd $bin
+htseq-count -f bam -t CDS -r pos -i ID $BAMDIR1/D1_metabat_output.$bin.fa_sort.bam $SEQDIR/D1/$gff > $OUTDIR/D1_htseq_${bin}.counts
 done
 
 #cd $SEQDIR/D3
