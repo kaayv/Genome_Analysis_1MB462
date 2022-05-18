@@ -1,0 +1,26 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 2
+#SBATCH -t 10:00:00
+#SBATCH -J metaphlan_profiling
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user kaavya.venkateswaran.5938@student.uu.se
+
+# Profiling of composition of microbial communities with Metaphlan script
+
+# Load modules 
+module load bioinfo-tools
+module load MetaPhlAn3/3.0.8 BioBakery
+
+# Path to sequence directory and output directories
+input="/home/kvenk811/Genome_Analysis_1MB462/Data/raw_data/3_Thrash_2017/DNA_trimmed"
+output="/proj/genomeanalysis2022/nobackup/work/lihu6475/6_extra_analyses/metaphlan"
+
+# Install MetaPhlAn
+#metaphlan --install --bowtie2db $OUTDIR/install
+
+# Run MetaPhlAn
+metaphlan $output/SRR4342129_1.paired.trimmed.fastq.gz,$inputSRR4342129_2.paired.trimmed.fastq.gz --bowtie2db $output/install --bowtie2out $output/bt2out_D1.txt --input_type fastq --nproc 4 --input_type fastq --add_viruses -o $output/metagenome_profile_D1.txt
+metaphlan $output/SRR4342133_1.paired.trimmed.fastq.gz,$inputSRR4342133_2.paired.trimmed.fastq.gz --bowtie2db $output/install --bowtie2out $output/bt2out_D3.txt --input_type fastq --nproc 4 --input_type fastq --add_viruses -o $output/metagenome_profile_D3.txt
