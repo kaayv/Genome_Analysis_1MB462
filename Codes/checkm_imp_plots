@@ -1,0 +1,46 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 4
+#SBATCH -t 01:00:00
+#SBATCH -J Checkm_for_bwa
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user kaavya.venkateswaran.5938@student.uu.se
+
+set -x
+
+#load modules
+module load bioinfo-tools 
+module load CheckM
+seq="/proj/genomeanalysis2022/nobackup/work/kvenk811/Metabat_binning_before_bwa"
+ass="/proj/genomeanalysis2022/nobackup/work/kvenk811/Megahit_Assembly"
+out="/proj/genomeanalysis2022/nobackup/work/kvenk811/Checkm_imp"
+
+cd $out
+checkm len_plot -x fa $seq/D1_metabat_output $out/D1/D1_len_plots
+checkm len_plot -x fa $seq/D3_metabat_output $out/D3/D3_len_plots
+
+checkm len_hist -x fa $seq/D1_metabat_output $out/D1/D1_len_hist
+checkm len_hist -x fa $seq/D3_metabat_output $out/D3/D3_len_hist
+
+checkm unbinned -x fa $seq/D1_metabat_output $ass/D1_megahit_output/final.contigs.fa $out/D1/D1_unbinned.out $out/D1/D1_unbinned_stats.out
+checkm unbinned -x fa $seq/D3_metabat_output $ass/D3_megahit_output/final.contigs.fa $out/D3/D3_unbinned.out $out/D3/D3_unbinned_stats.out
+
+checkm tetra -t 2 $ass/D1_megahit_output/final.contigs.fa $out/D1/D1_tetra.out
+checkm tetra -t 2 $ass/D3_megahit_output/final.contigs.fa $out/D3/D3_tetra.out
+
+# Taxonomy pipeline which includes taxon_set, analyze and qa.
+
+checkm taxonomy_wf -t 2 -x fa domain Bacteria $seq/D1_metabat_output/ $out/D1/D1_taxonomy_wf
+checkm taxonomy_wf -t 2 -x fa domain Bacteria $seq/D3_metabat_output/ $out/D3/D3_taxonomy_wf
+
+# Extra QA because I wanted better output
+
+checkm qa -t 2 -o 2 $out/D1/D1_taxonomy_wf/Bacteria.ms D1_taxonomy_wf > $out/D1/D1_qa.out
+checkm qa -t 2 -o 2 $out/D3/D3_taxonomy_wf/Bacteria.ms D3_taxonomy_wf > $out/D3/D3_qa.out
+
+# Finally, running the qa plot
+
+checkm bin_qa_plot -x fa $out/D1/D1_taxonomy_wf $seq/D1_metabat_output $out/D1/D1_bin_qa_plot
+checkm bin_qa_plot -x fa $out/D3/D3_taxonomy_wf $seq/D3_metabat_output $out/D3/D3_bin_qa_plot
