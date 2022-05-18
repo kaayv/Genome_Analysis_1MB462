@@ -2,9 +2,9 @@
 #SBATCH -A uppmax2022-2-5
 #SBATCH -M snowy
 #SBATCH -p core
-#SBATCH -n 2
+#SBATCH -n 6
 #SBATCH -t 10:00:00
-#SBATCH -J htseq
+#SBATCH -J htseq_D3
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user kaavya.venkateswaran.5938@student.uu.se
 
@@ -48,7 +48,7 @@ BAMDIR3="/proj/genomeanalysis2022/nobackup/work/kvenk811/bwa_conc_rna_map/D3_tes
 #htseq-count -f bam -t CDS -r pos -i ID $BAMDIR1/D1_metabat_output.$bin.fa_sort.bam $SEQDIR/D1/$gff > $OUTDIR/D1/D1_htseq_${bin}.counts
 #done
 
-#cd $SEQDIR/D3
+cd $SEQDIR/D3_funct
 for gff in *.gff
 do
 echo $gff
@@ -57,5 +57,5 @@ echo $bin
 cd $OUTDIR/D3
 mkdir $bin
 cd $bin
-htseq-count -f bam -t CDS -r pos -i ID $BAMDIR3/D3_metabat_output.$bin.fa_sort.bam $SEQDIR/D3/$gff > $OUTDIR/D3/D3_htseq_${bin}.counts
+htseq-count -f bam -t CDS -r pos -i ID $BAMDIR3/D3_metabat_output.$bin.fa_sort.bam $SEQDIR/D3_funct/$gff > $OUTDIR/D3/D3_htseq_${bin}.counts
 done

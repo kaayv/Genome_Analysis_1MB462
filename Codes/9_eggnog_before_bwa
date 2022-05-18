@@ -2,9 +2,9 @@
 #SBATCH -A uppmax2022-2-5
 #SBATCH -M snowy
 #SBATCH -p core
-#SBATCH -n 2
+#SBATCH -n 4
 #SBATCH -t 50:00:00
-#SBATCH -J eggnoggmapper_D3_of_5-2
+#SBATCH -J eggnoggmapper_D3_of_6
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user kaavya.venkateswaran.5938@student.uu.se
 
@@ -34,11 +34,10 @@ cd $seqdir/D3_metabat_output
 
 
 cd $seqdir/D3_metabat_output
-emapper.py --itype metagenome -i D3_metabat_output.5.fa -o D3_metabat_output.5.fa --output_dir $outdir/D3_partial --sensmode fast
+#emapper.py --itype metagenome -i D3_metabat_output.5.fa -o D3_metabat_output.5.fa --output_dir $outdir/D3_partial --sensmode fast
 
-emapper.py --itype metagenome -i D3_metabat_output.4.fa -o D3_metabat_output.4.fa --output_dir $outdir/D3_partial --sensmode fast
+#emapper.py --itype metagenome -i D3_metabat_output.4.fa -o D3_metabat_output.4.fa --output_dir $outdir/D3_partial --sensmode fast
 
-emapper.py --itype metagenome -i D3_metabat_output.3.fa -o D3_metabat_output.3.fa --output_dir $outdir/D3_partial --sensmode fast
+#emapper.py --itype metagenome -i D3_metabat_output.3.fa -o D3_metabat_output.3.fa --output_dir $outdir/D3_partial --sensmode fast
 
-emapper.py --itype metagenome -i D3_metabat_output.2.fa -o D3_metabat_output.2.fa --output_dir $outdir/D3_partial --sensmode fast
-
+emapper.py --itype metagenome -i D3_metabat_output.6.fa -o D3_metabat_output.6.fa --output_dir $outdir/D3_partial --sensmode fast 
