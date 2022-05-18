@@ -3,8 +3,8 @@
 #SBATCH -M snowy
 #SBATCH -p core
 #SBATCH -n 2
-#SBATCH -t 200:00:00
-#SBATCH -J eggnoggmapper_without_bwa
+#SBATCH -t 50:00:00
+#SBATCH -J eggnoggmapper_D3_of_5-2
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user kaavya.venkateswaran.5938@student.uu.se
 
@@ -27,11 +27,18 @@ outdir="/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa
 
 cd $seqdir/D3_metabat_output
 
-for bin_D3 in *
-do
-emapper.py --itype metagenome -i $bin_D3 -o $bin_D3 --output_dir $outdir/D3_complete
-done
+#for bin_D3 in *
+#do
+#emapper.py --itype metagenome -i $bin_D3 -o $bin_D3 --output_dir $outdir/D3_complete
+#done
 
 
-#cd $seqdir/D3_metabat_output
-#emapper.py --itype metagenome -i D3_metabat_output.21.fa -o D3_metabat_output.21.fa --output_dir $outdir/D3
+cd $seqdir/D3_metabat_output
+emapper.py --itype metagenome -i D3_metabat_output.5.fa -o D3_metabat_output.5.fa --output_dir $outdir/D3_partial --sensmode fast
+
+emapper.py --itype metagenome -i D3_metabat_output.4.fa -o D3_metabat_output.4.fa --output_dir $outdir/D3_partial --sensmode fast
+
+emapper.py --itype metagenome -i D3_metabat_output.3.fa -o D3_metabat_output.3.fa --output_dir $outdir/D3_partial --sensmode fast
+
+emapper.py --itype metagenome -i D3_metabat_output.2.fa -o D3_metabat_output.2.fa --output_dir $outdir/D3_partial --sensmode fast
+

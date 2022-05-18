@@ -1,0 +1,78 @@
++ module load bioinfo-tools eggNOG-mapper
+++ /usr/share/lmod/lmod/libexec/lmod bash load bioinfo-tools eggNOG-mapper
+EggNOG data 5.0 available at /sw/data/uppnex/eggNOG/5.0
++ eval '__LMOD_REF_COUNT_CPATH=/sw/apps/sqlite/3.34.0/snowy/include:1;' export '__LMOD_REF_COUNT_CPATH;' 'CPATH=/sw/apps/sqlite/3.34.0/snowy/include;' export 'CPATH;' '__LMOD_REF_COUNT_CPLUS_INCLUDE_PATH=/sw/apps/sqlite/3.34.0/snowy/include:1;' export '__LMOD_REF_COUNT_CPLUS_INCLUDE_PATH;' 'CPLUS_INCLUDE_PATH=/sw/apps/sqlite/3.34.0/snowy/include;' export 'CPLUS_INCLUDE_PATH;' 'EGGNOGMAPPER_DATA=/sw/data/uppnex/eggNOG/5.0;' export 'EGGNOGMAPPER_DATA;' 'EGGNOG_DATA_DIR=/sw/data/uppnex/eggNOG/5.0;' export 'EGGNOG_DATA_DIR;' '__LMOD_REF_COUNT_LD_LIBRARY_PATH=/sw/apps/sqlite/3.34.0/snowy/lib:1\;/sw/libs/wxWidgets/lib:1;' export '__LMOD_REF_COUNT_LD_LIBRARY_PATH;' 'LD_LIBRARY_PATH=/sw/apps/sqlite/3.34.0/snowy/lib:/sw/libs/wxWidgets/lib;' export 'LD_LIBRARY_PATH;' '__LMOD_REF_COUNT_LD_RUN_PATH=/sw/apps/sqlite/3.34.0/snowy/lib:1;' export '__LMOD_REF_COUNT_LD_RUN_PATH;' 'LD_RUN_PATH=/sw/apps/sqlite/3.34.0/snowy/lib;' export 'LD_RUN_PATH;' '__LMOD_REF_COUNT_LIBRARY_PATH=/sw/apps/sqlite/3.34.0/snowy/lib:1;' export '__LMOD_REF_COUNT_LIBRARY_PATH;' 'LIBRARY_PATH=/sw/apps/sqlite/3.34.0/snowy/lib;' export 'LIBRARY_PATH;' '__LMOD_REF_COUNT_LOADEDMODULES=uppmax:2\;bioinfo-tools:1\;python/3.8.7:1\;sqlite/3.34.0:1\;eggNOG-mapper/2.1.5:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=uppmax:bioinfo-tools:python/3.8.7:sqlite/3.34.0:eggNOG-mapper/2.1.5;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MANPATH=/sw/apps/sqlite/3.34.0/snowy/share/man:1\;/sw/comp/python/3.8.7_snowy/share/man:1\;/usr/share/man:2\;/sw/uppmax/man:2\;/opt/thinlinc/share/man:2;' export '__LMOD_REF_COUNT_MANPATH;' 'MANPATH=/sw/apps/sqlite/3.34.0/snowy/share/man:/sw/comp/python/3.8.7_snowy/share/man:/usr/share/man:/sw/uppmax/man:/opt/thinlinc/share/man;' export 'MANPATH;' '__LMOD_REF_COUNT_MODULEPATH=/sw/mf/snowy/bioinfo-tools/annotation:1\;/sw/mf/snowy/bioinfo-tools/alignment:1\;/sw/mf/snowy/bioinfo-tools/assembly:1\;/sw/mf/snowy/bioinfo-tools/misc:1\;/sw/mf/snowy/bioinfo-tools/phylogeny:1\;/sw/mf/snowy/bioinfo-tools/pipelines:1\;/sw/mf/snowy/bioinfo-tools/sw_collections:1\;/sw/mf/snowy/applications:1\;/sw/mf/snowy/build-tools:1\;/sw/mf/snowy/compilers:1\;/sw/mf/snowy/data:1\;/sw/mf/snowy/environment:1\;/sw/mf/snowy/libraries:1\;/sw/mf/snowy/parallel:1;' export '__LMOD_REF_COUNT_MODULEPATH;' 'MODULEPATH=/sw/mf/snowy/bioinfo-tools/annotation:/sw/mf/snowy/bioinfo-tools/alignment:/sw/mf/snowy/bioinfo-tools/assembly:/sw/mf/snowy/bioinfo-tools/misc:/sw/mf/snowy/bioinfo-tools/phylogeny:/sw/mf/snowy/bioinfo-tools/pipelines:/sw/mf/snowy/bioinfo-tools/sw_collections:/sw/mf/snowy/applications:/sw/mf/snowy/build-tools:/sw/mf/snowy/compilers:/sw/mf/snowy/data:/sw/mf/snowy/environment:/sw/mf/snowy/libraries:/sw/mf/snowy/parallel;' export 'MODULEPATH;' '__LMOD_REF_COUNT_PATH=/sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin:1\;/sw/bioinfo/eggNOG-mapper/2.1.5/snowy/bin:1\;/sw/apps/sqlite/3.34.0/snowy/bin:1\;/sw/comp/python/3.8.7_snowy/bin:1\;/home/kvenk811/bin:2\;/usr/local/bin:1\;/usr/bin:1\;/usr/local/sbin:1\;/usr/sbin:1\;/sw/uppmax/bin:2;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin:/sw/bioinfo/eggNOG-mapper/2.1.5/snowy/bin:/sw/apps/sqlite/3.34.0/snowy/bin:/sw/comp/python/3.8.7_snowy/bin:/home/kvenk811/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sw/uppmax/bin;' export 'PATH;' '__LMOD_REF_COUNT_PKG_CONFIG_PATH=/sw/apps/sqlite/3.34.0/snowy/lib/pkgconfig:1\;/sw/comp/python/3.8.7_snowy/lib/pkgconfig:1;' export '__LMOD_REF_COUNT_PKG_CONFIG_PATH;' 'PKG_CONFIG_PATH=/sw/apps/sqlite/3.34.0/snowy/lib/pkgconfig:/sw/comp/python/3.8.7_snowy/lib/pkgconfig;' export 'PKG_CONFIG_PATH;' '__LMOD_REF_COUNT_PYTHONPATH=/sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages:1;' export '__LMOD_REF_COUNT_PYTHONPATH;' 'PYTHONPATH=/sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages;' export 'PYTHONPATH;' 'PYTHON_ROOT=/sw/comp/python/3.8.7_snowy;' export 'PYTHON_ROOT;' 'SQLITE_ROOT=/sw/apps/sqlite/3.34.0/snowy;' export 'SQLITE_ROOT;' '__LMOD_REF_COUNT__LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:1\;/sw/mf/snowy/compilers/python/3.8.7:1\;/sw/mf/snowy/applications/sqlite/3.34.0:1\;/sw/mf/snowy/bioinfo-tools/annotation/eggNOG-mapper/2.1.5:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:/sw/mf/snowy/compilers/python/3.8.7:/sw/mf/snowy/applications/sqlite/3.34.0:/sw/mf/snowy/bioinfo-tools/annotation/eggNOG-mapper/2.1.5;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImJpb2luZm8tdG9vbHMiXT17WyJmbiJdPSIvc3cvbWYvc25vd3kvZW52aXJvbm1lbnQvYmlvaW5mby10b29scyIsWyJmdWxsTmFtZSJdPSJiaW9pbmZvLXRvb2xzIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iYmlvaW5mby10b29scyIsfSxbImVnZ05PRy1tYXBwZXIiXT17WyJmbiJdPSIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9hbm5vdGF0aW9uL2VnZ05PRy1tYXBwZXIvMi4xLjUiLFsiZnVsbE5h;' export '_ModuleTable001_;' '_ModuleTable002_=bWUiXT0iZWdnTk9HLW1hcHBlci8yLjEuNSIsWyJsb2FkT3JkZXIiXT00LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImVnZ05PRy1tYXBwZXIiLH0scHl0aG9uPXtbImZuIl09Ii9zdy9tZi9zbm93eS9jb21waWxlcnMvcHl0aG9uLzMuOC43IixbImZ1bGxOYW1lIl09InB5dGhvbi8zLjguNyIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTEsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09InB5dGhvbi8zLjguNyIsfSxzcWxpdGU9e1siZm4iXT0iL3N3L21mL3Nub3d5L2FwcGxpY2F0aW9ucy9zcWxpdGUvMy4zNC4wIixbImZ1bGxOYW1lIl09InNxbGl0ZS8zLjM0LjAiLFsibG9h;' export '_ModuleTable002_;' '_ModuleTable003_=ZE9yZGVyIl09Myxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJzcWxpdGUvMy4zNC4wIix9LH0sbXBhdGhBPXsiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvYW5ub3RhdGlvbiIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2FsaWdubWVudCIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2Fzc2VtYmx5IiwiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvbWlzYyIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3BoeWxvZ2VueSIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3BpcGVsaW5lcyIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3N3X2NvbGxlY3Rpb25zIiwiL3N3L21mL3Nub3d5;' export '_ModuleTable003_;' '_ModuleTable004_=L2FwcGxpY2F0aW9ucyIsIi9zdy9tZi9zbm93eS9idWlsZC10b29scyIsIi9zdy9tZi9zbm93eS9jb21waWxlcnMiLCIvc3cvbWYvc25vd3kvZGF0YSIsIi9zdy9tZi9zbm93eS9lbnZpcm9ubWVudCIsIi9zdy9tZi9zbm93eS9saWJyYXJpZXMiLCIvc3cvbWYvc25vd3kvcGFyYWxsZWwiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL3N3L21mL3Nub3d5L2FwcGxpY2F0aW9uczovc3cvbWYvc25vd3kvYnVpbGQtdG9vbHM6L3N3L21mL3Nub3d5L2NvbXBpbGVyczovc3cvbWYvc25vd3kvZGF0YTovc3cvbWYvc25vd3kvZW52aXJvbm1lbnQ6L3N3L21mL3Nub3d5L2xpYnJhcmllczovc3cvbWYvc25vd3kvcGFyYWxsZWwiLH0=;' export '_ModuleTable004_;' '_ModuleTable_Sz_=4;' export '_ModuleTable_Sz_;'
+++ __LMOD_REF_COUNT_CPATH=/sw/apps/sqlite/3.34.0/snowy/include:1
+++ export __LMOD_REF_COUNT_CPATH
+++ CPATH=/sw/apps/sqlite/3.34.0/snowy/include
+++ export CPATH
+++ __LMOD_REF_COUNT_CPLUS_INCLUDE_PATH=/sw/apps/sqlite/3.34.0/snowy/include:1
+++ export __LMOD_REF_COUNT_CPLUS_INCLUDE_PATH
+++ CPLUS_INCLUDE_PATH=/sw/apps/sqlite/3.34.0/snowy/include
+++ export CPLUS_INCLUDE_PATH
+++ EGGNOGMAPPER_DATA=/sw/data/uppnex/eggNOG/5.0
+++ export EGGNOGMAPPER_DATA
+++ EGGNOG_DATA_DIR=/sw/data/uppnex/eggNOG/5.0
+++ export EGGNOG_DATA_DIR
+++ __LMOD_REF_COUNT_LD_LIBRARY_PATH='/sw/apps/sqlite/3.34.0/snowy/lib:1;/sw/libs/wxWidgets/lib:1'
+++ export __LMOD_REF_COUNT_LD_LIBRARY_PATH
+++ LD_LIBRARY_PATH=/sw/apps/sqlite/3.34.0/snowy/lib:/sw/libs/wxWidgets/lib
+++ export LD_LIBRARY_PATH
+++ __LMOD_REF_COUNT_LD_RUN_PATH=/sw/apps/sqlite/3.34.0/snowy/lib:1
+++ export __LMOD_REF_COUNT_LD_RUN_PATH
+++ LD_RUN_PATH=/sw/apps/sqlite/3.34.0/snowy/lib
+++ export LD_RUN_PATH
+++ __LMOD_REF_COUNT_LIBRARY_PATH=/sw/apps/sqlite/3.34.0/snowy/lib:1
+++ export __LMOD_REF_COUNT_LIBRARY_PATH
+++ LIBRARY_PATH=/sw/apps/sqlite/3.34.0/snowy/lib
+++ export LIBRARY_PATH
+++ __LMOD_REF_COUNT_LOADEDMODULES='uppmax:2;bioinfo-tools:1;python/3.8.7:1;sqlite/3.34.0:1;eggNOG-mapper/2.1.5:1'
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=uppmax:bioinfo-tools:python/3.8.7:sqlite/3.34.0:eggNOG-mapper/2.1.5
+++ export LOADEDMODULES
+++ __LMOD_REF_COUNT_MANPATH='/sw/apps/sqlite/3.34.0/snowy/share/man:1;/sw/comp/python/3.8.7_snowy/share/man:1;/usr/share/man:2;/sw/uppmax/man:2;/opt/thinlinc/share/man:2'
+++ export __LMOD_REF_COUNT_MANPATH
+++ MANPATH=/sw/apps/sqlite/3.34.0/snowy/share/man:/sw/comp/python/3.8.7_snowy/share/man:/usr/share/man:/sw/uppmax/man:/opt/thinlinc/share/man
+++ export MANPATH
+++ __LMOD_REF_COUNT_MODULEPATH='/sw/mf/snowy/bioinfo-tools/annotation:1;/sw/mf/snowy/bioinfo-tools/alignment:1;/sw/mf/snowy/bioinfo-tools/assembly:1;/sw/mf/snowy/bioinfo-tools/misc:1;/sw/mf/snowy/bioinfo-tools/phylogeny:1;/sw/mf/snowy/bioinfo-tools/pipelines:1;/sw/mf/snowy/bioinfo-tools/sw_collections:1;/sw/mf/snowy/applications:1;/sw/mf/snowy/build-tools:1;/sw/mf/snowy/compilers:1;/sw/mf/snowy/data:1;/sw/mf/snowy/environment:1;/sw/mf/snowy/libraries:1;/sw/mf/snowy/parallel:1'
+++ export __LMOD_REF_COUNT_MODULEPATH
+++ MODULEPATH=/sw/mf/snowy/bioinfo-tools/annotation:/sw/mf/snowy/bioinfo-tools/alignment:/sw/mf/snowy/bioinfo-tools/assembly:/sw/mf/snowy/bioinfo-tools/misc:/sw/mf/snowy/bioinfo-tools/phylogeny:/sw/mf/snowy/bioinfo-tools/pipelines:/sw/mf/snowy/bioinfo-tools/sw_collections:/sw/mf/snowy/applications:/sw/mf/snowy/build-tools:/sw/mf/snowy/compilers:/sw/mf/snowy/data:/sw/mf/snowy/environment:/sw/mf/snowy/libraries:/sw/mf/snowy/parallel
+++ export MODULEPATH
+++ __LMOD_REF_COUNT_PATH='/sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin:1;/sw/bioinfo/eggNOG-mapper/2.1.5/snowy/bin:1;/sw/apps/sqlite/3.34.0/snowy/bin:1;/sw/comp/python/3.8.7_snowy/bin:1;/home/kvenk811/bin:2;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/sw/uppmax/bin:2'
+++ export __LMOD_REF_COUNT_PATH
+++ PATH=/sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages/eggnogmapper/bin:/sw/bioinfo/eggNOG-mapper/2.1.5/snowy/bin:/sw/apps/sqlite/3.34.0/snowy/bin:/sw/comp/python/3.8.7_snowy/bin:/home/kvenk811/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sw/uppmax/bin
+++ export PATH
+++ __LMOD_REF_COUNT_PKG_CONFIG_PATH='/sw/apps/sqlite/3.34.0/snowy/lib/pkgconfig:1;/sw/comp/python/3.8.7_snowy/lib/pkgconfig:1'
+++ export __LMOD_REF_COUNT_PKG_CONFIG_PATH
+++ PKG_CONFIG_PATH=/sw/apps/sqlite/3.34.0/snowy/lib/pkgconfig:/sw/comp/python/3.8.7_snowy/lib/pkgconfig
+++ export PKG_CONFIG_PATH
+++ __LMOD_REF_COUNT_PYTHONPATH=/sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages:1
+++ export __LMOD_REF_COUNT_PYTHONPATH
+++ PYTHONPATH=/sw/bioinfo/eggNOG-mapper/2.1.5/snowy/lib/python3.8/site-packages
+++ export PYTHONPATH
+++ PYTHON_ROOT=/sw/comp/python/3.8.7_snowy
+++ export PYTHON_ROOT
+++ SQLITE_ROOT=/sw/apps/sqlite/3.34.0/snowy
+++ export SQLITE_ROOT
+++ __LMOD_REF_COUNT__LMFILES_='/sw/mf/snowy/environment/bioinfo-tools:1;/sw/mf/snowy/compilers/python/3.8.7:1;/sw/mf/snowy/applications/sqlite/3.34.0:1;/sw/mf/snowy/bioinfo-tools/annotation/eggNOG-mapper/2.1.5:1'
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/sw/mf/snowy/environment/bioinfo-tools:/sw/mf/snowy/compilers/python/3.8.7:/sw/mf/snowy/applications/sqlite/3.34.0:/sw/mf/snowy/bioinfo-tools/annotation/eggNOG-mapper/2.1.5
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXtbImJpb2luZm8tdG9vbHMiXT17WyJmbiJdPSIvc3cvbWYvc25vd3kvZW52aXJvbm1lbnQvYmlvaW5mby10b29scyIsWyJmdWxsTmFtZSJdPSJiaW9pbmZvLXRvb2xzIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iYmlvaW5mby10b29scyIsfSxbImVnZ05PRy1tYXBwZXIiXT17WyJmbiJdPSIvc3cvbWYvc25vd3kvYmlvaW5mby10b29scy9hbm5vdGF0aW9uL2VnZ05PRy1tYXBwZXIvMi4xLjUiLFsiZnVsbE5h
+++ export _ModuleTable001_
+++ _ModuleTable002_=bWUiXT0iZWdnTk9HLW1hcHBlci8yLjEuNSIsWyJsb2FkT3JkZXIiXT00LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImVnZ05PRy1tYXBwZXIiLH0scHl0aG9uPXtbImZuIl09Ii9zdy9tZi9zbm93eS9jb21waWxlcnMvcHl0aG9uLzMuOC43IixbImZ1bGxOYW1lIl09InB5dGhvbi8zLjguNyIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTEsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09InB5dGhvbi8zLjguNyIsfSxzcWxpdGU9e1siZm4iXT0iL3N3L21mL3Nub3d5L2FwcGxpY2F0aW9ucy9zcWxpdGUvMy4zNC4wIixbImZ1bGxOYW1lIl09InNxbGl0ZS8zLjM0LjAiLFsibG9h
+++ export _ModuleTable002_
+++ _ModuleTable003_=ZE9yZGVyIl09Myxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJzcWxpdGUvMy4zNC4wIix9LH0sbXBhdGhBPXsiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvYW5ub3RhdGlvbiIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2FsaWdubWVudCIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL2Fzc2VtYmx5IiwiL3N3L21mL3Nub3d5L2Jpb2luZm8tdG9vbHMvbWlzYyIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3BoeWxvZ2VueSIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3BpcGVsaW5lcyIsIi9zdy9tZi9zbm93eS9iaW9pbmZvLXRvb2xzL3N3X2NvbGxlY3Rpb25zIiwiL3N3L21mL3Nub3d5
+++ export _ModuleTable003_
+++ _ModuleTable004_=L2FwcGxpY2F0aW9ucyIsIi9zdy9tZi9zbm93eS9idWlsZC10b29scyIsIi9zdy9tZi9zbm93eS9jb21waWxlcnMiLCIvc3cvbWYvc25vd3kvZGF0YSIsIi9zdy9tZi9zbm93eS9lbnZpcm9ubWVudCIsIi9zdy9tZi9zbm93eS9saWJyYXJpZXMiLCIvc3cvbWYvc25vd3kvcGFyYWxsZWwiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL3N3L21mL3Nub3d5L2FwcGxpY2F0aW9uczovc3cvbWYvc25vd3kvYnVpbGQtdG9vbHM6L3N3L21mL3Nub3d5L2NvbXBpbGVyczovc3cvbWYvc25vd3kvZGF0YTovc3cvbWYvc25vd3kvZW52aXJvbm1lbnQ6L3N3L21mL3Nub3d5L2xpYnJhcmllczovc3cvbWYvc25vd3kvcGFyYWxsZWwiLH0=
+++ export _ModuleTable004_
+++ _ModuleTable_Sz_=4
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ seqdir=/proj/genomeanalysis2022/nobackup/work/kvenk811/Metabat_binning_before_bwa
++ outdir=/proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa
++ cd /proj/genomeanalysis2022/nobackup/work/kvenk811/Metabat_binning_before_bwa/D3_metabat_output
++ cd /proj/genomeanalysis2022/nobackup/work/kvenk811/Metabat_binning_before_bwa/D3_metabat_output
++ emapper.py --itype metagenome -i D3_metabat_output.21.fa -o D3_metabat_output.21.fa --output_dir /proj/genomeanalysis2022/nobackup/work/kvenk811/eggnog_funct_without_bwa/D3_partial
+slurmstepd: error: *** JOB 6219556 ON s100 CANCELLED AT 2022-05-18T08:41:42 ***
