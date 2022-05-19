@@ -1,0 +1,25 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Bin Id                          Marker lineage            # genomes   # markers   # marker sets    0     1    2    3    4    5+   Completeness   Contamination   Strain heterogeneity  
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  D3_metabat_output.16         k__Bacteria (UID203)            5449         99            53         0     2    7    9    24   57      100.00          324.99              4.37          
+  D3_metabat_output.8         k__Bacteria (UID2565)            2921        142            87         3    139   0    0    0    0       97.63            0.00               0.00          
+  D3_metabat_output.21        k__Bacteria (UID2495)            2993        147            91         3    144   0    0    0    0       96.70            0.00               0.00          
+  D3_metabat_output.12         k__Bacteria (UID203)            5449        104            58         3     17   55   28   1    0       94.83           97.16              51.03          
+  D3_metabat_output.4    c__Gammaproteobacteria (UID4274)      112         577           287         49   518   10   0    0    0       93.95            2.25              10.00          
+  D3_metabat_output.17          k__Archaea (UID2)              207         145           103         16    22   23   50   23   11      86.41           159.40             36.16          
+  D3_metabat_output.18        k__Bacteria (UID3187)            2258        188           117         20   165   3    0    0    0       85.37            1.50              33.33          
+  D3_metabat_output.13        k__Bacteria (UID2495)            2993        147            91         22   123   2    0    0    0       79.92            2.20              50.00          
+  D3_metabat_output.19        k__Bacteria (UID2565)            2921        142            87         24   115   3    0    0    0       78.87            2.87              100.00         
+  D3_metabat_output.15     o__Actinomycetales (UID1663)        488         310           185         64   243   3    0    0    0       77.36            1.62              66.67          
+  D3_metabat_output.10        k__Bacteria (UID2495)            2993        147            91         38   109   0    0    0    0       75.06            0.00               0.00          
+  D3_metabat_output.2      o__Actinomycetales (UID1696)        455         315           190         86   169   54   6    0    0       68.30           19.08               9.72          
+  D3_metabat_output.11       p__Euryarchaeota (UID3)           148         188           125         61   123   4    0    0    0       66.80            1.60              25.00          
+  D3_metabat_output.3          k__Bacteria (UID203)            5449        104            58         64    34   6    0    0    0       60.34            8.62              66.67          
+  D3_metabat_output.20        k__Bacteria (UID3187)            2258        190           119         87   103   0    0    0    0       53.34            0.00               0.00          
+  D3_metabat_output.5         k__Bacteria (UID3187)            2258        188           117         88    82   17   1    0    0       52.59            9.69              20.00          
+  D3_metabat_output.6        p__Euryarchaeota (UID3)           148         188           125        111    73   4    0    0    0       38.45            2.04              50.00          
+  D3_metabat_output.9          k__Bacteria (UID203)            5449        104            58         78    24   2    0    0    0       37.93            3.45              50.00          
+  D3_metabat_output.14         k__Bacteria (UID203)            5449        104            58         74    30   0    0    0    0       26.96            0.00               0.00          
+  D3_metabat_output.7          k__Bacteria (UID203)            5449        104            58         88    16   0    0    0    0       16.16            0.00               0.00          
+  D3_metabat_output.1           k__Archaea (UID2)              207         149           107        137    12   0    0    0    0        9.35            0.00               0.00          
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
