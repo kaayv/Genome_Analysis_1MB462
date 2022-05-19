@@ -2,8 +2,8 @@
 #SBATCH -A uppmax2022-2-5
 #SBATCH -M snowy
 #SBATCH -p core
-#SBATCH -n 2
-#SBATCH -t 02:00:00
+#SBATCH -n 6
+#SBATCH -t 05:00:00
 #SBATCH -J metaphlan_profiling
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user kaavya.venkateswaran.5938@student.uu.se
@@ -21,8 +21,8 @@ input="/home/kvenk811/Genome_Analysis_1MB462/Data/raw_data/3_Thrash_2017/DNA_tri
 output="/proj/genomeanalysis2022/nobackup/work/kvenk811/metaphlan"
  
 # Install MetaPhlAn
-#metaphlan --install --bowtie2db $output/install
+metaphlan --install --bowtie2db $output/install
 
 # Run MetaPhlAn
-metaphlan $input/SRR4342129_1.paired.trimmed.fastq.gz,$input/SRR4342129_2.paired.trimmed.fastq.gz --bowtie2db $output/install --bowtie2out $output/bt2out_D1.txt --input_type fastq --nproc 4 --input_type fastq --add_viruses -o $output/metagenome_profile_D1.txt
-#metaphlan $input/SRR4342133_1.paired.trimmed.fastq.gz,$input/SRR4342133_2.paired.trimmed.fastq.gz --bowtie2db $output/install --bowtie2out $output/bt2out_D3.txt --input_type fastq --nproc 4 --input_type fastq --add_viruses -o $output/metagenome_profile_D3.txt
+#metaphlan $input/SRR4342129_1.paired.trimmed.fastq.gz,$input/SRR4342129_2.paired.trimmed.fastq.gz --bowtie2db $output/install --bowtie2out $output/bt2out_D1.txt --input_type fastq --nproc 4 --input_type fastq --add_viruses -o $output/metagenome_profile_D1.txt
+metaphlan $input/SRR4342133_1.paired.trimmed.fastq.gz,$input/SRR4342133_2.paired.trimmed.fastq.gz --bowtie2db $output/install --bowtie2out $output/bt2out_D3.txt --input_type fastq --nproc 4 --input_type fastq --add_viruses -o $output/metagenome_profile_D3.txt
