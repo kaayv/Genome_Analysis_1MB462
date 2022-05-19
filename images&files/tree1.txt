@@ -1,0 +1,3928 @@
+Genome_Analysis_1MB462/
+├── Analysis\ Notes
+├── Codes
+│   ├── 0_git_and_softlink_to_data
+│   ├── 10_bwa_rna
+│   ├── 11_phylophlan
+│   ├── 12_htseqq
+│   ├── 13_metaphlan
+│   ├── 1_trimRNA
+│   ├── 2_quality_check_DNA_RNA
+│   ├── 3_megahit
+│   ├── 4_metaquast4megahit
+│   ├── 5_metabat
+│   ├── 6_checkm_before_bwa
+│   ├── 7_bwa_metabat
+│   ├── 8_prokka_before_bwa
+│   ├── 9_eggnog_before_bwa
+│   └── checkm_imp_plots
+├── Data
+│   ├── metadata.csv
+│   └── raw_data
+│       └── 3_Thrash_2017 -> /proj/genomeanalysis2022/Genome_Analysis/3_Thrash_2017/
+├── images
+│   ├── D1_checkm.png
+│   ├── D3_checkm.png
+│   └── readme.txt
+├── README.md
+├── Results
+│   ├── BWA_before_metabat
+│   │   ├── D1_BWA
+│   │   └── D3_BWA
+│   ├── Checkm_after_bwa
+│   ├── Checkm_before_bwa
+│   │   ├── D1_checkm
+│   │   │   ├── bins
+│   │   │   │   ├── D1_metabat_output.1
+│   │   │   │   │   ├── genes.faa
+│   │   │   │   │   ├── genes.gff
+│   │   │   │   │   ├── hmmer.analyze.txt
+│   │   │   │   │   └── hmmer.tree.txt
+│   │   │   │   ├── D1_metabat_output.10
+│   │   │   │   │   ├── genes.faa
+│   │   │   │   │   ├── genes.gff
+│   │   │   │   │   ├── hmmer.analyze.txt
+│   │   │   │   │   └── hmmer.tree.txt
+│   │   │   │   ├── D1_metabat_output.11
+│   │   │   │   │   ├── genes.faa
+│   │   │   │   │   ├── genes.gff
+│   │   │   │   │   ├── hmmer.analyze.txt
+│   │   │   │   │   └── hmmer.tree.txt
+│   │   │   │   ├── D1_metabat_output.12
+│   │   │   │   │   ├── genes.faa
+│   │   │   │   │   ├── genes.gff
+│   │   │   │   │   ├── hmmer.analyze.txt
+│   │   │   │   │   └── hmmer.tree.txt
+│   │   │   │   ├── D1_metabat_output.2
+│   │   │   │   │   ├── genes.faa
+│   │   │   │   │   ├── genes.gff
+│   │   │   │   │   ├── hmmer.analyze.txt
+│   │   │   │   │   └── hmmer.tree.txt
+│   │   │   │   ├── D1_metabat_output.3
+│   │   │   │   │   ├── genes.faa
+│   │   │   │   │   ├── genes.gff
+│   │   │   │   │   ├── hmmer.analyze.txt
+│   │   │   │   │   └── hmmer.tree.txt
+│   │   │   │   ├── D1_metabat_output.4
+│   │   │   │   │   ├── genes.faa
+│   │   │   │   │   ├── genes.gff
+│   │   │   │   │   ├── hmmer.analyze.txt
+│   │   │   │   │   └── hmmer.tree.txt
+│   │   │   │   ├── D1_metabat_output.5
+│   │   │   │   │   ├── genes.faa
+│   │   │   │   │   ├── genes.gff
+│   │   │   │   │   ├── hmmer.analyze.txt
+│   │   │   │   │   └── hmmer.tree.txt
+│   │   │   │   ├── D1_metabat_output.6
+│   │   │   │   │   ├── genes.faa
+│   │   │   │   │   ├── genes.gff
+│   │   │   │   │   ├── hmmer.analyze.txt
+│   │   │   │   │   └── hmmer.tree.txt
+│   │   │   │   ├── D1_metabat_output.7
+│   │   │   │   │   ├── genes.faa
+│   │   │   │   │   ├── genes.gff
+│   │   │   │   │   ├── hmmer.analyze.txt
+│   │   │   │   │   └── hmmer.tree.txt
+│   │   │   │   ├── D1_metabat_output.8
+│   │   │   │   │   ├── genes.faa
+│   │   │   │   │   ├── genes.gff
+│   │   │   │   │   ├── hmmer.analyze.txt
+│   │   │   │   │   └── hmmer.tree.txt
+│   │   │   │   └── D1_metabat_output.9
+│   │   │   │       ├── genes.faa
+│   │   │   │       ├── genes.gff
+│   │   │   │       ├── hmmer.analyze.txt
+│   │   │   │       └── hmmer.tree.txt
+│   │   │   ├── checkm.log
+│   │   │   ├── lineage.ms
+│   │   │   ├── qa.out
+│   │   │   └── storage
+│   │   │       ├── aai_qa
+│   │   │       │   ├── D1_metabat_output.1
+│   │   │       │   │   ├── PF00162.14.masked.faa
+│   │   │       │   │   ├── PF00164.20.masked.faa
+│   │   │       │   │   ├── PF00177.16.masked.faa
+│   │   │       │   │   ├── PF00181.18.masked.faa
+│   │   │       │   │   ├── PF00189.15.masked.faa
+│   │   │       │   │   ├── PF00203.16.masked.faa
+│   │   │       │   │   ├── PF00237.14.masked.faa
+│   │   │       │   │   ├── PF00238.14.masked.faa
+│   │   │       │   │   ├── PF00252.13.masked.faa
+│   │   │       │   │   ├── PF00276.15.masked.faa
+│   │   │       │   │   ├── PF00281.14.masked.faa
+│   │   │       │   │   ├── PF00297.17.masked.faa
+│   │   │       │   │   ├── PF00298.14.masked.faa
+│   │   │       │   │   ├── PF00312.17.masked.faa
+│   │   │       │   │   ├── PF00318.15.masked.faa
+│   │   │       │   │   ├── PF00333.15.masked.faa
+│   │   │       │   │   ├── PF00338.17.masked.faa
+│   │   │       │   │   ├── PF00347.18.masked.faa
+│   │   │       │   │   ├── PF00366.15.masked.faa
+│   │   │       │   │   ├── PF00380.14.masked.faa
+│   │   │       │   │   ├── PF00410.14.masked.faa
+│   │   │       │   │   ├── PF00411.14.masked.faa
+│   │   │       │   │   ├── PF00416.17.masked.faa
+│   │   │       │   │   ├── PF00466.15.masked.faa
+│   │   │       │   │   ├── PF00562.23.masked.faa
+│   │   │       │   │   ├── PF00572.13.masked.faa
+│   │   │       │   │   ├── PF00573.17.masked.faa
+│   │   │       │   │   ├── PF00623.15.masked.faa
+│   │   │       │   │   ├── PF00673.16.masked.faa
+│   │   │       │   │   ├── PF00687.16.masked.faa
+│   │   │       │   │   ├── PF00831.18.masked.faa
+│   │   │       │   │   ├── PF00861.17.masked.faa
+│   │   │       │   │   ├── PF01000.21.masked.faa
+│   │   │       │   │   ├── PF01193.19.masked.faa
+│   │   │       │   │   ├── PF01509.13.masked.faa
+│   │   │       │   │   ├── PF02978.14.masked.faa
+│   │   │       │   │   ├── PF03484.10.masked.faa
+│   │   │       │   │   ├── PF03719.10.masked.faa
+│   │   │       │   │   ├── PF03946.9.masked.faa
+│   │   │       │   │   ├── PF03947.13.masked.faa
+│   │   │       │   │   ├── PF04560.15.masked.faa
+│   │   │       │   │   ├── PF04561.9.masked.faa
+│   │   │       │   │   ├── PF04563.10.masked.faa
+│   │   │       │   │   ├── PF04565.11.masked.faa
+│   │   │       │   │   ├── PF04983.13.masked.faa
+│   │   │       │   │   ├── PF04997.7.masked.faa
+│   │   │       │   │   ├── PF05000.12.masked.faa
+│   │   │       │   │   ├── PF08459.6.masked.faa
+│   │   │       │   │   ├── PF11987.3.masked.faa
+│   │   │       │   │   ├── PF13184.1.masked.faa
+│   │   │       │   │   ├── TIGR00329.masked.faa
+│   │   │       │   │   ├── TIGR00344.masked.faa
+│   │   │       │   │   ├── TIGR00392.masked.faa
+│   │   │       │   │   ├── TIGR00468.masked.faa
+│   │   │       │   │   ├── TIGR00755.masked.faa
+│   │   │       │   │   └── TIGR00967.masked.faa
+│   │   │       │   ├── D1_metabat_output.10
+│   │   │       │   │   ├── PF00164.20.masked.faa
+│   │   │       │   │   ├── PF00177.16.masked.faa
+│   │   │       │   │   ├── PF00189.15.masked.faa
+│   │   │       │   │   ├── PF00203.16.masked.faa
+│   │   │       │   │   ├── PF00237.14.masked.faa
+│   │   │       │   │   ├── PF00238.14.masked.faa
+│   │   │       │   │   ├── PF00252.13.masked.faa
+│   │   │       │   │   ├── PF00281.14.masked.faa
+│   │   │       │   │   ├── PF00297.17.masked.faa
+│   │   │       │   │   ├── PF00298.14.masked.faa
+│   │   │       │   │   ├── PF00318.15.masked.faa
+│   │   │       │   │   ├── PF00327.15.masked.faa
+│   │   │       │   │   ├── PF00333.15.masked.faa
+│   │   │       │   │   ├── PF00347.18.masked.faa
+│   │   │       │   │   ├── PF00366.15.masked.faa
+│   │   │       │   │   ├── PF00380.14.masked.faa
+│   │   │       │   │   ├── PF00398.15.masked.faa
+│   │   │       │   │   ├── PF00410.14.masked.faa
+│   │   │       │   │   ├── PF00411.14.masked.faa
+│   │   │       │   │   ├── PF00466.15.masked.faa
+│   │   │       │   │   ├── PF00572.13.masked.faa
+│   │   │       │   │   ├── PF00623.15.masked.faa
+│   │   │       │   │   ├── PF00673.16.masked.faa
+│   │   │       │   │   ├── PF00679.19.masked.faa
+│   │   │       │   │   ├── PF00687.16.masked.faa
+│   │   │       │   │   ├── PF00736.14.masked.faa
+│   │   │       │   │   ├── PF00750.14.masked.faa
+│   │   │       │   │   ├── PF00827.12.masked.faa
+│   │   │       │   │   ├── PF00831.18.masked.faa
+│   │   │       │   │   ├── PF00833.13.masked.faa
+│   │   │       │   │   ├── PF00861.17.masked.faa
+│   │   │       │   │   ├── PF00900.15.masked.faa
+│   │   │       │   │   ├── PF00935.14.masked.faa
+│   │   │       │   │   ├── PF00958.17.masked.faa
+│   │   │       │   │   ├── PF01000.21.masked.faa
+│   │   │       │   │   ├── PF01015.13.masked.faa
+│   │   │       │   │   ├── PF01090.14.masked.faa
+│   │   │       │   │   ├── PF01157.13.masked.faa
+│   │   │       │   │   ├── PF01192.17.masked.faa
+│   │   │       │   │   ├── PF01193.19.masked.faa
+│   │   │       │   │   ├── PF01194.12.masked.faa
+│   │   │       │   │   ├── PF01198.14.masked.faa
+│   │   │       │   │   ├── PF01200.13.masked.faa
+│   │   │       │   │   ├── PF01246.15.masked.faa
+│   │   │       │   │   ├── PF01269.12.masked.faa
+│   │   │       │   │   ├── PF01280.15.masked.faa
+│   │   │       │   │   ├── PF01282.14.masked.faa
+│   │   │       │   │   ├── PF01351.13.masked.faa
+│   │   │       │   │   ├── PF01655.13.masked.faa
+│   │   │       │   │   ├── PF01667.12.masked.faa
+│   │   │       │   │   ├── PF01725.11.masked.faa
+│   │   │       │   │   ├── PF01868.11.masked.faa
+│   │   │       │   │   ├── PF01982.11.masked.faa
+│   │   │       │   │   ├── PF03439.8.masked.faa
+│   │   │       │   │   ├── PF03484.10.masked.faa
+│   │   │       │   │   ├── PF03719.10.masked.faa
+│   │   │       │   │   ├── PF03764.13.masked.faa
+│   │   │       │   │   ├── PF03874.11.masked.faa
+│   │   │       │   │   ├── PF03876.12.masked.faa
+│   │   │       │   │   ├── PF03947.13.masked.faa
+│   │   │       │   │   ├── PF04019.7.masked.faa
+│   │   │       │   │   ├── PF04127.10.masked.faa
+│   │   │       │   │   ├── PF04919.7.masked.faa
+│   │   │       │   │   ├── PF04983.13.masked.faa
+│   │   │       │   │   ├── PF04997.7.masked.faa
+│   │   │       │   │   ├── PF05000.12.masked.faa
+│   │   │       │   │   ├── PF05221.12.masked.faa
+│   │   │       │   │   ├── PF05746.10.masked.faa
+│   │   │       │   │   ├── PF06418.9.masked.faa
+│   │   │       │   │   ├── PF07541.7.masked.faa
+│   │   │       │   │   ├── PF08068.7.masked.faa
+│   │   │       │   │   ├── PF08071.7.masked.faa
+│   │   │       │   │   ├── PF13656.1.masked.faa
+│   │   │       │   │   ├── TIGR00057.masked.faa
+│   │   │       │   │   ├── TIGR00064.masked.faa
+│   │   │       │   │   ├── TIGR00134.masked.faa
+│   │   │       │   │   ├── TIGR00329.masked.faa
+│   │   │       │   │   ├── TIGR00336.masked.faa
+│   │   │       │   │   ├── TIGR00408.masked.faa
+│   │   │       │   │   ├── TIGR00425.masked.faa
+│   │   │       │   │   ├── TIGR00468.masked.faa
+│   │   │       │   │   ├── TIGR01080.masked.faa
+│   │   │       │   │   ├── TIGR01213.masked.faa
+│   │   │       │   │   ├── TIGR02076.masked.faa
+│   │   │       │   │   ├── TIGR02153.masked.faa
+│   │   │       │   │   ├── TIGR02389.masked.faa
+│   │   │       │   │   ├── TIGR03665.masked.faa
+│   │   │       │   │   ├── TIGR03685.masked.faa
+│   │   │       │   │   └── TIGR03724.masked.faa
+│   │   │       │   ├── D1_metabat_output.2
+│   │   │       │   │   ├── PF00298.14.masked.faa
+│   │   │       │   │   ├── PF00466.15.masked.faa
+│   │   │       │   │   ├── PF00687.16.masked.faa
+│   │   │       │   │   ├── PF03946.9.masked.faa
+│   │   │       │   │   └── TIGR00922.masked.faa
+│   │   │       │   ├── D1_metabat_output.3
+│   │   │       │   │   ├── PF00562.23.masked.faa
+│   │   │       │   │   ├── PF01121.15.masked.faa
+│   │   │       │   │   ├── PF04561.9.masked.faa
+│   │   │       │   │   ├── PF04563.10.masked.faa
+│   │   │       │   │   ├── PF04565.11.masked.faa
+│   │   │       │   │   ├── PF10609.4.masked.faa
+│   │   │       │   │   └── TIGR01978.masked.faa
+│   │   │       │   ├── D1_metabat_output.4
+│   │   │       │   │   ├── PF00162.14.masked.faa
+│   │   │       │   │   ├── PF00861.17.masked.faa
+│   │   │       │   │   └── PF03710.10.masked.faa
+│   │   │       │   ├── D1_metabat_output.5
+│   │   │       │   │   ├── PF00035.20.masked.faa
+│   │   │       │   │   ├── PF00562.23.masked.faa
+│   │   │       │   │   ├── PF01195.14.masked.faa
+│   │   │       │   │   ├── PF01386.14.masked.faa
+│   │   │       │   │   ├── PF01687.12.masked.faa
+│   │   │       │   │   ├── PF02565.10.masked.faa
+│   │   │       │   │   ├── PF02606.9.masked.faa
+│   │   │       │   │   ├── PF02938.9.masked.faa
+│   │   │       │   │   ├── PF04390.7.masked.faa
+│   │   │       │   │   ├── PF06574.7.masked.faa
+│   │   │       │   │   ├── PF11967.3.masked.faa
+│   │   │       │   │   ├── TIGR00436.masked.faa
+│   │   │       │   │   ├── TIGR01083.masked.faa
+│   │   │       │   │   └── TIGR01951.masked.faa
+│   │   │       │   ├── D1_metabat_output.7
+│   │   │       │   │   └── TIGR01213.masked.faa
+│   │   │       │   ├── D1_metabat_output.8
+│   │   │       │   │   ├── PF00164.20.masked.faa
+│   │   │       │   │   ├── PF00189.15.masked.faa
+│   │   │       │   │   ├── PF00238.14.masked.faa
+│   │   │       │   │   ├── PF00281.14.masked.faa
+│   │   │       │   │   ├── PF00298.14.masked.faa
+│   │   │       │   │   ├── PF00327.15.masked.faa
+│   │   │       │   │   ├── PF00333.15.masked.faa
+│   │   │       │   │   ├── PF00347.18.masked.faa
+│   │   │       │   │   ├── PF00366.15.masked.faa
+│   │   │       │   │   ├── PF00380.14.masked.faa
+│   │   │       │   │   ├── PF00410.14.masked.faa
+│   │   │       │   │   ├── PF00411.14.masked.faa
+│   │   │       │   │   ├── PF00416.17.masked.faa
+│   │   │       │   │   ├── PF00466.15.masked.faa
+│   │   │       │   │   ├── PF00562.23.masked.faa
+│   │   │       │   │   ├── PF00572.13.masked.faa
+│   │   │       │   │   ├── PF00623.15.masked.faa
+│   │   │       │   │   ├── PF00673.16.masked.faa
+│   │   │       │   │   ├── PF00679.19.masked.faa
+│   │   │       │   │   ├── PF00687.16.masked.faa
+│   │   │       │   │   ├── PF00736.14.masked.faa
+│   │   │       │   │   ├── PF00749.16.masked.faa
+│   │   │       │   │   ├── PF00750.14.masked.faa
+│   │   │       │   │   ├── PF00752.12.masked.faa
+│   │   │       │   │   ├── PF00827.12.masked.faa
+│   │   │       │   │   ├── PF00831.18.masked.faa
+│   │   │       │   │   ├── PF00832.15.masked.faa
+│   │   │       │   │   ├── PF00833.13.masked.faa
+│   │   │       │   │   ├── PF00861.17.masked.faa
+│   │   │       │   │   ├── PF00867.13.masked.faa
+│   │   │       │   │   ├── PF00900.15.masked.faa
+│   │   │       │   │   ├── PF00935.14.masked.faa
+│   │   │       │   │   ├── PF00958.17.masked.faa
+│   │   │       │   │   ├── PF01000.21.masked.faa
+│   │   │       │   │   ├── PF01090.14.masked.faa
+│   │   │       │   │   ├── PF01157.13.masked.faa
+│   │   │       │   │   ├── PF01172.13.masked.faa
+│   │   │       │   │   ├── PF01191.14.masked.faa
+│   │   │       │   │   ├── PF01192.17.masked.faa
+│   │   │       │   │   ├── PF01193.19.masked.faa
+│   │   │       │   │   ├── PF01198.14.masked.faa
+│   │   │       │   │   ├── PF01201.17.masked.faa
+│   │   │       │   │   ├── PF01269.12.masked.faa
+│   │   │       │   │   ├── PF01280.15.masked.faa
+│   │   │       │   │   ├── PF01287.15.masked.faa
+│   │   │       │   │   ├── PF01351.13.masked.faa
+│   │   │       │   │   ├── PF01655.13.masked.faa
+│   │   │       │   │   ├── PF01667.12.masked.faa
+│   │   │       │   │   ├── PF01780.14.masked.faa
+│   │   │       │   │   ├── PF01798.13.masked.faa
+│   │   │       │   │   ├── PF01849.13.masked.faa
+│   │   │       │   │   ├── PF01868.11.masked.faa
+│   │   │       │   │   ├── PF01912.13.masked.faa
+│   │   │       │   │   ├── PF01922.12.masked.faa
+│   │   │       │   │   ├── PF01981.11.masked.faa
+│   │   │       │   │   ├── PF01982.11.masked.faa
+│   │   │       │   │   ├── PF01984.15.masked.faa
+│   │   │       │   │   ├── PF02005.11.masked.faa
+│   │   │       │   │   ├── PF02978.14.masked.faa
+│   │   │       │   │   ├── PF03439.8.masked.faa
+│   │   │       │   │   ├── PF03484.10.masked.faa
+│   │   │       │   │   ├── PF03719.10.masked.faa
+│   │   │       │   │   ├── PF03764.13.masked.faa
+│   │   │       │   │   ├── PF03874.11.masked.faa
+│   │   │       │   │   ├── PF03947.13.masked.faa
+│   │   │       │   │   ├── PF03950.13.masked.faa
+│   │   │       │   │   ├── PF04010.8.masked.faa
+│   │   │       │   │   ├── PF04560.15.masked.faa
+│   │   │       │   │   ├── PF04561.9.masked.faa
+│   │   │       │   │   ├── PF04563.10.masked.faa
+│   │   │       │   │   ├── PF04565.11.masked.faa
+│   │   │       │   │   ├── PF04566.8.masked.faa
+│   │   │       │   │   ├── PF04567.12.masked.faa
+│   │   │       │   │   ├── PF04919.7.masked.faa
+│   │   │       │   │   ├── PF04983.13.masked.faa
+│   │   │       │   │   ├── PF04997.7.masked.faa
+│   │   │       │   │   ├── PF05000.12.masked.faa
+│   │   │       │   │   ├── PF05221.12.masked.faa
+│   │   │       │   │   ├── PF05746.10.masked.faa
+│   │   │       │   │   ├── PF06026.9.masked.faa
+│   │   │       │   │   ├── PF06418.9.masked.faa
+│   │   │       │   │   ├── PF08068.7.masked.faa
+│   │   │       │   │   ├── PF08071.7.masked.faa
+│   │   │       │   │   ├── PF09377.5.masked.faa
+│   │   │       │   │   ├── PF11987.3.masked.faa
+│   │   │       │   │   ├── TIGR00057.masked.faa
+│   │   │       │   │   ├── TIGR00064.masked.faa
+│   │   │       │   │   ├── TIGR00289.masked.faa
+│   │   │       │   │   ├── TIGR00329.masked.faa
+│   │   │       │   │   ├── TIGR00336.masked.faa
+│   │   │       │   │   ├── TIGR00344.masked.faa
+│   │   │       │   │   ├── TIGR00389.masked.faa
+│   │   │       │   │   ├── TIGR00392.masked.faa
+│   │   │       │   │   ├── TIGR00408.masked.faa
+│   │   │       │   │   ├── TIGR00422.masked.faa
+│   │   │       │   │   ├── TIGR00425.masked.faa
+│   │   │       │   │   ├── TIGR00442.masked.faa
+│   │   │       │   │   ├── TIGR00468.masked.faa
+│   │   │       │   │   ├── TIGR00522.masked.faa
+│   │   │       │   │   ├── TIGR00670.masked.faa
+│   │   │       │   │   ├── TIGR01018.masked.faa
+│   │   │       │   │   ├── TIGR01046.masked.faa
+│   │   │       │   │   ├── TIGR01080.masked.faa
+│   │   │       │   │   ├── TIGR02076.masked.faa
+│   │   │       │   │   ├── TIGR02338.masked.faa
+│   │   │       │   │   ├── TIGR02389.masked.faa
+│   │   │       │   │   ├── TIGR03665.masked.faa
+│   │   │       │   │   ├── TIGR03679.masked.faa
+│   │   │       │   │   ├── TIGR03683.masked.faa
+│   │   │       │   │   ├── TIGR03685.masked.faa
+│   │   │       │   │   └── TIGR03724.masked.faa
+│   │   │       │   └── D1_metabat_output.9
+│   │   │       │       ├── PF01250.12.masked.faa
+│   │   │       │       ├── PF01765.14.masked.faa
+│   │   │       │       ├── PF02576.12.masked.faa
+│   │   │       │       ├── PF02823.11.masked.faa
+│   │   │       │       └── PF03710.10.masked.faa
+│   │   │       ├── bin_stats.analyze.tsv
+│   │   │       ├── bin_stats_ext.tsv
+│   │   │       ├── bin_stats.tree.tsv
+│   │   │       ├── checkm_hmm_info.pkl.gz
+│   │   │       ├── marker_gene_stats.tsv
+│   │   │       ├── phylo_hmm_info.pkl.gz
+│   │   │       └── tree
+│   │   │           ├── concatenated.fasta
+│   │   │           ├── concatenated.pplacer.json
+│   │   │           ├── concatenated.tre
+│   │   │           ├── PF00164.20.masked.faa
+│   │   │           ├── PF00177.16.masked.faa
+│   │   │           ├── PF00181.18.masked.faa
+│   │   │           ├── PF00189.15.masked.faa
+│   │   │           ├── PF00203.16.masked.faa
+│   │   │           ├── PF00237.14.masked.faa
+│   │   │           ├── PF00238.14.masked.faa
+│   │   │           ├── PF00252.13.masked.faa
+│   │   │           ├── PF00276.15.masked.faa
+│   │   │           ├── PF00281.14.masked.faa
+│   │   │           ├── PF00297.17.masked.faa
+│   │   │           ├── PF00298.14.masked.faa
+│   │   │           ├── PF00312.17.masked.faa
+│   │   │           ├── PF00318.15.masked.faa
+│   │   │           ├── PF00333.15.masked.faa
+│   │   │           ├── PF00366.15.masked.faa
+│   │   │           ├── PF00380.14.masked.faa
+│   │   │           ├── PF00410.14.masked.faa
+│   │   │           ├── PF00411.14.masked.faa
+│   │   │           ├── PF00466.15.masked.faa
+│   │   │           ├── PF00562.23.masked.faa
+│   │   │           ├── PF00572.13.masked.faa
+│   │   │           ├── PF00573.17.masked.faa
+│   │   │           ├── PF00623.15.masked.faa
+│   │   │           ├── PF00673.16.masked.faa
+│   │   │           ├── PF00687.16.masked.faa
+│   │   │           ├── PF00831.18.masked.faa
+│   │   │           ├── PF00861.17.masked.faa
+│   │   │           ├── PF01192.17.masked.faa
+│   │   │           ├── PF01509.13.masked.faa
+│   │   │           ├── PF02978.14.masked.faa
+│   │   │           ├── PF03719.10.masked.faa
+│   │   │           ├── PF03946.9.masked.faa
+│   │   │           ├── PF03947.13.masked.faa
+│   │   │           ├── PF04560.15.masked.faa
+│   │   │           ├── PF04561.9.masked.faa
+│   │   │           ├── PF04563.10.masked.faa
+│   │   │           ├── PF04565.11.masked.faa
+│   │   │           ├── PF04997.7.masked.faa
+│   │   │           ├── PF05000.12.masked.faa
+│   │   │           ├── PF11987.3.masked.faa
+│   │   │           ├── pplacer.out
+│   │   │           ├── TIGR00344.masked.faa
+│   │   │           └── TIGR00422.masked.faa
+│   │   └── D3_checkm
+│   │       ├── bins
+│   │       │   ├── D3_metabat_output.1
+│   │       │   │   ├── genes.faa
+│   │       │   │   ├── genes.gff
+│   │       │   │   ├── hmmer.analyze.txt
+│   │       │   │   └── hmmer.tree.txt
+│   │       │   ├── D3_metabat_output.10
+│   │       │   │   ├── genes.faa
+│   │       │   │   ├── genes.gff
+│   │       │   │   ├── hmmer.analyze.txt
+│   │       │   │   └── hmmer.tree.txt
+│   │       │   ├── D3_metabat_output.11
+│   │       │   │   ├── genes.faa
+│   │       │   │   ├── genes.gff
+│   │       │   │   ├── hmmer.analyze.txt
+│   │       │   │   └── hmmer.tree.txt
+│   │       │   ├── D3_metabat_output.12
+│   │       │   │   ├── genes.faa
+│   │       │   │   ├── genes.gff
+│   │       │   │   ├── hmmer.analyze.txt
+│   │       │   │   └── hmmer.tree.txt
+│   │       │   ├── D3_metabat_output.13
+│   │       │   │   ├── genes.faa
+│   │       │   │   ├── genes.gff
+│   │       │   │   ├── hmmer.analyze.txt
+│   │       │   │   └── hmmer.tree.txt
+│   │       │   ├── D3_metabat_output.14
+│   │       │   │   ├── genes.faa
+│   │       │   │   ├── genes.gff
+│   │       │   │   ├── hmmer.analyze.txt
+│   │       │   │   └── hmmer.tree.txt
+│   │       │   ├── D3_metabat_output.15
+│   │       │   │   ├── genes.faa
+│   │       │   │   ├── genes.gff
+│   │       │   │   ├── hmmer.analyze.txt
+│   │       │   │   └── hmmer.tree.txt
+│   │       │   ├── D3_metabat_output.16
+│   │       │   │   ├── genes.faa
+│   │       │   │   ├── genes.gff
+│   │       │   │   ├── hmmer.analyze.txt
+│   │       │   │   └── hmmer.tree.txt
+│   │       │   ├── D3_metabat_output.17
+│   │       │   │   ├── genes.faa
+│   │       │   │   ├── genes.gff
+│   │       │   │   ├── hmmer.analyze.txt
+│   │       │   │   └── hmmer.tree.txt
+│   │       │   ├── D3_metabat_output.18
+│   │       │   │   ├── genes.faa
+│   │       │   │   ├── genes.gff
+│   │       │   │   ├── hmmer.analyze.txt
+│   │       │   │   └── hmmer.tree.txt
+│   │       │   ├── D3_metabat_output.19
+│   │       │   │   ├── genes.faa
+│   │       │   │   ├── genes.gff
+│   │       │   │   ├── hmmer.analyze.txt
+│   │       │   │   └── hmmer.tree.txt
+│   │       │   ├── D3_metabat_output.2
+│   │       │   │   ├── genes.faa
+│   │       │   │   ├── genes.gff
+│   │       │   │   ├── hmmer.analyze.txt
+│   │       │   │   └── hmmer.tree.txt
+│   │       │   ├── D3_metabat_output.20
+│   │       │   │   ├── genes.faa
+│   │       │   │   ├── genes.gff
+│   │       │   │   ├── hmmer.analyze.txt
+│   │       │   │   └── hmmer.tree.txt
+│   │       │   ├── D3_metabat_output.21
+│   │       │   │   ├── genes.faa
+│   │       │   │   ├── genes.gff
+│   │       │   │   ├── hmmer.analyze.txt
+│   │       │   │   └── hmmer.tree.txt
+│   │       │   ├── D3_metabat_output.3
+│   │       │   │   ├── genes.faa
+│   │       │   │   ├── genes.gff
+│   │       │   │   ├── hmmer.analyze.txt
+│   │       │   │   └── hmmer.tree.txt
+│   │       │   ├── D3_metabat_output.4
+│   │       │   │   ├── genes.faa
+│   │       │   │   ├── genes.gff
+│   │       │   │   ├── hmmer.analyze.txt
+│   │       │   │   └── hmmer.tree.txt
+│   │       │   ├── D3_metabat_output.5
+│   │       │   │   ├── genes.faa
+│   │       │   │   ├── genes.gff
+│   │       │   │   ├── hmmer.analyze.txt
+│   │       │   │   └── hmmer.tree.txt
+│   │       │   ├── D3_metabat_output.6
+│   │       │   │   ├── genes.faa
+│   │       │   │   ├── genes.gff
+│   │       │   │   ├── hmmer.analyze.txt
+│   │       │   │   └── hmmer.tree.txt
+│   │       │   ├── D3_metabat_output.7
+│   │       │   │   ├── genes.faa
+│   │       │   │   ├── genes.gff
+│   │       │   │   ├── hmmer.analyze.txt
+│   │       │   │   └── hmmer.tree.txt
+│   │       │   ├── D3_metabat_output.8
+│   │       │   │   ├── genes.faa
+│   │       │   │   ├── genes.gff
+│   │       │   │   ├── hmmer.analyze.txt
+│   │       │   │   └── hmmer.tree.txt
+│   │       │   └── D3_metabat_output.9
+│   │       │       ├── genes.faa
+│   │       │       ├── genes.gff
+│   │       │       ├── hmmer.analyze.txt
+│   │       │       └── hmmer.tree.txt
+│   │       ├── checkm.log
+│   │       ├── lineage.ms
+│   │       ├── qa.out
+│   │       └── storage
+│   │           ├── aai_qa
+│   │           │   ├── D3_metabat_output.11
+│   │           │   │   ├── PF00380.14.masked.faa
+│   │           │   │   ├── PF00572.13.masked.faa
+│   │           │   │   ├── PF01194.12.masked.faa
+│   │           │   │   └── PF02005.11.masked.faa
+│   │           │   ├── D3_metabat_output.12
+│   │           │   │   ├── PF00164.20.masked.faa
+│   │           │   │   ├── PF00177.16.masked.faa
+│   │           │   │   ├── PF00181.18.masked.faa
+│   │           │   │   ├── PF00189.15.masked.faa
+│   │           │   │   ├── PF00203.16.masked.faa
+│   │           │   │   ├── PF00237.14.masked.faa
+│   │           │   │   ├── PF00238.14.masked.faa
+│   │           │   │   ├── PF00252.13.masked.faa
+│   │           │   │   ├── PF00276.15.masked.faa
+│   │           │   │   ├── PF00281.14.masked.faa
+│   │           │   │   ├── PF00297.17.masked.faa
+│   │           │   │   ├── PF00298.14.masked.faa
+│   │           │   │   ├── PF00312.17.masked.faa
+│   │           │   │   ├── PF00318.15.masked.faa
+│   │           │   │   ├── PF00333.15.masked.faa
+│   │           │   │   ├── PF00338.17.masked.faa
+│   │           │   │   ├── PF00347.18.masked.faa
+│   │           │   │   ├── PF00366.15.masked.faa
+│   │           │   │   ├── PF00410.14.masked.faa
+│   │           │   │   ├── PF00411.14.masked.faa
+│   │           │   │   ├── PF00416.17.masked.faa
+│   │           │   │   ├── PF00453.13.masked.faa
+│   │           │   │   ├── PF00466.15.masked.faa
+│   │           │   │   ├── PF00562.23.masked.faa
+│   │           │   │   ├── PF00573.17.masked.faa
+│   │           │   │   ├── PF00623.15.masked.faa
+│   │           │   │   ├── PF00673.16.masked.faa
+│   │           │   │   ├── PF00687.16.masked.faa
+│   │           │   │   ├── PF00828.14.masked.faa
+│   │           │   │   ├── PF00829.16.masked.faa
+│   │           │   │   ├── PF00831.18.masked.faa
+│   │           │   │   ├── PF00861.17.masked.faa
+│   │           │   │   ├── PF00886.14.masked.faa
+│   │           │   │   ├── PF00889.14.masked.faa
+│   │           │   │   ├── PF01016.14.masked.faa
+│   │           │   │   ├── PF01018.17.masked.faa
+│   │           │   │   ├── PF01195.14.masked.faa
+│   │           │   │   ├── PF01245.15.masked.faa
+│   │           │   │   ├── PF01250.12.masked.faa
+│   │           │   │   ├── PF01409.15.masked.faa
+│   │           │   │   ├── PF01509.13.masked.faa
+│   │           │   │   ├── PF01668.13.masked.faa
+│   │           │   │   ├── PF01746.16.masked.faa
+│   │           │   │   ├── PF01765.14.masked.faa
+│   │           │   │   ├── PF01795.14.masked.faa
+│   │           │   │   ├── PF02033.13.masked.faa
+│   │           │   │   ├── PF02130.12.masked.faa
+│   │           │   │   ├── PF02367.12.masked.faa
+│   │           │   │   ├── PF02912.13.masked.faa
+│   │           │   │   ├── PF02978.14.masked.faa
+│   │           │   │   ├── PF03484.10.masked.faa
+│   │           │   │   ├── PF03719.10.masked.faa
+│   │           │   │   ├── PF03946.9.masked.faa
+│   │           │   │   ├── PF03947.13.masked.faa
+│   │           │   │   ├── PF04560.15.masked.faa
+│   │           │   │   ├── PF04561.9.masked.faa
+│   │           │   │   ├── PF04563.10.masked.faa
+│   │           │   │   ├── PF04565.11.masked.faa
+│   │           │   │   ├── PF04983.13.masked.faa
+│   │           │   │   ├── PF04997.7.masked.faa
+│   │           │   │   ├── PF04998.12.masked.faa
+│   │           │   │   ├── PF05000.12.masked.faa
+│   │           │   │   ├── PF05491.8.masked.faa
+│   │           │   │   ├── PF06071.8.masked.faa
+│   │           │   │   ├── PF06421.7.masked.faa
+│   │           │   │   ├── PF08459.6.masked.faa
+│   │           │   │   ├── PF08529.6.masked.faa
+│   │           │   │   ├── PF10385.4.masked.faa
+│   │           │   │   ├── PF11987.3.masked.faa
+│   │           │   │   ├── PF12344.3.masked.faa
+│   │           │   │   ├── PF13184.1.masked.faa
+│   │           │   │   ├── PF13603.1.masked.faa
+│   │           │   │   ├── TIGR00019.masked.faa
+│   │           │   │   ├── TIGR00084.masked.faa
+│   │           │   │   ├── TIGR00459.masked.faa
+│   │           │   │   ├── TIGR00460.masked.faa
+│   │           │   │   ├── TIGR00615.masked.faa
+│   │           │   │   ├── TIGR00855.masked.faa
+│   │           │   │   ├── TIGR00922.masked.faa
+│   │           │   │   ├── TIGR00967.masked.faa
+│   │           │   │   ├── TIGR01079.masked.faa
+│   │           │   │   ├── TIGR02075.masked.faa
+│   │           │   │   ├── TIGR02432.masked.faa
+│   │           │   │   └── TIGR03594.masked.faa
+│   │           │   ├── D3_metabat_output.13
+│   │           │   │   ├── PF01018.17.masked.faa
+│   │           │   │   └── TIGR03594.masked.faa
+│   │           │   ├── D3_metabat_output.15
+│   │           │   │   ├── PF00677.12.masked.faa
+│   │           │   │   ├── TIGR00093.masked.faa
+│   │           │   │   └── TIGR01499.masked.faa
+│   │           │   ├── D3_metabat_output.16
+│   │           │   │   ├── PF00162.14.masked.faa
+│   │           │   │   ├── PF00164.20.masked.faa
+│   │           │   │   ├── PF00177.16.masked.faa
+│   │           │   │   ├── PF00181.18.masked.faa
+│   │           │   │   ├── PF00189.15.masked.faa
+│   │           │   │   ├── PF00203.16.masked.faa
+│   │           │   │   ├── PF00237.14.masked.faa
+│   │           │   │   ├── PF00238.14.masked.faa
+│   │           │   │   ├── PF00252.13.masked.faa
+│   │           │   │   ├── PF00276.15.masked.faa
+│   │           │   │   ├── PF00281.14.masked.faa
+│   │           │   │   ├── PF00297.17.masked.faa
+│   │           │   │   ├── PF00298.14.masked.faa
+│   │           │   │   ├── PF00312.17.masked.faa
+│   │           │   │   ├── PF00318.15.masked.faa
+│   │           │   │   ├── PF00333.15.masked.faa
+│   │           │   │   ├── PF00338.17.masked.faa
+│   │           │   │   ├── PF00347.18.masked.faa
+│   │           │   │   ├── PF00366.15.masked.faa
+│   │           │   │   ├── PF00380.14.masked.faa
+│   │           │   │   ├── PF00410.14.masked.faa
+│   │           │   │   ├── PF00411.14.masked.faa
+│   │           │   │   ├── PF00416.17.masked.faa
+│   │           │   │   ├── PF00453.13.masked.faa
+│   │           │   │   ├── PF00466.15.masked.faa
+│   │           │   │   ├── PF00562.23.masked.faa
+│   │           │   │   ├── PF00572.13.masked.faa
+│   │           │   │   ├── PF00573.17.masked.faa
+│   │           │   │   ├── PF00623.15.masked.faa
+│   │           │   │   ├── PF00673.16.masked.faa
+│   │           │   │   ├── PF00687.16.masked.faa
+│   │           │   │   ├── PF00828.14.masked.faa
+│   │           │   │   ├── PF00829.16.masked.faa
+│   │           │   │   ├── PF00831.18.masked.faa
+│   │           │   │   ├── PF00861.17.masked.faa
+│   │           │   │   ├── PF00886.14.masked.faa
+│   │           │   │   ├── PF00889.14.masked.faa
+│   │           │   │   ├── PF01000.21.masked.faa
+│   │           │   │   ├── PF01016.14.masked.faa
+│   │           │   │   ├── PF01018.17.masked.faa
+│   │           │   │   ├── PF01121.15.masked.faa
+│   │           │   │   ├── PF01193.19.masked.faa
+│   │           │   │   ├── PF01195.14.masked.faa
+│   │           │   │   ├── PF01196.14.masked.faa
+│   │           │   │   ├── PF01245.15.masked.faa
+│   │           │   │   ├── PF01250.12.masked.faa
+│   │           │   │   ├── PF01281.14.masked.faa
+│   │           │   │   ├── PF01409.15.masked.faa
+│   │           │   │   ├── PF01632.14.masked.faa
+│   │           │   │   ├── PF01668.13.masked.faa
+│   │           │   │   ├── PF01746.16.masked.faa
+│   │           │   │   ├── PF01765.14.masked.faa
+│   │           │   │   ├── PF01795.14.masked.faa
+│   │           │   │   ├── PF02033.13.masked.faa
+│   │           │   │   ├── PF02130.12.masked.faa
+│   │           │   │   ├── PF02367.12.masked.faa
+│   │           │   │   ├── PF02912.13.masked.faa
+│   │           │   │   ├── PF03484.10.masked.faa
+│   │           │   │   ├── PF03719.10.masked.faa
+│   │           │   │   ├── PF03946.9.masked.faa
+│   │           │   │   ├── PF03947.13.masked.faa
+│   │           │   │   ├── PF03948.9.masked.faa
+│   │           │   │   ├── PF04560.15.masked.faa
+│   │           │   │   ├── PF04561.9.masked.faa
+│   │           │   │   ├── PF04563.10.masked.faa
+│   │           │   │   ├── PF04565.11.masked.faa
+│   │           │   │   ├── PF04983.13.masked.faa
+│   │           │   │   ├── PF04997.7.masked.faa
+│   │           │   │   ├── PF04998.12.masked.faa
+│   │           │   │   ├── PF05000.12.masked.faa
+│   │           │   │   ├── PF05697.8.masked.faa
+│   │           │   │   ├── PF06071.8.masked.faa
+│   │           │   │   ├── PF06421.7.masked.faa
+│   │           │   │   ├── PF08459.6.masked.faa
+│   │           │   │   ├── PF08529.6.masked.faa
+│   │           │   │   ├── PF10385.4.masked.faa
+│   │           │   │   ├── PF11987.3.masked.faa
+│   │           │   │   ├── PF12344.3.masked.faa
+│   │           │   │   ├── PF13184.1.masked.faa
+│   │           │   │   ├── PF13603.1.masked.faa
+│   │           │   │   ├── TIGR00019.masked.faa
+│   │           │   │   ├── TIGR00250.masked.faa
+│   │           │   │   ├── TIGR00329.masked.faa
+│   │           │   │   ├── TIGR00344.masked.faa
+│   │           │   │   ├── TIGR00392.masked.faa
+│   │           │   │   ├── TIGR00459.masked.faa
+│   │           │   │   ├── TIGR00460.masked.faa
+│   │           │   │   ├── TIGR00615.masked.faa
+│   │           │   │   ├── TIGR00755.masked.faa
+│   │           │   │   ├── TIGR00810.masked.faa
+│   │           │   │   ├── TIGR00855.masked.faa
+│   │           │   │   ├── TIGR00922.masked.faa
+│   │           │   │   ├── TIGR00967.masked.faa
+│   │           │   │   ├── TIGR01079.masked.faa
+│   │           │   │   ├── TIGR02432.masked.faa
+│   │           │   │   ├── TIGR03263.masked.faa
+│   │           │   │   └── TIGR03723.masked.faa
+│   │           │   ├── D3_metabat_output.17
+│   │           │   │   ├── PF00189.15.masked.faa
+│   │           │   │   ├── PF00238.14.masked.faa
+│   │           │   │   ├── PF00276.15.masked.faa
+│   │           │   │   ├── PF00281.14.masked.faa
+│   │           │   │   ├── PF00298.14.masked.faa
+│   │           │   │   ├── PF00312.17.masked.faa
+│   │           │   │   ├── PF00318.15.masked.faa
+│   │           │   │   ├── PF00327.15.masked.faa
+│   │           │   │   ├── PF00333.15.masked.faa
+│   │           │   │   ├── PF00347.18.masked.faa
+│   │           │   │   ├── PF00366.15.masked.faa
+│   │           │   │   ├── PF00380.14.masked.faa
+│   │           │   │   ├── PF00398.15.masked.faa
+│   │           │   │   ├── PF00410.14.masked.faa
+│   │           │   │   ├── PF00411.14.masked.faa
+│   │           │   │   ├── PF00416.17.masked.faa
+│   │           │   │   ├── PF00466.15.masked.faa
+│   │           │   │   ├── PF00562.23.masked.faa
+│   │           │   │   ├── PF00572.13.masked.faa
+│   │           │   │   ├── PF00623.15.masked.faa
+│   │           │   │   ├── PF00673.16.masked.faa
+│   │           │   │   ├── PF00679.19.masked.faa
+│   │           │   │   ├── PF00687.16.masked.faa
+│   │           │   │   ├── PF00736.14.masked.faa
+│   │           │   │   ├── PF00749.16.masked.faa
+│   │           │   │   ├── PF00750.14.masked.faa
+│   │           │   │   ├── PF00752.12.masked.faa
+│   │           │   │   ├── PF00827.12.masked.faa
+│   │           │   │   ├── PF00831.18.masked.faa
+│   │           │   │   ├── PF00832.15.masked.faa
+│   │           │   │   ├── PF00833.13.masked.faa
+│   │           │   │   ├── PF00861.17.masked.faa
+│   │           │   │   ├── PF00867.13.masked.faa
+│   │           │   │   ├── PF00900.15.masked.faa
+│   │           │   │   ├── PF00958.17.masked.faa
+│   │           │   │   ├── PF01000.21.masked.faa
+│   │           │   │   ├── PF01015.13.masked.faa
+│   │           │   │   ├── PF01157.13.masked.faa
+│   │           │   │   ├── PF01172.13.masked.faa
+│   │           │   │   ├── PF01191.14.masked.faa
+│   │           │   │   ├── PF01192.17.masked.faa
+│   │           │   │   ├── PF01193.19.masked.faa
+│   │           │   │   ├── PF01198.14.masked.faa
+│   │           │   │   ├── PF01201.17.masked.faa
+│   │           │   │   ├── PF01280.15.masked.faa
+│   │           │   │   ├── PF01287.15.masked.faa
+│   │           │   │   ├── PF01655.13.masked.faa
+│   │           │   │   ├── PF01780.14.masked.faa
+│   │           │   │   ├── PF01798.13.masked.faa
+│   │           │   │   ├── PF01849.13.masked.faa
+│   │           │   │   ├── PF01868.11.masked.faa
+│   │           │   │   ├── PF01922.12.masked.faa
+│   │           │   │   ├── PF01981.11.masked.faa
+│   │           │   │   ├── PF01982.11.masked.faa
+│   │           │   │   ├── PF01984.15.masked.faa
+│   │           │   │   ├── PF02978.14.masked.faa
+│   │           │   │   ├── PF03439.8.masked.faa
+│   │           │   │   ├── PF03484.10.masked.faa
+│   │           │   │   ├── PF03719.10.masked.faa
+│   │           │   │   ├── PF03764.13.masked.faa
+│   │           │   │   ├── PF03874.11.masked.faa
+│   │           │   │   ├── PF03876.12.masked.faa
+│   │           │   │   ├── PF03950.13.masked.faa
+│   │           │   │   ├── PF04010.8.masked.faa
+│   │           │   │   ├── PF04019.7.masked.faa
+│   │           │   │   ├── PF04560.15.masked.faa
+│   │           │   │   ├── PF04561.9.masked.faa
+│   │           │   │   ├── PF04563.10.masked.faa
+│   │           │   │   ├── PF04565.11.masked.faa
+│   │           │   │   ├── PF04566.8.masked.faa
+│   │           │   │   ├── PF04567.12.masked.faa
+│   │           │   │   ├── PF04919.7.masked.faa
+│   │           │   │   ├── PF04983.13.masked.faa
+│   │           │   │   ├── PF04997.7.masked.faa
+│   │           │   │   ├── PF05000.12.masked.faa
+│   │           │   │   ├── PF05221.12.masked.faa
+│   │           │   │   ├── PF05746.10.masked.faa
+│   │           │   │   ├── PF06026.9.masked.faa
+│   │           │   │   ├── PF06418.9.masked.faa
+│   │           │   │   ├── PF08069.7.masked.faa
+│   │           │   │   ├── PF08071.7.masked.faa
+│   │           │   │   ├── PF09377.5.masked.faa
+│   │           │   │   ├── PF13685.1.masked.faa
+│   │           │   │   ├── TIGR00057.masked.faa
+│   │           │   │   ├── TIGR00289.masked.faa
+│   │           │   │   ├── TIGR00336.masked.faa
+│   │           │   │   ├── TIGR00344.masked.faa
+│   │           │   │   ├── TIGR00389.masked.faa
+│   │           │   │   ├── TIGR00392.masked.faa
+│   │           │   │   ├── TIGR00408.masked.faa
+│   │           │   │   ├── TIGR00419.masked.faa
+│   │           │   │   ├── TIGR00422.masked.faa
+│   │           │   │   ├── TIGR00432.masked.faa
+│   │           │   │   ├── TIGR00468.masked.faa
+│   │           │   │   ├── TIGR00522.masked.faa
+│   │           │   │   ├── TIGR00549.masked.faa
+│   │           │   │   ├── TIGR00670.masked.faa
+│   │           │   │   ├── TIGR01018.masked.faa
+│   │           │   │   ├── TIGR01046.masked.faa
+│   │           │   │   ├── TIGR01080.masked.faa
+│   │           │   │   ├── TIGR01213.masked.faa
+│   │           │   │   ├── TIGR02076.masked.faa
+│   │           │   │   ├── TIGR02338.masked.faa
+│   │           │   │   ├── TIGR02389.masked.faa
+│   │           │   │   ├── TIGR03679.masked.faa
+│   │           │   │   ├── TIGR03683.masked.faa
+│   │           │   │   └── TIGR03685.masked.faa
+│   │           │   ├── D3_metabat_output.18
+│   │           │   │   ├── PF03948.9.masked.faa
+│   │           │   │   ├── PF05698.9.masked.faa
+│   │           │   │   └── TIGR00186.masked.faa
+│   │           │   ├── D3_metabat_output.19
+│   │           │   │   ├── PF01687.12.masked.faa
+│   │           │   │   ├── PF02768.10.masked.faa
+│   │           │   │   └── TIGR02350.masked.faa
+│   │           │   ├── D3_metabat_output.2
+│   │           │   │   ├── PF00119.15.masked.faa
+│   │           │   │   ├── PF00164.20.masked.faa
+│   │           │   │   ├── PF00177.16.masked.faa
+│   │           │   │   ├── PF00213.13.masked.faa
+│   │           │   │   ├── PF00231.14.masked.faa
+│   │           │   │   ├── PF00297.17.masked.faa
+│   │           │   │   ├── PF00344.15.masked.faa
+│   │           │   │   ├── PF00380.14.masked.faa
+│   │           │   │   ├── PF00411.14.masked.faa
+│   │           │   │   ├── PF00572.13.masked.faa
+│   │           │   │   ├── PF00625.16.masked.faa
+│   │           │   │   ├── PF00677.12.masked.faa
+│   │           │   │   ├── PF00988.17.masked.faa
+│   │           │   │   ├── PF01000.21.masked.faa
+│   │           │   │   ├── PF01171.15.masked.faa
+│   │           │   │   ├── PF01189.12.masked.faa
+│   │           │   │   ├── PF01193.19.masked.faa
+│   │           │   │   ├── PF01196.14.masked.faa
+│   │           │   │   ├── PF01330.16.masked.faa
+│   │           │   │   ├── PF01409.15.masked.faa
+│   │           │   │   ├── PF01502.13.masked.faa
+│   │           │   │   ├── PF01649.13.masked.faa
+│   │           │   │   ├── PF01709.15.masked.faa
+│   │           │   │   ├── PF01765.14.masked.faa
+│   │           │   │   ├── PF01939.11.masked.faa
+│   │           │   │   ├── PF02075.12.masked.faa
+│   │           │   │   ├── PF02580.11.masked.faa
+│   │           │   │   ├── PF02686.10.masked.faa
+│   │           │   │   ├── PF02823.11.masked.faa
+│   │           │   │   ├── PF02934.10.masked.faa
+│   │           │   │   ├── PF03054.11.masked.faa
+│   │           │   │   ├── PF03461.10.masked.faa
+│   │           │   │   ├── PF03484.10.masked.faa
+│   │           │   │   ├── PF05173.9.masked.faa
+│   │           │   │   ├── PF05258.7.masked.faa
+│   │           │   │   ├── PF06144.8.masked.faa
+│   │           │   │   ├── PF08436.7.masked.faa
+│   │           │   │   ├── PF11305.3.masked.faa
+│   │           │   │   ├── PF13288.1.masked.faa
+│   │           │   │   ├── TIGR00019.masked.faa
+│   │           │   │   ├── TIGR00086.masked.faa
+│   │           │   │   ├── TIGR00093.masked.faa
+│   │           │   │   ├── TIGR00132.masked.faa
+│   │           │   │   ├── TIGR00392.masked.faa
+│   │           │   │   ├── TIGR00416.masked.faa
+│   │           │   │   ├── TIGR00611.masked.faa
+│   │           │   │   ├── TIGR00634.masked.faa
+│   │           │   │   ├── TIGR00639.masked.faa
+│   │           │   │   ├── TIGR00878.masked.faa
+│   │           │   │   ├── TIGR00945.masked.faa
+│   │           │   │   ├── TIGR00962.masked.faa
+│   │           │   │   ├── TIGR01027.masked.faa
+│   │           │   │   ├── TIGR01039.masked.faa
+│   │           │   │   ├── TIGR01087.masked.faa
+│   │           │   │   ├── TIGR01134.masked.faa
+│   │           │   │   ├── TIGR01366.masked.faa
+│   │           │   │   ├── TIGR01394.masked.faa
+│   │           │   │   ├── TIGR01455.masked.faa
+│   │           │   │   ├── TIGR03723.masked.faa
+│   │           │   │   └── TIGR03725.masked.faa
+│   │           │   ├── D3_metabat_output.3
+│   │           │   │   ├── PF00380.14.masked.faa
+│   │           │   │   ├── PF00572.13.masked.faa
+│   │           │   │   ├── PF01018.17.masked.faa
+│   │           │   │   ├── PF01121.15.masked.faa
+│   │           │   │   ├── TIGR00615.masked.faa
+│   │           │   │   └── TIGR00755.masked.faa
+│   │           │   ├── D3_metabat_output.4
+│   │           │   │   ├── PF00398.15.masked.faa
+│   │           │   │   ├── PF00815.15.masked.faa
+│   │           │   │   ├── PF01259.13.masked.faa
+│   │           │   │   ├── PF01386.14.masked.faa
+│   │           │   │   ├── PF04166.7.masked.faa
+│   │           │   │   ├── PF09976.4.masked.faa
+│   │           │   │   ├── TIGR00418.masked.faa
+│   │           │   │   ├── TIGR01135.masked.faa
+│   │           │   │   ├── TIGR01418.masked.faa
+│   │           │   │   └── TIGR01496.masked.faa
+│   │           │   ├── D3_metabat_output.5
+│   │           │   │   ├── PF00318.15.masked.faa
+│   │           │   │   ├── PF00562.23.masked.faa
+│   │           │   │   ├── PF00627.26.masked.faa
+│   │           │   │   ├── PF00889.14.masked.faa
+│   │           │   │   ├── PF01765.14.masked.faa
+│   │           │   │   ├── PF02091.10.masked.faa
+│   │           │   │   ├── PF02092.12.masked.faa
+│   │           │   │   ├── PF04560.15.masked.faa
+│   │           │   │   ├── PF04561.9.masked.faa
+│   │           │   │   ├── PF04563.10.masked.faa
+│   │           │   │   ├── PF04565.11.masked.faa
+│   │           │   │   ├── PF10385.4.masked.faa
+│   │           │   │   ├── PF12169.3.masked.faa
+│   │           │   │   ├── PF13932.1.masked.faa
+│   │           │   │   ├── TIGR00186.masked.faa
+│   │           │   │   ├── TIGR00409.masked.faa
+│   │           │   │   ├── TIGR01750.masked.faa
+│   │           │   │   └── TIGR02075.masked.faa
+│   │           │   ├── D3_metabat_output.6
+│   │           │   │   ├── PF00709.16.masked.faa
+│   │           │   │   ├── PF01198.14.masked.faa
+│   │           │   │   ├── PF08071.7.masked.faa
+│   │           │   │   └── TIGR00329.masked.faa
+│   │           │   └── D3_metabat_output.9
+│   │           │       ├── PF01250.12.masked.faa
+│   │           │       └── PF11987.3.masked.faa
+│   │           ├── bin_stats.analyze.tsv
+│   │           ├── bin_stats_ext.tsv
+│   │           ├── bin_stats.tree.tsv
+│   │           ├── checkm_hmm_info.pkl.gz
+│   │           ├── marker_gene_stats.tsv
+│   │           ├── phylo_hmm_info.pkl.gz
+│   │           └── tree
+│   │               ├── concatenated.fasta
+│   │               ├── concatenated.pplacer.json
+│   │               ├── concatenated.tre
+│   │               ├── PF00164.20.masked.faa
+│   │               ├── PF00177.16.masked.faa
+│   │               ├── PF00181.18.masked.faa
+│   │               ├── PF00189.15.masked.faa
+│   │               ├── PF00203.16.masked.faa
+│   │               ├── PF00237.14.masked.faa
+│   │               ├── PF00238.14.masked.faa
+│   │               ├── PF00252.13.masked.faa
+│   │               ├── PF00276.15.masked.faa
+│   │               ├── PF00281.14.masked.faa
+│   │               ├── PF00297.17.masked.faa
+│   │               ├── PF00298.14.masked.faa
+│   │               ├── PF00312.17.masked.faa
+│   │               ├── PF00318.15.masked.faa
+│   │               ├── PF00333.15.masked.faa
+│   │               ├── PF00366.15.masked.faa
+│   │               ├── PF00380.14.masked.faa
+│   │               ├── PF00410.14.masked.faa
+│   │               ├── PF00411.14.masked.faa
+│   │               ├── PF00466.15.masked.faa
+│   │               ├── PF00562.23.masked.faa
+│   │               ├── PF00572.13.masked.faa
+│   │               ├── PF00573.17.masked.faa
+│   │               ├── PF00623.15.masked.faa
+│   │               ├── PF00673.16.masked.faa
+│   │               ├── PF00687.16.masked.faa
+│   │               ├── PF00831.18.masked.faa
+│   │               ├── PF00861.17.masked.faa
+│   │               ├── PF01192.17.masked.faa
+│   │               ├── PF01509.13.masked.faa
+│   │               ├── PF02978.14.masked.faa
+│   │               ├── PF03719.10.masked.faa
+│   │               ├── PF03946.9.masked.faa
+│   │               ├── PF03947.13.masked.faa
+│   │               ├── PF04560.15.masked.faa
+│   │               ├── PF04561.9.masked.faa
+│   │               ├── PF04563.10.masked.faa
+│   │               ├── PF04565.11.masked.faa
+│   │               ├── PF04997.7.masked.faa
+│   │               ├── PF05000.12.masked.faa
+│   │               ├── PF11987.3.masked.faa
+│   │               ├── pplacer.out
+│   │               ├── TIGR00344.masked.faa
+│   │               └── TIGR00422.masked.faa
+│   ├── distributions
+│   │   ├── cd_dist.txt
+│   │   ├── gc_dist.txt
+│   │   └── td_dist.txt
+│   ├── FASTQC
+│   │   ├── DNA_trimmed
+│   │   │   ├── SRR4342129_1.paired.trimmed_fastqc.html
+│   │   │   ├── SRR4342129_1.paired.trimmed_fastqc.zip
+│   │   │   ├── SRR4342129_2.paired.trimmed_fastqc.html
+│   │   │   ├── SRR4342129_2.paired.trimmed_fastqc.zip
+│   │   │   ├── SRR4342133_1.paired.trimmed_fastqc.html
+│   │   │   ├── SRR4342133_1.paired.trimmed_fastqc.zip
+│   │   │   ├── SRR4342133_2.paired.trimmed_fastqc.html
+│   │   │   └── SRR4342133_2.paired.trimmed_fastqc.zip
+│   │   ├── RNA_trim_37.left_paired.trimmed_fastqc.html
+│   │   ├── RNA_trim_37.left_paired.trimmed_fastqc.zip
+│   │   ├── RNA_trim_37.left_unpaired.trimmed_fastqc.html
+│   │   ├── RNA_trim_37.left_unpaired.trimmed_fastqc.zip
+│   │   ├── RNA_trim_37.right_paired.trimmed_fastqc.html
+│   │   ├── RNA_trim_37.right_paired.trimmed_fastqc.zip
+│   │   ├── RNA_trim_37.right_unpaired.trimmed_fastqc.html
+│   │   ├── RNA_trim_37.right_unpaired.trimmed_fastqc.zip
+│   │   ├── RNA_trim_39.left_paired.trimmed_fastqc.html
+│   │   ├── RNA_trim_39.left_paired.trimmed_fastqc.zip
+│   │   ├── RNA_trim_39.left_unpaired.trimmed_fastqc.html
+│   │   ├── RNA_trim_39.left_unpaired.trimmed_fastqc.zip
+│   │   ├── RNA_trim_39.right_paired.trimmed_fastqc.html
+│   │   ├── RNA_trim_39.right_paired.trimmed_fastqc.zip
+│   │   ├── RNA_trim_39.right_unpaired.trimmed_fastqc.html
+│   │   ├── RNA_trim_39.right_unpaired.trimmed_fastqc.zip
+│   │   ├── RNA_trimmed
+│   │   │   ├── RNA_trim_37.left_paired.trimmed_fastqc.html
+│   │   │   ├── RNA_trim_37.left_paired.trimmed_fastqc.zip
+│   │   │   ├── RNA_trim_37.left_unpaired.trimmed_fastqc.html
+│   │   │   ├── RNA_trim_37.left_unpaired.trimmed_fastqc.zip
+│   │   │   ├── RNA_trim_37.right_paired.trimmed_fastqc.html
+│   │   │   ├── RNA_trim_37.right_paired.trimmed_fastqc.zip
+│   │   │   ├── RNA_trim_37.right_unpaired.trimmed_fastqc.html
+│   │   │   ├── RNA_trim_37.right_unpaired.trimmed_fastqc.zip
+│   │   │   ├── RNA_trim_39.left_paired.trimmed_fastqc.html
+│   │   │   ├── RNA_trim_39.left_paired.trimmed_fastqc.zip
+│   │   │   ├── RNA_trim_39.left_unpaired.trimmed_fastqc.html
+│   │   │   ├── RNA_trim_39.left_unpaired.trimmed_fastqc.zip
+│   │   │   ├── RNA_trim_39.right_paired.trimmed_fastqc.html
+│   │   │   ├── RNA_trim_39.right_paired.trimmed_fastqc.zip
+│   │   │   ├── RNA_trim_39.right_unpaired.trimmed_fastqc.html
+│   │   │   └── RNA_trim_39.right_unpaired.trimmed_fastqc.zip
+│   │   ├── RNA_untrimmed
+│   │   │   ├── SRR4342137.1_fastqc.html
+│   │   │   ├── SRR4342137.1_fastqc.zip
+│   │   │   ├── SRR4342137.2_fastqc.html
+│   │   │   ├── SRR4342137.2_fastqc.zip
+│   │   │   ├── SRR4342139.1_fastqc.html
+│   │   │   ├── SRR4342139.1_fastqc.zip
+│   │   │   ├── SRR4342139.2_fastqc.html
+│   │   │   └── SRR4342139.2_fastqc.zip
+│   │   ├── SRR4342129_1.paired.trimmed_fastqc.html
+│   │   ├── SRR4342129_1.paired.trimmed_fastqc.zip
+│   │   ├── SRR4342129_2.paired.trimmed_fastqc.html
+│   │   ├── SRR4342129_2.paired.trimmed_fastqc.zip
+│   │   ├── SRR4342137.1_fastqc.html
+│   │   ├── SRR4342137.1_fastqc.zip
+│   │   ├── SRR4342137.2_fastqc.html
+│   │   ├── SRR4342137.2_fastqc.zip
+│   │   ├── SRR4342139.1_fastqc.html
+│   │   ├── SRR4342139.1_fastqc.zip
+│   │   ├── SRR4342139.2_fastqc.html
+│   │   └── SRR4342139.2_fastqc.zip
+│   ├── genome_tree
+│   │   ├── genome_tree.derep.txt
+│   │   ├── genome_tree_full.refpkg
+│   │   │   ├── CONTENTS.json
+│   │   │   ├── genome_tree.fasta
+│   │   │   ├── genome_tree.log
+│   │   │   ├── genome_tree.tre
+│   │   │   └── phylo_modelEcOyPk.json
+│   │   ├── genome_tree.metadata.tsv
+│   │   ├── genome_tree_reduced.refpkg
+│   │   │   ├── CONTENTS.json
+│   │   │   ├── genome_tree.fasta
+│   │   │   ├── genome_tree.log
+│   │   │   ├── genome_tree.tre
+│   │   │   └── phylo_modelJqWx6_.json
+│   │   ├── genome_tree.taxonomy.tsv
+│   │   ├── missing_duplicate_genes_50.tsv
+│   │   └── missing_duplicate_genes_97.tsv
+│   ├── hmms
+│   │   ├── checkm.hmm
+│   │   ├── checkm.hmm.ssi
+│   │   ├── phylo.hmm
+│   │   └── phylo.hmm.ssi
+│   ├── hmms_ssu
+│   │   ├── createHMMs.py
+│   │   ├── SSU_archaea.hmm
+│   │   ├── SSU_bacteria.hmm
+│   │   └── SSU_euk.hmm
+│   ├── img
+│   │   └── img_metadata.tsv
+│   ├── Metquast_analysis_of_Megahit
+│   │   ├── D1_metaquast_out
+│   │   │   ├── combined_reference
+│   │   │   │   ├── aligned_stats
+│   │   │   │   │   ├── cumulative_plot.pdf
+│   │   │   │   │   └── NAx_plot.pdf
+│   │   │   │   ├── basic_stats
+│   │   │   │   │   ├── cumulative_plot.pdf
+│   │   │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │   │   │   │   ├── GC_content_plot.pdf
+│   │   │   │   │   ├── gc.icarus.txt
+│   │   │   │   │   └── Nx_plot.pdf
+│   │   │   │   ├── contigs_reports
+│   │   │   │   │   ├── alignments_final-contigs.tsv
+│   │   │   │   │   ├── all_alignments_final-contigs.tsv
+│   │   │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │   │   │   │   ├── contigs_report_final-contigs.stderr
+│   │   │   │   │   ├── contigs_report_final-contigs.stdout
+│   │   │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │   │   │   │   ├── final_contigs.mis_contigs.fa
+│   │   │   │   │   ├── intergenomic_misassemblies.pdf
+│   │   │   │   │   ├── interspecies_translocations_by_refs_final_contigs.info
+│   │   │   │   │   ├── minimap_output
+│   │   │   │   │   │   ├── final-contigs.coords
+│   │   │   │   │   │   ├── final-contigs.coords.filtered
+│   │   │   │   │   │   ├── final-contigs.coords_tmp
+│   │   │   │   │   │   ├── final-contigs.sf
+│   │   │   │   │   │   ├── final-contigs.unaligned
+│   │   │   │   │   │   ├── final-contigs.used_snps.gz
+│   │   │   │   │   │   └── raw
+│   │   │   │   │   │       ├── final-contigs.coords
+│   │   │   │   │   │       ├── final-contigs.coords.filtered
+│   │   │   │   │   │       ├── final-contigs.coords_tmp
+│   │   │   │   │   │       ├── final-contigs.sf
+│   │   │   │   │   │       ├── final-contigs.unaligned
+│   │   │   │   │   │       └── final-contigs.used_snps.gz
+│   │   │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │   │   │   │   ├── misassemblies_plot.pdf
+│   │   │   │   │   ├── misassemblies_report.tex
+│   │   │   │   │   ├── misassemblies_report.tsv
+│   │   │   │   │   ├── misassemblies_report.txt
+│   │   │   │   │   ├── transposed_report_misassemblies.tex
+│   │   │   │   │   ├── transposed_report_misassemblies.tsv
+│   │   │   │   │   ├── transposed_report_misassemblies.txt
+│   │   │   │   │   ├── unaligned_report.tex
+│   │   │   │   │   ├── unaligned_report.tsv
+│   │   │   │   │   ├── unaligned_report.txt
+│   │   │   │   │   └── unique_contigs_final-contigs.tsv
+│   │   │   │   ├── genome_stats
+│   │   │   │   │   ├── final-contigs_gaps.txt
+│   │   │   │   │   └── genome_info.txt
+│   │   │   │   ├── icarus.html
+│   │   │   │   ├── icarus_viewers
+│   │   │   │   │   ├── alignment_viewer.html
+│   │   │   │   │   ├── alpha_proteobacterium_SCGC_AAA015_O19.html
+│   │   │   │   │   ├── Arenicella_chitinivorans.html
+│   │   │   │   │   ├── Aurantimonas_manganoxydans_SI85_9A1.html
+│   │   │   │   │   ├── Blastopirellula_marina.html
+│   │   │   │   │   ├── contig_size_viewer.html
+│   │   │   │   │   ├── Dehalobacter_restrictus_DSM_9455.html
+│   │   │   │   │   ├── Desulfocurvus_vexinensis.html
+│   │   │   │   │   ├── endosymbiont_of_Ridgeia_piscesae.html
+│   │   │   │   │   ├── Formosa_algae.html
+│   │   │   │   │   ├── gamma_proteobacterium_SCGC_AB_629_P17.html
+│   │   │   │   │   ├── marine_gamma_proteobacterium_HTCC2080.html
+│   │   │   │   │   ├── marine_metagenome.html
+│   │   │   │   │   ├── Nisaea_denitrificans_DSM_18348.html
+│   │   │   │   │   ├── Oceanibaculum_pacificum.html
+│   │   │   │   │   ├── Owenweeksia_hongkongensis_DSM_17368.html
+│   │   │   │   │   ├── Pelagicoccus_mobilis.html
+│   │   │   │   │   ├── Photobacterium_halotolerans.html
+│   │   │   │   │   ├── Planctomyces_maris_DSM_8797.html
+│   │   │   │   │   ├── Porticoccus_hydrocarbonoclasticus_MCTG13d.html
+│   │   │   │   │   ├── Prosthecobacter_debontii.html
+│   │   │   │   │   ├── Pseudoalteromonas_atlantica_T6c.html
+│   │   │   │   │   ├── Pseudoalteromonas_tunicata_D2.html
+│   │   │   │   │   ├── Pseudohongiella_spirulinae.html
+│   │   │   │   │   ├── Pseudomonas_mohnii.html
+│   │   │   │   │   ├── Psychroserpens_sp._PAMC_27130.html
+│   │   │   │   │   ├── Puniceicoccus_vermicola.html
+│   │   │   │   │   ├── Rhodobacteraceae_bacterium_HIMB11.html
+│   │   │   │   │   ├── Rhodothalassium_salexigens.html
+│   │   │   │   │   ├── Roseibacterium_elongatum_DSM_19469.html
+│   │   │   │   │   ├── Roseobacter_sp._SK209_2_6.html
+│   │   │   │   │   ├── Serratia_symbiotica.html
+│   │   │   │   │   ├── Shewanella_amazonensis_SB2B.html
+│   │   │   │   │   ├── Sinobacterium_caligoides.html
+│   │   │   │   │   ├── Solirubrobacter_soli_DSM_22325.html
+│   │   │   │   │   ├── Sphingobium_czechense_LL01.html
+│   │   │   │   │   ├── Spongiibacter_tropicus_DSM_19543.html
+│   │   │   │   │   ├── Streptomyces_cyaneogriseus_subsp._noncyanogenus.html
+│   │   │   │   │   ├── Synechococcus_sp._KORDI_49.html
+│   │   │   │   │   ├── Synechococcus_sp._RCC307.html
+│   │   │   │   │   ├── Syntrophus_aciditrophicus.html
+│   │   │   │   │   ├── Thalassobaculum_salexigens_DSM_19539.html
+│   │   │   │   │   ├── Thermoplasmatales_archaeon_A_plasma.html
+│   │   │   │   │   ├── Thioalkalivibrio_sulfidiphilus_HL_EbGr7.html
+│   │   │   │   │   ├── Vibrio_sinaloensis.html
+│   │   │   │   │   ├── Weeksella_virosa_DSM_16922.html
+│   │   │   │   │   └── Zymomonas_mobilis.html
+│   │   │   │   ├── quast.log
+│   │   │   │   ├── report.html
+│   │   │   │   ├── report.pdf
+│   │   │   │   ├── report.tex
+│   │   │   │   ├── report.tsv
+│   │   │   │   ├── report.txt
+│   │   │   │   ├── transposed_report.tex
+│   │   │   │   ├── transposed_report.tsv
+│   │   │   │   └── transposed_report.txt
+│   │   │   ├── icarus.html
+│   │   │   ├── icarus_viewers
+│   │   │   │   ├── alignment_viewer.html
+│   │   │   │   └── contig_size_viewer.html
+│   │   │   ├── krona_charts
+│   │   │   │   ├── final.contigs_taxonomy_chart.html
+│   │   │   │   ├── krona.err
+│   │   │   │   └── krona.log
+│   │   │   ├── metaquast.log
+│   │   │   ├── not_aligned
+│   │   │   │   ├── basic_stats
+│   │   │   │   │   ├── cumulative_plot.pdf
+│   │   │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │   │   │   │   ├── GC_content_plot.pdf
+│   │   │   │   │   └── Nx_plot.pdf
+│   │   │   │   ├── icarus.html
+│   │   │   │   ├── icarus_viewers
+│   │   │   │   │   └── contig_size_viewer.html
+│   │   │   │   ├── quast.log
+│   │   │   │   ├── report.html
+│   │   │   │   ├── report.pdf
+│   │   │   │   ├── report.tex
+│   │   │   │   ├── report.tsv
+│   │   │   │   ├── report.txt
+│   │   │   │   ├── transposed_report.tex
+│   │   │   │   ├── transposed_report.tsv
+│   │   │   │   └── transposed_report.txt
+│   │   │   ├── quast_downloaded_references
+│   │   │   │   ├── alpha_proteobacterium_SCGC_AAA015_O19.fasta
+│   │   │   │   ├── Arenicella_chitinivorans.fasta
+│   │   │   │   ├── Aurantimonas_manganoxydans_SI85_9A1.fasta
+│   │   │   │   ├── blast.check_final-contigs
+│   │   │   │   ├── Blastopirellula_marina.fasta
+│   │   │   │   ├── blast.res_final-contigs
+│   │   │   │   ├── Dehalobacter_restrictus_DSM_9455.fasta
+│   │   │   │   ├── Desulfocurvus_vexinensis.fasta
+│   │   │   │   ├── endosymbiont_of_Ridgeia_piscesae.fasta
+│   │   │   │   ├── Formosa_algae.fasta
+│   │   │   │   ├── gamma_proteobacterium_SCGC_AB_629_P17.fasta
+│   │   │   │   ├── marine_gamma_proteobacterium_HTCC2080.fasta
+│   │   │   │   ├── marine_metagenome.fasta
+│   │   │   │   ├── Nisaea_denitrificans_DSM_18348.fasta
+│   │   │   │   ├── Oceanibaculum_pacificum.fasta
+│   │   │   │   ├── Owenweeksia_hongkongensis_DSM_17368.fasta
+│   │   │   │   ├── Pelagicoccus_mobilis.fasta
+│   │   │   │   ├── Photobacterium_halotolerans.fasta
+│   │   │   │   ├── Planctomyces_maris_DSM_8797.fasta
+│   │   │   │   ├── Porticoccus_hydrocarbonoclasticus_MCTG13d.fasta
+│   │   │   │   ├── Prosthecobacter_debontii.fasta
+│   │   │   │   ├── Pseudoalteromonas_atlantica_T6c.fasta
+│   │   │   │   ├── Pseudoalteromonas_tunicata_D2.fasta
+│   │   │   │   ├── Pseudohongiella_spirulinae.fasta
+│   │   │   │   ├── Pseudomonas_mohnii.fasta
+│   │   │   │   ├── Psychroserpens_sp._PAMC_27130.fasta
+│   │   │   │   ├── Puniceicoccus_vermicola.fasta
+│   │   │   │   ├── Rhodobacteraceae_bacterium_HIMB11.fasta
+│   │   │   │   ├── Rhodothalassium_salexigens.fasta
+│   │   │   │   ├── Roseibacterium_elongatum_DSM_19469.fasta
+│   │   │   │   ├── Roseobacter_sp._SK209_2_6.fasta
+│   │   │   │   ├── Serratia_symbiotica.fasta
+│   │   │   │   ├── Shewanella_amazonensis_SB2B.fasta
+│   │   │   │   ├── Sinobacterium_caligoides.fasta
+│   │   │   │   ├── Solirubrobacter_soli_DSM_22325.fasta
+│   │   │   │   ├── Sphingobium_czechense_LL01.fasta
+│   │   │   │   ├── Spongiibacter_tropicus_DSM_19543.fasta
+│   │   │   │   ├── Streptomyces_cyaneogriseus_subsp._noncyanogenus.fasta
+│   │   │   │   ├── Synechococcus_sp._KORDI_49.fasta
+│   │   │   │   ├── Synechococcus_sp._RCC307.fasta
+│   │   │   │   ├── Syntrophus_aciditrophicus.fasta
+│   │   │   │   ├── Thalassobaculum_salexigens_DSM_19539.fasta
+│   │   │   │   ├── Thermoplasmatales_archaeon_A_plasma.fasta
+│   │   │   │   ├── Thioalkalivibrio_sulfidiphilus_HL_EbGr7.fasta
+│   │   │   │   ├── Vibrio_sinaloensis.fasta
+│   │   │   │   ├── Weeksella_virosa_DSM_16922.fasta
+│   │   │   │   └── Zymomonas_mobilis.fasta
+│   │   │   ├── report.html
+│   │   │   ├── runs_per_reference
+│   │   │   │   └── Synechococcus_sp._RCC307
+│   │   │   │       ├── aligned_stats
+│   │   │   │       │   ├── cumulative_plot.pdf
+│   │   │   │       │   ├── NAx_plot.pdf
+│   │   │   │       │   └── NGAx_plot.pdf
+│   │   │   │       ├── basic_stats
+│   │   │   │       │   ├── cumulative_plot.pdf
+│   │   │   │       │   ├── final.contigs_GC_content_plot.pdf
+│   │   │   │       │   ├── GC_content_plot.pdf
+│   │   │   │       │   ├── gc.icarus.txt
+│   │   │   │       │   ├── NGx_plot.pdf
+│   │   │   │       │   └── Nx_plot.pdf
+│   │   │   │       ├── contigs_reports
+│   │   │   │       │   ├── all_alignments_final-contigs.tsv
+│   │   │   │       │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │   │   │       │   ├── contigs_report_final-contigs.stderr
+│   │   │   │       │   ├── contigs_report_final-contigs.stdout
+│   │   │   │       │   ├── contigs_report_final-contigs.unaligned.info
+│   │   │   │       │   ├── final-contigs_to_Synechococcus_sp._RCC307.mis_contigs.fa
+│   │   │   │       │   ├── minimap_output
+│   │   │   │       │   │   ├── final-contigs.coords
+│   │   │   │       │   │   ├── final-contigs.coords.filtered
+│   │   │   │       │   │   ├── final-contigs.coords_tmp
+│   │   │   │       │   │   ├── final-contigs.sf
+│   │   │   │       │   │   ├── final-contigs.unaligned
+│   │   │   │       │   │   └── final-contigs.used_snps.gz
+│   │   │   │       │   ├── misassemblies_frcurve_plot.pdf
+│   │   │   │       │   ├── misassemblies_plot.pdf
+│   │   │   │       │   ├── misassemblies_report.tex
+│   │   │   │       │   ├── misassemblies_report.tsv
+│   │   │   │       │   ├── misassemblies_report.txt
+│   │   │   │       │   ├── transposed_report_misassemblies.tex
+│   │   │   │       │   ├── transposed_report_misassemblies.tsv
+│   │   │   │       │   ├── transposed_report_misassemblies.txt
+│   │   │   │       │   ├── unaligned_report.tex
+│   │   │   │       │   ├── unaligned_report.tsv
+│   │   │   │       │   └── unaligned_report.txt
+│   │   │   │       ├── genome_stats
+│   │   │   │       │   ├── final-contigs_gaps.txt
+│   │   │   │       │   └── genome_info.txt
+│   │   │   │       ├── icarus.html
+│   │   │   │       ├── icarus_viewers
+│   │   │   │       │   ├── alignment_viewer.html
+│   │   │   │       │   └── contig_size_viewer.html
+│   │   │   │       ├── quast.log
+│   │   │   │       ├── report.html
+│   │   │   │       ├── report.pdf
+│   │   │   │       ├── report.tex
+│   │   │   │       ├── report.tsv
+│   │   │   │       ├── report.txt
+│   │   │   │       ├── transposed_report.tex
+│   │   │   │       ├── transposed_report.tsv
+│   │   │   │       └── transposed_report.txt
+│   │   │   └── summary
+│   │   │       ├── PDF
+│   │   │       │   ├── Duplication_ratio.pdf
+│   │   │       │   ├── final-contigs_misassemblies.pdf
+│   │   │       │   ├── Genome_fraction.pdf
+│   │   │       │   ├── Largest_alignment.pdf
+│   │   │       │   ├── Largest_contig.pdf
+│   │   │       │   ├── LGA50.pdf
+│   │   │       │   ├── Misassembled_contigs_length.pdf
+│   │   │       │   ├── NGA50.pdf
+│   │   │       │   ├── num_contigs.pdf
+│   │   │       │   ├── num_indels_per_100_kbp.pdf
+│   │   │       │   ├── num_misassemblies.pdf
+│   │   │       │   ├── num_mismatches_per_100_kbp.pdf
+│   │   │       │   ├── num_Ns_per_100_kbp.pdf
+│   │   │       │   ├── Total_aligned_length.pdf
+│   │   │       │   ├── Total_length_(ge_10000_bp).pdf
+│   │   │       │   ├── Total_length_(ge_1000_bp).pdf
+│   │   │       │   ├── Total_length_(ge_50000_bp).pdf
+│   │   │       │   └── Total_length.pdf
+│   │   │       ├── TEX
+│   │   │       │   ├── Duplication_ratio.tex
+│   │   │       │   ├── Genome_fraction.tex
+│   │   │       │   ├── Largest_alignment.tex
+│   │   │       │   ├── Largest_contig.tex
+│   │   │       │   ├── LGA50.tex
+│   │   │       │   ├── Misassembled_contigs_length.tex
+│   │   │       │   ├── NGA50.tex
+│   │   │       │   ├── num_contigs.tex
+│   │   │       │   ├── num_indels_per_100_kbp.tex
+│   │   │       │   ├── num_misassemblies.tex
+│   │   │       │   ├── num_mismatches_per_100_kbp.tex
+│   │   │       │   ├── num_Ns_per_100_kbp.tex
+│   │   │       │   ├── Total_aligned_length.tex
+│   │   │       │   ├── Total_length_(ge_10000_bp).tex
+│   │   │       │   ├── Total_length_(ge_1000_bp).tex
+│   │   │       │   ├── Total_length_(ge_50000_bp).tex
+│   │   │       │   └── Total_length.tex
+│   │   │       ├── TSV
+│   │   │       │   ├── Duplication_ratio.tsv
+│   │   │       │   ├── Genome_fraction.tsv
+│   │   │       │   ├── Largest_alignment.tsv
+│   │   │       │   ├── Largest_contig.tsv
+│   │   │       │   ├── LGA50.tsv
+│   │   │       │   ├── Misassembled_contigs_length.tsv
+│   │   │       │   ├── NGA50.tsv
+│   │   │       │   ├── num_contigs.tsv
+│   │   │       │   ├── num_indels_per_100_kbp.tsv
+│   │   │       │   ├── num_misassemblies.tsv
+│   │   │       │   ├── num_mismatches_per_100_kbp.tsv
+│   │   │       │   ├── num_Ns_per_100_kbp.tsv
+│   │   │       │   ├── Total_aligned_length.tsv
+│   │   │       │   ├── Total_length_(ge_10000_bp).tsv
+│   │   │       │   ├── Total_length_(ge_1000_bp).tsv
+│   │   │       │   ├── Total_length_(ge_50000_bp).tsv
+│   │   │       │   └── Total_length.tsv
+│   │   │       └── TXT
+│   │   │           ├── Duplication_ratio.txt
+│   │   │           ├── Genome_fraction.txt
+│   │   │           ├── Largest_alignment.txt
+│   │   │           ├── Largest_contig.txt
+│   │   │           ├── LGA50.txt
+│   │   │           ├── Misassembled_contigs_length.txt
+│   │   │           ├── NGA50.txt
+│   │   │           ├── num_contigs.txt
+│   │   │           ├── num_indels_per_100_kbp.txt
+│   │   │           ├── num_misassemblies.txt
+│   │   │           ├── num_mismatches_per_100_kbp.txt
+│   │   │           ├── num_Ns_per_100_kbp.txt
+│   │   │           ├── Total_aligned_length.txt
+│   │   │           ├── Total_length_(ge_10000_bp).txt
+│   │   │           ├── Total_length_(ge_1000_bp).txt
+│   │   │           ├── Total_length_(ge_50000_bp).txt
+│   │   │           └── Total_length.txt
+│   │   └── D3_metaquast_out
+│   │       ├── combined_reference
+│   │       │   ├── aligned_stats
+│   │       │   │   ├── cumulative_plot.pdf
+│   │       │   │   └── NAx_plot.pdf
+│   │       │   ├── basic_stats
+│   │       │   │   ├── cumulative_plot.pdf
+│   │       │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   ├── GC_content_plot.pdf
+│   │       │   │   ├── gc.icarus.txt
+│   │       │   │   └── Nx_plot.pdf
+│   │       │   ├── contigs_reports
+│   │       │   │   ├── alignments_final-contigs.tsv
+│   │       │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   ├── final_contigs.mis_contigs.fa
+│   │       │   │   ├── intergenomic_misassemblies.pdf
+│   │       │   │   ├── interspecies_translocations_by_refs_final_contigs.info
+│   │       │   │   ├── minimap_output
+│   │       │   │   │   └── raw
+│   │       │   │   │       ├── final-contigs.coords
+│   │       │   │   │       ├── final-contigs.coords.filtered
+│   │       │   │   │       ├── final-contigs.coords_tmp
+│   │       │   │   │       ├── final-contigs.sf
+│   │       │   │   │       ├── final-contigs.unaligned
+│   │       │   │   │       └── final-contigs.used_snps.gz
+│   │       │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   ├── misassemblies_plot.pdf
+│   │       │   │   ├── misassemblies_report.tex
+│   │       │   │   ├── misassemblies_report.tsv
+│   │       │   │   ├── misassemblies_report.txt
+│   │       │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   ├── unaligned_report.tex
+│   │       │   │   ├── unaligned_report.tsv
+│   │       │   │   ├── unaligned_report.txt
+│   │       │   │   └── unique_contigs_final-contigs.tsv
+│   │       │   ├── genome_stats
+│   │       │   │   ├── final-contigs_gaps.txt
+│   │       │   │   └── genome_info.txt
+│   │       │   ├── icarus.html
+│   │       │   ├── icarus_viewers
+│   │       │   │   ├── Alcanivorax_pacificus_W11_5.html
+│   │       │   │   ├── alpha_proteobacterium_BAL199.html
+│   │       │   │   ├── Aurantimonas_manganoxydans_SI85_9A1.html
+│   │       │   │   ├── Conexibacter_woesei_Iso977N.html
+│   │       │   │   ├── contig_size_viewer.html
+│   │       │   │   ├── Desulfitibacter_alkalitolerans_DSM_16504.html
+│   │       │   │   ├── Desulfuromonas_thiophila.html
+│   │       │   │   ├── endosymbiont_of_Ridgeia_piscesae.html
+│   │       │   │   ├── Flavobacterium_sp._SCGC_AAA160_P02.html
+│   │       │   │   ├── Fluviicola_taffensis_DSM_16823.html
+│   │       │   │   ├── Gaiella_occulta.html
+│   │       │   │   ├── gamma_proteobacterium_SCGC_AB_629_P17.html
+│   │       │   │   ├── Gracilibacteria_bacterium_JGI_0000069_P22.html
+│   │       │   │   ├── Luminiphilus_syltensis_NOR5_1B.html
+│   │       │   │   ├── Magnetococcus_marinus_MC_1.html
+│   │       │   │   ├── Magnetospira_sp._QH_2.html
+│   │       │   │   ├── marine_gamma_proteobacterium_HTCC2080.html
+│   │       │   │   ├── marine_metagenome.html
+│   │       │   │   ├── Marinomonas_communis.html
+│   │       │   │   ├── Methylobacter_sp._XLMV4.html
+│   │       │   │   ├── mine_drainage_metagenome.html
+│   │       │   │   ├── Mollicutes_bacterium_HR1.html
+│   │       │   │   ├── Neisseria_sp._CSL_7565.html
+│   │       │   │   ├── Nitrospina_gracilis.html
+│   │       │   │   ├── Nitrospina_sp._SCGC_AAA288_L16.html
+│   │       │   │   ├── Oceanicola_granulosus_HTCC2516.html
+│   │       │   │   ├── Owenweeksia_hongkongensis_DSM_17368.html
+│   │       │   │   ├── Paracoccus_aminophilus.html
+│   │       │   │   ├── Porticoccus_hydrocarbonoclasticus_MCTG13d.html
+│   │       │   │   ├── Pseudoruegeria_aquimaris.html
+│   │       │   │   ├── Shewanella_amazonensis_SB2B.html
+│   │       │   │   ├── Simiduia_sp._J_MY2.html
+│   │       │   │   ├── Sinobacterium_caligoides.html
+│   │       │   │   ├── Sphingobium_fuliginis.html
+│   │       │   │   ├── Sulfitobacter_sp._NAS_14.1.html
+│   │       │   │   ├── Synechococcus_sp._KORDI_49.html
+│   │       │   │   ├── Syntrophus_aciditrophicus.html
+│   │       │   │   ├── Tenacibaculum_skagerrakense.html
+│   │       │   │   ├── Thioalkalivibrio_sp._ALJ17.html
+│   │       │   │   ├── Thioalkalivibrio_sulfidiphilus_HL_EbGr7.html
+│   │       │   │   ├── Thiohalobacter_thiocyanaticus.html
+│   │       │   │   ├── Ulvibacter_litoralis.html
+│   │       │   │   └── Xanthomonas_citri_subsp._malvacearum.html
+│   │       │   ├── quast.log
+│   │       │   ├── report.html
+│   │       │   ├── report.pdf
+│   │       │   ├── report.tex
+│   │       │   ├── report.tsv
+│   │       │   ├── report.txt
+│   │       │   ├── transposed_report.tex
+│   │       │   ├── transposed_report.tsv
+│   │       │   └── transposed_report.txt
+│   │       ├── icarus.html
+│   │       ├── icarus_viewers
+│   │       │   ├── Alcanivorax_pacificus_W11_5.html
+│   │       │   ├── alpha_proteobacterium_BAL199.html
+│   │       │   ├── Aurantimonas_manganoxydans_SI85_9A1.html
+│   │       │   ├── Conexibacter_woesei_Iso977N.html
+│   │       │   ├── contig_size_viewer.html
+│   │       │   ├── Desulfitibacter_alkalitolerans_DSM_16504.html
+│   │       │   ├── Desulfuromonas_thiophila.html
+│   │       │   ├── endosymbiont_of_Ridgeia_piscesae.html
+│   │       │   ├── Flavobacterium_sp._SCGC_AAA160_P02.html
+│   │       │   ├── Fluviicola_taffensis_DSM_16823.html
+│   │       │   ├── Gaiella_occulta.html
+│   │       │   ├── gamma_proteobacterium_SCGC_AB_629_P17.html
+│   │       │   ├── Gracilibacteria_bacterium_JGI_0000069_P22.html
+│   │       │   ├── Luminiphilus_syltensis_NOR5_1B.html
+│   │       │   ├── Magnetococcus_marinus_MC_1.html
+│   │       │   ├── Magnetospira_sp._QH_2.html
+│   │       │   ├── marine_gamma_proteobacterium_HTCC2080.html
+│   │       │   ├── marine_metagenome.html
+│   │       │   ├── Marinomonas_communis.html
+│   │       │   ├── Methylobacter_sp._XLMV4.html
+│   │       │   ├── Mollicutes_bacterium_HR1.html
+│   │       │   ├── Neisseria_sp._CSL_7565.html
+│   │       │   ├── Nitrospina_gracilis.html
+│   │       │   ├── Nitrospina_sp._SCGC_AAA288_L16.html
+│   │       │   ├── Oceanicola_granulosus_HTCC2516.html
+│   │       │   ├── Owenweeksia_hongkongensis_DSM_17368.html
+│   │       │   ├── Paracoccus_aminophilus.html
+│   │       │   ├── Porticoccus_hydrocarbonoclasticus_MCTG13d.html
+│   │       │   ├── Pseudoruegeria_aquimaris.html
+│   │       │   ├── Shewanella_amazonensis_SB2B.html
+│   │       │   ├── Simiduia_sp._J_MY2.html
+│   │       │   ├── Sinobacterium_caligoides.html
+│   │       │   ├── Sphingobium_fuliginis.html
+│   │       │   ├── Sulfitobacter_sp._NAS_14.1.html
+│   │       │   ├── Synechococcus_sp._KORDI_49.html
+│   │       │   ├── Syntrophus_aciditrophicus.html
+│   │       │   ├── Tenacibaculum_skagerrakense.html
+│   │       │   ├── Thioalkalivibrio_sp._ALJ17.html
+│   │       │   ├── Thioalkalivibrio_sulfidiphilus_HL_EbGr7.html
+│   │       │   ├── Thiohalobacter_thiocyanaticus.html
+│   │       │   ├── Ulvibacter_litoralis.html
+│   │       │   └── Xanthomonas_citri_subsp._malvacearum.html
+│   │       ├── krona_charts
+│   │       │   ├── final.contigs_taxonomy_chart.html
+│   │       │   ├── krona.err
+│   │       │   └── krona.log
+│   │       ├── metaquast.log
+│   │       ├── not_aligned
+│   │       │   ├── basic_stats
+│   │       │   │   ├── cumulative_plot.pdf
+│   │       │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   ├── GC_content_plot.pdf
+│   │       │   │   └── Nx_plot.pdf
+│   │       │   ├── icarus.html
+│   │       │   ├── icarus_viewers
+│   │       │   │   └── contig_size_viewer.html
+│   │       │   ├── quast.log
+│   │       │   ├── report.html
+│   │       │   ├── report.pdf
+│   │       │   ├── report.tex
+│   │       │   ├── report.tsv
+│   │       │   ├── report.txt
+│   │       │   ├── transposed_report.tex
+│   │       │   ├── transposed_report.tsv
+│   │       │   └── transposed_report.txt
+│   │       ├── quast_downloaded_references
+│   │       │   ├── Alcanivorax_pacificus_W11_5.fasta
+│   │       │   ├── alpha_proteobacterium_BAL199.fasta
+│   │       │   ├── Aurantimonas_manganoxydans_SI85_9A1.fasta
+│   │       │   ├── blast.check_final-contigs
+│   │       │   ├── blast.res_final-contigs
+│   │       │   ├── Conexibacter_woesei_Iso977N.fasta
+│   │       │   ├── Desulfitibacter_alkalitolerans_DSM_16504.fasta
+│   │       │   ├── Desulfuromonas_thiophila.fasta
+│   │       │   ├── endosymbiont_of_Ridgeia_piscesae.fasta
+│   │       │   ├── Flavobacterium_sp._SCGC_AAA160_P02.fasta
+│   │       │   ├── Fluviicola_taffensis_DSM_16823.fasta
+│   │       │   ├── Gaiella_occulta.fasta
+│   │       │   ├── gamma_proteobacterium_SCGC_AB_629_P17.fasta
+│   │       │   ├── Gracilibacteria_bacterium_JGI_0000069_P22.fasta
+│   │       │   ├── Luminiphilus_syltensis_NOR5_1B.fasta
+│   │       │   ├── Magnetococcus_marinus_MC_1.fasta
+│   │       │   ├── Magnetospira_sp._QH_2.fasta
+│   │       │   ├── marine_gamma_proteobacterium_HTCC2080.fasta
+│   │       │   ├── marine_metagenome.fasta
+│   │       │   ├── Marinomonas_communis.fasta
+│   │       │   ├── Methylobacter_sp._XLMV4.fasta
+│   │       │   ├── mine_drainage_metagenome.fasta
+│   │       │   ├── Mollicutes_bacterium_HR1.fasta
+│   │       │   ├── Neisseria_sp._CSL_7565.fasta
+│   │       │   ├── Nitrospina_gracilis.fasta
+│   │       │   ├── Nitrospina_sp._SCGC_AAA288_L16.fasta
+│   │       │   ├── Oceanicola_granulosus_HTCC2516.fasta
+│   │       │   ├── Owenweeksia_hongkongensis_DSM_17368.fasta
+│   │       │   ├── Paracoccus_aminophilus.fasta
+│   │       │   ├── Porticoccus_hydrocarbonoclasticus_MCTG13d.fasta
+│   │       │   ├── Pseudoruegeria_aquimaris.fasta
+│   │       │   ├── Shewanella_amazonensis_SB2B.fasta
+│   │       │   ├── Simiduia_sp._J_MY2.fasta
+│   │       │   ├── Sinobacterium_caligoides.fasta
+│   │       │   ├── Sphingobium_fuliginis.fasta
+│   │       │   ├── Sulfitobacter_sp._NAS_14.1.fasta
+│   │       │   ├── Synechococcus_sp._KORDI_49.fasta
+│   │       │   ├── Syntrophus_aciditrophicus.fasta
+│   │       │   ├── Tenacibaculum_skagerrakense.fasta
+│   │       │   ├── Thioalkalivibrio_sp._ALJ17.fasta
+│   │       │   ├── Thioalkalivibrio_sulfidiphilus_HL_EbGr7.fasta
+│   │       │   ├── Thiohalobacter_thiocyanaticus.fasta
+│   │       │   ├── Ulvibacter_litoralis.fasta
+│   │       │   └── Xanthomonas_citri_subsp._malvacearum.fasta
+│   │       ├── report.html
+│   │       ├── runs_per_reference
+│   │       │   ├── Alcanivorax_pacificus_W11_5
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Alcanivorax_pacificus_W11_5.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── alpha_proteobacterium_BAL199
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_alpha_proteobacterium_BAL199.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Aurantimonas_manganoxydans_SI85_9A1
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Aurantimonas_manganoxydans_SI85_9A1.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Conexibacter_woesei_Iso977N
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Conexibacter_woesei_Iso977N.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Desulfitibacter_alkalitolerans_DSM_16504
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Desulfitibacter_alkalitolerans_DSM_16504.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Desulfuromonas_thiophila
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Desulfuromonas_thiophila.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── endosymbiont_of_Ridgeia_piscesae
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_endosymbiont_of_Ridgeia_piscesae.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Flavobacterium_sp._SCGC_AAA160_P02
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Flavobacterium_sp._SCGC_AAA160_P02.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Fluviicola_taffensis_DSM_16823
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Fluviicola_taffensis_DSM_16823.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Gaiella_occulta
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Gaiella_occulta.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── gamma_proteobacterium_SCGC_AB_629_P17
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_gamma_proteobacterium_SCGC_AB_629_P17.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Gracilibacteria_bacterium_JGI_0000069_P22
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Gracilibacteria_bacterium_JGI_0000069_P22.mis_contigs.fa
+│   │       │   │   │   └── minimap_output
+│   │       │   │   │       ├── final-contigs.coords
+│   │       │   │   │       ├── final-contigs.coords.filtered
+│   │       │   │   │       ├── final-contigs.coords_tmp
+│   │       │   │   │       ├── final-contigs.sf
+│   │       │   │   │       ├── final-contigs.unaligned
+│   │       │   │   │       └── final-contigs.used_snps.gz
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Luminiphilus_syltensis_NOR5_1B
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Luminiphilus_syltensis_NOR5_1B.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Magnetococcus_marinus_MC_1
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Magnetococcus_marinus_MC_1.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Magnetospira_sp._QH_2
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Magnetospira_sp._QH_2.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── marine_gamma_proteobacterium_HTCC2080
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_marine_gamma_proteobacterium_HTCC2080.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── marine_metagenome
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_marine_metagenome.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Marinomonas_communis
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Marinomonas_communis.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Methylobacter_sp._XLMV4
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Methylobacter_sp._XLMV4.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Mollicutes_bacterium_HR1
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Mollicutes_bacterium_HR1.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Neisseria_sp._CSL_7565
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Neisseria_sp._CSL_7565.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Nitrospina_gracilis
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Nitrospina_gracilis.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Nitrospina_sp._SCGC_AAA288_L16
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Nitrospina_sp._SCGC_AAA288_L16.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Oceanicola_granulosus_HTCC2516
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Oceanicola_granulosus_HTCC2516.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Owenweeksia_hongkongensis_DSM_17368
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Owenweeksia_hongkongensis_DSM_17368.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Paracoccus_aminophilus
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Paracoccus_aminophilus.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Porticoccus_hydrocarbonoclasticus_MCTG13d
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Porticoccus_hydrocarbonoclasticus_MCTG13d.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Pseudoruegeria_aquimaris
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Pseudoruegeria_aquimaris.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Shewanella_amazonensis_SB2B
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Shewanella_amazonensis_SB2B.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Simiduia_sp._J_MY2
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Simiduia_sp._J_MY2.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Sinobacterium_caligoides
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Sinobacterium_caligoides.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Sphingobium_fuliginis
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Sphingobium_fuliginis.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Sulfitobacter_sp._NAS_14.1
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Sulfitobacter_sp._NAS_14.1.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Synechococcus_sp._KORDI_49
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Synechococcus_sp._KORDI_49.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Syntrophus_aciditrophicus
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Syntrophus_aciditrophicus.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Tenacibaculum_skagerrakense
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Tenacibaculum_skagerrakense.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Thioalkalivibrio_sp._ALJ17
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Thioalkalivibrio_sp._ALJ17.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Thioalkalivibrio_sulfidiphilus_HL_EbGr7
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Thioalkalivibrio_sulfidiphilus_HL_EbGr7.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Thiohalobacter_thiocyanaticus
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Thiohalobacter_thiocyanaticus.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   ├── Ulvibacter_litoralis
+│   │       │   │   ├── aligned_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── NAx_plot.pdf
+│   │       │   │   │   └── NGAx_plot.pdf
+│   │       │   │   ├── basic_stats
+│   │       │   │   │   ├── cumulative_plot.pdf
+│   │       │   │   │   ├── final.contigs_GC_content_plot.pdf
+│   │       │   │   │   ├── GC_content_plot.pdf
+│   │       │   │   │   ├── gc.icarus.txt
+│   │       │   │   │   ├── NGx_plot.pdf
+│   │       │   │   │   └── Nx_plot.pdf
+│   │       │   │   ├── contigs_reports
+│   │       │   │   │   ├── all_alignments_final-contigs.tsv
+│   │       │   │   │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │   │   │   ├── contigs_report_final-contigs.stderr
+│   │       │   │   │   ├── contigs_report_final-contigs.stdout
+│   │       │   │   │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │   │   │   ├── final-contigs_to_Ulvibacter_litoralis.mis_contigs.fa
+│   │       │   │   │   ├── minimap_output
+│   │       │   │   │   │   ├── final-contigs.coords
+│   │       │   │   │   │   ├── final-contigs.coords.filtered
+│   │       │   │   │   │   ├── final-contigs.coords_tmp
+│   │       │   │   │   │   ├── final-contigs.sf
+│   │       │   │   │   │   ├── final-contigs.unaligned
+│   │       │   │   │   │   └── final-contigs.used_snps.gz
+│   │       │   │   │   ├── misassemblies_frcurve_plot.pdf
+│   │       │   │   │   ├── misassemblies_plot.pdf
+│   │       │   │   │   ├── misassemblies_report.tex
+│   │       │   │   │   ├── misassemblies_report.tsv
+│   │       │   │   │   ├── misassemblies_report.txt
+│   │       │   │   │   ├── transposed_report_misassemblies.tex
+│   │       │   │   │   ├── transposed_report_misassemblies.tsv
+│   │       │   │   │   ├── transposed_report_misassemblies.txt
+│   │       │   │   │   ├── unaligned_report.tex
+│   │       │   │   │   ├── unaligned_report.tsv
+│   │       │   │   │   └── unaligned_report.txt
+│   │       │   │   ├── genome_stats
+│   │       │   │   │   ├── final-contigs_gaps.txt
+│   │       │   │   │   └── genome_info.txt
+│   │       │   │   ├── icarus.html
+│   │       │   │   ├── icarus_viewers
+│   │       │   │   │   ├── alignment_viewer.html
+│   │       │   │   │   └── contig_size_viewer.html
+│   │       │   │   ├── quast.log
+│   │       │   │   ├── report.html
+│   │       │   │   ├── report.pdf
+│   │       │   │   ├── report.tex
+│   │       │   │   ├── report.tsv
+│   │       │   │   ├── report.txt
+│   │       │   │   ├── transposed_report.tex
+│   │       │   │   ├── transposed_report.tsv
+│   │       │   │   └── transposed_report.txt
+│   │       │   └── Xanthomonas_citri_subsp._malvacearum
+│   │       │       ├── aligned_stats
+│   │       │       │   ├── cumulative_plot.pdf
+│   │       │       │   ├── NAx_plot.pdf
+│   │       │       │   └── NGAx_plot.pdf
+│   │       │       ├── basic_stats
+│   │       │       │   ├── cumulative_plot.pdf
+│   │       │       │   ├── final.contigs_GC_content_plot.pdf
+│   │       │       │   ├── GC_content_plot.pdf
+│   │       │       │   ├── gc.icarus.txt
+│   │       │       │   ├── NGx_plot.pdf
+│   │       │       │   └── Nx_plot.pdf
+│   │       │       ├── contigs_reports
+│   │       │       │   ├── all_alignments_final-contigs.tsv
+│   │       │       │   ├── contigs_report_final-contigs.mis_contigs.info
+│   │       │       │   ├── contigs_report_final-contigs.stderr
+│   │       │       │   ├── contigs_report_final-contigs.stdout
+│   │       │       │   ├── contigs_report_final-contigs.unaligned.info
+│   │       │       │   ├── final-contigs_to_Xanthomonas_citri_subsp._malvacearum.mis_contigs.fa
+│   │       │       │   ├── minimap_output
+│   │       │       │   │   ├── final-contigs.coords
+│   │       │       │   │   ├── final-contigs.coords.filtered
+│   │       │       │   │   ├── final-contigs.coords_tmp
+│   │       │       │   │   ├── final-contigs.sf
+│   │       │       │   │   ├── final-contigs.unaligned
+│   │       │       │   │   └── final-contigs.used_snps.gz
+│   │       │       │   ├── misassemblies_frcurve_plot.pdf
+│   │       │       │   ├── misassemblies_plot.pdf
+│   │       │       │   ├── misassemblies_report.tex
+│   │       │       │   ├── misassemblies_report.tsv
+│   │       │       │   ├── misassemblies_report.txt
+│   │       │       │   ├── transposed_report_misassemblies.tex
+│   │       │       │   ├── transposed_report_misassemblies.tsv
+│   │       │       │   ├── transposed_report_misassemblies.txt
+│   │       │       │   ├── unaligned_report.tex
+│   │       │       │   ├── unaligned_report.tsv
+│   │       │       │   └── unaligned_report.txt
+│   │       │       ├── genome_stats
+│   │       │       │   ├── final-contigs_gaps.txt
+│   │       │       │   └── genome_info.txt
+│   │       │       ├── icarus.html
+│   │       │       ├── icarus_viewers
+│   │       │       │   ├── alignment_viewer.html
+│   │       │       │   └── contig_size_viewer.html
+│   │       │       ├── quast.log
+│   │       │       ├── report.html
+│   │       │       ├── report.pdf
+│   │       │       ├── report.tex
+│   │       │       ├── report.tsv
+│   │       │       ├── report.txt
+│   │       │       ├── transposed_report.tex
+│   │       │       ├── transposed_report.tsv
+│   │       │       └── transposed_report.txt
+│   │       └── summary
+│   │           ├── PDF
+│   │           │   ├── Duplication_ratio.pdf
+│   │           │   ├── final-contigs_misassemblies.pdf
+│   │           │   ├── Genome_fraction.pdf
+│   │           │   ├── Largest_alignment.pdf
+│   │           │   ├── Largest_contig.pdf
+│   │           │   ├── Misassembled_contigs_length.pdf
+│   │           │   ├── NGA50.pdf
+│   │           │   ├── num_contigs.pdf
+│   │           │   ├── num_indels_per_100_kbp.pdf
+│   │           │   ├── num_misassemblies.pdf
+│   │           │   ├── num_mismatches_per_100_kbp.pdf
+│   │           │   ├── num_Ns_per_100_kbp.pdf
+│   │           │   ├── Total_aligned_length.pdf
+│   │           │   ├── Total_length_(ge_10000_bp).pdf
+│   │           │   ├── Total_length_(ge_1000_bp).pdf
+│   │           │   ├── Total_length_(ge_50000_bp).pdf
+│   │           │   └── Total_length.pdf
+│   │           ├── TEX
+│   │           │   ├── Duplication_ratio.tex
+│   │           │   ├── Genome_fraction.tex
+│   │           │   ├── Largest_alignment.tex
+│   │           │   ├── Largest_contig.tex
+│   │           │   ├── Misassembled_contigs_length.tex
+│   │           │   ├── NGA50.tex
+│   │           │   ├── num_contigs.tex
+│   │           │   ├── num_indels_per_100_kbp.tex
+│   │           │   ├── num_misassemblies.tex
+│   │           │   ├── num_mismatches_per_100_kbp.tex
+│   │           │   ├── num_Ns_per_100_kbp.tex
+│   │           │   ├── Total_aligned_length.tex
+│   │           │   ├── Total_length_(ge_10000_bp).tex
+│   │           │   ├── Total_length_(ge_1000_bp).tex
+│   │           │   ├── Total_length_(ge_50000_bp).tex
+│   │           │   └── Total_length.tex
+│   │           ├── TSV
+│   │           │   ├── Duplication_ratio.tsv
+│   │           │   ├── Genome_fraction.tsv
+│   │           │   ├── Largest_alignment.tsv
+│   │           │   ├── Largest_contig.tsv
+│   │           │   ├── Misassembled_contigs_length.tsv
+│   │           │   ├── NGA50.tsv
+│   │           │   ├── num_contigs.tsv
+│   │           │   ├── num_indels_per_100_kbp.tsv
+│   │           │   ├── num_misassemblies.tsv
+│   │           │   ├── num_mismatches_per_100_kbp.tsv
+│   │           │   ├── num_Ns_per_100_kbp.tsv
+│   │           │   ├── Total_aligned_length.tsv
+│   │           │   ├── Total_length_(ge_10000_bp).tsv
+│   │           │   ├── Total_length_(ge_1000_bp).tsv
+│   │           │   ├── Total_length_(ge_50000_bp).tsv
+│   │           │   └── Total_length.tsv
+│   │           └── TXT
+│   │               ├── Duplication_ratio.txt
+│   │               ├── Genome_fraction.txt
+│   │               ├── Largest_alignment.txt
+│   │               ├── Largest_contig.txt
+│   │               ├── Misassembled_contigs_length.txt
+│   │               ├── NGA50.txt
+│   │               ├── num_contigs.txt
+│   │               ├── num_indels_per_100_kbp.txt
+│   │               ├── num_misassemblies.txt
+│   │               ├── num_mismatches_per_100_kbp.txt
+│   │               ├── num_Ns_per_100_kbp.txt
+│   │               ├── Total_aligned_length.txt
+│   │               ├── Total_length_(ge_10000_bp).txt
+│   │               ├── Total_length_(ge_1000_bp).txt
+│   │               ├── Total_length_(ge_50000_bp).txt
+│   │               └── Total_length.txt
+│   ├── multiqc
+│   │   ├── multiqc_data
+│   │   │   ├── multiqc_citations.txt
+│   │   │   ├── multiqc_data.json
+│   │   │   ├── multiqc_fastqc.txt
+│   │   │   ├── multiqc_general_stats.txt
+│   │   │   ├── multiqc.log
+│   │   │   └── multiqc_sources.txt
+│   │   └── multiqc_report.html
+│   ├── pfam
+│   │   ├── Pfam-A.hmm.dat
+│   │   └── tigrfam2pfam.tsv
+│   ├── readme.txt
+│   ├── selected_marker_sets.tsv
+│   ├── softlinks
+│   │   ├── Megahit_Assembly -> /proj/genomeanalysis2022/nobackup/work/kvenk811/Megahit_Assembly/
+│   │   └── Metabat_binning_before_bwa -> /proj/genomeanalysis2022/nobackup/work/kvenk811/Metabat_binning_before_bwa/
+│   ├── taxon_marker_sets.tsv
+│   └── test_data
+│       └── 637000110.fna
+└── Slurm\ Outputs
+    ├── 1_RNA_trim_slurm-6101825.out
+    ├── also_megahit_6129017.out
+    ├── bwa_D3_slurm_6184331.out
+    ├── bwa_recent_slurm-6205052.out
+    ├── bwa_slurm_6180795.out
+    ├── bwa_slurm_again_6206468.out
+    ├── bwa_sort_error_slurm-6205043.out
+    ├── bwa_works_slurm_6206636.out
+    ├── D1_metabat_after_BWA_slurm-6184305.out
+    ├── D3_separate_bwa_slurm_618424.out
+    ├── egggg_before_bwa_slurm_618827.out
+    ├── eggnog_incomp_for_D3_6205956.out
+    ├── fastqc_slurm_6113853.out
+    ├── megahit_slurm_6129000.out
+    ├── metabat_before_bwaslurm_6132780.out
+    ├── metabat_error_slurm-6184292.out
+    ├── metabat_error_slurm_6184474.out
+    ├── prokka_before_bwa_slurm_6181335.out
+    ├── readme.txt
+    ├── summarize_bam_of_bwa_slurm_6181338.out
+    └── trimmomatic_slurm1.out
+
+431 directories, 3494 files

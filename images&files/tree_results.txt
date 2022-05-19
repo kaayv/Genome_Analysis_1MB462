@@ -1,0 +1,540 @@
+kvenk811/
+├── BWA_before_metabat
+│   └── D3_BWA
+│       └── Desktop
+├── bwa_conc_rna_map
+│   ├── D1
+│   ├── D1_test
+│   ├── D3
+│   └── D3_test
+├── Checkm_before_bwa
+│   ├── D1_checkm
+│   │   ├── bins
+│   │   │   ├── D1_metabat_output.1
+│   │   │   ├── D1_metabat_output.10
+│   │   │   ├── D1_metabat_output.11
+│   │   │   ├── D1_metabat_output.12
+│   │   │   ├── D1_metabat_output.2
+│   │   │   ├── D1_metabat_output.3
+│   │   │   ├── D1_metabat_output.4
+│   │   │   ├── D1_metabat_output.5
+│   │   │   ├── D1_metabat_output.6
+│   │   │   ├── D1_metabat_output.7
+│   │   │   ├── D1_metabat_output.8
+│   │   │   └── D1_metabat_output.9
+│   │   └── storage
+│   │       ├── aai_qa
+│   │       │   ├── D1_metabat_output.1
+│   │       │   ├── D1_metabat_output.10
+│   │       │   ├── D1_metabat_output.2
+│   │       │   ├── D1_metabat_output.3
+│   │       │   ├── D1_metabat_output.4
+│   │       │   ├── D1_metabat_output.5
+│   │       │   ├── D1_metabat_output.7
+│   │       │   ├── D1_metabat_output.8
+│   │       │   └── D1_metabat_output.9
+│   │       └── tree
+│   └── D3_checkm
+│       ├── bins
+│       │   ├── D3_metabat_output.1
+│       │   ├── D3_metabat_output.10
+│       │   ├── D3_metabat_output.11
+│       │   ├── D3_metabat_output.12
+│       │   ├── D3_metabat_output.13
+│       │   ├── D3_metabat_output.14
+│       │   ├── D3_metabat_output.15
+│       │   ├── D3_metabat_output.16
+│       │   ├── D3_metabat_output.17
+│       │   ├── D3_metabat_output.18
+│       │   ├── D3_metabat_output.19
+│       │   ├── D3_metabat_output.2
+│       │   ├── D3_metabat_output.20
+│       │   ├── D3_metabat_output.21
+│       │   ├── D3_metabat_output.3
+│       │   ├── D3_metabat_output.4
+│       │   ├── D3_metabat_output.5
+│       │   ├── D3_metabat_output.6
+│       │   ├── D3_metabat_output.7
+│       │   ├── D3_metabat_output.8
+│       │   └── D3_metabat_output.9
+│       └── storage
+│           ├── aai_qa
+│           │   ├── D3_metabat_output.11
+│           │   ├── D3_metabat_output.12
+│           │   ├── D3_metabat_output.13
+│           │   ├── D3_metabat_output.15
+│           │   ├── D3_metabat_output.16
+│           │   ├── D3_metabat_output.17
+│           │   ├── D3_metabat_output.18
+│           │   ├── D3_metabat_output.19
+│           │   ├── D3_metabat_output.2
+│           │   ├── D3_metabat_output.3
+│           │   ├── D3_metabat_output.4
+│           │   ├── D3_metabat_output.5
+│           │   ├── D3_metabat_output.6
+│           │   └── D3_metabat_output.9
+│           └── tree
+├── Checkm_imp
+│   ├── D1
+│   │   ├── D1_gc_plot
+│   │   ├── D1_len_hist
+│   │   └── D1_taxonomy_wf
+│   └── D3
+│       ├── D3_gc_plot
+│       ├── D3_len_hist
+│       └── D3_taxonomy_wf
+├── checkm_improvised
+├── eggnog_funct_without_bwa
+│   ├── D1
+│   ├── D1_funct
+│   ├── D3
+│   ├── D3_complete
+│   ├── D3_funct
+│   └── D3_partial
+├── htseq
+│   ├── D1
+│   │   ├── 1
+│   │   ├── 10
+│   │   ├── 11
+│   │   ├── 12
+│   │   ├── 2
+│   │   ├── 3
+│   │   ├── 4
+│   │   ├── 5
+│   │   ├── 6
+│   │   ├── 7
+│   │   ├── 8
+│   │   ├── 9
+│   │   └── gff
+│   └── D3
+│       ├── 1
+│       ├── 10
+│       ├── 11
+│       ├── 12
+│       ├── 13
+│       ├── 14
+│       ├── 15
+│       ├── 16
+│       ├── 17
+│       ├── 18
+│       ├── 19
+│       ├── 2
+│       ├── 20
+│       ├── 21
+│       ├── 3
+│       ├── 4
+│       ├── 5
+│       ├── 6
+│       ├── 7
+│       ├── 8
+│       ├── 9
+│       └── gff
+├── Megahit_Assembly
+│   ├── D1_megahit_output
+│   │   └── intermediate_contigs
+│   └── D3_megahit_output
+│       └── intermediate_contigs
+├── Metabat_binning_before_bwa
+│   ├── D1_metabat_output
+│   └── D3_metabat_output
+│       ├── emappertmp_dmdn_8xc9dfj3
+│       ├── emappertmp_dmdn_aczzceta
+│       ├── emappertmp_dmdn_b53lv_n1
+│       ├── emappertmp_dmdn_f5ee3ixd
+│       ├── emappertmp_dmdn_ffeeuw_v
+│       ├── emappertmp_dmdn_fkb54r0f
+│       ├── emappertmp_dmdn_t4bqdl55
+│       ├── emappertmp_dmdn_tkbse77k
+│       ├── emappertmp_dmdn_ua2k7kes
+│       ├── emappertmp_dmdn_ydn_ynwa
+│       └── emappertmp_dmdn_zjlab1aj
+├── metaphlan
+│   └── install
+├── Metquast_analysis_of_Megahit
+│   ├── D1_metaquast_out
+│   │   ├── combined_reference
+│   │   │   ├── aligned_stats
+│   │   │   ├── basic_stats
+│   │   │   ├── contigs_reports
+│   │   │   │   └── minimap_output
+│   │   │   │       └── raw
+│   │   │   ├── genome_stats
+│   │   │   └── icarus_viewers
+│   │   ├── icarus_viewers
+│   │   ├── krona_charts
+│   │   ├── not_aligned
+│   │   │   ├── basic_stats
+│   │   │   └── icarus_viewers
+│   │   ├── quast_downloaded_references
+│   │   ├── runs_per_reference
+│   │   │   └── Synechococcus_sp._RCC307
+│   │   │       ├── aligned_stats
+│   │   │       ├── basic_stats
+│   │   │       ├── contigs_reports
+│   │   │       │   └── minimap_output
+│   │   │       ├── genome_stats
+│   │   │       └── icarus_viewers
+│   │   └── summary
+│   │       ├── PDF
+│   │       ├── TEX
+│   │       ├── TSV
+│   │       └── TXT
+│   └── D3_metaquast_out
+│       ├── combined_reference
+│       │   ├── aligned_stats
+│       │   ├── basic_stats
+│       │   ├── contigs_reports
+│       │   │   └── minimap_output
+│       │   │       └── raw
+│       │   ├── genome_stats
+│       │   └── icarus_viewers
+│       ├── icarus_viewers
+│       ├── krona_charts
+│       ├── not_aligned
+│       │   ├── basic_stats
+│       │   └── icarus_viewers
+│       ├── quast_downloaded_references
+│       ├── runs_per_reference
+│       │   ├── Alcanivorax_pacificus_W11_5
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── alpha_proteobacterium_BAL199
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Aurantimonas_manganoxydans_SI85_9A1
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Conexibacter_woesei_Iso977N
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Desulfitibacter_alkalitolerans_DSM_16504
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Desulfuromonas_thiophila
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── endosymbiont_of_Ridgeia_piscesae
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Flavobacterium_sp._SCGC_AAA160_P02
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Fluviicola_taffensis_DSM_16823
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Gaiella_occulta
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── gamma_proteobacterium_SCGC_AB_629_P17
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Gracilibacteria_bacterium_JGI_0000069_P22
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   └── icarus_viewers
+│       │   ├── Luminiphilus_syltensis_NOR5_1B
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Magnetococcus_marinus_MC_1
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Magnetospira_sp._QH_2
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── marine_gamma_proteobacterium_HTCC2080
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── marine_metagenome
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Marinomonas_communis
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Methylobacter_sp._XLMV4
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Mollicutes_bacterium_HR1
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Neisseria_sp._CSL_7565
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Nitrospina_gracilis
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Nitrospina_sp._SCGC_AAA288_L16
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Oceanicola_granulosus_HTCC2516
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Owenweeksia_hongkongensis_DSM_17368
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Paracoccus_aminophilus
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Porticoccus_hydrocarbonoclasticus_MCTG13d
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Pseudoruegeria_aquimaris
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Shewanella_amazonensis_SB2B
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Simiduia_sp._J_MY2
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Sinobacterium_caligoides
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Sphingobium_fuliginis
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Sulfitobacter_sp._NAS_14.1
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Synechococcus_sp._KORDI_49
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Syntrophus_aciditrophicus
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Tenacibaculum_skagerrakense
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Thioalkalivibrio_sp._ALJ17
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Thioalkalivibrio_sulfidiphilus_HL_EbGr7
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Thiohalobacter_thiocyanaticus
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   ├── Ulvibacter_litoralis
+│       │   │   ├── aligned_stats
+│       │   │   ├── basic_stats
+│       │   │   ├── contigs_reports
+│       │   │   │   └── minimap_output
+│       │   │   ├── genome_stats
+│       │   │   └── icarus_viewers
+│       │   └── Xanthomonas_citri_subsp._malvacearum
+│       │       ├── aligned_stats
+│       │       ├── basic_stats
+│       │       ├── contigs_reports
+│       │       │   └── minimap_output
+│       │       ├── genome_stats
+│       │       └── icarus_viewers
+│       └── summary
+│           ├── PDF
+│           ├── TEX
+│           ├── TSV
+│           └── TXT
+├── phylophlan
+│   ├── data
+│   │   ├── D1
+│   │   ├── D3
+│   │   └── ppaalns
+│   ├── input
+│   │   ├── D1
+│   │   ├── D3
+│   │   ├── example_corynebacteria
+│   │   └── example_insertion
+│   ├── output
+│   │   ├── D1
+│   │   └── D3
+│   └── taxcuration
+├── prokka_before_bwa
+│   ├── D1
+│   │   ├── D1_metabat_output.10.fa_ann.out
+│   │   ├── D1_metabat_output.11.fa_ann.out
+│   │   ├── D1_metabat_output.12.fa_ann.out
+│   │   ├── D1_metabat_output.1.fa_ann.out
+│   │   ├── D1_metabat_output.2.fa_ann.out
+│   │   ├── D1_metabat_output.3.fa_ann.out
+│   │   ├── D1_metabat_output.4.fa_ann.out
+│   │   ├── D1_metabat_output.5.fa_ann.out
+│   │   ├── D1_metabat_output.6.fa_ann.out
+│   │   ├── D1_metabat_output.7.fa_ann.out
+│   │   ├── D1_metabat_output.8.fa_ann.out
+│   │   └── D1_metabat_output.9.fa_ann.out
+│   └── D3
+│       ├── D3_metabat_output.10.fa_ann.out
+│       ├── D3_metabat_output.11.fa_ann.out
+│       ├── D3_metabat_output.12.fa_ann.out
+│       ├── D3_metabat_output.13.fa_ann.out
+│       ├── D3_metabat_output.14.fa_ann.out
+│       ├── D3_metabat_output.15.fa_ann.out
+│       ├── D3_metabat_output.16.fa_ann.out
+│       ├── D3_metabat_output.17.fa_ann.out
+│       ├── D3_metabat_output.18.fa_ann.out
+│       ├── D3_metabat_output.19.fa_ann.out
+│       ├── D3_metabat_output.1.fa_ann.out
+│       ├── D3_metabat_output.20.fa_ann.out
+│       ├── D3_metabat_output.21.fa_ann.out
+│       ├── D3_metabat_output.2.fa_ann.out
+│       ├── D3_metabat_output.3.fa_ann.out
+│       ├── D3_metabat_output.4.fa_ann.out
+│       ├── D3_metabat_output.5.fa_ann.out
+│       ├── D3_metabat_output.6.fa_ann.out
+│       ├── D3_metabat_output.7.fa_ann.out
+│       ├── D3_metabat_output.8.fa_ann.out
+│       └── D3_metabat_output.9.fa_ann.out
+└── RNA_trimmed_files
+
+537 directories
